@@ -49,14 +49,14 @@ const ELHero = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.1]">
-            Il diritto dell'edilizia, <br className="hidden md:block" />
-            <span className="text-gold">dai due lati del cantiere.</span>
+            Il diritto dell'edilizia. <br className="hidden md:block" />
+            <span className="text-gold">Conosciamo le carte dell'altra parte.</span>
           </h1>
 
           <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto">
-            Nel contenzioso edilizio vince chi conosce le carte dell'altra parte. Noi scriviamo i contratti
-            d'appalto per le imprese e li smontiamo per i committenti — mai nella stessa vicenda. Per questo
-            sappiamo quale riserva regge, quale perizia tiene in giudizio, quale clausola non verrà mai applicata.
+            Scriviamo i contratti d'appalto per le imprese e li smontiamo per i committenti — mai nella stessa
+            vicenda. Per questo sappiamo in anticipo quale riserva regge, quale perizia tiene in giudizio,
+            quale clausola non verrà mai applicata.
           </p>
         </div>
 
