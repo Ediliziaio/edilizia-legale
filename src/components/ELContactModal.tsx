@@ -50,8 +50,9 @@ const ELContactModal = ({ isOpen, onClose }: ELContactModalProps) => {
             <DialogTitle className="text-xl text-navy text-left">Raccontaci il tuo caso</DialogTitle>
           </div>
           <p className="text-sm text-foreground/70 text-left">
-            Compila il modulo: analizziamo la situazione e ti ricontattiamo entro 48 ore lavorative con una prima
-            valutazione. <strong>Tutto riservato.</strong>
+            Due minuti per compilare. Entro 48 ore lavorative ti diciamo in che termine sei e quali strade
+            esistono — anche quando la risposta onesta è "non conviene muoversi". <strong>Tutto riservato,
+            nessun impegno.</strong>
           </p>
         </DialogHeader>
 

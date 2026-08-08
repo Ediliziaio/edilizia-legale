@@ -82,9 +82,9 @@ const Imprese = () => {
                   L'avvocato dell'impresa edile, <span className="text-gold">dal contratto all'incasso.</span>
                 </h1>
                 <p className="text-lg text-white/80 mb-4 leading-relaxed">
-                  Chi ha un problema di cassa non cerca "consulenza contrattualistica": cerca di farsi pagare un SAL,
-                  sbloccare un DURC, difendersi da un accertamento. Le dieci aree qui sotto sono ordinate per urgenza,
-                  non per eleganza giuridica.
+                  Il problema non è "la contrattualistica". Il problema è che hai 23.000 euro di saldo fermi da
+                  cinque mesi, un DURC che blocca la gara, o un atto da 400.000 euro sul Superbonus. Le dieci aree
+                  qui sotto partono da lì: ordinate per urgenza, non per eleganza giuridica.
                 </p>
                 <p className="text-sm text-white/60 mb-8">
                   Lavoriamo con: {SEGMENTI.join(" · ").toLowerCase()}.

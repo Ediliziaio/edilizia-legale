@@ -12,19 +12,27 @@ const doors = [
     icon: Building2,
     title: "Sono un'impresa",
     subtitle: "Imprese edili, subappaltatori, artigiani",
-    desc: "Non ti pagano SAL e fatture, ti contestano vizi pretestuosi, il DURC blocca i cantieri o il Fisco contesta i bonus edilizi.",
+    desc: "Hai chiuso il cantiere a marzo. Siamo ad agosto e il saldo non arriva. Intanto paghi tu: operai, ferro, contributi.",
     href: "/imprese",
-    bullets: ["Recupero crediti nel settore edile", "Riserve, varianti e maggiori oneri", "Contenzioso tributario e Superbonus"],
-    cta: "Entra nell'area imprese",
+    bullets: [
+      "Il committente contesta \"vizi\" a voce per non pagare",
+      "Un DURC irregolare ti sta bloccando SAL e gare",
+      "L'Agenzia contesta i crediti Superbonus",
+    ],
+    cta: "Vedi cosa puoi fare",
   },
   {
     icon: HomeIcon,
     title: "Sono un privato",
     subtitle: "Committenti, acquirenti, condòmini",
-    desc: "Difetti nella casa nuova, cantiere abbandonato dopo gli acconti, preventivo raddoppiato o un decreto ingiuntivo da contestare.",
+    desc: "Hai pagato gli acconti. Il cantiere è fermo, il telefono squilla a vuoto. E i termini di legge corrono anche se tu aspetti.",
     href: "/privati",
-    bullets: ["Difetti costruttivi e garanzia decennale", "Lavori mai finiti o eseguiti male", "Fotovoltaico, cappotto, infissi e verticali"],
-    cta: "Entra nell'area privati",
+    bullets: [
+      "Crepe e infiltrazioni nella casa appena comprata",
+      "Preventivo da 84.000 diventato fattura da 127.000",
+      "Decreto ingiuntivo ricevuto: hai 40 giorni, non uno di più",
+    ],
+    cta: "Vedi cosa puoi fare",
   },
 ];
 
@@ -46,9 +54,9 @@ const ELHero = () => {
           </h1>
 
           <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto">
-            Ogni contenzioso edilizio si vince conoscendo le carte dell'altra parte. Noi le conosciamo perché
-            scriviamo i contratti d'appalto delle imprese e li smontiamo per i committenti: sappiamo quale
-            riserva regge, quale perizia tiene in giudizio, quale clausola non verrà mai applicata.
+            Nel contenzioso edilizio vince chi conosce le carte dell'altra parte. Noi scriviamo i contratti
+            d'appalto per le imprese e li smontiamo per i committenti — mai nella stessa vicenda. Per questo
+            sappiamo quale riserva regge, quale perizia tiene in giudizio, quale clausola non verrà mai applicata.
           </p>
         </div>
 

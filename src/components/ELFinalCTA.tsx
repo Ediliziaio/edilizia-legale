@@ -17,13 +17,17 @@ const ELFinalCTA = ({ onOpenContact }: ELFinalCTAProps) => {
           <div>
             <p className="text-gold uppercase tracking-widest text-sm font-semibold mb-3">Iniziamo dai documenti</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 leading-tight">
-              Mandaci il fascicolo: ti diciamo in che termine sei.
+              Prima di decidere se ti serve un avvocato, scopri in che termine sei.
             </h2>
-            <p className="text-lg text-white/80 mb-8 leading-relaxed">
-              Contratto, preventivo, SAL, foto, messaggi: raccogli quello che hai e raccontaci il caso. Entro 48 ore
-              lavorative ricevi una prima valutazione riservata: quali strumenti sono praticabili, quali termini
-              corrono e da dove ha senso iniziare.
+            <p className="text-lg text-white/80 mb-4 leading-relaxed">
+              Nel contenzioso edilizio i diritti scadono in silenzio: 60 giorni, un anno, 40 giorni. Mandaci quello
+              che hai — contratto, preventivo, SAL, foto, messaggi — ed entro 48 ore lavorative ricevi tre risposte:
             </p>
+            <ul className="text-white/85 mb-8 space-y-2">
+              <li className="flex items-start gap-2.5"><span className="text-gold mt-1.5 text-xs">●</span> quali termini corrono nel tuo caso, e quanto tempo resta;</li>
+              <li className="flex items-start gap-2.5"><span className="text-gold mt-1.5 text-xs">●</span> quali strade sono praticabili e quali sono già chiuse;</li>
+              <li className="flex items-start gap-2.5"><span className="text-gold mt-1.5 text-xs">●</span> se conviene muoversi — o se la cosa più onesta è dirti di no.</li>
+            </ul>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-6">
               <Button

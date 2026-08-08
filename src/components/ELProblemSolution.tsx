@@ -30,13 +30,13 @@ const ELProblemSolution = () => (
         <Reveal>
           <p className="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">Perché due lati</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-navy mb-6 leading-tight">
-            Difendere le imprese e i committenti non è una contraddizione. È il metodo.
+            L'avvocato dell'altra parte sa già cosa farai. Il tuo dovrebbe sapere cosa farà lui.
           </h2>
           <p className="text-foreground/70 text-lg leading-relaxed">
-            Chi scrive i contratti d'appalto sa dove si rompono. Chi smonta le contestazioni pretestuose sa come si
-            costruisce una contestazione fondata. Lavorare sui due lati del cantiere — mai nella stessa vicenda —
-            significa conoscere in anticipo le mosse dell'altra parte: quale riserva regge, quale perizia tiene in
-            giudizio, quale clausola non verrà mai applicata.
+            Chi scrive i contratti d'appalto sa dove si rompono. Chi smonta le contestazioni pretestuose sa come se
+            ne costruisce una fondata. Lavoriamo sui due lati del cantiere — mai nella stessa vicenda — e per questo
+            conosciamo in anticipo le mosse dell'altra parte: quale riserva regge, quale perizia tiene in giudizio,
+            quale clausola non verrà mai applicata.
           </p>
         </Reveal>
       </div>

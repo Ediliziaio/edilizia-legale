@@ -75,13 +75,14 @@ const Privati = () => {
                   La casa è tua. <span className="text-gold">I tuoi diritti anche.</span>
                 </h1>
                 <p className="text-lg text-white/80 mb-4 leading-relaxed">
-                  Prima di cercare un avvocato, vuoi capire se hai ragione: è normale, ed è per questo che ogni area
-                  qui sotto è collegata a una guida che spiega termini, strade e costi con il linguaggio di chi il
-                  problema ce l'ha in casa, non con quello degli atti.
+                  Prima di cercare un avvocato vuoi capire se hai ragione. È normale. Per questo ogni area qui
+                  sotto è collegata a una guida che spiega termini, strade e costi — con le parole di chi il
+                  problema ce l'ha in casa, non con quelle degli atti.
                 </p>
                 <p className="text-sm text-white/60 mb-8">
-                  Attenzione ai termini: molti diritti si perdono per decadenza — 60 giorni, un anno, 40 giorni —
-                  ben prima che il problema si aggravi.
+                  Una cosa però va detta subito: mentre il costruttore "manda un tecnico" e ti rassicura a voce,
+                  i termini corrono. 60 giorni per i vizi, un anno dalla scoperta per i difetti gravi, 40 giorni
+                  per un decreto ingiuntivo. Chi aspetta troppo non perde la ragione: perde il diritto.
                 </p>
                 <Button
                   onClick={openContact}

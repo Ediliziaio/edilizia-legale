@@ -40,7 +40,7 @@ const ELServicesCards = () => (
             <div>
               <p className="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">Per le imprese</p>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-navy leading-tight">
-                Il cantiere lo conosci tu. <br className="hidden md:block" />Le carte le curiamo noi.
+                Il lavoro l'hai fatto. <br className="hidden md:block" />Ora facciamolo pagare.
               </h2>
             </div>
             <Link
@@ -67,7 +67,7 @@ const ELServicesCards = () => (
             <div>
               <p className="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">Per i privati</p>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-navy leading-tight">
-                Hai pagato per un lavoro fatto bene. <br className="hidden md:block" />Facciamolo valere.
+                Hai pagato per un lavoro fatto bene. <br className="hidden md:block" />Non ti hanno consegnato quello.
               </h2>
             </div>
             <Link
