@@ -1,0 +1,33 @@
+# Edilizia Legale
+
+> Studio legale italiano specializzato in diritto dell'edilizia. Assiste imprese
+> edili su appalti, subappalti, recupero crediti e contenzioso tributario, e
+> privati nei contenziosi con imprese di costruzione. Contenuti aggiornati alla
+> normativa vigente, con riferimenti al codice civile e al D.lgs. 36/2023.
+
+## Imprese
+- [Recupero crediti edilizia](https://www.edilizialegale.it/guide/recupero-crediti-edilizia): strumenti per farsi pagare SAL, saldi e ritenute a garanzia
+- [Subappaltatore non pagato](https://www.edilizialegale.it/guide/subappaltatore-non-pagato): perché l'art. 1676 c.c. non spetta all'impresa e quali strumenti funzionano
+- [SAL non pagato](https://www.edilizialegale.it/guide/sal-non-pagato): quando è legittimo sospendere i lavori e con quale procedura
+- [Accertamenti Superbonus](https://www.edilizialegale.it/guide/accertamento-superbonus-imprese): difesa dell'impresa nel contenzioso sui crediti d'imposta
+- [DURC irregolare](https://www.edilizialegale.it/guide/durc-irregolare): sblocco di pagamenti e aggiudicazioni nei 15 giorni dal preavviso
+- [Varianti in corso d'opera](https://www.edilizialegale.it/guide/varianti-in-corso-opera): come farsi pagare i lavori extra ordinati a voce
+- [Contratto d'appalto](https://www.edilizialegale.it/guide/contratto-appalto-impresa): le dodici clausole che proteggono l'impresa
+
+## Privati
+- [Difetti costruttivi](https://www.edilizialegale.it/guide/difetti-costruttivi-casa-nuova): diritti e termini per chi ha comprato casa con vizi
+- [Annullare il contratto](https://www.edilizialegale.it/guide/annullare-contratto-impresa-edile): le cinque strade per sciogliere un contratto con un'impresa edile
+- [Impresa sparita](https://www.edilizialegale.it/guide/impresa-sparita-cantiere-abbandonato): i cinque passi quando il cantiere viene abbandonato
+- [Decreto ingiuntivo](https://www.edilizialegale.it/guide/opposizione-decreto-ingiuntivo-impresa-edile): opposizione entro 40 giorni
+- [Fotovoltaico che non produce](https://www.edilizialegale.it/guide/fotovoltaico-non-produce): cosa chiedere quando l'impianto rende meno del promesso
+- [Recesso fotovoltaico](https://www.edilizialegale.it/guide/recesso-contratto-fotovoltaico): contratti firmati a casa, fino a 12 mesi e 14 giorni per recedere
+- [Cappotto termico difettoso](https://www.edilizialegale.it/guide/cappotto-termico-difettoso): responsabilità di impresa, progettista e direttore dei lavori
+
+## Riferimenti
+- [Tutte le guide](https://www.edilizialegale.it/guide): indice completo per imprese, privati, verticali e fisco
+- [Domande frequenti](https://www.edilizialegale.it/domande-frequenti): risposte brevi con riferimenti normativi, una pagina per domanda
+
+## Optional
+- [Lo studio](https://www.edilizialegale.it/studio)
+- [Conflitti di interesse](https://www.edilizialegale.it/studio/conflitti-di-interesse)
+- [Contatti](https://www.edilizialegale.it/contatti)
