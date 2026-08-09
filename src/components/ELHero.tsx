@@ -48,10 +48,9 @@ const ELHero = () => {
             Appalti · Difetti costruttivi · Contenzioso edile
           </div>
 
-          <h1 className="text-3xl md:text-5xl lg:text-[3.4rem] font-bold tracking-tight mb-6 leading-[1.15]">
-            Sei un'impresa e non ti pagano i lavori che hai finito?<br className="hidden md:block" />{" "}
-            O un privato che ha pagato lavori mai finiti?
-            <span className="block text-gold mt-3">Il diritto dell'edilizia, per entrambi. Mai nella stessa causa.</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.12]">
+            Lavori non pagati. <br className="hidden md:block" />O pagati e mai finiti.
+            <span className="block text-gold mt-3">Qualunque sia il tuo lato, è il nostro campo.</span>
           </h1>
 
           <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto">
