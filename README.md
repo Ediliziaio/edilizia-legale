@@ -43,6 +43,36 @@ npm run preview   # serve la build da dist/
 2. Aggiungi lo slug in `ORDER` dentro `scripts/generate-article-index.mjs` (ordine di listing).
 3. `npm run build` — indice, sitemap e route statica si aggiornano da soli.
 
+## [DA VERIFICARE] citazioni giurisprudenziali
+
+Il blocco `caselaw` mostra i principi di diritto con gli estremi della pronuncia: è il
+segnale di autorevolezza più forte del sito, ma **solo se gli estremi sono corretti**.
+
+Regola tenuta in redazione: si citano con numero e data **solo** le pronunce verificate.
+Dove l'indirizzo è consolidato ma il precedente puntuale non è stato controllato su banca
+dati, il campo `court` riporta "Orientamento costante di legittimità" e il campo `ref` è
+omesso — nessun numero inventato.
+
+**REGISTRO COMPLETO delle pronunce citate con estremi.** Sono cinque in tutto il sito e
+vanno confermate su banca dati prima di promuovere i contenuti:
+
+| Pronuncia | Dove | Principio riportato |
+|---|---|---|
+| Cass. civ., Sez. Un., n. 7756 del 27/03/2017 | contenzioso-ristrutturazione, contenzioso-serramenti, contenzioso-fotovoltaico | Art. 1669 c.c. applicabile anche agli interventi su edifici preesistenti, non solo alle nuove costruzioni |
+| Cass. civ., Sez. Un., n. 9449/2016 | terrazzo-infiltrazioni | Lastrico solare a uso esclusivo: responsabilità del custode ex art. 2051 c.c. e riparto ex art. 1126 c.c. |
+| Cass. civ., n. 12048/2003 e n. 24368/2017 | subappaltatore-non-pagato | L'azione diretta dell'art. 1676 c.c. spetta ai dipendenti dell'appaltatore, non all'impresa subappaltatrice |
+| Cass., Sez. Un., n. 34419 e n. 34452 del 2023 | accertamento-superbonus-imprese | Distinzione tra credito inesistente e credito non spettante |
+
+Livello di verifica: la 7756/2017 è stata usata come riferimento centrale ed è la più
+consolidata; le altre sono state inserite in redazione e **non sono state verificate su
+banca dati**. Se una non regge, si toglie il numero e resta il principio (il blocco
+`caselaw` è progettato per funzionare anche senza `ref`).
+
+Prossimo passo consigliato: sostituire gli "Orientamento costante di legittimità" senza
+estremi con precedenti puntuali verificati — aumenta la citabilità sui motori di risposta.
+
+Per trovarli tutti: `grep -rn '"caselaw"' src/data/articles/`
+
 ## [DA VERIFICARE] punti normativi mobili nelle guide
 
 Dove la disciplina cambia spesso, le guide descrivono il **meccanismo** e rinviano alla

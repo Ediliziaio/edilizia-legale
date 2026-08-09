@@ -52,6 +52,10 @@ const ORDER = [
   "parquet-posato-male",
   "mediazione-obbligatoria-edilizia",
   "quanto-dura-causa-difetti",
+  // Contenziosi verticali con giurisprudenza
+  "contenzioso-ristrutturazione",
+  "contenzioso-serramenti",
+  "contenzioso-fotovoltaico",
 ];
 
 const files = readdirSync(dir).filter((f) => f.endsWith(".ts"));

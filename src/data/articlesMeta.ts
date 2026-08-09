@@ -737,5 +737,62 @@ export const articlesMeta: ArticleMeta[] = [
       "tempi appello causa civile"
     ],
     "intro": "Una causa per difetti costruttivi in primo grado dura di norma tra due e quattro anni, con differenze rilevanti tra tribunali. La fase che pesa di più è la consulenza tecnica d'ufficio, che da sola assorbe spesso più di un anno. La legge Pinto considera ragionevole una durata di tre anni in primo grado."
+  },
+  {
+    "slug": "contenzioso-ristrutturazione",
+    "title": "Contenzioso da ristrutturazione: la mappa completa delle contestazioni",
+    "excerpt": "Lavori non finiti, vizi di esecuzione, preventivo sforato, ritardi, danni al condominio, opere difformi dal titolo: le sei famiglie di contestazione in una ristrutturazione, con la norma applicabile, il termine da rispettare e il rimedio che funziona davvero.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "18 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "contenzioso ristrutturazione",
+      "causa impresa ristrutturazione",
+      "contestare lavori ristrutturazione",
+      "ristrutturazione fatta male cosa fare",
+      "perizia lavori ristrutturazione",
+      "risoluzione contratto ristrutturazione"
+    ],
+    "intro": "Chi ha subito una ristrutturazione eseguita male può chiedere l'eliminazione dei vizi a spese dell'impresa, la riduzione del prezzo o, nei casi più gravi, la risoluzione del contratto. Il termine cambia con la qualificazione del difetto: due anni dalla consegna per i vizi comuni (art. 1667 c.c.), dieci anni dal compimento dell'opera per i gravi difetti (art. 1669 c.c.)."
+  },
+  {
+    "slug": "contenzioso-serramenti",
+    "title": "Contenzioso sui serramenti: chi risponde, in che termini, con quali prove",
+    "excerpt": "Vendita con posa o appalto? Da questa qualificazione dipendono otto giorni o sessanta per denunciare, un anno o due per agire. Chi risponde tra produttore, posatore e venditore, quali prove tecniche reggono e quando conviene l'ATP.",
+    "category": "Verticali",
+    "date": "Agosto 2026",
+    "readTime": "19 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "contenzioso serramenti",
+      "causa contro serramentista",
+      "infissi difettosi risarcimento",
+      "responsabilità posatore serramenti",
+      "perizia infissi contenzioso",
+      "contestare fornitura e posa infissi"
+    ],
+    "intro": "Nel contenzioso sui serramenti la prima domanda non è chi ha sbagliato, ma come è qualificato il contratto: se prevale la fornitura si applicano gli otto giorni e l'anno della vendita, se prevale la posa con opere di adattamento valgono i sessanta giorni e i due anni dell'appalto. Da questa qualificazione dipendono termini, rimedi e soggetto responsabile."
+  },
+  {
+    "slug": "contenzioso-fotovoltaico",
+    "title": "Contenzioso fotovoltaico: le cinque cause più frequenti e come si affrontano",
+    "excerpt": "Produzione sotto le promesse, infiltrazioni dal tetto, contratti firmati a casa, aziende sparite a impianto incompleto, pratiche GSE mai presentate: le cinque liti tipiche del fotovoltaico, con le prove che servono e i rimedi nell'ordine giusto.",
+    "category": "Verticali",
+    "date": "Agosto 2026",
+    "readTime": "16 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "contenzioso fotovoltaico",
+      "causa azienda fotovoltaico",
+      "impianto fotovoltaico difettoso rimedi",
+      "risoluzione contratto fotovoltaico",
+      "perizia impianto fotovoltaico",
+      "finanziamento collegato fotovoltaico"
+    ],
+    "intro": "Il contenzioso fotovoltaico nasce quasi sempre da cinque situazioni: produzione inferiore a quella promessa, infiltrazioni dal tetto dopo il fissaggio, contratti firmati fuori dai locali commerciali, aziende sparite a impianto incompleto e pratiche GSE mai presentate. Ognuna ha una prova tipica e un rimedio diverso: sbagliare la qualificazione è l'errore che fa perdere la causa."
   }
 ];

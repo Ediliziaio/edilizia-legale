@@ -329,6 +329,30 @@ export const articleImages: Record<string, string | null> = {
   "quanto-dura-causa-difetti-1": null,
   // Consulente tecnico d'ufficio che esegue un saggio su una parete durante un sopralluogo peritale, con i tecnici di parte presenti
   "quanto-dura-causa-difetti-2": null,
+
+  // contenzioso-ristrutturazione
+  // Copertina — Appartamento in ristrutturazione a lavori fermi: pavimento sventrato, tracce impiantistiche aperte nei muri e materiali accatastati
+  "contenzioso-ristrutturazione-cover": null,
+  // Appartamento in ristrutturazione a lavori fermi: pavimento sventrato, tracce impiantistiche aperte nei muri e materiali accatastati
+  "contenzioso-ristrutturazione-1": null,
+  // Tecnico con termocamera e umidimetro che documenta una macchia di infiltrazione sul soffitto di un bagno ristrutturato
+  "contenzioso-ristrutturazione-2": null,
+
+  // contenzioso-serramenti
+  // Copertina — Dettaglio del nodo di posa di una finestra: telaio, controtelaio e nastro di tenuta interno interrotto in corrispondenza dell'angolo
+  "contenzioso-serramenti-cover": null,
+  // Dettaglio del nodo di posa di una finestra: telaio, controtelaio e nastro di tenuta interno interrotto in corrispondenza dell'angolo
+  "contenzioso-serramenti-1": null,
+  // Immagine termografica di una finestra con la fascia fredda continua lungo il perimetro del telaio e l'angolo inferiore in evidenza
+  "contenzioso-serramenti-2": null,
+
+  // contenzioso-fotovoltaico
+  // Copertina — Tetto a falda in tegole con moduli fotovoltaici installati e staffe di fissaggio in vista, fotografato dall'alto in una giornata limpida
+  "contenzioso-fotovoltaico-cover": null,
+  // Tetto a falda in tegole con moduli fotovoltaici installati e staffe di fissaggio in vista, fotografato dall'alto in una giornata limpida
+  "contenzioso-fotovoltaico-1": null,
+  // Schermata del portale di monitoraggio dell'inverter con il grafico della produzione mensile, affiancata al prospetto cartaceo di producibilità consegnato alla firma
+  "contenzioso-fotovoltaico-2": null,
 };
 
 export const getArticleImage = (slot: string): string | null => articleImages[slot] ?? null;

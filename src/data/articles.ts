@@ -18,7 +18,27 @@ export type Block =
    */
   | { type: "figure"; slot: string; alt: string; caption?: string }
   /** Sequenza di termini/passi con le scadenze: blocco molto estratto dai motori AI. */
-  | { type: "timeline"; title?: string; steps: { when: string; label: string; detail?: string }[] };
+  | { type: "timeline"; title?: string; steps: { when: string; label: string; detail?: string }[] }
+  /**
+   * Giurisprudenza: principio di diritto con gli estremi della pronuncia.
+   * ATTENZIONE: gli estremi vanno validati su banca dati prima di pubblicare.
+   * Quando l'orientamento è consolidato ma il precedente puntuale non è
+   * verificato, lasciare `ref` vuoto e descrivere l'indirizzo nel principio.
+   */
+  | {
+      type: "caselaw";
+      title?: string;
+      items: {
+        /** Es. "Cassazione civile, Sezioni Unite" oppure "Orientamento costante". */
+        court: string;
+        /** Es. "n. 7756 del 27 marzo 2017". Vuoto se si cita solo l'indirizzo. */
+        ref?: string;
+        /** Il principio di diritto, in linguaggio piano. */
+        principle: string;
+        /** Cosa cambia in concreto per chi legge. */
+        impact?: string;
+      }[];
+    };
 
 export type Article = {
   slug: string;

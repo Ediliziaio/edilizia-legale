@@ -36,6 +36,7 @@ import { PHONE_TEL, PHONE_DISPLAY } from "@/data/site";
 import ArticleFigure from "@/components/ArticleFigure";
 import ArticleTimeline from "@/components/ArticleTimeline";
 import ArticleCover from "@/components/ArticleCover";
+import ArticleCaselaw from "@/components/ArticleCaselaw";
 
 const renderBlock = (block: Block, i: number) => {
   switch (block.type) {
@@ -138,6 +139,8 @@ const renderBlock = (block: Block, i: number) => {
       return <ArticleFigure key={i} slot={block.slot} alt={block.alt} caption={block.caption} />;
     case "timeline":
       return <ArticleTimeline key={i} title={block.title} steps={block.steps} />;
+    case "caselaw":
+      return <ArticleCaselaw key={i} title={block.title} items={block.items} />;
     case "image":
       return (
         <figure key={i} className="my-8">
@@ -166,9 +169,17 @@ const wordCountOf = (blocks?: Block[]): number => {
     if ("text" in b && typeof b.text === "string") n += count(b.text);
     if ("items" in b && Array.isArray(b.items)) {
       for (const it of b.items) {
-        if (typeof it === "string") n += count(it);
-        else if (it && typeof it === "object") n += count(it.q) + count(it.a);
+        if (typeof it === "string") {
+          n += count(it);
+        } else if (it && typeof it === "object") {
+          // FAQ ({q,a}) oppure giurisprudenza ({principle,impact})
+          if ("q" in it) n += count(it.q) + count(it.a);
+          else if ("principle" in it) n += count(it.principle) + count(it.impact ?? "");
+        }
       }
+    }
+    if (b.type === "timeline") {
+      for (const s of b.steps) n += count(s.label) + count(s.detail ?? "");
     }
   }
   return n;

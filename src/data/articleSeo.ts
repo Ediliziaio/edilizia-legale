@@ -165,6 +165,18 @@ export const ARTICLE_SEO: Record<string, ArticleSeo> = {
   "quanto-dura-causa-difetti": {
     "seoTitle": "Quanto Dura una Causa per Difetti Costruttivi",
     "metaDescription": "Tempi reali di una causa per difetti costruttivi: fasi del giudizio, perché la CTU allunga tutto, differenze tra tribunali e come accorciare il percorso."
+  },
+  "contenzioso-ristrutturazione": {
+    "seoTitle": "Contenzioso Ristrutturazione: Mappa delle Contestazioni",
+    "metaDescription": "Lavori non finiti, vizi, preventivo sforato, ritardi, danni: le sei famiglie di contestazione in una ristrutturazione, i termini e i rimedi che funzionano."
+  },
+  "contenzioso-serramenti": {
+    "seoTitle": "Contenzioso Serramenti: Chi Risponde e in Che Termini",
+    "metaDescription": "Infissi difettosi: vendita o appalto, 8 giorni o 60, chi risponde tra produttore e posatore, quali prove tecniche reggono e quando conviene l'ATP."
+  },
+  "contenzioso-fotovoltaico": {
+    "seoTitle": "Contenzioso fotovoltaico: le 5 cause più frequenti",
+    "metaDescription": "Impianto che produce poco, infiltrazioni dal tetto, recesso, azienda sparita, pratiche GSE: le 5 liti tipiche del fotovoltaico, le prove e i rimedi."
   }
 };
 
