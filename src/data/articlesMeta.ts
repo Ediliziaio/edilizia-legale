@@ -782,7 +782,7 @@ export const articlesMeta: ArticleMeta[] = [
     "excerpt": "Produzione sotto le promesse, infiltrazioni dal tetto, contratti firmati a casa, aziende sparite a impianto incompleto, pratiche GSE mai presentate: le cinque liti tipiche del fotovoltaico, con le prove che servono e i rimedi nell'ordine giusto.",
     "category": "Verticali",
     "date": "Agosto 2026",
-    "readTime": "16 min",
+    "readTime": "15 min",
     "author": "Redazione Edilizia Legale",
     "cover": "from-navy to-navy-light",
     "keywords": [
