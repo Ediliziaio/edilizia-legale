@@ -43,9 +43,9 @@ const ELHero = () => {
 
       <div className="container mx-auto px-4 py-14 lg:py-20 relative">
         <div className="max-w-3xl mx-auto text-center mb-10 lg:mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur text-white rounded-full text-xs font-semibold mb-6 uppercase tracking-wider border border-white/15">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold/15 backdrop-blur text-gold rounded-full text-sm font-bold mb-6 uppercase tracking-wider border border-gold/30">
             <Scale className="w-4 h-4 text-gold" />
-            Appalti · Difetti costruttivi · Contenzioso edile
+            Lo Studio Legale specializzato solo in Edilizia
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.12]">

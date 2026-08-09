@@ -50,7 +50,7 @@ const ELHeader = ({ onOpenContact }: ELHeaderProps) => {
       <div className="hidden lg:block bg-navy text-white text-sm">
         <div className="container mx-auto px-4 flex items-center justify-between h-9">
           <div className="flex items-center gap-6 text-white/80">
-            <span>Il diritto dell'edilizia, dai due lati del cantiere</span>
+            <span>Lo studio legale specializzato solo in edilizia</span>
           </div>
           <a href={`tel:${PHONE_TEL}`} className="flex items-center gap-2 hover:text-gold">
             <Phone className="w-3.5 h-3.5" />
