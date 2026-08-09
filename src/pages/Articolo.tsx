@@ -31,9 +31,11 @@ import {
 import { articlesMeta, getRelated, toISODate, type Block, type Article, type ArticleMeta } from "@/data/articles";
 import { getArticleContent } from "@/data/articlesContent";
 import { getArticleSeo } from "@/data/articleSeo";
+import { getArticleImage } from "@/data/articleImages";
 import { PHONE_TEL, PHONE_DISPLAY } from "@/data/site";
 import ArticleFigure from "@/components/ArticleFigure";
 import ArticleTimeline from "@/components/ArticleTimeline";
+import ArticleCover from "@/components/ArticleCover";
 
 const renderBlock = (block: Block, i: number) => {
   switch (block.type) {
@@ -174,10 +176,12 @@ const wordCountOf = (blocks?: Block[]): number => {
 
 const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
   const url = `https://www.edilizialegale.it/guide/${article.slug}`;
-  const image = article.coverImage
-    ? (article.coverImage.startsWith("http")
-        ? article.coverImage
-        : `https://www.edilizialegale.it${article.coverImage}`)
+  // Immagine per schema/Open Graph: la copertina collegata, altrimenti l'OG di sito.
+  const cover = getArticleImage(`${article.slug}-cover`) ?? article.coverImage;
+  const image = cover
+    ? cover.startsWith("http")
+      ? cover
+      : `https://www.edilizialegale.it${cover}`
     : "https://www.edilizialegale.it/og-image.png";
   const minutes = parseInt(article.readTime, 10);
   
@@ -451,15 +455,7 @@ const Sidebar = ({ article, related, onOpenContact }: SidebarProps) => {
                   to={`/guide/${a.slug}`}
                   className="group flex items-start gap-3 hover:bg-muted/60 -mx-2 px-2 py-1.5 rounded-lg transition-colors"
                 >
-                  <div className={`shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br ${a.cover} flex items-center justify-center relative overflow-hidden`}>
-                    {a.coverImage ? (
-                      <>
-                        <img src={a.coverImage} alt="" loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover" />
-                      </>
-                    ) : (
-                      <BookOpen className="w-4 h-4 text-white relative" />
-                    )}
-                  </div>
+                  <ArticleCover article={a} className="shrink-0 w-12 h-12 rounded-lg" />
                   <div className="min-w-0 flex-1">
                     <div className="text-[10px] uppercase tracking-wider text-gold-dark font-bold leading-tight mb-0.5">
                       {a.category}
@@ -576,10 +572,11 @@ const Articolo = () => {
           {/* Article Hero — navy band; l'intro è il blocco di risposta diretta */}
           <section className="bg-navy text-white border-b border-white/10">
             <div className="container mx-auto px-4 py-10 lg:py-14">
-              <div className="max-w-4xl">
-                <Link to="/guide" className="inline-flex items-center gap-1.5 text-white/70 hover:text-gold text-sm font-semibold mb-6">
-                  <ArrowLeft className="w-4 h-4" /> Tutte le guide
-                </Link>
+              <Link to="/guide" className="inline-flex items-center gap-1.5 text-white/70 hover:text-gold text-sm font-semibold mb-6">
+                <ArrowLeft className="w-4 h-4" /> Tutte le guide
+              </Link>
+              <div className="grid lg:grid-cols-[1.35fr_1fr] gap-8 lg:gap-12 items-center">
+                <div className="max-w-4xl">
                 <div className="flex items-center gap-3 flex-wrap mb-5">
                   <span className="px-3 py-1 rounded-full bg-gold/15 text-gold text-xs font-bold uppercase tracking-wider">
                     {article.category}
@@ -596,6 +593,12 @@ const Articolo = () => {
                     {article.intro}
                   </p>
                 </div>
+                </div>
+                <ArticleCover
+                  article={article}
+                  eager
+                  className="hidden lg:block rounded-2xl aspect-[4/3] shadow-soft"
+                />
               </div>
             </div>
           </section>
@@ -649,14 +652,8 @@ const Articolo = () => {
                         to={`/guide/${a.slug}`}
                         className="group bg-white rounded-2xl overflow-hidden border border-border hover:border-gold hover:shadow-card flex flex-col"
                       >
-                        <div className={`aspect-[16/9] relative overflow-hidden ${!a.coverImage ? `bg-gradient-to-br ${a.cover}` : ""}`}>
-                          {a.coverImage ? (
-                            <>
-                              <img src={a.coverImage} alt={a.title} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover" />
-                            </>
-                          ) : (
-                            <BookOpen className="w-10 h-10 text-white/70 absolute inset-0 m-auto" />
-                          )}
+                        <div className="relative">
+                          <ArticleCover article={a} className="aspect-[16/9]" />
                           <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/95 text-navy text-xs font-semibold z-10">
                             {a.category}
                           </span>

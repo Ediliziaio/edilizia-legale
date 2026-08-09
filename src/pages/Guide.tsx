@@ -12,6 +12,7 @@ import { BookOpen, ArrowRight, Clock, Search, X, Star, HelpCircle } from "lucide
 import { articlesMeta, isPillar, type ArticleMeta, type Category } from "@/data/articles";
 import { SITE_URL } from "@/data/site";
 import ELImageSlot from "@/components/ELImageSlot";
+import ArticleCover from "@/components/ArticleCover";
 
 type FilterKey = "Tutte" | Category;
 
@@ -50,6 +51,7 @@ const GuideCard = ({ a, featured = false }: { a: ArticleMeta; featured?: boolean
       to={`/guide/${a.slug}`}
       className="group bg-white rounded-2xl overflow-hidden border border-border hover:border-gold hover:shadow-card transition-all duration-300 hover:-translate-y-1 flex flex-col h-full"
     >
+      <ArticleCover article={a} className={featured ? "aspect-[21/9]" : "aspect-[16/9]"} />
       <div className={`h-1.5 bg-gradient-to-r ${style.bar}`} />
       <div className={`flex-1 flex flex-col ${featured ? "p-7" : "p-6"}`}>
         <div className="flex items-center gap-2.5 mb-3 flex-wrap">

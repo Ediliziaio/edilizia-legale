@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Building2 } from "lucide-react";
 import { areeImprese } from "@/data/aree";
 import ELImageSlot from "@/components/ELImageSlot";
+import ArticleCover from "@/components/ArticleCover";
 import { articlesMeta } from "@/data/articlesMeta";
 import { SITE_URL } from "@/data/site";
 
@@ -140,14 +141,17 @@ const Imprese = () => {
                   <Reveal key={a.slug} delay={(i % 3) * 80}>
                     <Link
                       to={`/guide/${a.slug}`}
-                      className="group block bg-muted/40 hover:bg-white rounded-xl p-6 border border-border hover:border-gold hover:shadow-card transition-all h-full"
+                      className="group block bg-muted/40 hover:bg-white rounded-xl overflow-hidden border border-border hover:border-gold hover:shadow-card transition-all h-full"
                     >
+                      <ArticleCover article={a} className="aspect-[16/9]" />
+                      <div className="p-6">
                       <span className="text-[10px] uppercase tracking-wider font-bold text-gold-dark">{a.category}</span>
                       <h3 className="font-bold text-navy mt-2 mb-2 leading-snug group-hover:text-gold-dark">{a.title}</h3>
                       <p className="text-sm text-foreground/65 leading-relaxed line-clamp-3">{a.excerpt}</p>
                       <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-navy group-hover:text-gold-dark">
                         Leggi la guida <ArrowRight className="w-4 h-4" />
                       </span>
+                      </div>
                     </Link>
                   </Reveal>
                 ))}

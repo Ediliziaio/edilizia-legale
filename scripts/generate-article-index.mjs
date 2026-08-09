@@ -58,7 +58,17 @@ for (const f of files) {
   const figures = (mod.article.content ?? [])
     .filter((b) => b?.type === "figure")
     .map((b) => ({ slot: b.slot, alt: b.alt }));
-  entries.push({ slug, meta: mod.meta, seo: mod.seo, figures });
+  // Copertina: primo slot di ogni articolo, mostrato nelle card e in cima alla guida.
+  // Il brief riprende la prima figura, che è già l'immagine più rappresentativa.
+  const coverBrief = figures[0]
+    ? `Copertina — ${figures[0].alt}`
+    : `Copertina di «${mod.meta.title}»`;
+  entries.push({
+    slug,
+    meta: mod.meta,
+    seo: mod.seo,
+    figures: [{ slot: `${slug}-cover`, alt: coverBrief }, ...figures],
+  });
 }
 
 entries.sort((a, b) => {
