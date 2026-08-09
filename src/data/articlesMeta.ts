@@ -446,5 +446,296 @@ export const articlesMeta: ArticleMeta[] = [
       "impianto filtrazione piscina sottodimensionato"
     ],
     "intro": "La piscina interrata è un'opera immobiliare destinata per sua natura a lunga durata: rientra quindi nell'art. 1669 c.c., con responsabilità del costruttore per dieci anni dal completamento e non nei due anni della garanzia ordinaria dell'appalto. Perdite strutturali, cedimenti e distacchi del rivestimento sono inquadrabili tra i gravi difetti."
+  },
+  {
+    "slug": "differenza-1667-1669",
+    "title": "Differenza tra art. 1667 e art. 1669 del codice civile: la tabella che chiarisce tutto",
+    "excerpt": "Vizi e difformità o gravi difetti? L'art. 1667 c.c. e l'art. 1669 c.c. hanno termini e legittimati diversi: la tabella comparativa e i casi pratici per capire quale norma vale nel tuo caso.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "17 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "differenza 1667 e 1669 codice civile",
+      "vizi e difformità appalto",
+      "gravi difetti art 1669",
+      "termini denuncia vizi appalto",
+      "garanzia decennale differenza"
+    ],
+    "intro": "L'art. 1667 c.c. copre vizi e difformità dell'opera appaltata: vanno denunciati entro 60 giorni dalla scoperta e l'azione si prescrive in due anni dalla consegna. L'art. 1669 c.c. copre invece rovina e gravi difetti degli immobili destinati a lunga durata: si applica per dieci anni dal compimento, con denuncia entro un anno dalla scoperta."
+  },
+  {
+    "slug": "quanto-costa-causa-costruttore",
+    "title": "Quanto costa davvero fare causa a un costruttore",
+    "excerpt": "Compenso dell'avvocato, contributo unificato, CTU, consulente di parte e mediazione: tutte le voci di spesa di una causa per difetti costruttivi, chi le anticipa e chi le paga alla fine.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "17 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "quanto costa fare causa al costruttore",
+      "costi causa difetti costruttivi",
+      "contributo unificato cause civili",
+      "spese CTU chi paga",
+      "compenso avvocato causa edilizia",
+      "recupero spese legali"
+    ],
+    "intro": "Una causa per difetti costruttivi comporta il compenso dell'avvocato secondo i parametri forensi, il contributo unificato per scaglione di valore, le anticipazioni forfettarie, il consulente tecnico di parte e il fondo spese del consulente d'ufficio. Chi perde è di regola condannato a rimborsare le spese, ma l'anticipo resta a carico di chi agisce."
+  },
+  {
+    "slug": "accertamento-tecnico-preventivo",
+    "title": "Accertamento tecnico preventivo: perché conviene farlo per primi",
+    "excerpt": "Crepe o infiltrazioni da far accertare prima che qualcuno metta mano ai luoghi? Come funziona l'ATP ex art. 696 e 696-bis c.p.c., i quesiti da porre, costi, tempi e quando non conviene.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "17 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "accertamento tecnico preventivo difetti casa",
+      "ATP come funziona",
+      "ATP costi tempi",
+      "art 696 bis cpc",
+      "consulenza tecnica preventiva",
+      "ATP o causa ordinaria"
+    ],
+    "intro": "L'accertamento tecnico preventivo è un procedimento con cui il tribunale nomina un consulente per accertare difetti e cause prima della causa di merito. Si chiede con ricorso ex art. 696 c.p.c. in caso di urgenza, oppure ex art. 696-bis c.p.c. anche senza urgenza, con tentativo di conciliazione affidato al consulente stesso."
+  },
+  {
+    "slug": "superbonus-recupero-agenzia-privato",
+    "title": "Superbonus: l'Agenzia chiede i soldi a me, che sono solo il proprietario",
+    "excerpt": "L'Agenzia notifica l'atto di recupero al beneficiario, non all'impresa. Perché accade, quando risponde davvero il privato, cosa lo tutela e come si costruisce la rivalsa verso chi ha sbagliato.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "17 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "agenzia entrate chiede restituzione superbonus privato",
+      "recupero detrazione superbonus beneficiario",
+      "responsabilità solidale cessionario",
+      "sconto in fattura contestato",
+      "dolo o colpa grave superbonus"
+    ],
+    "intro": "L'Agenzia delle Entrate recupera la detrazione non spettante presso il beneficiario, cioè il proprietario che ha commissionato i lavori: è lui il titolare del diritto contestato. L'impresa e il cessionario del credito rispondono in solido soltanto se hanno concorso alla violazione, e nei limiti del dolo o della colpa grave previsti dall'art. 121 del D.L. 34/2020."
+  },
+  {
+    "slug": "ordinanza-demolizione-cosa-fare",
+    "title": "Ordinanza di demolizione: cosa fare nei primi trenta giorni",
+    "excerpt": "Il Comune ha notificato l'ordine di demolire: novanta giorni per ottemperare, sessanta per il ricorso al TAR. Cosa verificare subito, quali vizi contano e quando la sanatoria è ancora percorribile.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "17 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "ordinanza demolizione cosa fare ricorso",
+      "ricorso TAR ordinanza demolizione termini",
+      "90 giorni demolizione acquisizione",
+      "sanatoria abuso edilizio",
+      "sospensiva TAR demolizione"
+    ],
+    "intro": "Con l'ordinanza di demolizione hai novanta giorni per demolire e ripristinare, e sessanta giorni dalla notifica per impugnare l'atto davanti al TAR. I due termini corrono insieme: se lasci scadere il primo senza ottemperare né agire, il bene e l'area di sedime possono essere acquisiti gratuitamente al patrimonio del Comune ai sensi dell'art. 31 del D.P.R. 380/2001."
+  },
+  {
+    "slug": "iscrizione-riserve-appalto",
+    "title": "Iscrizione delle riserve: come non perdere il diritto ai maggiori compensi",
+    "excerpt": "Nei lavori pubblici ogni pretesa va iscritta a riserva sul registro di contabilità, esplicitata e quantificata entro termini brevi. Chi firma senza riserva perde il diritto anche se ha ragione.",
+    "category": "Imprese",
+    "date": "Agosto 2026",
+    "readTime": "17 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "iscrizione riserve appalto termini",
+      "riserve decadenza registro contabilità",
+      "riserve appalto pubblico come si scrivono",
+      "quantificazione riserva",
+      "esplicitazione riserve"
+    ],
+    "intro": "Nei lavori pubblici la riserva va iscritta al momento della firma del documento contabile che registra il fatto contestato, poi esplicitata e quantificata entro quindici giorni. Se manca uno di questi tre passaggi la pretesa economica decade, anche se l'impresa ha ragione nel merito: il giudice non potrà più esaminarla."
+  },
+  {
+    "slug": "contratto-subappalto-clausole",
+    "title": "Contratto di subappalto: le clausole che salvano l'artigiano",
+    "excerpt": "Chi esegue il lavoro è l'ultimo a incassare e il primo a rischiare. Termini di pagamento certi, limiti al pay when paid, ritenute e penali speculari: le clausole da pretendere prima di firmare.",
+    "category": "Imprese",
+    "date": "Agosto 2026",
+    "readTime": "15 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "contratto subappalto edile cosa deve contenere",
+      "clausole subappalto tutela subappaltatore",
+      "pagamento subappaltatore",
+      "responsabilità solidale subappalto",
+      "autorizzazione al subappalto"
+    ],
+    "intro": "Un contratto di subappalto edile deve indicare le lavorazioni, i prezzi, i tempi, le modalità di contabilizzazione e i termini di pagamento. Le clausole che proteggono davvero chi esegue sono altre: termini di pagamento non subordinati all'incasso dell'appaltatore, penali speculari, limiti alle ritenute e consenso preventivo alla cessione del credito."
+  },
+  {
+    "slug": "congruita-manodopera-durc",
+    "title": "Congruità della manodopera: come si giustifica un'incongruenza",
+    "excerpt": "Il DURC di congruità verifica se il costo del lavoro denunciato in cantiere raggiunge l'incidenza minima di categoria. Quando scatta l'incongruenza e come si giustifica in quindici giorni.",
+    "category": "Imprese",
+    "date": "Agosto 2026",
+    "readTime": "14 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "durc di congruità manodopera incongruenza",
+      "congruità manodopera percentuali",
+      "DURC congruità come funziona",
+      "giustificare incongruenza manodopera",
+      "CNCE Edilconnect"
+    ],
+    "intro": "Il DURC di congruità verifica se la manodopera denunciata in un cantiere raggiunge l'incidenza minima prevista per quella categoria di lavori dal D.M. 143/2021. Se l'esito è negativo, la Cassa Edile invita l'impresa affidataria a regolarizzare entro quindici giorni: in quella finestra si presentano le giustificazioni documentate."
+  },
+  {
+    "slug": "sospensione-illegittima-lavori",
+    "title": "Sospensione illegittima dei lavori: come si quantificano i maggiori oneri",
+    "excerpt": "Il cantiere è fermo per cause non imputabili all'impresa? I maggiori oneri si recuperano solo con un verbale completo e la riserva iscritta subito: le voci di danno riconosciute e come si provano.",
+    "category": "Imprese",
+    "date": "Agosto 2026",
+    "readTime": "15 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "sospensione lavori illegittima maggiori oneri",
+      "sospensione lavori appalto pubblico",
+      "verbale di sospensione",
+      "ripresa lavori",
+      "danno da fermo cantiere"
+    ],
+    "intro": "Quando il cantiere si ferma per cause non imputabili all'impresa, i maggiori oneri si recuperano su quattro voci: spese generali infruttifere, mancato ammortamento di macchine e attrezzature, retribuzioni al personale rimasto inoperoso e mancata utilizzazione della capacità produttiva. Servono però un verbale di sospensione compilato correttamente e la riserva iscritta subito."
+  },
+  {
+    "slug": "vizi-appalto-condominiale",
+    "title": "Vizi nell'appalto condominiale: può agire anche il singolo condomino?",
+    "excerpt": "I lavori sulle parti comuni sono venuti male e l'assemblea non decide. Quando può muoversi il singolo condomino, che cosa può chiedere e quali termini corrono anche senza delibera.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "16 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "vizi lavori condominio chi può agire",
+      "legittimazione singolo condomino appalto",
+      "amministratore azione contro impresa",
+      "delibera per agire in giudizio condominio",
+      "difetti lavori parti comuni"
+    ],
+    "intro": "Il committente formale è il condominio, rappresentato dall'amministratore, ma il singolo condomino non è spettatore: per la tutela delle parti comuni la Cassazione gli riconosce una legittimazione concorrente, con maggiori certezze per l'azione sui gravi difetti dell'art. 1669 c.c. I termini di denuncia, però, corrono anche se l'assemblea resta ferma."
+  },
+  {
+    "slug": "polizza-decennale-postuma",
+    "title": "Il costruttore ha chiuso la società: come si attiva la polizza decennale postuma",
+    "excerpt": "Se l'impresa che ha costruito casa tua non esiste più, la polizza indennitaria decennale del D.lgs. 122/2005 può restare l'unica strada: come scoprirla, cosa copre e come si denuncia il sinistro.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "17 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "polizza decennale postuma come attivarla",
+      "costruttore fallito difetti casa",
+      "assicurazione decennale costruttore obbligatoria",
+      "D.lgs 122/2005 polizza",
+      "denuncia sinistro polizza decennale"
+    ],
+    "intro": "La polizza decennale postuma è l'assicurazione indennitaria che il costruttore deve consegnare all'acquirente al rogito, prevista dall'art. 4 del D.lgs. 122/2005. Copre per dieci anni dall'ultimazione dei lavori i danni da rovina e gravi difetti, e consente di rivolgersi direttamente all'assicuratore anche se l'impresa non esiste più."
+  },
+  {
+    "slug": "sconto-in-fattura-non-applicato",
+    "title": "Sconto in fattura promesso e mai applicato: cosa si può fare",
+    "excerpt": "L'impresa aveva promesso lo sconto in fattura, poi ha emesso fattura piena o ha lasciato il cantiere a metà. Quando è inadempimento, quali rimedi restano e come si recuperano gli acconti versati.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "15 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "sconto in fattura non applicato cosa fare",
+      "general contractor non applica sconto in fattura",
+      "contratto superbonus sconto in fattura inadempimento",
+      "recupero acconti superbonus",
+      "cessione credito non perfezionata"
+    ],
+    "intro": "La promessa di sconto in fattura è un'obbligazione contrattuale: se l'impresa non la rispetta, sei di fronte a un inadempimento e puoi chiedere l'esecuzione, la risoluzione con restituzione degli acconti o il risarcimento. La difesa dell'impresa che invoca il blocco normativo delle cessioni regge solo se quel blocco ha reso l'obbligazione davvero impossibile."
+  },
+  {
+    "slug": "tetto-rifatto-infiltrazioni",
+    "title": "Il tetto rifatto infiltra ancora: garanzia e responsabilità",
+    "excerpt": "Hai rifatto la copertura e l'acqua entra ancora? Le infiltrazioni dal tetto rientrano di norma nei gravi difetti dell'art. 1669 c.c.: dieci anni di garanzia, non due. Cause, responsabili e termini.",
+    "category": "Verticali",
+    "date": "Agosto 2026",
+    "readTime": "15 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "tetto rifatto infiltra ancora chi risponde",
+      "rifacimento tetto difettoso garanzia",
+      "infiltrazioni copertura responsabilità impresa",
+      "guaina tetto difetti",
+      "coibentazione tetto condensa"
+    ],
+    "intro": "Se dopo il rifacimento la copertura infiltra ancora, l'impresa risponde di norma ai sensi dell'art. 1669 c.c.: le infiltrazioni dal tetto sono considerate gravi difetti perché compromettono la funzionalità dell'edificio. La garanzia è di dieci anni dal compimento dell'opera, ma devi denunciare il difetto entro un anno dalla scoperta."
+  },
+  {
+    "slug": "parquet-posato-male",
+    "title": "Parquet posato male che si solleva: prodotto o posa?",
+    "excerpt": "Il parquet si solleva o si imbarca dopo pochi mesi? Quasi sempre la causa è a monte: umidità residua del massetto e prova igrometrica mai eseguita. Chi risponde, con quali termini e quali prove.",
+    "category": "Verticali",
+    "date": "Agosto 2026",
+    "readTime": "14 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "parquet posato male si solleva rimedi",
+      "parquet si imbarca umidità massetto",
+      "garanzia parquet quanti anni",
+      "posa parquet a regola d'arte",
+      "contestare posatore parquet"
+    ],
+    "intro": "Un parquet che si solleva o si imbarca pochi mesi dopo la posa indica quasi sempre umidità residua nel massetto, non un difetto del legno. Il posatore professionista deve misurare l'umidità prima di posare e rifiutare la posa se è troppo alta: se non l'ha fatto, la responsabilità è sua."
+  },
+  {
+    "slug": "mediazione-obbligatoria-edilizia",
+    "title": "Mediazione obbligatoria nelle controversie edilizie: come funziona davvero",
+    "excerpt": "La mediazione è obbligatoria solo in alcune materie: condominio, diritti reali, locazione, contratto d'opera. Sull'appalto no. Quando serve, quanto costa e cosa rischi se non partecipi.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "15 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "mediazione obbligatoria appalto edilizia",
+      "mediazione condominio lavori",
+      "quando è obbligatoria la mediazione",
+      "costi mediazione civile",
+      "mancata partecipazione mediazione conseguenze",
+      "D.lgs 28/2010"
+    ],
+    "intro": "Nelle controversie edilizie la mediazione è condizione di procedibilità solo per le materie elencate dall'art. 5 del D.lgs. 28/2010: condominio, diritti reali, divisione, locazione, comodato e contratto d'opera. L'appalto non è nell'elenco. Se la materia rientra, senza mediazione la domanda giudiziale è improcedibile."
+  },
+  {
+    "slug": "quanto-dura-causa-difetti",
+    "title": "Quanto dura una causa per difetti costruttivi in Italia",
+    "excerpt": "Introduzione, memorie, istruttoria, CTU, decisione: quanto pesa ciascuna fase in una causa per difetti costruttivi, perché la consulenza tecnica dilata i tempi e cosa accorcia il percorso.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "14 min",
+    "author": "Redazione Edilizia Legale",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "quanto dura una causa per difetti costruttivi",
+      "tempi giustizia civile primo grado",
+      "durata CTU causa edilizia",
+      "legge Pinto irragionevole durata",
+      "tempi appello causa civile"
+    ],
+    "intro": "Una causa per difetti costruttivi in primo grado dura di norma tra due e quattro anni, con differenze rilevanti tra tribunali. La fase che pesa di più è la consulenza tecnica d'ufficio, che da sola assorbe spesso più di un anno. La legge Pinto considera ragionevole una durata di tre anni in primo grado."
   }
 ];

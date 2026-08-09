@@ -201,6 +201,134 @@ export const articleImages: Record<string, string | null> = {
   "piscina-difetti-costruttore-1": null,
   // Test di tenuta con misurazione dell'abbassamento del livello dell'acqua
   "piscina-difetti-costruttore-2": null,
+
+  // differenza-1667-1669
+  // Copertina — Parete di un soggiorno con una crepa verticale che attraversa l'intonaco dal soffitto al battiscopa, luce radente
+  "differenza-1667-1669-cover": null,
+  // Parete di un soggiorno con una crepa verticale che attraversa l'intonaco dal soffitto al battiscopa, luce radente
+  "differenza-1667-1669-1": null,
+  // Tecnico con termocamera e taccuino rileva una macchia di umidità sul soffitto di una camera da letto
+  "differenza-1667-1669-2": null,
+
+  // quanto-costa-causa-costruttore
+  // Copertina — Scrivania con un preventivo legale dettagliato per fasi, una calcolatrice e il fascicolo di una perizia tecnica
+  "quanto-costa-causa-costruttore-cover": null,
+  // Scrivania con un preventivo legale dettagliato per fasi, una calcolatrice e il fascicolo di una perizia tecnica
+  "quanto-costa-causa-costruttore-1": null,
+  // Computo metrico stampato con le voci di ripristino di una copertura, evidenziate con marcatore
+  "quanto-costa-causa-costruttore-2": null,
+
+  // accertamento-tecnico-preventivo
+  // Copertina — Sopralluogo peritale in un appartamento: consulente con metro laser e macchina fotografica, due tecnici di parte prendono appunti
+  "accertamento-tecnico-preventivo-cover": null,
+  // Sopralluogo peritale in un appartamento: consulente con metro laser e macchina fotografica, due tecnici di parte prendono appunti
+  "accertamento-tecnico-preventivo-1": null,
+  // Saggio esplorativo su un solaio: porzione di massetto rimossa che mostra la stratigrafia e la guaina impermeabilizzante
+  "accertamento-tecnico-preventivo-2": null,
+
+  // superbonus-recupero-agenzia-privato
+  // Copertina — Busta dell'Agenzia delle Entrate aperta sul tavolo di casa accanto al fascicolo dei lavori e alle asseverazioni
+  "superbonus-recupero-agenzia-privato-cover": null,
+  // Busta dell'Agenzia delle Entrate aperta sul tavolo di casa accanto al fascicolo dei lavori e alle asseverazioni
+  "superbonus-recupero-agenzia-privato-1": null,
+  // Tabella comparativa stampata con le date delle asseverazioni, delle fatture e dei bonifici affiancate
+  "superbonus-recupero-agenzia-privato-2": null,
+
+  // ordinanza-demolizione-cosa-fare
+  // Copertina — Ordinanza comunale di demolizione con la relata di notifica in evidenza, accanto a un calendario
+  "ordinanza-demolizione-cosa-fare-cover": null,
+  // Ordinanza comunale di demolizione con la relata di notifica in evidenza, accanto a un calendario
+  "ordinanza-demolizione-cosa-fare-1": null,
+  // Tecnico che misura una veranda chiusa confrontando il rilievo con i grafici allegati al permesso di costruire
+  "ordinanza-demolizione-cosa-fare-2": null,
+
+  // iscrizione-riserve-appalto
+  // Copertina — Registro di contabilità di cantiere aperto con la firma dell'impresa e l'annotazione manoscritta con riserva
+  "iscrizione-riserve-appalto-cover": null,
+  // Registro di contabilità di cantiere aperto con la firma dell'impresa e l'annotazione manoscritta con riserva
+  "iscrizione-riserve-appalto-1": null,
+  // Tavolo di cantiere con il conto finale, la memoria di quantificazione delle riserve e una calcolatrice
+  "iscrizione-riserve-appalto-2": null,
+
+  // contratto-subappalto-clausole
+  // Copertina — Artigiano con il contratto di subappalto in mano davanti a un cantiere con ponteggi montati
+  "contratto-subappalto-clausole-cover": null,
+  // Artigiano con il contratto di subappalto in mano davanti a un cantiere con ponteggi montati
+  "contratto-subappalto-clausole-1": null,
+  // Pagina di contratto di subappalto con la clausola sui termini di pagamento evidenziata a pennarello
+  "contratto-subappalto-clausole-2": null,
+
+  // congruita-manodopera-durc
+  // Copertina — Cantiere edile con squadra di operai al lavoro e cartello di cantiere in primo piano
+  "congruita-manodopera-durc-cover": null,
+  // Cantiere edile con squadra di operai al lavoro e cartello di cantiere in primo piano
+  "congruita-manodopera-durc-1": null,
+  // Scrivania con fatture di forniture, contratti di nolo e prospetto di calcolo della congruità della manodopera
+  "congruita-manodopera-durc-2": null,
+
+  // sospensione-illegittima-lavori
+  // Copertina — Cantiere fermo con gru immobile e ponteggi montati, nessun operaio al lavoro
+  "sospensione-illegittima-lavori-cover": null,
+  // Cantiere fermo con gru immobile e ponteggi montati, nessun operaio al lavoro
+  "sospensione-illegittima-lavori-1": null,
+  // Verbale di sospensione dei lavori compilato con l'elenco dei mezzi e delle maestranze presenti in cantiere
+  "sospensione-illegittima-lavori-2": null,
+
+  // vizi-appalto-condominiale
+  // Copertina — Facciata condominiale appena rifatta con distacchi di intonaco e macchie di umidità, con ponteggio smontato da poco
+  "vizi-appalto-condominiale-cover": null,
+  // Facciata condominiale appena rifatta con distacchi di intonaco e macchie di umidità, con ponteggio smontato da poco
+  "vizi-appalto-condominiale-1": null,
+  // Verbale di assemblea condominiale aperto sul punto relativo alla contestazione dei lavori, con la relazione tecnica allegata
+  "vizi-appalto-condominiale-2": null,
+
+  // polizza-decennale-postuma
+  // Copertina — Cartellina del rogito aperta sul tavolo con l'atto notarile e un fascicolo di polizza assicurativa allegato
+  "polizza-decennale-postuma-cover": null,
+  // Cartellina del rogito aperta sul tavolo con l'atto notarile e un fascicolo di polizza assicurativa allegato
+  "polizza-decennale-postuma-1": null,
+  // Facciata di una palazzina recente con transenne e rete di protezione sotto un cornicione con intonaco distaccato
+  "polizza-decennale-postuma-2": null,
+
+  // sconto-in-fattura-non-applicato
+  // Copertina — Contratto di appalto aperto sulla clausola dello sconto in fattura, accanto a una fattura emessa per l'intero importo
+  "sconto-in-fattura-non-applicato-cover": null,
+  // Contratto di appalto aperto sulla clausola dello sconto in fattura, accanto a una fattura emessa per l'intero importo
+  "sconto-in-fattura-non-applicato-1": null,
+  // Facciata con cappotto termico posato solo su una porzione e ponteggio ancora montato
+  "sconto-in-fattura-non-applicato-2": null,
+
+  // tetto-rifatto-infiltrazioni
+  // Copertina — Falda di tetto rifatto vista dall'alto: manto in tegole, camino con risvolto della guaina e lucernario
+  "tetto-rifatto-infiltrazioni-cover": null,
+  // Falda di tetto rifatto vista dall'alto: manto in tegole, camino con risvolto della guaina e lucernario
+  "tetto-rifatto-infiltrazioni-1": null,
+  // Sottotetto con isolante bagnato e macchia di infiltrazione sul cartongesso, illuminato da una torcia
+  "tetto-rifatto-infiltrazioni-2": null,
+
+  // parquet-posato-male
+  // Copertina — Doghe di parquet sollevate al centro della stanza con fughe aperte e battiscopa staccato
+  "parquet-posato-male-cover": null,
+  // Doghe di parquet sollevate al centro della stanza con fughe aperte e battiscopa staccato
+  "parquet-posato-male-1": null,
+  // Tecnico che preleva un campione di massetto per la prova dell'umidità con il metodo al carburo di calcio
+  "parquet-posato-male-2": null,
+
+  // mediazione-obbligatoria-edilizia
+  // Copertina — Tavolo di mediazione con due parti sedute ai lati, i rispettivi avvocati e il mediatore al centro
+  "mediazione-obbligatoria-edilizia-cover": null,
+  // Tavolo di mediazione con due parti sedute ai lati, i rispettivi avvocati e il mediatore al centro
+  "mediazione-obbligatoria-edilizia-1": null,
+  // Verbale di mediazione sul tavolo con la relazione tecnica di parte e le fotografie dei difetti
+  "mediazione-obbligatoria-edilizia-2": null,
+
+  // quanto-dura-causa-difetti
+  // Copertina — Fascicolo processuale voluminoso su una scrivania di tribunale, con faldoni e perizie tecniche
+  "quanto-dura-causa-difetti-cover": null,
+  // Fascicolo processuale voluminoso su una scrivania di tribunale, con faldoni e perizie tecniche
+  "quanto-dura-causa-difetti-1": null,
+  // Consulente tecnico d'ufficio che esegue un saggio su una parete durante un sopralluogo peritale, con i tecnici di parte presenti
+  "quanto-dura-causa-difetti-2": null,
 };
 
 export const getArticleImage = (slot: string): string | null => articleImages[slot] ?? null;

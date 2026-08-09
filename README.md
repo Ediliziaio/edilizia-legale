@@ -43,6 +43,23 @@ npm run preview   # serve la build da dist/
 2. Aggiungi lo slug in `ORDER` dentro `scripts/generate-article-index.mjs` (ordine di listing).
 3. `npm run build` — indice, sitemap e route statica si aggiornano da soli.
 
+## [DA VERIFICARE] punti normativi mobili nelle guide
+
+Dove la disciplina cambia spesso, le guide descrivono il **meccanismo** e rinviano alla
+verifica sul caso concreto, invece di fissare numeri che invecchiano male. Prima di
+promuovere questi contenuti, un professionista dovrebbe validare:
+
+- **Congruità della manodopera**: in `congruita-manodopera-durc.ts` è citata solo la
+  percentuale consolidata della nuova edilizia civile (14,28%) e una tabella di pesi
+  relativi. Se hai la tabella ufficiale allegata al D.M. 143/2021 vigente, sostituisci
+  con le aliquote puntuali per categoria.
+- **Sanatoria e tolleranze**: art. 36 vs 36-bis D.P.R. 380/2001 (introdotto dal
+  D.L. 69/2024) e percentuali dell'art. 34-bis, in `ordinanza-demolizione-cosa-fare.ts`.
+- **Aliquote e sanzioni Superbonus** per annualità, e le misure post D.lgs. 87/2024,
+  negli articoli su Superbonus e sconto in fattura.
+- **Voci di danno da sospensione**: il d.P.R. 207/2010 art. 160 è citato come riferimento
+  operativo previgente in `sospensione-illegittima-lavori.ts`.
+
 ## [DA CONFERMARE] prima del lancio
 
 Tutti i placeholder sono centralizzati in **`src/data/site.ts`**:

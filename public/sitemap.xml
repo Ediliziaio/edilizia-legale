@@ -73,6 +73,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.edilizialegale.it/guide/accertamento-tecnico-preventivo</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.edilizialegale.it/guide/annullare-contratto-impresa-edile</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -91,7 +97,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.edilizialegale.it/guide/congruita-manodopera-durc</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.edilizialegale.it/guide/contratto-appalto-impresa</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/contratto-subappalto-clausole</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -104,6 +122,12 @@
   </url>
   <url>
     <loc>https://www.edilizialegale.it/guide/difetti-costruttivi-casa-nuova</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/differenza-1667-1669</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -133,13 +157,43 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.edilizialegale.it/guide/iscrizione-riserve-appalto</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/mediazione-obbligatoria-edilizia</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.edilizialegale.it/guide/opposizione-decreto-ingiuntivo-impresa-edile</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.edilizialegale.it/guide/ordinanza-demolizione-cosa-fare</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/parquet-posato-male</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.edilizialegale.it/guide/piscina-difetti-costruttore</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/polizza-decennale-postuma</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -152,6 +206,18 @@
   </url>
   <url>
     <loc>https://www.edilizialegale.it/guide/preventivo-sforato</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/quanto-costa-causa-costruttore</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/quanto-dura-causa-difetti</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -193,7 +259,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.edilizialegale.it/guide/sconto-in-fattura-non-applicato</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/sospensione-illegittima-lavori</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.edilizialegale.it/guide/subappaltatore-non-pagato</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/superbonus-recupero-agenzia-privato</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -205,7 +289,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.edilizialegale.it/guide/tetto-rifatto-infiltrazioni</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.edilizialegale.it/guide/varianti-in-corso-opera</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/vizi-appalto-condominiale</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

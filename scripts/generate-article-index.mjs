@@ -35,6 +35,23 @@ const ORDER = [
   "terrazzo-infiltrazioni",
   "pompa-di-calore-non-scalda",
   "piscina-difetti-costruttore",
+  // Seconda ondata editoriale
+  "differenza-1667-1669",
+  "quanto-costa-causa-costruttore",
+  "accertamento-tecnico-preventivo",
+  "superbonus-recupero-agenzia-privato",
+  "ordinanza-demolizione-cosa-fare",
+  "iscrizione-riserve-appalto",
+  "contratto-subappalto-clausole",
+  "congruita-manodopera-durc",
+  "sospensione-illegittima-lavori",
+  "vizi-appalto-condominiale",
+  "polizza-decennale-postuma",
+  "sconto-in-fattura-non-applicato",
+  "tetto-rifatto-infiltrazioni",
+  "parquet-posato-male",
+  "mediazione-obbligatoria-edilizia",
+  "quanto-dura-causa-difetti",
 ];
 
 const files = readdirSync(dir).filter((f) => f.endsWith(".ts"));

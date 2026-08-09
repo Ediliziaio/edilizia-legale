@@ -101,6 +101,70 @@ export const ARTICLE_SEO: Record<string, ArticleSeo> = {
   "piscina-difetti-costruttore": {
     "seoTitle": "Piscina Perde Acqua: Garanzia 10 Anni del Costruttore",
     "metaDescription": "La piscina interrata è coperta dalla garanzia decennale dell'art. 1669 c.c., non dai due anni dell'art. 1667: perdite, crepe e distacchi sono gravi difetti."
+  },
+  "differenza-1667-1669": {
+    "seoTitle": "Differenza 1667 e 1669 Codice Civile: la Tabella",
+    "metaDescription": "L'art. 1667 c.c. copre vizi e difformità (60 giorni, 2 anni); l'art. 1669 c.c. i gravi difetti per 10 anni. La tabella per capire quale norma vale."
+  },
+  "quanto-costa-causa-costruttore": {
+    "seoTitle": "Quanto Costa Fare Causa al Costruttore: le Voci",
+    "metaDescription": "Compenso legale, contributo unificato, CTU, CTP e mediazione: tutte le voci di spesa di una causa per difetti costruttivi e chi le paga alla fine."
+  },
+  "accertamento-tecnico-preventivo": {
+    "seoTitle": "Accertamento Tecnico Preventivo: Come Funziona",
+    "metaDescription": "L'ATP fa accertare i difetti da un CTU prima della causa. Ricorso ex art. 696 e 696-bis c.p.c., quesiti, costi, tempi e quando conviene farlo per primi."
+  },
+  "superbonus-recupero-agenzia-privato": {
+    "seoTitle": "Superbonus: Agenzia Chiede la Restituzione al Privato",
+    "metaDescription": "L'Agenzia recupera la detrazione dal beneficiario, non dall'impresa. Quando il privato risponde davvero, cosa lo tutela e come esercitare la rivalsa."
+  },
+  "ordinanza-demolizione-cosa-fare": {
+    "seoTitle": "Ordinanza di Demolizione: Cosa Fare e Come Fare Ricorso",
+    "metaDescription": "Novanta giorni per demolire, sessanta per il ricorso al TAR. Vizi dell'ordinanza, sanatoria, tolleranze e sospensiva: cosa verificare subito."
+  },
+  "iscrizione-riserve-appalto": {
+    "seoTitle": "Iscrizione Riserve Appalto: Termini e Decadenza",
+    "metaDescription": "La riserva va iscritta alla firma del documento contabile e quantificata entro 15 giorni. Come si scrive e gli errori che fanno decadere la pretesa."
+  },
+  "contratto-subappalto-clausole": {
+    "seoTitle": "Contratto di Subappalto Edile: Clausole da Pretendere",
+    "metaDescription": "Cosa deve contenere un contratto di subappalto e quali clausole proteggono chi esegue: termini di pagamento, pay when paid, ritenute, penali, solidarietà."
+  },
+  "congruita-manodopera-durc": {
+    "seoTitle": "DURC di Congruità: Come Giustificare un'Incongruenza",
+    "metaDescription": "Il DURC di congruità confronta la manodopera denunciata con l'incidenza minima di categoria. Quando scatta l'incongruenza e come si giustifica."
+  },
+  "sospensione-illegittima-lavori": {
+    "seoTitle": "Sospensione Lavori Illegittima: Maggiori Oneri",
+    "metaDescription": "Cantiere fermo per cause non imputabili all'impresa? Le voci di danno riconosciute, come si provano e perché il verbale di sospensione decide tutto."
+  },
+  "vizi-appalto-condominiale": {
+    "seoTitle": "Vizi Lavori Condominio: Chi Può Agire Contro l'Impresa",
+    "metaDescription": "Lavori difettosi sulle parti comuni: quando può agire il singolo condomino, cosa può chiedere e quali termini corrono anche senza delibera assembleare."
+  },
+  "polizza-decennale-postuma": {
+    "seoTitle": "Polizza Decennale Postuma: Come Attivarla",
+    "metaDescription": "Il costruttore ha chiuso? La polizza decennale postuma ex D.lgs. 122/2005 copre i gravi difetti: come scoprire se esiste e denunciare il sinistro."
+  },
+  "sconto-in-fattura-non-applicato": {
+    "seoTitle": "Sconto in Fattura Non Applicato: Cosa Fare Subito",
+    "metaDescription": "L'impresa ha promesso lo sconto in fattura e non l'ha applicato? Diffida, risoluzione, recupero degli acconti e detrazione residua: i rimedi reali."
+  },
+  "tetto-rifatto-infiltrazioni": {
+    "seoTitle": "Tetto Rifatto che Infiltra: Chi Risponde e per Quanto",
+    "metaDescription": "Il tetto appena rifatto infiltra? È un grave difetto ex art. 1669 c.c.: dieci anni di garanzia. Cause tecniche, responsabili e termini per denunciare."
+  },
+  "parquet-posato-male": {
+    "seoTitle": "Parquet Posato Male che si Solleva: Chi Risponde",
+    "metaDescription": "Parquet che si solleva o si imbarca? Di norma è umidità del massetto, non il legno. Responsabilità del posatore, termini di denuncia e prove da fare."
+  },
+  "mediazione-obbligatoria-edilizia": {
+    "seoTitle": "Mediazione Obbligatoria Edilizia: Quando Serve Davvero",
+    "metaDescription": "Mediazione obbligatoria nelle liti edilizie: quali materie la richiedono, quali no, costi reali, agevolazioni fiscali e conseguenze se non partecipi."
+  },
+  "quanto-dura-causa-difetti": {
+    "seoTitle": "Quanto Dura una Causa per Difetti Costruttivi",
+    "metaDescription": "Tempi reali di una causa per difetti costruttivi: fasi del giudizio, perché la CTU allunga tutto, differenze tra tribunali e come accorciare il percorso."
   }
 };
 
