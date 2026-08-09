@@ -30,6 +30,20 @@ export type Article = {
 /** Article without the heavy `content` — used for listing, related cards, category counts. */
 export type ArticleMeta = Omit<Article, "content">;
 
+/**
+ * Guide pilastro: aprono un cluster tematico e rispondono alla query madre.
+ * Vanno messe in evidenza nel listing — sono le porte d'ingresso principali.
+ */
+export const PILLAR_SLUGS = [
+  "recupero-crediti-edilizia",
+  "difetti-costruttivi-casa-nuova",
+  "annullare-contratto-impresa-edile",
+  "accertamento-superbonus-imprese",
+] as const;
+
+export const isPillar = (slug: string): boolean =>
+  (PILLAR_SLUGS as readonly string[]).includes(slug);
+
 // Lightweight metadata for all articles (eager, tiny). Full `content` is NOT here.
 import { articlesMeta } from "./articlesMeta";
 export { articlesMeta };
