@@ -33,7 +33,7 @@ const ELFinalCTA = ({ onOpenContact }: ELFinalCTAProps) => {
               <Button
                 onClick={onOpenContact}
                 size="lg"
-                className="bg-gold hover:bg-gold-dark text-navy font-semibold text-base h-12 px-7 w-full sm:w-auto"
+                className="bg-gold hover:bg-gold-dark text-navy font-semibold text-base h-12 px-7 w-full sm:w-auto animate-glow-pulse"
               >
                 Richiedi l'analisi del caso
                 <ArrowRight className="ml-2 w-5 h-5" />

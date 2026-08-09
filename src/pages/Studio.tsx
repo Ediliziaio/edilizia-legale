@@ -11,6 +11,7 @@ import ELFinalCTA from "@/components/ELFinalCTA";
 import Reveal from "@/components/Reveal";
 import { Scale, ShieldCheck, BookOpen, ArrowRight, Landmark } from "lucide-react";
 import { SITE_URL } from "@/data/site";
+import ELImageSlot from "@/components/ELImageSlot";
 
 const Studio = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -42,6 +43,7 @@ const Studio = () => {
           <section className="relative bg-navy text-white overflow-hidden border-b border-white/10">
             <ELHeroBackdrop />
             <div className="container mx-auto px-4 py-14 lg:py-20 relative">
+              <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center">
               <div className="max-w-3xl">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur rounded-full text-xs font-semibold mb-6 uppercase tracking-wider border border-white/15">
                   <Scale className="w-4 h-4 text-gold" />
@@ -55,6 +57,8 @@ const Studio = () => {
                   contratti pubblici, fisco, lavoro e tecnica delle costruzioni. Presidiarlo davvero richiede di non
                   fare altro. È la scelta che abbiamo fatto.
                 </p>
+              </div>
+              <ELImageSlot id="studio-team" tone="dark" className="hidden lg:flex rounded-2xl aspect-[4/3]" />
               </div>
             </div>
           </section>

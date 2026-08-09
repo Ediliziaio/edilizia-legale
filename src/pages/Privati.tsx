@@ -13,6 +13,7 @@ import { AreaCard } from "@/components/ELServicesCards";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Home } from "lucide-react";
 import { areePrivati } from "@/data/aree";
+import ELImageSlot from "@/components/ELImageSlot";
 import { articlesMeta } from "@/data/articlesMeta";
 import { SITE_URL } from "@/data/site";
 
@@ -66,6 +67,7 @@ const Privati = () => {
           <section className="relative bg-navy text-white overflow-hidden border-b border-white/10">
             <ELHeroBackdrop />
             <div className="container mx-auto px-4 py-14 lg:py-20 relative">
+              <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center">
               <div className="max-w-3xl">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur rounded-full text-xs font-semibold mb-6 uppercase tracking-wider border border-white/15">
                   <Home className="w-4 h-4 text-gold" />
@@ -91,6 +93,8 @@ const Privati = () => {
                 >
                   Raccontaci il tuo caso <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
+              </div>
+              <ELImageSlot id="privati-hero" tone="dark" className="hidden lg:flex rounded-2xl aspect-[4/3]" />
               </div>
             </div>
           </section>

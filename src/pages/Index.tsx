@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import SEO from "@/components/SEO";
 import ELHeader from "@/components/ELHeader";
 import ELHero from "@/components/ELHero";
 import ELTrustStrip from "@/components/ELTrustStrip";
+import ELStats from "@/components/ELStats";
 import ELProblemSolution from "@/components/ELProblemSolution";
+// Lazy: recharts (~500 kB) resta fuori dal bundle iniziale della home.
+const ELDeadlinesChart = lazy(() => import("@/components/ELDeadlinesChart"));
 import ELServicesCards from "@/components/ELServicesCards";
 import ELVerticali from "@/components/ELVerticali";
 import ELProcessFlow from "@/components/ELProcessFlow";
@@ -36,8 +39,12 @@ const Index = () => {
         <main className="flex-1">
           <ELHero />
           <ELTrustStrip />
+          <ELStats />
           <ELProblemSolution />
           <ELServicesCards />
+          <Suspense fallback={<div className="min-h-[400px]" aria-hidden="true" />}>
+            <ELDeadlinesChart />
+          </Suspense>
           <ELVerticali />
           <ELProcessFlow />
           <ELWhyUs />

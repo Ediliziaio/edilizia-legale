@@ -11,6 +11,7 @@ import Reveal from "@/components/Reveal";
 import { BookOpen, ArrowRight, Clock, Calendar } from "lucide-react";
 import { articlesMeta, type Category } from "@/data/articles";
 import { SITE_URL } from "@/data/site";
+import ELImageSlot from "@/components/ELImageSlot";
 
 const categories: ("Tutte" | Category)[] = ["Tutte", "Imprese", "Privati", "Verticali", "Tributario"];
 
@@ -67,6 +68,7 @@ const Guide = () => {
           <section className="relative bg-navy text-white overflow-hidden border-b border-white/10">
             <ELHeroBackdrop />
             <div className="container mx-auto px-4 py-14 lg:py-16 relative">
+              <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center">
               <div className="max-w-3xl">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur rounded-full text-xs font-semibold mb-6 uppercase tracking-wider border border-white/15">
                   <BookOpen className="w-4 h-4 text-gold" />
@@ -79,6 +81,8 @@ const Guide = () => {
                   Ogni guida risponde a una domanda precisa: quali termini corrono, quali strade esistono, quali
                   errori chiudono la partita. Con i riferimenti normativi e un esempio concreto, sempre.
                 </p>
+              </div>
+              <ELImageSlot id="guide-hero" tone="dark" className="hidden lg:flex rounded-2xl aspect-[4/3]" />
               </div>
             </div>
           </section>

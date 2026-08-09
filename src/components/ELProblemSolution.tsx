@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import ELImageSlot from "@/components/ELImageSlot";
 import { Split, ShieldCheck, Users } from "lucide-react";
 
 /**
@@ -26,18 +27,23 @@ const rules = [
 const ELProblemSolution = () => (
   <section className="py-16 lg:py-24 bg-muted/40">
     <div className="container mx-auto px-4">
-      <div className="max-w-3xl mx-auto text-center mb-12">
+      <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-14 items-center max-w-6xl mx-auto mb-14">
         <Reveal>
-          <p className="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">Perché due lati</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-navy mb-6 leading-tight">
-            L'avvocato dell'altra parte sa già cosa farai. Il tuo dovrebbe sapere cosa farà lui.
-          </h2>
-          <p className="text-foreground/70 text-lg leading-relaxed">
-            Chi scrive i contratti d'appalto sa dove si rompono. Chi smonta le contestazioni pretestuose sa come se
-            ne costruisce una fondata. Lavoriamo sui due lati del cantiere — mai nella stessa vicenda — e per questo
-            conosciamo in anticipo le mosse dell'altra parte: quale riserva regge, quale perizia tiene in giudizio,
-            quale clausola non verrà mai applicata.
-          </p>
+          <div>
+            <p className="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">Perché due lati</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-navy mb-6 leading-tight">
+              L'avvocato dell'altra parte sa già cosa farai. Il tuo dovrebbe sapere cosa farà lui.
+            </h2>
+            <p className="text-foreground/70 text-lg leading-relaxed">
+              Chi scrive i contratti d'appalto sa dove si rompono. Chi smonta le contestazioni pretestuose sa come se
+              ne costruisce una fondata. Lavoriamo sui due lati del cantiere — mai nella stessa vicenda — e per questo
+              conosciamo in anticipo le mosse dell'altra parte: quale riserva regge, quale perizia tiene in giudizio,
+              quale clausola non verrà mai applicata.
+            </p>
+          </div>
+        </Reveal>
+        <Reveal delay={150} direction="right">
+          <ELImageSlot id="home-due-lati" className="rounded-2xl aspect-[4/3] shadow-card" />
         </Reveal>
       </div>
 

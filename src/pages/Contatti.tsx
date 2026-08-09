@@ -9,6 +9,7 @@ import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Shield, Clock, FileText, ArrowRight } from "lucide-react";
 import { PHONE_TEL, PHONE_DISPLAY, EMAIL, PEC, SITE_URL } from "@/data/site";
+import ELImageSlot from "@/components/ELImageSlot";
 
 const Contatti = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -127,6 +128,9 @@ const Contatti = () => {
                       recuperarlo.
                     </p>
                   </div>
+                </Reveal>
+                <Reveal delay={200} className="lg:col-span-2">
+                  <ELImageSlot id="contatti-studio" className="rounded-2xl aspect-[21/8]" />
                 </Reveal>
               </div>
             </div>

@@ -48,15 +48,16 @@ const ELHero = () => {
             Appalti · Difetti costruttivi · Contenzioso edile
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.1]">
-            Il diritto dell'edilizia. <br className="hidden md:block" />
-            <span className="text-gold">Conosciamo le carte dell'altra parte.</span>
+          <h1 className="text-3xl md:text-5xl lg:text-[3.4rem] font-bold tracking-tight mb-6 leading-[1.15]">
+            Sei un'impresa e non ti pagano i lavori che hai finito?<br className="hidden md:block" />{" "}
+            O un privato che ha pagato lavori mai finiti?
+            <span className="block text-gold mt-3">Il diritto dell'edilizia, per entrambi. Mai nella stessa causa.</span>
           </h1>
 
           <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto">
-            Scriviamo i contratti d'appalto per le imprese e li smontiamo per i committenti — mai nella stessa
-            vicenda. Per questo sappiamo in anticipo quale riserva regge, quale perizia tiene in giudizio,
-            quale clausola non verrà mai applicata.
+            Scriviamo i contratti d'appalto per le imprese e li smontiamo per i committenti: conosciamo le carte
+            dell'altra parte. Per questo sappiamo in anticipo quale riserva regge, quale perizia tiene in
+            giudizio, quale clausola non verrà mai applicata.
           </p>
         </div>
 
@@ -66,7 +67,7 @@ const ELHero = () => {
             <Link
               key={door.title}
               to={door.href}
-              className="group bg-white/5 hover:bg-white backdrop-blur rounded-2xl p-7 lg:p-8 border border-white/15 hover:border-gold text-white hover:text-navy transition-colors"
+              className="group bg-white/5 hover:bg-white backdrop-blur rounded-2xl p-7 lg:p-8 border border-white/15 hover:border-gold text-white hover:text-navy transition-all duration-300 hover:-translate-y-1.5 hover:shadow-gold"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gold/15 group-hover:bg-gold/20 flex items-center justify-center">
