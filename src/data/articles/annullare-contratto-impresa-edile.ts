@@ -37,6 +37,8 @@ export const article: Article = {
     { type: "p", text: "Il recesso è un diritto che eserciti senza dover dimostrare nulla, ma nel contratto d'appalto ha un prezzo: devi tenere indenne l'impresa. La risoluzione presuppone che l'impresa sia inadempiente: non costa nulla, ma l'inadempimento va provato. L'annullamento riguarda i casi in cui il contratto è nato viziato — per esempio con l'inganno — e cancella tutto dall'inizio. A queste tre figure del codice civile si aggiunge il diritto di ripensamento del Codice del Consumo, che vale solo per chi ha firmato fuori dai locali commerciali dell'impresa." },
     { type: "p", text: "Il punto pratico è uno: la prima comunicazione che mandi all'impresa qualifica la tua posizione. Una email come \"non siamo più interessati, restituiteci l'acconto\" può essere letta come un recesso ex art. 1671 c.c., con tutto l'indennizzo che comporta — anche se avevi quattordici giorni gratuiti o un inadempimento da far valere. Per questo le cinque strade vanno conosciute prima di scrivere qualsiasi cosa." },
 
+    { type: "figure", slot: "annullare-contratto-impresa-edile-1", alt: "Contratto di ristrutturazione firmato sul tavolo di casa, con il plico dei documenti", caption: "Dove è stato firmato il contratto cambia i diritti: fuori dai locali commerciali si applica il Codice del Consumo." },
+
     { type: "h2", text: "Strada 1 — Il recesso del committente (art. 1671 c.c.): sempre possibile, ma si paga", id: "recesso-1671" },
     { type: "p", text: "L'art. 1671 c.c. dà al committente il diritto di recedere dal contratto d'appalto in qualunque momento, anche a lavori iniziati, senza dover fornire alcuna giustificazione. È la strada più semplice e quella che non richiede prove: basta comunicare il recesso per iscritto." },
     { type: "p", text: "Il rovescio della medaglia è l'indennizzo. La norma impone di tenere indenne l'appaltatore di tre voci: le spese sostenute, i lavori eseguiti e il mancato guadagno, cioè l'utile che avrebbe ricavato completando l'opera. Spese e lavori vanno documentati dall'impresa; per il mancato guadagno la giurisprudenza richiede la prova del margine effettivamente perso, tenendo conto anche di ciò che l'impresa ha potuto guadagnare impiegando altrove uomini e mezzi." },
@@ -86,11 +88,20 @@ export const article: Article = {
       "Decorso il termine, chiedi per iscritto la restituzione dell'acconto assegnando un termine di 10-15 giorni; se non arriva, valuta il decreto ingiuntivo (opposizione del debitore: 40 giorni dalla notifica)",
     ] },
 
+    { type: "figure", slot: "annullare-contratto-impresa-edile-2", alt: "Appartamento vuoto prima dell'inizio dei lavori", caption: "Uscire dal contratto prima che i lavori inizino costa molto meno che uscirne dopo." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Una famiglia firma con un'impresa la ristrutturazione completa dell'appartamento per 78.000 euro e versa un acconto di 15.000. Dopo tre settimane, prima che i lavori inizino, scopre che la stessa impresa ha in corso due contenziosi con altri condomini dello stesso palazzo e vuole uscire dal contratto. La prima strada che viene in mente è il recesso dell'art. 1671 c.c.: sempre possibile, ma l'impresa documenta 4.700 euro di materiali su misura già ordinati e reclama un mancato guadagno di altri 7.800 — il conto rischia di assorbire gran parte dell'acconto." },
     { type: "p", text: "Il contratto però è stato firmato in cucina, durante il sopralluogo. Sono passati ventuno giorni, quindi i quattordici giorni ordinari sono scaduti; ma il testo non contiene l'informativa sul diritto di recesso prevista dall'art. 49 del Codice del Consumo. Il termine si è quindi prolungato di dodici mesi: il recesso consumeristico è ancora esercitabile, senza motivazione e con restituzione integrale dei 15.000 euro. In parallelo, l'impresa aveva mancato la consegna della polizza e del cronoprogramma promessi in contratto: un inadempimento da far valere in subordine con diffida ex art. 1454 c.c." },
     { type: "p", text: "Il bivio è tutto qui: tre strade con costi opposti per gli stessi fatti. La lettera giusta esercita il ripensamento consumeristico e tiene in riserva la risoluzione; la lettera sbagliata — un recesso generico — avrebbe fatto nascere l'obbligo di indennizzo e trasformato la famiglia da creditrice di 15.000 euro a debitrice di parte della differenza." },
     { type: "note", text: "L'errore da non fare: mandare una email dicendo \"non siamo più interessati, restituiteci l'acconto\". È un recesso a tutti gli effetti, con i costi dell'art. 1671 c.c., quando magari c'erano quattordici giorni gratuiti o un inadempimento da far valere. Lo scenario descritto è illustrativo: l'esito concreto dipende sempre dal testo del contratto e dalle circostanze specifiche." },
+
+    { type: "timeline", title: "Le finestre temporali per sciogliere il contratto", steps: [
+      { when: "Sempre", label: "Recesso del committente ex art. 1671 c.c.", detail: "Non richiede motivazione, ma obbliga a indennizzare spese, lavori e mancato guadagno." },
+      { when: "14 giorni", label: "Ripensamento se hai firmato fuori dai locali commerciali", detail: "Senza motivazione e senza penalità, con restituzione di quanto versato." },
+      { when: "12 mesi e 14 giorni", label: "Se mancava l'informativa sul recesso", detail: "Il termine si estende: è l'elemento che ribalta la partita." },
+      { when: "Dopo diffida di 15 giorni", label: "Risoluzione per inadempimento dell'impresa", detail: "Non costa nulla, ma va provata." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

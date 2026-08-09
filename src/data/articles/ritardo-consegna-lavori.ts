@@ -37,6 +37,8 @@ export const article: Article = {
     { type: "p", text: "Il calcolo, però, non è mai una semplice moltiplicazione. I giorni che contano sono i giorni di ritardo imputabili all'impresa: dal totale vanno scomputati i periodi di sospensione legittima, cioè i fermi cantiere causati dal committente stesso o da fattori che il contratto pone a suo carico. Una variante richiesta a lavori in corso, un'autorizzazione condominiale che spettava a te ottenere, un ritardo nel pagamento di un acconto che legittimava l'impresa a sospendere: tutto questo sposta in avanti la data di consegna dovuta." },
     { type: "p", text: "Restano invece a carico dell'impresa i ritardi dei suoi fornitori e subappaltatori: sono suoi ausiliari, e dei loro inadempimenti risponde lei (art. 1228 c.c.). Ultimo tassello: se la penale è manifestamente eccessiva rispetto all'interesse del committente, il giudice può ridurla d'ufficio secondo equità (art. 1384 c.c.). Funziona anche al contrario: una penale simbolica non si può gonfiare, e in quel caso il problema diventa il tetto al risarcimento, di cui parliamo tra poco." },
 
+    { type: "figure", slot: "ritardo-consegna-lavori-1", alt: "Calendario di cantiere con la data di consegna pattuita superata", caption: "Il calcolo della penale parte dai giorni di ritardo, ma non finisce lì." },
+
     { type: "h2", text: "Se la penale non c'è: cosa puoi chiedere come risarcimento?", id: "senza-penale" },
     { type: "p", text: "L'assenza della penale non significa assenza di tutela. Il ritardo è un inadempimento contrattuale, e il committente ha diritto al risarcimento integrale del danno che riesce a provare (artt. 1218 e 1223 c.c.): le spese sostenute a causa del ritardo (danno emergente) e i guadagni persi (lucro cessante). L'affitto pagato per una sistemazione temporanea, il deposito dei mobili, le doppie utenze, il canone di una locazione sfumata perché l'immobile non era pronto." },
     { type: "p", text: "Qui sta il punto che la maggior parte degli articoli online ignora: la penale è una tutela, ma anche un tetto. Salvo che il contratto contenga la formula \"fatto salvo il risarcimento del maggior danno\", la penale limita il risarcimento all'importo pattuito (art. 1382, primo comma, c.c.). Con una penale bassa e danni reali alti, chi ha la clausola può paradossalmente recuperare meno di chi non ce l'ha. È il motivo per cui la penale va calibrata al momento della firma su una stima realistica del danno da ritardo, aggiungendo sempre quella formula: sono nove parole." },
@@ -72,11 +74,20 @@ export const article: Article = {
       "Se l'impresa non paga né adempie, valuta mediazione o azione giudiziale: la prescrizione è di 10 anni, ma le prove invecchiano molto prima",
     ] },
 
+    { type: "figure", slot: "ritardo-consegna-lavori-2", alt: "Cronoprogramma dei lavori con le sospensioni annotate", caption: "Le sospensioni non imputabili all'impresa si scomputano dai giorni di ritardo." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Contratto di ristrutturazione con consegna prevista al 30 aprile e penale di 80 euro al giorno. La consegna avviene il 15 novembre: 199 giorni di ritardo. Nel frattempo la famiglia ha pagato 7.600 euro di affitto per una sistemazione temporanea e 900 euro di deposito mobili. Il calcolo istintivo — 199 giorni per 80 euro, cioè 15.920 euro — è solo il punto di partenza, e non è detto che il numero finale sia questo." },
     { type: "p", text: "Le sospensioni legittime, prima di tutto. L'impresa documenta trentadue giorni di fermo per una variante richiesta dai committenti e quattordici giorni di attesa per un'autorizzazione condominiale mai sollecitata dai committenti stessi: quarantasei giorni non imputabili, che vanno scomputati. La penale scende a 12.240 euro. Restano invece a carico dell'impresa i venti giorni di ritardo del fornitore dei serramenti, perché il fornitore è un suo ausiliario ex art. 1228 c.c." },
     { type: "p", text: "Poi il maggior danno. Nel contratto la clausola \"fatto salvo il risarcimento del maggior danno\" non c'era: la penale fa quindi da tetto, e affitto e deposito non si sommano automaticamente ai 12.240 euro. Il bivio è qui, e va detto con chiarezza: senza alcuna penale in contratto, la posizione dei committenti sarebbe stata paradossalmente migliore, perché avrebbero potuto chiedere il risarcimento integrale del danno provato — 7.600 euro di affitto, 900 di deposito, più le altre voci documentate. La lezione per il prossimo contratto: penale calibrata sul danno realistico e clausola di maggior danno, sempre." },
     { type: "note", text: "L'errore da non fare: accettare proroghe verbali o firmare verbali di sospensione generici, senza causa e durata scritte. Ogni giorno di proroga concesso senza riserva esce dal conteggio della penale e non rientra più. Lo scenario descritto è un caso illustrativo: l'esito concreto dipende sempre dal testo del contratto e dai documenti disponibili." },
+
+    { type: "timeline", title: "Come si arriva alla cifra", steps: [
+      { when: "Data pattuita", label: "Scade il termine di consegna", detail: "Da qui si contano i giorni di ritardo." },
+      { when: "Giorni di ritardo", label: "Penale giornaliera prevista in contratto", detail: "Il conteggio grezzo è solo il punto di partenza." },
+      { when: "Scomputo", label: "Sospensioni non imputabili all'impresa", detail: "Varianti richieste dal committente e autorizzazioni mai sollecitate." },
+      { when: "Verifica finale", label: "Maggior danno oltre la penale", detail: "Risarcibile solo se espressamente pattuito: senza clausola, la penale è un tetto." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

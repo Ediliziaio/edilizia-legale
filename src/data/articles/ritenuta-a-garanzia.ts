@@ -36,6 +36,8 @@ export const article: Article = {
     { type: "p", text: "In quasi tutti i contratti d'appalto il committente trattiene una percentuale di ogni stato di avanzamento, di norma il 5%, a garanzia dell'esatto adempimento e dei vizi successivi alla consegna. Non è una decurtazione del prezzo: è corrispettivo dell'impresa (art. 1657 c.c.) il cui pagamento è solo differito. Alla scadenza del periodo di garanzia previsto dal contratto, quella somma va restituita per intero." },
     { type: "p", text: "Nella pratica accade raramente in modo spontaneo. L'impresa chiude il cantiere, apre il successivo, e la ritenuta resta nei conti del committente per anni: nessuno la richiede perché il rapporto prosegue o perché nessuno tiene un registro delle scadenze. Sommate su più commesse, queste voci diventano cifre importanti — e sono crediti già maturati, non da conquistare partendo da zero." },
 
+    { type: "figure", slot: "ritenuta-a-garanzia-1", alt: "Registro dei SAL con le trattenute evidenziate cantiere per cantiere", caption: "Il primo passaggio non è legale ma contabile: ricostruire quanto è stato trattenuto e quando scade la garanzia." },
+
     { type: "h2", text: "Quando matura il diritto allo svincolo?", id: "quando-matura" },
     { type: "p", text: "Il momento in cui la ritenuta diventa esigibile lo fissa il contratto: di solito coincide con la scadenza del periodo di garanzia (dodici o ventiquattro mesi dal collaudo o dalla consegna), talvolta con l'emissione del certificato di regolare esecuzione. Se il contratto non prevede nulla, il riferimento è la disciplina generale dell'appalto: con l'accettazione dell'opera senza riserve il committente perde la garanzia per i vizi apparenti, e la denuncia dei vizi occulti va fatta entro 60 giorni dalla scoperta (art. 1667 c.c.)." },
     { type: "p", text: "Il punto pratico: il diritto allo svincolo non si estingue perché il tempo passa. Il credito si prescrive in 10 anni (art. 2946 c.c.) dall'esigibilità. Le ritenute su cantieri chiusi cinque, sette, nove anni fa sono quindi quasi sempre ancora recuperabili — a condizione di ricostruirle documentalmente, SAL per SAL." },
@@ -67,11 +69,20 @@ export const article: Article = {
     { type: "p", text: "Per i cantieri futuri esiste una soluzione che evita il problema alla radice: pattuire in contratto la sostituzione della ritenuta con una garanzia fideiussoria — bancaria o assicurativa — di pari importo. Il committente conserva la garanzia sui vizi, l'impresa incassa il 100% di ogni SAL e migliora il proprio flusso di cassa; il costo della polizza è quasi sempre inferiore al costo finanziario del denaro immobilizzato per uno o due anni." },
     { type: "p", text: "La clausola va scritta con attenzione: importo allineato alla ritenuta che sostituisce, durata coincidente con il periodo di garanzia, svincolo automatico alla scadenza. Con committenti strutturati la richiesta viene accettata più spesso di quanto le imprese immaginino — ma va negoziata prima della firma, non a lavori iniziati." },
 
+    { type: "figure", slot: "ritenuta-a-garanzia-2", alt: "Calendario con le date di fine garanzia dei cantieri chiusi", caption: "Le ritenute con garanzia già scaduta sono somme esigibili adesso." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Un'impresa impiantistica lavora da anni con lo stesso general contractor. Su undici cantieri chiusi tra il 2020 e il 2024 sono state trattenute ritenute del 5%, mai richieste indietro perché \"tanto poi si vede\". Ricostruendo i SAL, il totale è di 67.400 euro. Il primo passaggio non è legale ma contabile: estrarre da ogni SAL l'importo trattenuto e la data di fine garanzia contrattuale. Su undici cantieri, otto hanno la garanzia già scaduta da oltre un anno: quelle somme sono esigibili adesso." },
     { type: "p", text: "Il secondo passaggio è una sola PEC riepilogativa con tabella cantiere per cantiere — importo, data di scadenza della garanzia — e richiesta di svincolo entro 30 giorni: da quella data decorrono gli interessi di mora commerciali. La reazione tipica: il general contractor risponde che su due cantieri \"ci sono state segnalazioni del committente finale\". È una contestazione generica, senza indicazione del difetto né quantificazione, e non giustifica il trattenimento dell'intera ritenuta: si concede un termine per specificare e, in mancanza, si procede per l'intero." },
     { type: "p", text: "L'esito plausibile di un'operazione così impostata: una parte rientra in via bonaria, perché il rapporto commerciale prosegue; il resto va in decreto ingiuntivo con un fascicolo solido. In entrambi i casi è denaro che l'impresa aveva già dato per perso." },
     { type: "note", text: "L'errore da non fare: aspettare ancora. Per i cantieri più vecchi la prescrizione decennale corre, e ogni anno di inerzia trasforma crediti esigibili in crediti persi. Lo scenario descritto è un caso illustrativo: l'esito concreto dipende sempre dai documenti e dalle circostanze specifiche." },
+
+    { type: "timeline", title: "Dal trattenimento allo svincolo", steps: [
+      { when: "Durante il cantiere", label: "Trattenuta del 5% su ogni SAL", detail: "Va annotata cantiere per cantiere: è la base del recupero futuro." },
+      { when: "Fine garanzia contrattuale", label: "Matura il diritto allo svincolo", detail: "Salvo contestazione tempestiva di vizi specifici e quantificati." },
+      { when: "Richiesta formale", label: "PEC riepilogativa con termine di 30 giorni", detail: "Da quella data decorrono gli interessi di mora commerciali." },
+      { when: "Alla scadenza", label: "Decreto ingiuntivo per le somme non svincolate", detail: "Una contestazione generica non giustifica il trattenimento." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

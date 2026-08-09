@@ -32,6 +32,8 @@ import { articlesMeta, getRelated, toISODate, type Block, type Article, type Art
 import { getArticleContent } from "@/data/articlesContent";
 import { getArticleSeo } from "@/data/articleSeo";
 import { PHONE_TEL, PHONE_DISPLAY } from "@/data/site";
+import ArticleFigure from "@/components/ArticleFigure";
+import ArticleTimeline from "@/components/ArticleTimeline";
 
 const renderBlock = (block: Block, i: number) => {
   switch (block.type) {
@@ -130,6 +132,10 @@ const renderBlock = (block: Block, i: number) => {
           ))}
         </Accordion>
       );
+    case "figure":
+      return <ArticleFigure key={i} slot={block.slot} alt={block.alt} caption={block.caption} />;
+    case "timeline":
+      return <ArticleTimeline key={i} title={block.title} steps={block.steps} />;
     case "image":
       return (
         <figure key={i} className="my-8">

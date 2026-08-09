@@ -36,6 +36,8 @@ export const article: Article = {
     { type: "p", text: "Un cantiere fermo per una settimana non è un abbandono: può dipendere da forniture, meteo, altri lavori in sovrapposizione. Diventa inadempimento quando il fermo si protrae oltre ogni ragionevolezza rispetto ai tempi pattuiti, quando l'impresa smette di rispondere, quando ritira attrezzature e ponteggi senza spiegazioni. La combinazione tipica — telefono muto, cantiere vuoto da settimane, richieste di ulteriori acconti prima di riprendere — è il quadro che i giudici considerano inadempimento di non scarsa importanza ex art. 1455 c.c." },
     { type: "p", text: "In quel momento scatta una tentazione comprensibile e quasi sempre dannosa: chiamare subito un'altra impresa e far ripartire i lavori. Farlo prima di aver documentato lo stato del cantiere e risolto il contratto significa distruggere la prova di ciò che l'impresa aveva eseguito — e regalarle la difesa perfetta: \"i lavori li avevamo fatti, li ha rovinati chi è venuto dopo\". I cinque passi che seguono servono esattamente a evitare questo esito, nell'ordine in cui vanno fatti." },
 
+    { type: "figure", slot: "impresa-sparita-cantiere-abbandonato-1", alt: "Cantiere domestico abbandonato: impianti a metà, materiali fermi, nessun operaio", caption: "Prima di scrivere all'impresa serve la fotografia datata di quanto è stato davvero eseguito." },
+
     { type: "h2", text: "Passo 1 — Fotografare e verbalizzare lo stato dei lavori, oggi", id: "passo-1-documentare" },
     { type: "p", text: "Prima di qualsiasi lettera, un tecnico di tua fiducia — geometra, architetto o ingegnere — deve redigere un rilievo dello stato dei luoghi: documentazione fotografica datata, descrizione delle lavorazioni eseguite e non eseguite, computo metrico del valore di quanto realizzato. Costa in genere qualche centinaio di euro e vale tutto il contenzioso che segue: tra sei mesi, senza quel documento, sarà la tua parola contro quella dell'impresa." },
     { type: "p", text: "Il rilievo di parte è spesso sufficiente per la trattativa. Se prevedi una causa e lo stato dei luoghi è destinato a cambiare, lo strumento più solido è l'accertamento tecnico preventivo (artt. 696 e 696-bis c.p.c.): un consulente nominato dal giudice cristallizza lo stato del cantiere con valore di prova già formata per il futuro giudizio. Nel frattempo, non toccare nulla: niente sgomberi, niente demolizioni, niente interventi di altre imprese." },
@@ -66,6 +68,14 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "E se l'impresa è in liquidazione o è sparita davvero?", id: "impresa-insolvente" },
+    { type: "p", text: "Prima di scegliere la strada, va capito con che tipo di controparte hai a che fare: da questo dipende se conviene la causa, il sequestro o l'escussione di una garanzia." },
+    { type: "table", headers: ["Situazione dell'impresa", "Cosa si può aggredire", "Strada più efficace"], rows: [
+      ["Attiva, con altri cantieri in corso", "Crediti verso altri committenti, mezzi, conti", "Sequestro conservativo tempestivo, poi giudizio"],
+      ["Attiva ma senza patrimonio visibile", "Polizze, fideiussioni, garanzie contrattuali", "Escussione delle garanzie prima della causa"],
+      ["Irreperibile ma non cancellata", "Beni intestati, crediti fiscali", "Visure e pignoramento presso terzi"],
+      ["In liquidazione giudiziale", "Solo l'attivo della procedura", "Insinuazione al passivo, nei termini fissati dal giudice"],
+      ["Cancellata dal registro imprese", "Eventuale responsabilità di soci e amministratori", "Valutazione caso per caso, spesso non conviene agire"],
+    ] },
     { type: "p", text: "L'impresa che abbandona il cantiere è spesso un'impresa in difficoltà. Se è entrata in liquidazione giudiziale, il recupero individuale si ferma e resta l'insinuazione al passivo, con tempi lunghi e soddisfazione legata all'attivo disponibile. Se è semplicemente irreperibile ma continua a lavorare altrove, può avere senso un sequestro conservativo ex art. 671 c.p.c. sui crediti che vanta verso altri committenti, prima che incassi e sparisca anche quel denaro." },
     { type: "p", text: "Vale anche la pena verificare le coperture: la polizza CAR o RC dell'impresa, le garanzie eventualmente previste in contratto, e — se i lavori rientravano in un intervento con fideiussione o polizza di buona esecuzione — l'escussione della garanzia. Sono strade che non dipendono dal patrimonio dell'impresa, e per questo a volte valgono più della causa." },
 
@@ -73,11 +83,21 @@ export const article: Article = {
     { type: "p", text: "La domanda arriva sempre: \"posso denunciarli per truffa?\". La risposta onesta è: quasi mai per il solo abbandono. La truffa (art. 640 c.p.) richiede artifici o raggiri già al momento della firma — un'impresa che incassa acconti senza avere mezzi né intenzione di eseguire, magari con identità o qualifiche false. L'impresa che inizia i lavori e poi entra in crisi è inadempiente sul piano civile, non un truffatore su quello penale." },
     { type: "p", text: "Promettere una querela facile è un modo per far perdere tempo e soldi: il procedimento penale non restituisce gli acconti e non completa il bagno. Il profilo penale va coltivato quando ci sono indizi concreti di un disegno ingannatorio fin dall'origine; negli altri casi, le energie vanno messe sulla strada civile e sulla ricerca di patrimonio aggredibile." },
 
+    { type: "figure", slot: "impresa-sparita-cantiere-abbandonato-2", alt: "Tecnico che redige il rilievo dello stato dei luoghi con macchina fotografica e metro", caption: "Senza questo documento, tra sei mesi sarà la tua parola contro quella dell'impresa." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Ristrutturazione di un appartamento per 52.000 euro. L'impresa incassa 31.000 euro in acconti, demolisce tutto, rifà gli impianti a metà e poi sparisce: telefono staccato, cantiere fermo da undici settimane. La famiglia vive dai genitori e paga il mutuo di una casa inagibile. Il primo passo è il rilievo tecnico: un geometra fotografa lo stato dei luoghi e calcola 19.400 euro di lavorazioni effettivamente eseguite, a fronte dei 31.000 incassati." },
     { type: "p", text: "Segue la diffida ad adempiere via PEC e raccomandata, con termine di quindici giorni e dichiarazione espressa di risoluzione di diritto. Nessuna risposta. Alla scadenza il contratto è risolto e il completamento viene affidato a una seconda impresa: preventivo 41.000 euro, contro i 21.000 che sarebbero residuati dal contratto originario. Il danno chiesto all'impresa è quindi 20.000 euro di maggiore spesa più 11.600 di acconti non coperti da lavorazioni." },
     { type: "p", text: "Il bivio, da guardare in faccia: un'impresa sparita è spesso un'impresa senza patrimonio. Le visure rivelano se ci sono immobili o mezzi da aggredire; se non c'è nulla, la strategia cambia — garanzie e polizze da escutere, e un sequestro conservativo tempestivo sui crediti che l'impresa vanta verso altri committenti, se risulta ancora operativa su altri cantieri. Agire d'istinto con una causa ordinaria, in quel quadro, significa aggiungere spese a spese." },
     { type: "note", text: "L'errore da non fare: far entrare subito la seconda impresa senza rilievo tecnico e senza risoluzione. Si distrugge la prova dello stato dei lavori e si offre all'impresa la difesa perfetta. Lo scenario descritto è illustrativo: numeri ed esiti dipendono sempre dai documenti e dalle circostanze del caso concreto." },
+
+    { type: "timeline", title: "I cinque passi, con i tempi", steps: [
+      { when: "Oggi", label: "Rilievo tecnico dello stato dei lavori", detail: "Foto datate e computo delle lavorazioni effettivamente eseguite." },
+      { when: "Subito dopo", label: "Diffida ad adempiere via PEC", detail: "Termine non inferiore a 15 giorni e dichiarazione di risoluzione di diritto." },
+      { when: "15 giorni dopo", label: "Il contratto si risolve di diritto", detail: "La formula conta: senza quella dichiarazione la diffida è solo un sollecito." },
+      { when: "Poi", label: "Completamento a terzi e addebito della maggiore spesa", detail: "Preventivo della seconda impresa a confronto con il residuo contrattuale." },
+      { when: "In parallelo", label: "Verifica della capienza patrimoniale", detail: "Visure, mezzi, altri cantieri: decide se conviene agire o puntare alle garanzie." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

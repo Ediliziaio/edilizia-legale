@@ -38,6 +38,8 @@ export const article: Article = {
     { type: "p", text: "Lo strumento che il committente invoca — quasi mai citandolo — è l'eccezione di inadempimento dell'art. 1460 c.c.: \"non pago perché tu non hai adempiuto esattamente\". Ma quella norma ha un limite interno che i committenti dimenticano: il rifiuto di pagare non può essere contrario a buona fede, e la giurisprudenza lo traduce in un requisito di proporzionalità tra il difetto lamentato e la somma trattenuta. È da qui che si comincia a smontare la contestazione pretestuosa." },
     { type: "p", text: "Prima di rispondere d'impulso, la contestazione va classificata: è tardiva, è sproporzionata o è fondata? Le tre categorie portano a tre strategie diverse, e confonderle è l'errore più costoso che un'impresa possa fare in questa fase." },
 
+    { type: "figure", slot: "committente-contesta-i-lavori-1", alt: "Dettaglio di una finitura contestata, con metro e livella appoggiati", caption: "La proporzionalità si misura: quanto costa davvero eliminare il difetto contestato." },
+
     { type: "h2", text: "Quali sono le contestazioni che si smontano quasi sempre?", id: "contestazioni-deboli" },
     { type: "p", text: "La prima è la contestazione generica: \"i lavori non sono a regola d'arte\", senza indicazione di quali opere, in quali punti, con quali difetti. Una denuncia di vizi, per produrre effetti, deve mettere l'appaltatore in condizione di verificare e di intervenire; una formula vuota non interrompe nulla e non giustifica il mancato pagamento. Alla generica si risponde chiedendo per iscritto la specificazione analitica dei difetti, con termine." },
     { type: "p", text: "La seconda è la contestazione tardiva sui vizi apparenti: difetti visibili a occhio nudo, lamentati mesi dopo una consegna avvenuta senza riserve. Come vedremo, l'art. 1665 c.c. la neutralizza in radice, perché l'accettazione dell'opera copre i vizi riconoscibili. La terza è la contestazione sproporzionata: un difetto reale ma modesto usato per trattenere un saldo dieci volte superiore al costo della riparazione. Qui il vizio esiste, ma non autorizza quella ritenuta." },
@@ -81,11 +83,20 @@ export const article: Article = {
       "Se il confronto tecnico resta aperto su difetti rilevanti, valutare l'accertamento tecnico preventivo prima della causa di merito",
     ] },
 
+    { type: "figure", slot: "committente-contesta-i-lavori-2", alt: "Verbale di consegna dei lavori firmato, in primo piano la riga delle riserve", caption: "I vizi apparenti non contestati al momento della verifica si considerano accettati." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Un'impresa consegna la ristrutturazione completa di un appartamento per 63.000 euro. Il committente trattiene il saldo di 19.000 euro lamentando due difetti: una porta interna che struscia sul pavimento e alcune fughe del bagno non allineate. La prima verifica è economica: un preventivo di terzi quantifica l'eliminazione dei due difetti in circa 1.400 euro. Trattenere 19.000 euro per un difetto da 1.400 è sproporzionato e difficilmente regge in giudizio." },
     { type: "p", text: "La seconda verifica è temporale: si tratta di difetti visibili a occhio nudo, e il verbale di consegna è stato firmato senza riserve otto mesi prima. Per l'art. 1665 c.c. i vizi apparenti non contestati alla verifica si considerano accettati. La mossa scelta: una lettera che offre formalmente il ripristino dei due difetti entro quindici giorni, senza riconoscimento di responsabilità, e contestualmente diffida al pagamento del saldo detratta la sola somma di 1.400 euro accantonata a cautela. Questa combinazione toglie al committente l'argomento dell'eccezione di inadempimento e prepara il terreno al decreto ingiuntivo." },
     { type: "p", text: "Il bivio: se i difetti fossero occulti — per esempio un massetto che si sgretola sotto il pavimento — la partita si sposterebbe sulla perizia. In quel caso all'impresa converrebbe promuovere per prima l'accertamento tecnico preventivo, scegliendo il momento del confronto tecnico invece di subirlo dentro un'opposizione a decreto ingiuntivo." },
     { type: "note", text: "L'errore da non fare: rispondere alla contestazione con una lettera difensiva che discute ogni difetto punto per punto prima di aver verificato date e proporzioni. Si finisce per dare dignità a una contestazione tardiva e per fornire materiale alla controparte. Lo scenario descritto è un caso illustrativo: l'esito concreto dipende sempre dai documenti e dalle circostanze specifiche." },
+
+    { type: "timeline", title: "I termini che il committente lascia scadere", steps: [
+      { when: "Alla consegna", label: "Verifica dell'opera", detail: "I vizi apparenti non contestati in questo momento si considerano accettati." },
+      { when: "60 giorni dalla scoperta", label: "Denuncia dei vizi occulti", detail: "Art. 1667 c.c.: oltre il termine il committente decade dalla garanzia." },
+      { when: "2 anni dalla consegna", label: "Azione per i vizi dell'appalto", detail: "Termine di prescrizione dell'azione ex art. 1667 c.c." },
+      { when: "10 anni", label: "Solo per i gravi difetti", detail: "Art. 1669 c.c.: riguarda solidità, durata e godimento dell'immobile." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

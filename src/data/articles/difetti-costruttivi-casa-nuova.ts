@@ -37,6 +37,8 @@ export const article: Article = {
     { type: "p", text: "Rientrano quindi, per orientamento ormai consolidato, le infiltrazioni da coperture, terrazzi e pareti; i difetti di impermeabilizzazione; l'umidità da ponti termici o da barriera al vapore mancante; i distacchi estesi di intonaci e rivestimenti; i difetti seri degli impianti incorporati nell'edificio; i vizi del cappotto termico che ne annullano la funzione. Restano fuori i difetti puramente estetici e le imperfezioni che non incidono sul godimento: una fessurazione superficiale su un tramezzo interno, di norma, non è un grave difetto." },
     { type: "p", text: "Due caratteristiche rendono l'art. 1669 c.c. particolarmente forte. È responsabilità di natura extracontrattuale: puoi invocarla anche se non hai alcun contratto con il costruttore, per esempio se hai comprato da chi ha costruito o perfino come acquirente successivo. E non è derogabile: le clausole del rogito che pretendono di escluderla non ti tolgono la garanzia." },
 
+    { type: "figure", slot: "difetti-costruttivi-casa-nuova-1", alt: "Crepa su una parete perimetrale di un appartamento nuovo, con macchia di umidità", caption: "Il difetto va fotografato e datato: la prova dello stato dei luoghi si costruisce subito." },
+
     { type: "h2", text: "1669, 1667 o garanzia del venditore: quale norma si applica a te?", id: "tabella-termini" },
     { type: "p", text: "Il primo esercizio, davanti a un difetto, è capire in quale regime ricadi: cambiano i termini, la controparte e la forza della tua posizione. La tabella confronta le tre discipline che coprono la quasi totalità dei casi." },
     { type: "table", headers: ["Regime", "Cosa copre", "Denuncia", "Azione / prescrizione", "Contro chi"], rows: [
@@ -86,11 +88,20 @@ export const article: Article = {
       "Tenta la definizione in sede di conciliazione o mediazione; solo se fallisce, causa di merito",
     ] },
 
+    { type: "figure", slot: "difetti-costruttivi-casa-nuova-2", alt: "Tecnico che esegue un rilievo con termocamera in un appartamento", caption: "La perizia non serve solo a provare: serve anche a fissare la data della scoperta." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Una coppia acquista un appartamento nuovo nel marzo 2021, in un edificio completato nel 2020. Nell'autunno 2024 compaiono macchie di umidità in due stanze e, nella primavera successiva, si distacca l'intonaco su una parete perimetrale. Il costruttore manda un tecnico, parla di \"condensa da abitazione\" e non fa nulla. Il primo nodo è il tempo: il decennio dell'art. 1669 c.c. scade nel 2030, quindi si è ampiamente dentro; e la scoperta, ai fini dell'anno per la denuncia, non coincide con la prima macchia ma con la consapevolezza di gravità e causa — nella pratica, la data della relazione tecnica." },
     { type: "p", text: "La coppia invia comunque subito la denuncia scritta via PEC, poi incarica un termotecnico: la relazione individua un ponte termico non risolto e l'assenza di barriera al vapore su tutta la parete nord, con costi di ripristino stimati in 24.300 euro. Non è un problema estetico: incide sul godimento normale dell'immobile e rientra nei gravi difetti. Diverso sarebbe stato qualche capello di assestamento su un tramezzo interno, che sarebbe ricaduto nei termini ben più stretti dell'art. 1667 c.c." },
     { type: "p", text: "Il bivio è la qualificazione della causa: errore di progetto, quindi anche il progettista tra i responsabili con la sua polizza professionale, oltre al costruttore-venditore; e se il difetto era rilevabile in corso d'opera, anche il direttore dei lavori. Davanti al costruttore che continua a minimizzare, la mossa è l'accertamento tecnico preventivo: cristallizza lo stato dei luoghi, blocca i termini e in molti casi porta alla transazione prima della causa. Se invece la società fosse risultata chiusa, la strada maestra sarebbe stata la polizza decennale postuma del D.lgs. 122/2005 consegnata al rogito." },
     { type: "note", text: "L'errore da non fare: accontentarsi delle rassicurazioni verbali del costruttore per due o tre anni. È così che si consuma il termine di decadenza, e a quel punto non conta più avere ragione. Lo scenario descritto è illustrativo: qualificazione dei difetti, termini ed esiti dipendono sempre dagli accertamenti tecnici e dalle circostanze del caso concreto." },
+
+    { type: "timeline", title: "I termini della garanzia decennale", steps: [
+      { when: "Completamento dell'opera", label: "Parte il decennio dell'art. 1669 c.c.", detail: "Copre i gravi difetti che incidono su solidità, durata o godimento." },
+      { when: "Scoperta del difetto", label: "Consapevolezza certa di gravità e causa", detail: "Nella pratica coincide spesso con la data della relazione tecnica." },
+      { when: "1 anno dalla scoperta", label: "Denuncia al costruttore, a pena di decadenza", detail: "Va inviata subito e per iscritto, senza attendere la perizia completa." },
+      { when: "1 anno dalla denuncia", label: "Termine per agire in giudizio", detail: "Superato questo termine il diritto è perso, anche avendo ragione." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

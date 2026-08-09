@@ -39,6 +39,8 @@ export const article: Article = {
     { type: "p", text: "I sintomi tipici di una posa sbagliata sono cinque: correnti d'aria percepibili lungo il perimetro del telaio; condensa abbondante sui vetri o sui contorni murari; muffa nera che compare sugli angoli e sulle spallette; ante che non chiudono o strisciano sul telaio; rumore esterno che entra come se la finestra fosse socchiusa. Ognuno di questi segnala una discontinuità nel giunto tra serramento e muratura — il cosiddetto nodo di posa — o un controtelaio fuori squadro." },
     { type: "p", text: "La norma di riferimento per la posa (UNI 11673) richiede la continuità della tenuta all'aria, all'acqua e al vento su tutto il perimetro. Se il nastro di tenuta è interrotto o il giunto primario non è sigillato, anche il miglior serramento si comporta come uno scadente. E i sintomi compaiono quasi sempre al primo inverno." },
 
+    { type: "figure", slot: "infissi-montati-male-1", alt: "Condensa e muffa sul contorno murario di una finestra nuova", caption: "Spifferi, condensa e muffa sui contorni indicano quasi sempre un difetto di posa, non del serramento." },
+
     { type: "h2", text: "Prodotto o posa: come si capisce di chi è la colpa?", id: "prodotto-o-posa" },
     { type: "p", text: "È la prima domanda da sciogliere, perché venditore e posatore tendono a rimbalzarsi la responsabilità. Contestare l'azienda sbagliata fa perdere mesi e, in alcuni casi, fa scadere i termini." },
     { type: "p", text: "La verifica è tecnica e in genere rapida: una termografia in stagione fredda mostra dove si concentrano le dispersioni, e una prova di tenuta all'aria individua i punti di infiltrazione. Se le dispersioni corrono lungo il perimetro del telaio, il difetto è nella posa; se il problema sta nel vetrocamera o nella ferramenta, è del prodotto." },
@@ -75,11 +77,20 @@ export const article: Article = {
       "In assenza di riscontro, valuta con il legale l'accertamento tecnico preventivo o l'azione entro i 2 anni dalla consegna (26 mesi se consumatore)",
     ] },
 
+    { type: "figure", slot: "infissi-montati-male-2", alt: "Termografia di un nodo di posa che evidenzia le dispersioni", caption: "La termografia distingue il vizio del prodotto da quello dell'installazione: cambia il responsabile." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Una famiglia sostituisce dodici finestre con serramenti in PVC ad alte prestazioni: 13.800 euro, detrazione fiscale prevista e pratica ENEA trasmessa. Dopo il primo inverno compaiono correnti d'aria percepibili su quattro finestre, condensa abbondante sui vetri e muffa nera sui contorni murari di tre stanze. La termografia evidenzia dispersioni concentrate proprio sui nodi di posa dei quattro serramenti: nastro di tenuta interrotto e giunto primario non sigillato. Il prodotto è conforme; la posa no." },
     { type: "p", text: "Il primo effetto: il responsabile è l'installatore, non il produttore, e contestare l'azienda sbagliata avrebbe fatto perdere mesi. Il secondo effetto, quello economico: il rifacimento della posa è preventivato in 2.900 euro, ma con prestazioni reali inferiori ai valori dichiarati anche la detrazione è a rischio — su 13.800 euro di spesa, diverse migliaia di euro di ulteriore pregiudizio da contestare insieme, non dopo. Il bivio sta nella qualificazione del contratto: l'ordine comprendeva demolizione dei vecchi telai, rifacimento dei controtelai e ripristino murario, quindi prevale il fare e si applica l'appalto — 60 giorni dalla scoperta e due anni dalla consegna. Se fosse stata pura fornitura con montaggio standard, i termini della vendita sarebbero stati di otto giorni e un anno, probabilmente già decorsi." },
     { type: "p", text: "La leva negoziale finale: il saldo di 3.400 euro non era ancora stato versato. Trattenerne una parte proporzionata al ripristino, comunicandolo per iscritto, è legittimo e diventa la base per una soluzione bonaria: rifacimento della posa a regola d'arte, verifica finale in termografia e conguaglio." },
     { type: "note", text: "L'errore da non fare: aspettare la primavera \"per vedere se migliora\". La condensa sparisce con il caldo, ma i termini di denuncia decorrono dalla scoperta, e una denuncia inviata mesi dopo può essere tardiva. Lo scenario descritto è un caso illustrativo: l'esito concreto dipende sempre dal contratto e dalle circostanze specifiche." },
+
+    { type: "timeline", title: "I termini, secondo come è qualificato il contratto", steps: [
+      { when: "Consegna", label: "Verifica dei serramenti installati", detail: "Annota subito per iscritto ciò che è visibile." },
+      { when: "8 giorni", label: "Se è vendita di prodotti con posa accessoria", detail: "Denuncia dei vizi ex art. 1495 c.c., con azione entro un anno." },
+      { when: "60 giorni", label: "Se prevale il fare: siamo nell'appalto", detail: "Denuncia ex art. 1667 c.c., con azione entro due anni dalla consegna." },
+      { when: "Se sei un consumatore", label: "Garanzia legale di conformità", detail: "Tutela più ampia rispetto alla disciplina ordinaria." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

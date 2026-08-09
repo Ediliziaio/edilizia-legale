@@ -37,6 +37,8 @@ export const article: Article = {
     { type: "p", text: "Il codice però non contiene una sola regola, ma tre, e confonderle è l'errore più comune. L'art. 1659 riguarda le variazioni proposte dall'appaltatore o concordate; l'art. 1660 c.c. le variazioni necessarie per eseguire l'opera a regola d'arte, il cui prezzo — in mancanza di accordo — è determinato dal giudice; l'art. 1661 c.c. le varianti ordinate dal committente, che vanno compensate anche se il prezzo era stato pattuito globalmente, purché non eccedano il sesto del prezzo complessivo. Quando l'ordine viene dal committente o da chi lo rappresenta, la cornice giusta è l'art. 1661, e la posizione dell'impresa è più forte di quanto la lettera dell'art. 1659 faccia credere." },
     { type: "p", text: "Resta il nodo del direttore dei lavori: il suo ordine vincola il committente solo se il DL aveva il potere di disporre varianti — cosa che l'incarico spesso non prevede — oppure se il committente ha ratificato, anche per comportamento concludente: ha assistito ai lavori, ha sottoscritto la contabilità, usa l'opera modificata. È qui che si gioca la maggior parte dei contenziosi sui lavori extra." },
 
+    { type: "figure", slot: "varianti-in-corso-opera-1", alt: "Direttore dei lavori e capocantiere davanti a una traccia aperta nel muro", caption: "L'ordine dato a voce in cantiere è il punto in cui si perde il margine della commessa." },
+
     { type: "h2", text: "Quali prove accettano i giudici al posto dell'autorizzazione scritta?", id: "prove" },
     { type: "p", text: "La forma scritta dell'art. 1659 c.c. è richiesta ad probationem, non per la validità dell'accordo: non serve un contratto formale, basta un documento da cui l'autorizzazione risulti. La giurisprudenza ha progressivamente valorizzato gli scritti informali del cantiere reale: email, messaggi, annotazioni controfirmate, contabilità accettata. Il limite della forma ad probationem è un altro: restringe la prova per testimoni, che da sola difficilmente regge, mentre restano ammessi l'interrogatorio formale e la confessione del committente." },
     { type: "table", headers: ["Elemento di prova", "Che cosa dimostra", "Peso pratico"], rows: [
@@ -67,11 +69,20 @@ export const article: Article = {
       "Nel primo SAL utile: inserisci la voce della variante in contabilità — un SAL pagato senza contestazioni sulla voce extra è una delle prove più solide che esistano",
     ] },
 
+    { type: "figure", slot: "varianti-in-corso-opera-2", alt: "Giornale dei lavori aperto, con l'annotazione della lavorazione e la firma del DL", caption: "È la prova che i giudici accettano quando manca l'autorizzazione scritta." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Durante la ristrutturazione di un ufficio, il direttore dei lavori chiede a voce di rifare integralmente l'impianto elettrico \"visto che i muri sono già aperti\". L'impresa esegue: 14.600 euro di lavori non previsti in contratto. A fine cantiere il committente rifiuta il pagamento perché \"non c'era nessun ordine scritto\". Nel fascicolo però qualcosa c'è: due messaggi WhatsApp del DL con la foto della traccia e la frase \"procedete pure\", il giornale dei lavori con l'annotazione della lavorazione firmata dal DL a fine settimana, il verbale di collaudo dell'impianto sottoscritto anche dal committente, e l'impianto in funzione da otto mesi." },
     { type: "p", text: "Il percorso: diffida che ricostruisce la sequenza documentale e chiede il pagamento con gli interessi di mora del D.lgs. 231/2002, poi — in mancanza di riscontro — giudizio fondato sull'art. 1661 c.c. e sulla ratifica per comportamento concludente. Perché la posizione regge: un committente che ha assistito ai lavori, sottoscritto il collaudo dell'opera aggiuntiva e la usa da mesi difficilmente convince un giudice di non averla mai voluta. In subordine resta l'azione di arricchimento ex art. 2041 c.c., perché il vantaggio patrimoniale c'è ed è quantificabile." },
     { type: "p", text: "Il bivio: se in cantiere non fosse rimasto nulla — nessun messaggio, nessuna annotazione, nessun collaudo firmato — la posizione sarebbe molto più debole, l'arricchimento coprirebbe al più i costi vivi e la trattativa transattiva diventerebbe la strada realistica. La differenza tra i due scenari non la fa il giudice: la fanno i cinque minuti della conferma scritta, la sera stessa dell'ordine." },
     { type: "note", text: "L'errore da non fare: eseguire la variante contando sui buoni rapporti e rimandare la conferma scritta \"a quando c'è tempo\". La prova che non si forma il giorno dell'ordine, dopo, non si forma più. Lo scenario descritto è illustrativo: l'esito concreto dipende sempre dai documenti e dalle circostanze specifiche." },
+
+    { type: "timeline", title: "Il protocollo che salva il margine", steps: [
+      { when: "Giorno della richiesta", label: "Il DL ordina la variante a voce", detail: "Da solo non basta: l'art. 1659 c.c. richiede l'autorizzazione scritta." },
+      { when: "La sera stessa", label: "PEC di conferma in due righe", detail: "«Come da sua richiesta odierna procediamo con X, maggior costo stimato Y»." },
+      { when: "Fine settimana", label: "Annotazione sul giornale dei lavori", detail: "Da far controfirmare al direttore dei lavori." },
+      { when: "A fine opera", label: "Collaudo sottoscritto anche sull'opera aggiuntiva", detail: "Il comportamento concludente del committente pesa in giudizio." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

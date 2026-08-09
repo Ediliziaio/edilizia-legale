@@ -2,7 +2,7 @@
 // moduli in src/data/articles/*.ts (ognuno esporta meta, seo, article).
 // Eseguito in prebuild, prima del sitemap.
 import { build } from "esbuild";
-import { readdirSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -55,7 +55,10 @@ for (const f of files) {
   if (!mod.meta || !mod.article) throw new Error(`${f}: export meta/article mancante`);
   if (mod.meta.slug !== slug) throw new Error(`${f}: slug "${mod.meta.slug}" != filename`);
   if (!mod.seo?.seoTitle || !mod.seo?.metaDescription) throw new Error(`${f}: export seo mancante`);
-  entries.push({ slug, meta: mod.meta, seo: mod.seo });
+  const figures = (mod.article.content ?? [])
+    .filter((b) => b?.type === "figure")
+    .map((b) => ({ slot: b.slot, alt: b.alt }));
+  entries.push({ slug, meta: mod.meta, seo: mod.seo, figures });
 }
 
 entries.sort((a, b) => {
@@ -91,9 +94,60 @@ export const ARTICLE_SEO: Record<string, ArticleSeo> = ${JSON.stringify(
 export const getArticleSeo = (slug: string): ArticleSeo | undefined => ARTICLE_SEO[slug];
 `;
 
+// --- Manifest delle immagini degli articoli -------------------------------
+// Rigenerato a ogni build: i nuovi slot entrano a null, i percorsi già
+// collegati a mano vengono preservati.
+const imagesPath = path.join(root, "src/data/articleImages.ts");
+const existing = {};
+try {
+  // Riga per riga, saltando i commenti: un esempio dentro un commento non
+  // deve essere scambiato per un percorso realmente collegato.
+  for (const line of readFileSync(imagesPath, "utf-8").split("\n")) {
+    const code = line.trim();
+    if (code.startsWith("//") || code.startsWith("*") || code.startsWith("/*")) continue;
+    const m = code.match(/^"([^"]+)":\s*(?:"([^"]*)"|null),?$/);
+    if (m) existing[m[1]] = m[2] ?? null;
+  }
+} catch {
+  /* primo giro: il file non esiste ancora */
+}
+
+const figureLines = [];
+let pending = 0;
+for (const e of entries) {
+  if (!e.figures.length) continue;
+  figureLines.push(`\n  // ${e.slug}`);
+  for (const fig of e.figures) {
+    const val = existing[fig.slot] ?? null;
+    if (val == null) pending++;
+    figureLines.push(`  // ${fig.alt}`);
+    figureLines.push(`  ${JSON.stringify(fig.slot)}: ${val == null ? "null" : JSON.stringify(val)},`);
+  }
+}
+
+const imagesOut = `// AUTO-GENERATO da scripts/generate-article-index.mjs — i percorsi già
+// scritti vengono preservati a ogni rigenerazione, quindi puoi editarli qui.
+//
+// LISTA DELLE IMMAGINI DA PRODURRE: ogni slot a \`null\` mostra in pagina un
+// segnaposto con il brief (il commento qui sopra ciascuna riga).
+//
+// Per collegare una foto:
+//   1. metti il file in  public/images/guide/
+//   2. sostituisci null con il percorso, es. "/images/guide/<slot>.jpg"
+//
+// Formato consigliato: 16/9, larghezza minima 1200px, WebP o JPG sotto i 250 kB.
+export const articleImages: Record<string, string | null> = {${figureLines.join("\n")}
+};
+
+export const getArticleImage = (slot: string): string | null => articleImages[slot] ?? null;
+`;
+
+writeFileSync(imagesPath, imagesOut);
 writeFileSync(path.join(root, "src/data/articlesMeta.ts"), metaOut);
 writeFileSync(path.join(root, "src/data/articleSeo.ts"), seoOut);
 console.log(`OK: ${entries.length} articoli indicizzati.`);
+const totalSlots = entries.reduce((n, e) => n + e.figures.length, 0);
+console.log(`Immagini articoli: ${totalSlots} slot, ${totalSlots - pending} collegate, ${pending} da produrre.`);
 for (const e of entries) {
   const t = e.seo.seoTitle.length;
   const d = e.seo.metaDescription.length;

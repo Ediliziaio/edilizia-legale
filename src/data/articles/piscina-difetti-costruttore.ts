@@ -37,6 +37,8 @@ export const article: Article = {
     { type: "p", text: "Ma non è l'unica norma. Una vasca in cemento armato interrata è un'opera immobiliare destinata per sua natura a lunga durata: si applica l'art. 1669 c.c., che rende il costruttore responsabile per dieci anni dal compimento dell'opera quando questa rovina, presenta evidente pericolo di rovina o gravi difetti. La giurisprudenza intende i gravi difetti in senso ampio: non serve il crollo, basta un'alterazione che compromette in modo apprezzabile il godimento o la funzionalità dell'opera — e una piscina che non tiene l'acqua è l'esempio di scuola. Le Sezioni Unite (Cass. SS.UU. n. 7756/2017) hanno esteso lo stesso regime anche agli interventi di ristrutturazione su opere esistenti." },
     { type: "p", text: "C'è un vantaggio ulteriore: la responsabilità ex art. 1669 c.c. ha natura extracontrattuale, quindi può invocarla anche chi ha comprato la casa con la piscina già realizzata, senza alcun contratto con l'impresa costruttrice." },
 
+    { type: "figure", slot: "piscina-difetti-costruttore-1", alt: "Piscina interrata in cemento armato con fessurazione verticale sulla parete", caption: "Le fessurazioni strutturali di una vasca interrata rientrano tra i gravi difetti." },
+
     { type: "h2", text: "Quali sono i difetti tipici e cosa rivelano?", id: "difetti-tipici" },
     { type: "p", text: "Ogni sintomo racconta una causa probabile, e la causa decide l'inquadramento giuridico. La tabella riassume i casi più frequenti nella pratica." },
     { type: "table", headers: ["Sintomo", "Causa probabile", "Inquadramento"], rows: [
@@ -70,11 +72,20 @@ export const article: Article = {
       "Proponi l'azione entro 1 anno dalla denuncia (art. 1669, secondo comma, c.c.): il termine corre anche mentre tratti",
     ] },
 
+    { type: "figure", slot: "piscina-difetti-costruttore-2", alt: "Test di tenuta con misurazione dell'abbassamento del livello dell'acqua", caption: "Il test distingue la perdita della vasca da quella dell'impianto idraulico: cambia il responsabile." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Piscina interrata in cemento armato da 10 per 4 metri, realizzata nel 2021 per 58.000 euro. Dal 2024 il livello dell'acqua cala di circa tre centimetri al giorno e compaiono due fessure verticali sulla parete lunga. L'azienda risponde per iscritto che \"la garanzia era di due anni ed è scaduta\". La risposta è sbagliata: l'opera è destinata a lunga durata, si applica la responsabilità decennale dell'art. 1669 c.c. e il proprietario è nei termini fino al 2031, purché denunci entro un anno dalla scoperta." },
     { type: "p", text: "La prova. Il test di tenuta misura l'abbassamento a impianto fermo e a impianto acceso: la perdita si conferma anche a impianto fermo, quindi è la vasca. La verifica strutturale evidenzia copriferro insufficiente e giunti di ripresa non trattati — difetti di esecuzione, non di manutenzione. Il secondo fronte emerge controllando la pratica edilizia: la piscina è stata realizzata a una distanza dal confine inferiore a quella del regolamento comunale, un problema autonomo da gestire in parallelo prima di pretendere il rifacimento." },
     { type: "p", text: "Il bivio: se il proprietario avesse accettato la risposta sui due anni, avrebbe abbandonato un diritto ancora pieno; avendo invece denunciato subito e avviato l'accertamento tecnico, la richiesta comprende il costo del ripristino quantificato dalla perizia, il mancato godimento delle stagioni perse e le spese di acqua e trattamento — che a tre centimetri al giorno per una stagione sono una cifra concreta, non una voce di principio." },
     { type: "note", text: "L'errore da non fare: svuotare la vasca prima di aver eseguito il test di tenuta e documentato la perdita. Si distrugge la prova principale e, con falda alta, lo svuotamento può perfino danneggiare la struttura per sottospinta. Lo scenario descritto è un caso illustrativo: l'esito concreto dipende dalle risultanze tecniche e dai documenti del caso specifico." },
+
+    { type: "timeline", title: "Dieci anni, non due", steps: [
+      { when: "Completamento dell'opera", label: "Parte la responsabilità decennale", detail: "La piscina interrata è opera immobiliare destinata a lunga durata." },
+      { when: "Comparsa del difetto", label: "Perdite, cedimenti, distacchi del rivestimento", detail: "Inquadrabili tra i gravi difetti dell'art. 1669 c.c." },
+      { when: "1 anno dalla scoperta", label: "Denuncia al costruttore", detail: "È il termine che quasi tutti lasciano scadere convinti di essere fuori garanzia." },
+      { when: "In parallelo", label: "Verifica del titolo edilizio e delle distanze", detail: "Un secondo fronte che va gestito insieme, non dopo." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

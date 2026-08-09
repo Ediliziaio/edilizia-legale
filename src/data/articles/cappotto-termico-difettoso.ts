@@ -38,6 +38,8 @@ export const article: Article = {
     { type: "p", text: "Il cappotto termico è un intervento sull'involucro dell'edificio, destinato per sua natura a durare decenni. Quando la rasatura si distacca a placche, i giunti dei pannelli fessurano o compaiono infiltrazioni e ponti termici diffusi, non siamo davanti a un difetto estetico: è compromessa la funzione stessa dell'opera — proteggere e isolare l'edificio — e in molti casi anche la sicurezza, perché i frammenti cadono su cortili e marciapiedi. La giurisprudenza inquadra da tempo situazioni di questo tipo tra i gravi difetti dell'art. 1669 c.c." },
     { type: "p", text: "La qualificazione cambia tutto: la responsabilità ex art. 1669 c.c. dura dieci anni dal compimento dell'opera, la denuncia va fatta entro un anno dalla scoperta del difetto e l'azione si prescrive in un anno dalla denuncia. Inoltre è una responsabilità di natura extracontrattuale secondo l'orientamento consolidato: può invocarla anche chi non ha firmato il contratto d'appalto, come l'acquirente dell'appartamento o il singolo condomino." },
 
+    { type: "figure", slot: "cappotto-termico-difettoso-1", alt: "Distacco della rasatura di un cappotto termico su un prospetto condominiale", caption: "Il distacco della rasatura non è un difetto estetico: incide su durata, protezione e sicurezza." },
+
     { type: "h2", text: "Le tre cause tipiche: cosa rivelano sul responsabile?", id: "cause-tipiche" },
     { type: "p", text: "Un cappotto non si stacca \"per il gelo\" o \"per sfortuna\". Le perizie tecniche riconducono quasi sempre il degrado a tre famiglie di cause, e ciascuna punta verso un responsabile diverso. La prima è l'errore di esecuzione: collante applicato a punti invece che secondo le prescrizioni del produttore, tasselli mancanti o mal posizionati, rasatura troppo sottile, rete annegata male, lavorazione eseguita con temperature fuori range. Qui risponde l'impresa esecutrice." },
     { type: "p", text: "La seconda è l'errore di progetto: sistema non adatto al supporto, assenza di rete di armatura supplementare nei punti singolari, dettagli costruttivi mancanti su davanzali, giunti e raccordi, verifica igrometrica sbagliata che genera condensa interstiziale. Qui entra in gioco il progettista. La terza è il difetto di controllo: il direttore dei lavori che non verifica le fasi critiche — incollaggio, tassellatura, armatura — e non documenta i controlli, lasciando che gli errori esecutivi passino indisturbati." },
@@ -74,10 +76,19 @@ export const article: Article = {
       "Avviare l'azione di merito entro 1 anno (365 giorni) dalla denuncia, contro tutti i corresponsabili in solido",
     ] },
 
+    { type: "figure", slot: "cappotto-termico-difettoso-2", alt: "Frammenti di intonaco caduti sul marciapiede sotto la facciata", caption: "Quando i frammenti cadono su suolo pubblico si aggiunge un profilo di sicurezza da gestire subito." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Un condominio di ventiquattro unità fa eseguire nel 2022 un intervento da 780.000 euro che comprende il cappotto termico. Nell'inverno 2025 la rasatura si distacca a placche su due prospetti, con frammenti che cadono sul marciapiede, e compaiono fessurazioni lungo i giunti dei pannelli. All'amministratore viene detto che \"la garanzia di due anni è scaduta\". La qualificazione corretta è un'altra: il distacco incide sulla durata dell'opera, sulla protezione dell'involucro e sulla sicurezza, quindi rientra nei gravi difetti dell'art. 1669 c.c., con copertura decennale." },
     { type: "p", text: "La perizia individua tre concause: collante applicato con copertura insufficiente rispetto alle prescrizioni del produttore (esecuzione), assenza di rete di armatura supplementare nei punti singolari (progetto), mancanza di verifiche documentate nelle fasi critiche (direzione lavori). Su questa base la denuncia parte verso tutti e tre i soggetti e le rispettive assicurazioni. Il bivio: chiamare solo l'impresa significherebbe scommettere sulla sua capienza patrimoniale; chiamare anche progettista e direttore dei lavori significa poter contare sulle polizze professionali obbligatorie. Su un ripristino preventivato in 190.000 euro, è la differenza tra recuperare l'intero e recuperare poco o nulla. Poiché l'intervento era agevolato, la stessa perizia viene usata per verificare la tenuta del salto di classe asseverato e impostare la rivalsa verso il tecnico asseveratore." },
     { type: "note", text: "L'errore da non fare: aspettare l'assemblea successiva \"per decidere con calma\" mentre corre l'anno dalla scoperta del difetto. La denuncia ex art. 1669 c.c. è un atto semplice e va inviata subito a tutti i soggetti: conserva il diritto e interrompe la corsa dei termini. Lo scenario descritto è un caso illustrativo: l'esito concreto dipende sempre dagli accertamenti tecnici e dalle circostanze specifiche." },
+
+    { type: "timeline", title: "Chi chiamare, e quando", steps: [
+      { when: "Comparsa del difetto", label: "Documentazione fotografica datata", detail: "Distacchi, fessurazioni sui giunti, macchie di umidità." },
+      { when: "Perizia", label: "Individuazione delle concause", detail: "Esecuzione, progetto e direzione lavori: quasi mai il responsabile è uno solo." },
+      { when: "1 anno dalla scoperta", label: "Denuncia ex art. 1669 c.c.", detail: "A tutti i soggetti coinvolti, non solo all'impresa esecutrice." },
+      { when: "Subito", label: "Denuncia alle polizze professionali", detail: "Progettista e DL hanno coperture obbligatorie e capienti." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

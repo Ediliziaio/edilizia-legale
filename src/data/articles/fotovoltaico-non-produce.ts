@@ -38,6 +38,8 @@ export const article: Article = {
     { type: "p", text: "Ma anche i numeri rimasti fuori dal contratto non spariscono. Se il cliente è un consumatore, le caratteristiche dichiarate nel materiale promozionale e nelle comunicazioni precontrattuali concorrono a definire la conformità del bene (artt. 128 e ss. Codice del Consumo), e le informazioni precontrattuali integrano il contratto (art. 49 Cod. Cons.). Un piano di rientro consegnato a mano dal commerciale, su cui il cliente ha basato la decisione di acquisto, non è carta straccia: è il metro su cui si misura l'inadempimento." },
     { type: "p", text: "Se invece il contratto tace del tutto sulla produzione, la strada dell'inadempimento della prestazione promessa si restringe e si lavora sui vizi dell'opera: un impianto dimensionato o orientato male non è a regola d'arte, a prescindere dalle promesse." },
 
+    { type: "figure", slot: "fotovoltaico-non-produce-1", alt: "Impianto fotovoltaico su tetto a falda, con ombreggiamento parziale del camino", caption: "Esposizione reale e ombreggiamenti erano visibili al sopralluogo commerciale: non sono un imprevisto." },
+
     { type: "h2", text: "Come si misura davvero il divario di produzione?", id: "misurare-divario" },
     { type: "p", text: "\"La bolletta non è calata\" non basta: la bolletta dipende anche dai consumi, dai prezzi dell'energia e dall'autoconsumo. Il dato che regge è la produzione lorda in kWh, che l'inverter e il portale di monitoraggio registrano giorno per giorno, confrontata con la producibilità promessa e con l'irraggiamento reale della zona nel periodo." },
     { type: "p", text: "Il confronto corretto si fa in tre passaggi. Primo: raccogliere almeno dodici mesi di produzione reale, meglio ventiquattro, per neutralizzare la stagionalità. Secondo: normalizzare rispetto all'irraggiamento effettivo dell'annata, usando banche dati pubbliche come PVGIS, perché un anno poco soleggiato giustifica scostamenti fisiologici. Terzo: quantificare il divario percentuale residuo. Uno scarto di qualche punto è tolleranza tecnica; uno scarto che supera stabilmente il 15-20% su annate normalizzate è un'anomalia che richiede una spiegazione." },
@@ -82,11 +84,20 @@ export const article: Article = {
       "In assenza di riscontro, accertamento tecnico preventivo o azione di merito, tenendo d'occhio il termine dei 2 anni dalla consegna per i vizi",
     ] },
 
+    { type: "figure", slot: "fotovoltaico-non-produce-2", alt: "Macchia di infiltrazione sul soffitto della mansarda in corrispondenza dei fissaggi", caption: "Le infiltrazioni dai fissaggi sono un secondo danno, da contestare insieme al mancato rendimento." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Impianto da 6 kWp con accumulo, venduto per 19.500 euro con finanziamento a 120 rate. Il piano di rientro allegato al contratto indica una producibilità di 7.800 kWh l'anno e un risparmio in bolletta di circa 1.500 euro. Dopo due anni completi la produzione reale è di 5.100 kWh il primo anno e 5.300 il secondo, con un risparmio effettivo intorno ai 700 euro. Dallo scorso autunno, in più, il soffitto della mansarda presenta due macchie di infiltrazione in corrispondenza dei fissaggi." },
     { type: "p", text: "Primo passaggio: il divario è significativo e stabile. Uno scarto del 32% ripetuto su due annate consecutive non si spiega con un anno poco soleggiato, e il confronto con i dati di irraggiamento della zona nel periodo — non con una media generica — è il passaggio che regge in giudizio. Secondo: la causa. La perizia individua un'esposizione reale a sud-ovest anziché a sud e un ombreggiamento parziale del camino nelle ore centrali, entrambi visibili al momento del sopralluogo commerciale. Chi ha progettato e venduto doveva rilevarli: il divario non è un rischio imprevedibile, è un errore di progettazione della proposta. Terzo: le infiltrazioni, con ripristino della copertura preventivato in 3.400 euro, entrano nella stessa diffida come danno ulteriore." },
     { type: "p", text: "Il bivio sui rimedi: se il divario fosse colmabile con ottimizzatori e una ridistribuzione delle stringhe, la strada efficiente sarebbe l'adeguamento a spese dell'azienda. Qui l'orientamento della falda non si cambia: si punta alla riduzione del prezzo proporzionata al minor rendimento — sul valore attuale dei kWh mancanti per la vita utile dell'impianto — oppure, se il giudice ritenesse l'impianto inadatto allo scopo, alla risoluzione con effetti anche sul finanziamento collegato." },
     { type: "note", text: "L'errore da non fare: contestare \"la bolletta alta\" senza dati di produzione normalizzati. È l'obiezione che l'azienda smonta in una riga, dando la colpa ai consumi. Lo scenario descritto è un caso illustrativo: l'esito concreto dipende sempre dai documenti contrattuali e dalle risultanze tecniche del singolo impianto." },
+
+    { type: "timeline", title: "Come si costruisce la contestazione", steps: [
+      { when: "Primo anno", label: "Raccolta dei dati di produzione reali", detail: "Vanno confrontati con la producibilità indicata nel contratto." },
+      { when: "Secondo anno", label: "Conferma dello scostamento", detail: "Un divario stabile su due annate non si spiega con un anno poco soleggiato." },
+      { when: "Perizia", label: "Confronto con l'irraggiamento di zona", detail: "È il passaggio che regge in giudizio, non la media generica." },
+      { when: "Contestazione", label: "Adeguamento, riduzione del prezzo o risoluzione", detail: "Insieme al danno da infiltrazioni, mai con lettere separate." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

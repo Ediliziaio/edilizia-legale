@@ -36,6 +36,8 @@ export const article: Article = {
     { type: "h2", text: "Vendita o appalto: qual è il criterio della Cassazione?", id: "criterio" },
     { type: "p", text: "Quando una cucina arriva con le misure sbagliate o il top crepato, l'istinto è discutere del difetto. Ma la prima domanda giuridicamente utile è un'altra: che contratto hai firmato? La Cassazione, con orientamento costante, distingue la vendita dall'appalto guardando quale obbligazione prevale: quella di dare — consegnare un bene che rientra nella normale produzione del venditore — o quella di fare, cioè realizzare un risultato specifico con lavoro prevalente sulla materia." },
     { type: "p", text: "Tradotto sul caso cucina: se hai scelto moduli a catalogo che il rivenditore ha accostato e montato con lavorazioni standard, prevale il dare ed è vendita. Se invece il tecnico ha rilevato le misure in loco, il progetto è stato disegnato su quel vano specifico e alcuni elementi sono stati realizzati appositamente — tagli fuori misura, basi fuori serie, top sagomato — prevale il fare e sei nell'appalto (art. 1655 c.c.). Gli indizi si pesano nel complesso: rilievo misure, progetto personalizzato, entità delle lavorazioni dedicate." },
+    { type: "figure", slot: "cucina-su-misura-difettosa-1", alt: "Cucina appena consegnata con basi che non entrano nel vano murario", caption: "Se il rilievo delle misure lo ha fatto il tecnico del venditore, l'errore dimensionale è suo." },
+
     { type: "h2", text: "Cosa cambia tra vendita e appalto: la tabella", id: "tabella" },
     { type: "p", text: "La tabella riassume le differenze operative tra i due inquadramenti, ipotizzando — come è la regola in questi acquisti — che il cliente sia un consumatore." },
     { type: "table", headers: ["Aspetto", "Vendita al consumatore (artt. 128 e ss. Cod. cons.)", "Appalto (artt. 1655, 1667, 1668 c.c.)"], rows: [
@@ -69,10 +71,19 @@ export const article: Article = {
       "Se il venditore non risponde, valuta la mediazione o l'azione giudiziale: nella vendita al consumatore la prescrizione è di 26 mesi dalla consegna, nell'appalto di 2 anni dalla consegna dell'opera",
     ] },
 
+    { type: "figure", slot: "cucina-su-misura-difettosa-2", alt: "Documento di trasporto firmato con la riserva scritta a mano", caption: "Trenta secondi di annotazione alla consegna valgono più di mesi di contestazioni successive." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Cucina ordinata per 18.400 euro, acconto di 6.000, rilievo delle misure eseguito dal tecnico del rivenditore. Alla consegna: due basi non entrano perché il vano è più stretto di quanto rilevato, il top in pietra arriva con una crepa nell'angolo del lavello, la cappa è di un modello diverso da quello indicato nell'ordine. Il cliente scrive a mano sul documento di trasporto \"consegna accettata con riserva per difformità di misura, top danneggiato e cappa diversa dall'ordine\" e fotografa tutto: trenta secondi che valgono migliaia di euro." },
     { type: "p", text: "La qualificazione: rilievo in loco del tecnico, progetto disegnato su quel vano, elementi su misura — prevale il fare, è appalto. Le misure sbagliate sono un errore del venditore, che non può pretendere un supplemento per rifare le basi. Il bivio: se il complesso dei difetti rende la cucina inidonea allo scopo, la strada dell'art. 1668, comma 2, c.c. consente di chiedere la risoluzione e la restituzione dei 6.000 euro di acconto, oltre al danno; se invece i difetti sono rimediabili, conviene pretendere per iscritto un piano di ripristino con date, tenendosi pronta la riduzione del prezzo. Fosse stata una composizione di moduli a catalogo, il percorso sarebbe passato dalla gerarchia dei rimedi del Codice del consumo: prima sostituzione delle basi e del top, poi — solo in caso di fallimento — riduzione o risoluzione." },
     { type: "note", text: "L'errore da non fare: firmare la bolla di consegna senza riserve e contestare a voce nei giorni successivi. La sottoscrizione senza riserve di ciò che era visibile rende molto più difficile contestarlo dopo, e le telefonate non lasciano traccia. Lo scenario descritto è un caso illustrativo: l'esito concreto dipende dai documenti e dalle circostanze specifiche." },
+
+    { type: "timeline", title: "Termini diversi secondo la natura del contratto", steps: [
+      { when: "Consegna", label: "Momento della verifica", detail: "Non firmare senza riserve ciò che è visibilmente difforme." },
+      { when: "8 giorni", label: "Se è vendita di moduli a catalogo", detail: "Denuncia dei vizi ex art. 1495 c.c., azione entro un anno." },
+      { when: "60 giorni", label: "Se è appalto: progetto su misura per quel vano", detail: "Denuncia ex art. 1667 c.c., azione entro due anni." },
+      { when: "Se sei un consumatore", label: "Gerarchia dei rimedi", detail: "Prima riparazione o sostituzione, poi riduzione del prezzo o risoluzione." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

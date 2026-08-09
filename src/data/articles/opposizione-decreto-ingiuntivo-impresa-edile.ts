@@ -37,6 +37,8 @@ export const article: Article = {
     { type: "p", text: "Se i 40 giorni passano senza opposizione, il giudice dichiara il decreto esecutivo ai sensi dell'art. 647 c.p.c. e la partita nel merito è chiusa: il decreto diventa definitivo come una sentenza passata in giudicato, e non potrai più far valere vizi, lavori incompleti o importi gonfiati. L'impresa potrà iscrivere ipoteca sulla casa e procedere con il pignoramento. I rimedi tardivi — come l'opposizione ex art. 650 c.p.c. per chi non ha avuto conoscenza del decreto per irregolarità della notifica o caso fortuito — coprono ipotesi eccezionali e vanno provati: non sono una seconda occasione per chi ha semplicemente aspettato." },
     { type: "p", text: "La conseguenza pratica è una sola: dal giorno della notifica, ogni giorno conta. La decisione se opporsi o trattare va costruita nelle prime due o tre settimane, non all'ultimo momento, perché l'atto di opposizione è una citazione da redigere, notificare e iscrivere a ruolo nei termini." },
 
+    { type: "figure", slot: "opposizione-decreto-ingiuntivo-impresa-edile-1", alt: "Decreto ingiuntivo notificato, con la data di notifica cerchiata", caption: "Il termine di quaranta giorni è perentorio e decorre dalla notifica: non si riapre." },
+
     { type: "h2", text: "Il decreto è provvisoriamente esecutivo: cosa cambia per te?", id: "esecutivo" },
     { type: "p", text: "Prima di tutto leggi il decreto: se contiene la formula di provvisoria esecutorietà ex art. 642 c.p.c. — concessa spesso quando l'impresa ha fatture, SAL firmati o altra prova scritta forte — l'impresa non deve aspettare i 40 giorni né l'esito dell'opposizione: può iscrivere ipoteca giudiziale e avviare il pignoramento subito. In questo caso l'opposizione da sola non ferma nulla: serve anche l'istanza di sospensione dell'esecuzione, di cui parliamo più avanti." },
     { type: "p", text: "Se invece il decreto non è provvisoriamente esecutivo, l'opposizione proposta nei termini blocca la strada esecutiva: l'impresa potrà chiedere al giudice dell'opposizione l'esecuzione provvisoria in corso di causa (art. 648 c.p.c.), che viene concessa quando l'opposizione non è fondata su prova scritta o di pronta soluzione. Anche per questo la qualità dell'opposizione conta: un'opposizione generica, senza documenti né quantificazioni, non solo perde nel merito ma consegna all'impresa l'esecutorietà già alla prima udienza." },
@@ -73,11 +75,21 @@ export const article: Article = {
       ["Notifica irregolare o decreto mai conosciuto", "Opposizione tardiva ex art. 650 c.p.c.", "Ipotesi eccezionale: va provata l'irregolarità o il caso fortuito"],
     ] },
 
+    { type: "figure", slot: "opposizione-decreto-ingiuntivo-impresa-edile-2", alt: "Pavimento che suona a vuoto, verificato con battitura durante un sopralluogo", caption: "Quantificare i difetti con un preventivo di terzi è ciò che decide la strategia." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Una famiglia riceve un decreto ingiuntivo per 38.500 euro, provvisoriamente esecutivo, per il saldo di una ristrutturazione. I lavori, secondo loro, sono incompleti — mancano i battiscopa di tre stanze e la sistemazione del balcone — e difettosi: il pavimento della cucina suona a vuoto in più punti. Prima domanda: quanto vale la contestazione? Un preventivo di terzi quantifica il completamento in 2.100 euro e il rifacimento del pavimento in 6.800. Totale 8.900 euro a fronte di 38.500 richiesti: questo numero decide la strategia, perché un'opposizione su 8.900 euro non porta all'annullamento del decreto, porta a una riduzione." },
     { type: "p", text: "Seconda domanda: il decreto è esecutivo, quindi l'impresa può già procedere. L'istanza di sospensione ex art. 649 c.p.c. va depositata con l'opposizione, motivata sui gravi motivi: la contestazione documentata dei difetti e il rischio di un'esecuzione su somme in parte non dovute. Terza domanda, quella che cambia l'esito economico: nella stessa opposizione si propone domanda riconvenzionale per il costo di eliminazione dei vizi e per il completamento, così il giudizio compensa le due posizioni e l'esito plausibile è una condanna a una somma ridotta di quanto riconosciuto dovuto all'altra parte." },
     { type: "p", text: "Il bivio onesto, da mettere nero su bianco: opporsi per contestare 8.900 euro su 38.500 comporta spese legali e tecniche e anni di giudizio. In una situazione di questo tipo la trattativa transattiva — pagamento immediato di una somma ridotta, con rinuncia reciproca — è spesso la scelta economicamente migliore, e l'opposizione serve soprattutto come leva per ottenerla. Un avvocato che non lo dice al cliente gli sta facendo un danno." },
     { type: "note", text: "L'errore da non fare: lasciar passare i 40 giorni sperando in un accordo verbale con l'impresa. Il termine è perentorio e non si riapre: con la sua scadenza si perde ogni possibilità di far valere i difetti, e anche la trattativa muore, perché l'impresa non ha più nulla da temere. Lo scenario descritto è un caso illustrativo: l'esito concreto dipende sempre dai documenti e dalle circostanze specifiche." },
+
+    { type: "timeline", title: "I quaranta giorni", steps: [
+      { when: "Notifica del decreto", label: "Parte il termine perentorio", detail: "Da questo momento si contano i quaranta giorni." },
+      { when: "Primi giorni", label: "Quantificare la contestazione", detail: "Preventivo di terzi sui difetti: dice se conviene opporsi o trattare." },
+      { when: "Entro il 40° giorno", label: "Atto di citazione in opposizione", detail: "Con istanza di sospensione se il decreto è provvisoriamente esecutivo." },
+      { when: "Nello stesso atto", label: "Domanda riconvenzionale per i danni", detail: "Il giudizio compensa le due posizioni invece di limitarsi al pagamento." },
+      { when: "Oltre i 40 giorni", label: "Il decreto diventa definitivo", detail: "Non è più contestabile nel merito: è l'errore irreparabile." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

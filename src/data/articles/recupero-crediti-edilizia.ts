@@ -36,6 +36,8 @@ export const article: Article = {
     { type: "p", text: "Il mancato pagamento nel settore edile non è quasi mai un semplice ritardo: è un problema di sopravvivenza finanziaria a catena. L'impresa che non incassa il saldo deve comunque pagare operai, fornitori e contributi, e ogni settimana di attesa aumenta l'esposizione. Al tempo stesso, il credito dell'appaltatore ha caratteristiche proprie che lo distinguono da una normale fattura commerciale: nasce da un contratto d'appalto, matura per stati di avanzamento, ed è esposto a un'obiezione ricorrente — la contestazione dei vizi — che il committente usa spesso come pretesto per rinviare l'esborso." },
     { type: "p", text: "Per questo il recupero del credito edile non si riduce a \"mandare un sollecito e poi il decreto\". Prima di scegliere lo strumento va analizzato il fascicolo: quali documenti esistono, se ci sono contestazioni scritte, se il committente è capiente. Da questa analisi dipende non solo la strategia, ma anche la probabilità di ottenere l'esecutorietà immediata del decreto ingiuntivo." },
 
+    { type: "figure", slot: "recupero-crediti-edilizia-1", alt: "Fascicolo di cantiere aperto sulla scrivania: contratto d'appalto, SAL controfirmati e fatture", caption: "Il decreto ingiuntivo si vince qui: con i documenti raccolti durante il cantiere, non dopo." },
+
     { type: "h2", text: "Prima di tutto: che prove hai in mano?", id: "prove" },
     { type: "p", text: "La forza della posizione dell'impresa dipende quasi interamente dai documenti. La tabella che segue è un'autodiagnosi: più righe della colonna di sinistra sono presenti nel fascicolo, più il recupero è rapido." },
     { type: "table", headers: ["Documento nel fascicolo", "Cosa dimostra", "Effetto sul recupero"], rows: [
@@ -76,6 +78,8 @@ export const article: Article = {
     { type: "h2", text: "Se il committente è insolvente o fallito", id: "insolvenza" },
     { type: "p", text: "Se il committente entra in liquidazione giudiziale o in concordato, il recupero individuale si ferma e si passa all'insinuazione al passivo. I tempi si allungano e le percentuali di soddisfazione dipendono dall'attivo, ma la tempestività resta decisiva: chi si insinua correttamente e per tempo, con il credito ben documentato e le eventuali cause di prelazione fatte valere, si trova in posizione migliore. Anche qui vale la regola della capienza: prima di avviare qualunque azione conviene una verifica patrimoniale del debitore — visure immobiliari, protesti, altri cantieri in corso da cui potrebbe incassare." },
 
+    { type: "figure", slot: "recupero-crediti-edilizia-2", alt: "Verbale di fine lavori firmato dal committente senza riserve", caption: "Un verbale sottoscritto senza riserve rende molto più difficile eccepire vizi apparenti." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Un'impresa di ristrutturazioni con sei dipendenti chiude un cantiere da 41.200 euro. Il committente versa 18.000 euro in due acconti, poi contesta a voce \"lavori non a regola d'arte\" e smette di rispondere. Restano aperti 23.200 euro. Nel fascicolo ci sono: preventivo firmato, due SAL controfirmati, verbale di fine lavori sottoscritto senza riserve, nessuna contestazione scritta. È la configurazione che regge meglio, perché un verbale firmato senza riserve rende difficile eccepire vizi apparenti." },
     { type: "p", text: "Il percorso scelto: diffida con termine di quindici giorni e conteggio degli interessi di mora commerciali; alla scadenza, ricorso per decreto ingiuntivo con istanza di provvisoria esecutorietà, che con prova scritta di questo tipo viene normalmente concessa. Il bivio: se il committente propone opposizione, il giudizio di merito dura mediamente due o tre anni — ma il decreto provvisoriamente esecutivo consente già di iscrivere ipoteca giudiziale e avviare l'esecuzione. Se invece le contestazioni fossero state messe per iscritto durante il cantiere, la strategia sarebbe cambiata: prima un accertamento tecnico preventivo per consolidare la prova." },
@@ -87,6 +91,14 @@ export const article: Article = {
       ["Prescrizione del credito da appalto", "10 anni", "Dalla maturazione del credito (art. 2946 c.c.)"],
       ["Opposizione del debitore al decreto", "40 giorni", "Dalla notifica del decreto ingiuntivo"],
       ["Insinuazione tempestiva al passivo", "Termine fissato dal giudice", "Dalla sentenza di apertura della liquidazione giudiziale"],
+    ] },
+
+    { type: "timeline", title: "I termini del recupero credito", steps: [
+      { when: "Scadenza fattura", label: "Gli interessi di mora decorrono da soli", detail: "Interessi commerciali automatici ex D.lgs. 231/2002, senza bisogno di sollecito." },
+      { when: "15 giorni", label: "Termine della diffida", detail: "Conteggio analitico del credito e avvertimento che si procederà in via monitoria." },
+      { when: "Dopo la diffida", label: "Ricorso per decreto ingiuntivo", detail: "Con istanza di provvisoria esecutorietà ex art. 642 c.p.c." },
+      { when: "40 giorni dalla notifica", label: "Finestra di opposizione del debitore", detail: "Scaduta senza opposizione, il decreto diventa definitivo." },
+      { when: "10 anni", label: "Prescrizione del credito da appalto", detail: "Art. 2946 c.c., dalla maturazione del credito." },
     ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },

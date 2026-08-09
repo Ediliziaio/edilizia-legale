@@ -10,7 +10,15 @@ export type Block =
   | { type: "note"; text: string }
   | { type: "table"; headers: string[]; rows: string[][] }
   | { type: "faq"; items: { q: string; a: string }[] }
-  | { type: "image"; src: string; alt: string; caption?: string };
+  | { type: "image"; src: string; alt: string; caption?: string }
+  /**
+   * Immagine dell'articolo con slot sostituibile: finché in articleImages non
+   * c'è un percorso, mostra un segnaposto che descrive la foto da produrre.
+   * `alt` è anche il brief per chi la scatterà.
+   */
+  | { type: "figure"; slot: string; alt: string; caption?: string }
+  /** Sequenza di termini/passi con le scadenze: blocco molto estratto dai motori AI. */
+  | { type: "timeline"; title?: string; steps: { when: string; label: string; detail?: string }[] };
 
 export type Article = {
   slug: string;

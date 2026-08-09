@@ -43,6 +43,8 @@ export const article: Article = {
     ] },
     { type: "p", text: "Un correttivo esiste: l'art. 3, comma 3, del D.M. 30 gennaio 2015 stabilisce che uno scostamento non grave — pari o inferiore a 150 euro, comprensivo di sanzioni e interessi — non impedisce il rilascio del DURC regolare. Sopra quella soglia, però, l'importo del debito non conta più: 9.800 euro bloccano esattamente quanto 98.000." },
 
+    { type: "figure", slot: "durc-irregolare-1", alt: "Cantiere fermo con nastro di delimitazione e mezzi inattivi", caption: "Un debito contributivo modesto può bloccare SAL e gare per un valore molto superiore." },
+
     { type: "h2", text: "Il preavviso di accertamento negativo: quanto tempo hai davvero?", id: "preavviso-15-giorni" },
     { type: "p", text: "Il sistema non passa dal regolare al negativo senza avvisare. L'art. 4 del D.M. 30 gennaio 2015 impone all'ente che rileva l'irregolarità di inviare all'impresa — o al suo intermediario delegato — un invito a regolarizzare tramite PEC, assegnando un termine di quindici giorni. Solo se il termine scade senza esito il DURC viene emesso con esito negativo." },
     { type: "p", text: "Il problema è che quindici giorni di calendario si riducono in fretta. La PEC spesso viene letta con qualche giorno di ritardo; la verifica di ciò che è davvero dovuto richiede l'estratto conto e le denunce; il pagamento va eseguito con le causali corrette; la rateizzazione, se serve, ha un'istruttoria che non si chiude in un pomeriggio. Il tempo utile per decidere, in pratica, è la prima settimana." },
@@ -76,11 +78,20 @@ export const article: Article = {
     { type: "p", text: "Negli appalti pubblici la regolarità contributiva deve esistere al momento della presentazione della domanda e conservarsi per tutta la durata della procedura: la giurisprudenza amministrativa — a partire dalle pronunce dell'Adunanza Plenaria del Consiglio di Stato nn. 5 e 6 del 2016 — esclude che una regolarizzazione successiva possa sanare retroattivamente la posizione in gara. Tradotto: se al momento della domanda il DURC era negativo, pagare dopo non salva quella gara." },
     { type: "p", text: "Il preavviso di quindici giorni, però, vale anche qui, ed è decisivo per la nozione di violazione \"definitivamente accertata\" richiesta dall'art. 94, comma 6, del D.lgs. 36/2023: finché il termine per regolarizzare è pendente, l'accertamento non è definitivo. Le violazioni non definitivamente accertate ricadono invece nell'art. 95, comma 2, con margini di valutazione diversi. La conseguenza operativa è una sola: prima di ogni domanda di partecipazione, l'impresa dovrebbe verificare la propria posizione contributiva, perché scoprire l'anomalia dal provvedimento di esclusione significa scoprirla troppo tardi." },
 
+    { type: "figure", slot: "durc-irregolare-2", alt: "Preavviso di accertamento negativo con la data di ricezione in evidenza", caption: "Dal preavviso decorrono quindici giorni: è il termine che decide tutto." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Un'impresa edile con ventidue dipendenti riceve il preavviso di accertamento negativo per 9.800 euro di contributi Cassa Edile, riferiti a due mensilità di due anni prima. Nello stesso momento ha un SAL da 96.000 euro in liquidazione presso una stazione appaltante e una gara in corso di aggiudicazione da 1,4 milioni. La sproporzione è il punto: un debito di 9.800 euro sta tenendo in ostaggio quasi un milione e mezzo di valore." },
     { type: "p", text: "La verifica fatta nei primi due giorni cambia il quadro: 3.700 euro derivano da un bonifico imputato a un periodo sbagliato — versato, ma non abbinato — mentre 6.100 euro sono effettivamente dovuti. La strategia diventa doppia: contestazione documentale per la parte errata, con le contabili allegate, e pagamento della parte dovuta entro il decimo giorno, con comunicazione formale alla Cassa Edile prima della scadenza. Il DURC resta regolare, il SAL viene liquidato, la posizione in gara non viene toccata." },
     { type: "p", text: "Il bivio sta tutto nella prima settimana. Se l'impresa avesse pagato l'intero importo \"per chiudere\", avrebbe versato 3.700 euro non dovuti lasciando in piedi il disallineamento; se avesse lasciato scadere i quindici giorni confidando in una rateizzazione richiesta ma non ancora concessa, il DURC sarebbe diventato negativo: SAL fermo con intervento sostitutivo e violazione in via di consolidamento proprio durante l'aggiudicazione." },
     { type: "note", text: "L'errore da non fare: trattare la PEC del preavviso come una pratica ordinaria e affidarsi alla sola domanda di rateizzazione presentata a ridosso della scadenza. La rateizzazione rende regolari solo quando è concessa e in corso di regolare pagamento. Lo scenario descritto è illustrativo: l'esito concreto dipende sempre dai documenti e dalle circostanze specifiche." },
+
+    { type: "timeline", title: "I quindici giorni del DURC", steps: [
+      { when: "Giorno 0", label: "Arriva il preavviso di accertamento negativo", detail: "Gli enti devono invitare a regolarizzare prima di emettere un DURC irregolare." },
+      { when: "Entro 15 giorni", label: "Contestare, pagare o rateizzare", detail: "Prima verifica se l'importo è davvero dovuto: molte irregolarità sono errori di imputazione." },
+      { when: "Oltre i 15 giorni", label: "DURC negativo emesso", detail: "Blocca contemporaneamente i pagamenti degli appalti e la partecipazione alle gare." },
+      { when: "Dopo la sanatoria", label: "Nuova richiesta di DURC", detail: "Nel frattempo il SAL resta fermo e la gara è persa." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [

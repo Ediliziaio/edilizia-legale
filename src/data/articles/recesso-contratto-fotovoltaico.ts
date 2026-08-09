@@ -38,6 +38,8 @@ export const article: Article = {
     { type: "p", text: "La ragione della tutela è semplice: in quelle situazioni il cliente non ha potuto confrontare offerte né dormirci sopra. Per questo la legge concede un periodo di ripensamento in cui sciogliersi dal contratto senza motivare nulla e senza penali. Non serve dimostrare che l'impianto è difettoso: basta essere nei termini." },
     { type: "p", text: "Attenzione al perimetro: la tutela vale per i consumatori, cioè per chi firma per scopi estranei alla propria attività professionale. Un impianto per la casa rientra; un impianto per il capannone dell'azienda, di regola, no. E vale anche per i contratti conclusi interamente online o al telefono, che sono contratti a distanza a tutti gli effetti." },
 
+    { type: "figure", slot: "recesso-contratto-fotovoltaico-1", alt: "Plico contrattuale del fotovoltaico firmato in casa, senza modulo di recesso", caption: "La prima verifica non riguarda l'impianto: riguarda il plico e l'informativa sul recesso." },
+
     { type: "h2", text: "Quattordici giorni: ma da quando, e cosa doveva dirti il venditore?", id: "quattordici-giorni" },
     { type: "p", text: "Il termine ordinario è di quattordici giorni (art. 52 Cod. Cons.). Per i contratti che includono la fornitura di beni — i pannelli, l'inverter, l'accumulo — il termine decorre dalla consegna dei beni, non dalla firma. Per i contratti di soli servizi decorre dalla conclusione: se tra firma e consegna passano due mesi, la finestra si apre davvero solo alla consegna." },
     { type: "p", text: "Ma il punto decisivo è un altro: il venditore aveva l'obbligo di informarti del diritto di recesso prima della firma, in modo chiaro e comprensibile, indicando condizioni, termini e procedure e consegnando il modulo tipo di recesso (art. 49, comma 1, lett. h, Cod. Cons.). Questa informativa non è una formalità: è la condizione perché il termine di quattordici giorni inizi a decorrere. Nei plichi contrattuali del fotovoltaico porta a porta, sorprendentemente spesso, non c'è." },
@@ -74,11 +76,20 @@ export const article: Article = {
       "Conserva ricevute e risposte: se l'azienda non restituisce le somme entro 14 giorni o la finanziaria continua gli addebiti, si passa alla diffida legale",
     ] },
 
+    { type: "figure", slot: "recesso-contratto-fotovoltaico-2", alt: "Pannelli già installati sul tetto di un'abitazione", caption: "L'onere e il costo del ritiro dei beni restano a carico dell'azienda quando l'informativa mancava." },
+
     { type: "h2", text: "Un esempio concreto", id: "esempio" },
     { type: "p", text: "Un pensionato firma nel proprio salotto, dopo una visita commerciale non richiesta, un contratto per fotovoltaico e accumulo da 24.800 euro, finanziato con 144 rate da 172 euro. Nel plico ci sono il contratto, il piano finanziario e una brochure. Nessun modulo di recesso, nessuna informativa sui quattordici giorni. Sette mesi dopo l'impianto è installato, ma l'accumulo non è mai arrivato e la bolletta è calata di poco." },
     { type: "p", text: "La prima verifica non riguarda l'impianto: riguarda il plico. Il contratto è stato concluso fuori dai locali commerciali, quindi il Codice del Consumo si applica; l'informativa sul recesso manca, quindi il termine non è di quattordici giorni ma si estende fino a dodici mesi e quattordici giorni ex art. 53. A sette mesi dalla firma si è ampiamente nei termini. Il secondo effetto è quello che pesa di più: il recesso, comunicato anche alla finanziaria, scioglie il credito collegato e ferma le 137 rate residue. Il terzo punto scioglie l'obiezione classica: i pannelli già montati vanno ritirati a cura e spese dell'azienda, senza che il pensionato debba smontare o spedire nulla." },
     { type: "p", text: "Il bivio strategico, da valutare con onestà: se l'impianto funzionasse bene e il cliente volesse tenerlo, il recesso ancora esercitabile diventerebbe una leva negoziale — per ottenere l'accumulo mancante o uno sconto — invece che un azzeramento. Nel caso peggiore, azienda nel frattempo liquidata, il collegamento con il finanziamento resta la strada principale: la finanziaria è un soggetto solvibile, e la sorte del suo credito dipende da quella del contratto principale." },
     { type: "note", text: "L'errore da non fare: continuare a pagare le rate in silenzio \"finché non si chiarisce\", senza mai formalizzare nulla per iscritto. Ogni mese che passa consuma il termine dei dodici mesi, e il recesso non esercitato non produce alcun effetto. Lo scenario descritto è un caso illustrativo: l'esito concreto dipende dai documenti e dalle circostanze specifiche." },
+
+    { type: "timeline", title: "Quanto tempo hai davvero", steps: [
+      { when: "Firma del contratto", label: "Fuori dai locali commerciali", detail: "Vale il Codice del Consumo: casa, fiera, o a distanza." },
+      { when: "14 giorni", label: "Recesso ordinario senza motivazione", detail: "Se l'informativa sul diritto di recesso è stata fornita correttamente." },
+      { when: "12 mesi e 14 giorni", label: "Se l'informativa mancava", detail: "Il termine si estende, anche a impianto già installato." },
+      { when: "Contestualmente", label: "Comunicazione anche alla finanziaria", detail: "Il finanziamento è collegato: se cade il contratto, cadono le rate." },
+    ] },
 
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [
