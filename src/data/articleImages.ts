@@ -12,239 +12,239 @@
 export const articleImages: Record<string, string | null> = {
   // recupero-crediti-edilizia
   // Copertina — Fascicolo di cantiere aperto sulla scrivania: contratto d'appalto, SAL controfirmati e fatture
-  "recupero-crediti-edilizia-cover": null,
+  "recupero-crediti-edilizia-cover": "/images/guide/recupero-crediti-edilizia-cover.webp",
   // Fascicolo di cantiere aperto sulla scrivania: contratto d'appalto, SAL controfirmati e fatture
-  "recupero-crediti-edilizia-1": null,
+  "recupero-crediti-edilizia-1": "/images/guide/recupero-crediti-edilizia-1.webp",
   // Verbale di fine lavori firmato dal committente senza riserve
-  "recupero-crediti-edilizia-2": null,
+  "recupero-crediti-edilizia-2": "/images/guide/recupero-crediti-edilizia-2.webp",
 
   // difetti-costruttivi-casa-nuova
   // Copertina — Crepa su una parete perimetrale di un appartamento nuovo, con macchia di umidità
-  "difetti-costruttivi-casa-nuova-cover": null,
+  "difetti-costruttivi-casa-nuova-cover": "/images/guide/difetti-costruttivi-casa-nuova-cover.webp",
   // Crepa su una parete perimetrale di un appartamento nuovo, con macchia di umidità
-  "difetti-costruttivi-casa-nuova-1": null,
+  "difetti-costruttivi-casa-nuova-1": "/images/guide/difetti-costruttivi-casa-nuova-1.webp",
   // Tecnico che esegue un rilievo con termocamera in un appartamento
-  "difetti-costruttivi-casa-nuova-2": null,
+  "difetti-costruttivi-casa-nuova-2": "/images/guide/difetti-costruttivi-casa-nuova-2.webp",
 
   // annullare-contratto-impresa-edile
   // Copertina — Contratto di ristrutturazione firmato sul tavolo di casa, con il plico dei documenti
-  "annullare-contratto-impresa-edile-cover": null,
+  "annullare-contratto-impresa-edile-cover": "/images/guide/annullare-contratto-impresa-edile-cover.webp",
   // Contratto di ristrutturazione firmato sul tavolo di casa, con il plico dei documenti
-  "annullare-contratto-impresa-edile-1": null,
+  "annullare-contratto-impresa-edile-1": "/images/guide/annullare-contratto-impresa-edile-1.webp",
   // Appartamento vuoto prima dell'inizio dei lavori
-  "annullare-contratto-impresa-edile-2": null,
+  "annullare-contratto-impresa-edile-2": "/images/guide/annullare-contratto-impresa-edile-2.webp",
 
   // accertamento-superbonus-imprese
   // Copertina — Ponteggio su un condominio con cappotto termico in lavorazione
-  "accertamento-superbonus-imprese-cover": null,
+  "accertamento-superbonus-imprese-cover": "/images/guide/accertamento-superbonus-imprese-cover.webp",
   // Ponteggio su un condominio con cappotto termico in lavorazione
-  "accertamento-superbonus-imprese-1": null,
+  "accertamento-superbonus-imprese-1": "/images/guide/accertamento-superbonus-imprese-1.webp",
   // Atto di recupero dell'Agenzia delle Entrate con la data di notifica in evidenza
-  "accertamento-superbonus-imprese-2": null,
+  "accertamento-superbonus-imprese-2": "/images/guide/accertamento-superbonus-imprese-2.webp",
 
   // contratto-appalto-impresa
   // Copertina — Contratto d'appalto sul tavolo, penna appoggiata sulla pagina delle clausole
-  "contratto-appalto-impresa-cover": null,
+  "contratto-appalto-impresa-cover": "/images/guide/contratto-appalto-impresa-cover.webp",
   // Contratto d'appalto sul tavolo, penna appoggiata sulla pagina delle clausole
-  "contratto-appalto-impresa-1": null,
+  "contratto-appalto-impresa-1": "/images/guide/contratto-appalto-impresa-1.webp",
   // Due contratti a confronto, uno generico e uno con le clausole di tutela evidenziate
-  "contratto-appalto-impresa-2": null,
+  "contratto-appalto-impresa-2": "/images/guide/contratto-appalto-impresa-2.webp",
 
   // impresa-sparita-cantiere-abbandonato
   // Copertina — Cantiere domestico abbandonato: impianti a metà, materiali fermi, nessun operaio
-  "impresa-sparita-cantiere-abbandonato-cover": null,
+  "impresa-sparita-cantiere-abbandonato-cover": "/images/guide/impresa-sparita-cantiere-abbandonato-cover.webp",
   // Cantiere domestico abbandonato: impianti a metà, materiali fermi, nessun operaio
-  "impresa-sparita-cantiere-abbandonato-1": null,
+  "impresa-sparita-cantiere-abbandonato-1": "/images/guide/impresa-sparita-cantiere-abbandonato-1.webp",
   // Tecnico che redige il rilievo dello stato dei luoghi con macchina fotografica e metro
-  "impresa-sparita-cantiere-abbandonato-2": null,
+  "impresa-sparita-cantiere-abbandonato-2": "/images/guide/impresa-sparita-cantiere-abbandonato-2.webp",
 
   // sal-non-pagato
   // Copertina — Cantiere con lavorazioni a metà e materiali accatastati, fermo
-  "sal-non-pagato-cover": null,
+  "sal-non-pagato-cover": "/images/guide/sal-non-pagato-cover.webp",
   // Cantiere con lavorazioni a metà e materiali accatastati, fermo
-  "sal-non-pagato-1": null,
+  "sal-non-pagato-1": "/images/guide/sal-non-pagato-1.webp",
   // PEC di costituzione in mora stampata, con il termine evidenziato
-  "sal-non-pagato-2": null,
+  "sal-non-pagato-2": "/images/guide/sal-non-pagato-2.webp",
 
   // subappaltatore-non-pagato
   // Copertina — Struttura metallica montata in cantiere da un'impresa subappaltatrice
-  "subappaltatore-non-pagato-cover": null,
+  "subappaltatore-non-pagato-cover": "/images/guide/subappaltatore-non-pagato-cover.webp",
   // Struttura metallica montata in cantiere da un'impresa subappaltatrice
-  "subappaltatore-non-pagato-1": null,
+  "subappaltatore-non-pagato-1": "/images/guide/subappaltatore-non-pagato-1.webp",
   // Contratto di subappalto aperto sulla clausola dei pagamenti
-  "subappaltatore-non-pagato-2": null,
+  "subappaltatore-non-pagato-2": "/images/guide/subappaltatore-non-pagato-2.webp",
 
   // committente-contesta-i-lavori
   // Copertina — Dettaglio di una finitura contestata, con metro e livella appoggiati
-  "committente-contesta-i-lavori-cover": null,
+  "committente-contesta-i-lavori-cover": "/images/guide/committente-contesta-i-lavori-cover.webp",
   // Dettaglio di una finitura contestata, con metro e livella appoggiati
-  "committente-contesta-i-lavori-1": null,
+  "committente-contesta-i-lavori-1": "/images/guide/committente-contesta-i-lavori-1.webp",
   // Verbale di consegna dei lavori firmato, in primo piano la riga delle riserve
-  "committente-contesta-i-lavori-2": null,
+  "committente-contesta-i-lavori-2": "/images/guide/committente-contesta-i-lavori-2.webp",
 
   // durc-irregolare
   // Copertina — Cantiere fermo con nastro di delimitazione e mezzi inattivi
-  "durc-irregolare-cover": null,
+  "durc-irregolare-cover": "/images/guide/durc-irregolare-cover.webp",
   // Cantiere fermo con nastro di delimitazione e mezzi inattivi
-  "durc-irregolare-1": null,
+  "durc-irregolare-1": "/images/guide/durc-irregolare-1.webp",
   // Preavviso di accertamento negativo con la data di ricezione in evidenza
-  "durc-irregolare-2": null,
+  "durc-irregolare-2": "/images/guide/durc-irregolare-2.webp",
 
   // varianti-in-corso-opera
   // Copertina — Direttore dei lavori e capocantiere davanti a una traccia aperta nel muro
-  "varianti-in-corso-opera-cover": null,
+  "varianti-in-corso-opera-cover": "/images/guide/varianti-in-corso-opera-cover.webp",
   // Direttore dei lavori e capocantiere davanti a una traccia aperta nel muro
-  "varianti-in-corso-opera-1": null,
+  "varianti-in-corso-opera-1": "/images/guide/varianti-in-corso-opera-1.webp",
   // Giornale dei lavori aperto, con l'annotazione della lavorazione e la firma del DL
-  "varianti-in-corso-opera-2": null,
+  "varianti-in-corso-opera-2": "/images/guide/varianti-in-corso-opera-2.webp",
 
   // ritenuta-a-garanzia
   // Copertina — Registro dei SAL con le trattenute evidenziate cantiere per cantiere
-  "ritenuta-a-garanzia-cover": null,
+  "ritenuta-a-garanzia-cover": "/images/guide/ritenuta-a-garanzia-cover.webp",
   // Registro dei SAL con le trattenute evidenziate cantiere per cantiere
-  "ritenuta-a-garanzia-1": null,
+  "ritenuta-a-garanzia-1": "/images/guide/ritenuta-a-garanzia-1.webp",
   // Calendario con le date di fine garanzia dei cantieri chiusi
-  "ritenuta-a-garanzia-2": null,
+  "ritenuta-a-garanzia-2": "/images/guide/ritenuta-a-garanzia-2.webp",
 
   // reverse-charge-edilizia
   // Copertina — Fatture di subappalto impilate sulla scrivania di un ufficio tecnico
-  "reverse-charge-edilizia-cover": null,
+  "reverse-charge-edilizia-cover": "/images/guide/reverse-charge-edilizia-cover.webp",
   // Fatture di subappalto impilate sulla scrivania di un ufficio tecnico
-  "reverse-charge-edilizia-1": null,
+  "reverse-charge-edilizia-1": "/images/guide/reverse-charge-edilizia-1.webp",
   // Cantiere misto con prestazioni di servizi e forniture con posa in opera
-  "reverse-charge-edilizia-2": null,
+  "reverse-charge-edilizia-2": "/images/guide/reverse-charge-edilizia-2.webp",
 
   // opposizione-decreto-ingiuntivo-impresa-edile
   // Copertina — Decreto ingiuntivo notificato, con la data di notifica cerchiata
-  "opposizione-decreto-ingiuntivo-impresa-edile-cover": null,
+  "opposizione-decreto-ingiuntivo-impresa-edile-cover": "/images/guide/opposizione-decreto-ingiuntivo-impresa-edile-cover.webp",
   // Decreto ingiuntivo notificato, con la data di notifica cerchiata
-  "opposizione-decreto-ingiuntivo-impresa-edile-1": null,
+  "opposizione-decreto-ingiuntivo-impresa-edile-1": "/images/guide/opposizione-decreto-ingiuntivo-impresa-edile-1.webp",
   // Pavimento che suona a vuoto, verificato con battitura durante un sopralluogo
-  "opposizione-decreto-ingiuntivo-impresa-edile-2": null,
+  "opposizione-decreto-ingiuntivo-impresa-edile-2": "/images/guide/opposizione-decreto-ingiuntivo-impresa-edile-2.webp",
 
   // preventivo-sforato
   // Copertina — Preventivo e fattura finale affiancati, con le voci divergenti evidenziate
-  "preventivo-sforato-cover": null,
+  "preventivo-sforato-cover": "/images/guide/preventivo-sforato-cover.webp",
   // Preventivo e fattura finale affiancati, con le voci divergenti evidenziate
-  "preventivo-sforato-1": null,
+  "preventivo-sforato-1": "/images/guide/preventivo-sforato-1.webp",
   // Ristrutturazione in corso in un appartamento, con lavorazioni aggiuntive in vista
-  "preventivo-sforato-2": null,
+  "preventivo-sforato-2": "/images/guide/preventivo-sforato-2.webp",
 
   // ritardo-consegna-lavori
   // Copertina — Calendario di cantiere con la data di consegna pattuita superata
-  "ritardo-consegna-lavori-cover": null,
+  "ritardo-consegna-lavori-cover": "/images/guide/ritardo-consegna-lavori-cover.webp",
   // Calendario di cantiere con la data di consegna pattuita superata
-  "ritardo-consegna-lavori-1": null,
+  "ritardo-consegna-lavori-1": "/images/guide/ritardo-consegna-lavori-1.webp",
   // Cronoprogramma dei lavori con le sospensioni annotate
-  "ritardo-consegna-lavori-2": null,
+  "ritardo-consegna-lavori-2": "/images/guide/ritardo-consegna-lavori-2.webp",
 
   // infissi-montati-male
   // Copertina — Condensa e muffa sul contorno murario di una finestra nuova
-  "infissi-montati-male-cover": null,
+  "infissi-montati-male-cover": "/images/guide/infissi-montati-male-cover.webp",
   // Condensa e muffa sul contorno murario di una finestra nuova
-  "infissi-montati-male-1": null,
+  "infissi-montati-male-1": "/images/guide/infissi-montati-male-1.webp",
   // Termografia di un nodo di posa che evidenzia le dispersioni
-  "infissi-montati-male-2": null,
+  "infissi-montati-male-2": "/images/guide/infissi-montati-male-2.webp",
 
   // fotovoltaico-non-produce
   // Copertina — Impianto fotovoltaico su tetto a falda, con ombreggiamento parziale del camino
-  "fotovoltaico-non-produce-cover": null,
+  "fotovoltaico-non-produce-cover": "/images/guide/fotovoltaico-non-produce-cover.webp",
   // Impianto fotovoltaico su tetto a falda, con ombreggiamento parziale del camino
-  "fotovoltaico-non-produce-1": null,
+  "fotovoltaico-non-produce-1": "/images/guide/fotovoltaico-non-produce-1.webp",
   // Macchia di infiltrazione sul soffitto della mansarda in corrispondenza dei fissaggi
-  "fotovoltaico-non-produce-2": null,
+  "fotovoltaico-non-produce-2": "/images/guide/fotovoltaico-non-produce-2.webp",
 
   // recesso-contratto-fotovoltaico
   // Copertina — Plico contrattuale del fotovoltaico firmato in casa, senza modulo di recesso
-  "recesso-contratto-fotovoltaico-cover": null,
+  "recesso-contratto-fotovoltaico-cover": "/images/guide/recesso-contratto-fotovoltaico-cover.webp",
   // Plico contrattuale del fotovoltaico firmato in casa, senza modulo di recesso
-  "recesso-contratto-fotovoltaico-1": null,
+  "recesso-contratto-fotovoltaico-1": "/images/guide/recesso-contratto-fotovoltaico-1.webp",
   // Pannelli già installati sul tetto di un'abitazione
-  "recesso-contratto-fotovoltaico-2": null,
+  "recesso-contratto-fotovoltaico-2": "/images/guide/recesso-contratto-fotovoltaico-2.webp",
 
   // cappotto-termico-difettoso
   // Copertina — Distacco della rasatura di un cappotto termico su un prospetto condominiale
-  "cappotto-termico-difettoso-cover": null,
+  "cappotto-termico-difettoso-cover": "/images/guide/cappotto-termico-difettoso-cover.webp",
   // Distacco della rasatura di un cappotto termico su un prospetto condominiale
-  "cappotto-termico-difettoso-1": null,
+  "cappotto-termico-difettoso-1": "/images/guide/cappotto-termico-difettoso-1.webp",
   // Frammenti di intonaco caduti sul marciapiede sotto la facciata
-  "cappotto-termico-difettoso-2": null,
+  "cappotto-termico-difettoso-2": "/images/guide/cappotto-termico-difettoso-2.webp",
 
   // cucina-su-misura-difettosa
   // Copertina — Cucina appena consegnata con basi che non entrano nel vano murario
-  "cucina-su-misura-difettosa-cover": null,
+  "cucina-su-misura-difettosa-cover": "/images/guide/cucina-su-misura-difettosa-cover.webp",
   // Cucina appena consegnata con basi che non entrano nel vano murario
-  "cucina-su-misura-difettosa-1": null,
+  "cucina-su-misura-difettosa-1": "/images/guide/cucina-su-misura-difettosa-1.webp",
   // Documento di trasporto firmato con la riserva scritta a mano
-  "cucina-su-misura-difettosa-2": null,
+  "cucina-su-misura-difettosa-2": "/images/guide/cucina-su-misura-difettosa-2.webp",
 
   // terrazzo-infiltrazioni
   // Copertina — Macchia di umidità sul soffitto dell'appartamento sotto una terrazza a livello
-  "terrazzo-infiltrazioni-cover": null,
+  "terrazzo-infiltrazioni-cover": "/images/guide/terrazzo-infiltrazioni-cover.webp",
   // Macchia di umidità sul soffitto dell'appartamento sotto una terrazza a livello
-  "terrazzo-infiltrazioni-1": null,
+  "terrazzo-infiltrazioni-1": "/images/guide/terrazzo-infiltrazioni-1.webp",
   // Guaina impermeabilizzante con raccordo non risvoltato in corrispondenza della soglia
-  "terrazzo-infiltrazioni-2": null,
+  "terrazzo-infiltrazioni-2": "/images/guide/terrazzo-infiltrazioni-2.webp",
 
   // pompa-di-calore-non-scalda
   // Copertina — Unità esterna di pompa di calore installata accanto a una villetta non isolata
-  "pompa-di-calore-non-scalda-cover": null,
+  "pompa-di-calore-non-scalda-cover": "/images/guide/pompa-di-calore-non-scalda-cover.webp",
   // Unità esterna di pompa di calore installata accanto a una villetta non isolata
-  "pompa-di-calore-non-scalda-1": null,
+  "pompa-di-calore-non-scalda-1": "/images/guide/pompa-di-calore-non-scalda-1.webp",
   // Materiale commerciale con la promessa di risparmio in bolletta
-  "pompa-di-calore-non-scalda-2": null,
+  "pompa-di-calore-non-scalda-2": "/images/guide/pompa-di-calore-non-scalda-2.webp",
 
   // piscina-difetti-costruttore
   // Copertina — Piscina interrata in cemento armato con fessurazione verticale sulla parete
-  "piscina-difetti-costruttore-cover": null,
+  "piscina-difetti-costruttore-cover": "/images/guide/piscina-difetti-costruttore-cover.webp",
   // Piscina interrata in cemento armato con fessurazione verticale sulla parete
-  "piscina-difetti-costruttore-1": null,
+  "piscina-difetti-costruttore-1": "/images/guide/piscina-difetti-costruttore-1.webp",
   // Test di tenuta con misurazione dell'abbassamento del livello dell'acqua
-  "piscina-difetti-costruttore-2": null,
+  "piscina-difetti-costruttore-2": "/images/guide/piscina-difetti-costruttore-2.webp",
 
   // differenza-1667-1669
   // Copertina — Parete di un soggiorno con una crepa verticale che attraversa l'intonaco dal soffitto al battiscopa, luce radente
-  "differenza-1667-1669-cover": null,
+  "differenza-1667-1669-cover": "/images/guide/differenza-1667-1669-cover.webp",
   // Parete di un soggiorno con una crepa verticale che attraversa l'intonaco dal soffitto al battiscopa, luce radente
-  "differenza-1667-1669-1": null,
+  "differenza-1667-1669-1": "/images/guide/differenza-1667-1669-1.webp",
   // Tecnico con termocamera e taccuino rileva una macchia di umidità sul soffitto di una camera da letto
-  "differenza-1667-1669-2": null,
+  "differenza-1667-1669-2": "/images/guide/differenza-1667-1669-2.webp",
 
   // quanto-costa-causa-costruttore
   // Copertina — Scrivania con un preventivo legale dettagliato per fasi, una calcolatrice e il fascicolo di una perizia tecnica
-  "quanto-costa-causa-costruttore-cover": null,
+  "quanto-costa-causa-costruttore-cover": "/images/guide/quanto-costa-causa-costruttore-cover.webp",
   // Scrivania con un preventivo legale dettagliato per fasi, una calcolatrice e il fascicolo di una perizia tecnica
-  "quanto-costa-causa-costruttore-1": null,
+  "quanto-costa-causa-costruttore-1": "/images/guide/quanto-costa-causa-costruttore-1.webp",
   // Computo metrico stampato con le voci di ripristino di una copertura, evidenziate con marcatore
-  "quanto-costa-causa-costruttore-2": null,
+  "quanto-costa-causa-costruttore-2": "/images/guide/quanto-costa-causa-costruttore-2.webp",
 
   // accertamento-tecnico-preventivo
   // Copertina — Sopralluogo peritale in un appartamento: consulente con metro laser e macchina fotografica, due tecnici di parte prendono appunti
-  "accertamento-tecnico-preventivo-cover": null,
+  "accertamento-tecnico-preventivo-cover": "/images/guide/accertamento-tecnico-preventivo-cover.webp",
   // Sopralluogo peritale in un appartamento: consulente con metro laser e macchina fotografica, due tecnici di parte prendono appunti
-  "accertamento-tecnico-preventivo-1": null,
+  "accertamento-tecnico-preventivo-1": "/images/guide/accertamento-tecnico-preventivo-1.webp",
   // Saggio esplorativo su un solaio: porzione di massetto rimossa che mostra la stratigrafia e la guaina impermeabilizzante
-  "accertamento-tecnico-preventivo-2": null,
+  "accertamento-tecnico-preventivo-2": "/images/guide/accertamento-tecnico-preventivo-2.webp",
 
   // superbonus-recupero-agenzia-privato
   // Copertina — Busta dell'Agenzia delle Entrate aperta sul tavolo di casa accanto al fascicolo dei lavori e alle asseverazioni
-  "superbonus-recupero-agenzia-privato-cover": null,
+  "superbonus-recupero-agenzia-privato-cover": "/images/guide/superbonus-recupero-agenzia-privato-cover.webp",
   // Busta dell'Agenzia delle Entrate aperta sul tavolo di casa accanto al fascicolo dei lavori e alle asseverazioni
-  "superbonus-recupero-agenzia-privato-1": null,
+  "superbonus-recupero-agenzia-privato-1": "/images/guide/superbonus-recupero-agenzia-privato-1.webp",
   // Tabella comparativa stampata con le date delle asseverazioni, delle fatture e dei bonifici affiancate
-  "superbonus-recupero-agenzia-privato-2": null,
+  "superbonus-recupero-agenzia-privato-2": "/images/guide/superbonus-recupero-agenzia-privato-2.webp",
 
   // ordinanza-demolizione-cosa-fare
   // Copertina — Ordinanza comunale di demolizione con la relata di notifica in evidenza, accanto a un calendario
-  "ordinanza-demolizione-cosa-fare-cover": null,
+  "ordinanza-demolizione-cosa-fare-cover": "/images/guide/ordinanza-demolizione-cosa-fare-cover.webp",
   // Ordinanza comunale di demolizione con la relata di notifica in evidenza, accanto a un calendario
-  "ordinanza-demolizione-cosa-fare-1": null,
+  "ordinanza-demolizione-cosa-fare-1": "/images/guide/ordinanza-demolizione-cosa-fare-1.webp",
   // Tecnico che misura una veranda chiusa confrontando il rilievo con i grafici allegati al permesso di costruire
-  "ordinanza-demolizione-cosa-fare-2": null,
+  "ordinanza-demolizione-cosa-fare-2": "/images/guide/ordinanza-demolizione-cosa-fare-2.webp",
 
   // iscrizione-riserve-appalto
   // Copertina — Registro di contabilità di cantiere aperto con la firma dell'impresa e l'annotazione manoscritta con riserva
-  "iscrizione-riserve-appalto-cover": null,
+  "iscrizione-riserve-appalto-cover": "/images/guide/iscrizione-riserve-appalto-cover.webp",
   // Registro di contabilità di cantiere aperto con la firma dell'impresa e l'annotazione manoscritta con riserva
   "iscrizione-riserve-appalto-1": null,
   // Tavolo di cantiere con il conto finale, la memoria di quantificazione delle riserve e una calcolatrice

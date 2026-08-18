@@ -599,11 +599,13 @@ const Articolo = () => {
   const seo = getArticleSeo(slug);
   const seoTitle = seo?.seoTitle ?? `${article.title} | Edilizia Legale`;
   const seoDescription = seo?.metaDescription ?? article.excerpt;
-  const ogImage = article.coverImage
-    ? (article.coverImage.startsWith("http")
-        ? article.coverImage
-        : `https://www.edilizialegale.it${article.coverImage}`)
-    : "https://www.edilizialegale.it/og-image.png";
+  // Stessa copertina che finisce nello schema: prima lo slot collegato, poi il
+  // campo dell'articolo, e solo all'ultimo l'immagine di sito. Senza questo,
+  // ogni guida condivideva la stessa anteprima social.
+  const ogCover = getArticleImage(`${article.slug}-cover`) ?? article.coverImage;
+  const ogImage = ogCover
+    ? (ogCover.startsWith("http") ? ogCover : `${SITE_URL}${ogCover}`)
+    : `${SITE_URL}/og-image.png`;
 
   return (
     <>
