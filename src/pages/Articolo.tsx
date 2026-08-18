@@ -214,7 +214,9 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
       "url": "https://www.edilizialegale.it",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.edilizialegale.it/favicon.svg",
+        "url": "https://www.edilizialegale.it/brand/marchio-edilizia-legale.png",
+        "width": 388,
+        "height": 512,
       },
     },
     "datePublished": toISODate(article.date) ?? article.date,

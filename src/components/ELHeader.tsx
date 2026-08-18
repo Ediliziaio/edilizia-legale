@@ -18,13 +18,24 @@ const navItems = [
   { to: "/contatti", label: "Contatti" },
 ];
 
+/**
+ * Logo ufficiale: marchio a scudo (immagine) + marchio denominativo in testo.
+ * Il testo resta HTML perché il lockup completo, ridotto all'altezza di una
+ * barra di navigazione, rende il payoff illeggibile. Il lockup intero — con il
+ * payoff inciso — vive in /public/brand ed è usato per l'immagine social.
+ */
 export const ELLogo = ({ light = false }: { light?: boolean }) => (
   <span className="flex items-center gap-2.5">
-    <svg viewBox="0 0 64 64" className="w-10 h-10 md:w-11 md:h-11 shrink-0" aria-hidden="true">
-      <rect width="64" height="64" rx="12" fill={light ? "hsl(0 0% 100% / 0.1)" : "hsl(217 38% 27%)"} />
-      <path d="M14 46 L32 16 L50 46 Z" fill="none" stroke="hsl(45 90% 61%)" strokeWidth="4" strokeLinejoin="round" />
-      <rect x="26" y="36" width="12" height="10" fill="hsl(45 90% 61%)" />
-    </svg>
+    <img
+      src={light ? "/brand/marchio-edilizia-legale-chiaro.png" : "/brand/marchio-edilizia-legale.png"}
+      width={light ? 392 : 388}
+      height={512}
+      alt=""
+      aria-hidden="true"
+      className="h-11 md:h-12 w-auto shrink-0"
+      loading="eager"
+      decoding="async"
+    />
     <span className="leading-none text-left">
       <span className={`block font-heading font-extrabold text-xl md:text-2xl tracking-tight ${light ? "text-white" : "text-navy"}`}>
         Edilizia <span className={light ? "text-gold" : "text-gold-dark"}>Legale</span>
