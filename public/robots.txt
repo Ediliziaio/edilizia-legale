@@ -44,3 +44,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.edilizialegale.it/sitemap.xml
+
+# Indice dei contenuti per i motori generativi
+# https://www.edilizialegale.it/llms.txt

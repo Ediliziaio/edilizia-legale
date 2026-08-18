@@ -1,0 +1,51 @@
+# Immagini ancora da produrre — Edilizia Legale
+# 1600x900 px (16:9), WebP q82 o JPG q85, max 180 kB.
+# Soggetto nel rettangolo centrale: la copertina viene ritagliata anche 21:9 e 4:3.
+# Il nome del file deve essere ESATTAMENTE quello indicato.
+
+## COPERTINE (13)
+
+contratto-subappalto-clausole-cover.webp | Artigiano con il contratto di subappalto in mano davanti a un cantiere con ponteggi montati
+congruita-manodopera-durc-cover.webp | Cantiere edile con squadra di operai al lavoro e cartello di cantiere in primo piano
+sospensione-illegittima-lavori-cover.webp | Cantiere fermo con gru immobile e ponteggi montati, nessun operaio al lavoro
+vizi-appalto-condominiale-cover.webp | Facciata condominiale appena rifatta con distacchi di intonaco e macchie di umidità, con ponteggio smontato da poco
+polizza-decennale-postuma-cover.webp | Cartellina del rogito aperta sul tavolo con l'atto notarile e un fascicolo di polizza assicurativa allegato
+sconto-in-fattura-non-applicato-cover.webp | Contratto di appalto aperto sulla clausola dello sconto in fattura, accanto a una fattura emessa per l'intero importo
+tetto-rifatto-infiltrazioni-cover.webp | Falda di tetto rifatto vista dall'alto: manto in tegole, camino con risvolto della guaina e lucernario
+parquet-posato-male-cover.webp | Doghe di parquet sollevate al centro della stanza con fughe aperte e battiscopa staccato
+mediazione-obbligatoria-edilizia-cover.webp | Tavolo di mediazione con due parti sedute ai lati, i rispettivi avvocati e il mediatore al centro
+quanto-dura-causa-difetti-cover.webp | Fascicolo processuale voluminoso su una scrivania di tribunale, con faldoni e perizie tecniche
+contenzioso-ristrutturazione-cover.webp | Appartamento in ristrutturazione a lavori fermi: pavimento sventrato, tracce impiantistiche aperte nei muri e materiali accatastati
+contenzioso-serramenti-cover.webp | Dettaglio del nodo di posa di una finestra: telaio, controtelaio e nastro di tenuta interno interrotto in corrispondenza dell'angolo
+contenzioso-fotovoltaico-cover.webp | Tetto a falda in tegole con moduli fotovoltaici installati e staffe di fissaggio in vista, fotografato dall'alto in una giornata limpida
+
+## IMMAGINI INTERNE (28)
+
+iscrizione-riserve-appalto-1.webp | Registro di contabilità di cantiere aperto con la firma dell'impresa e l'annotazione manoscritta con riserva
+iscrizione-riserve-appalto-2.webp | Tavolo di cantiere con il conto finale, la memoria di quantificazione delle riserve e una calcolatrice
+contratto-subappalto-clausole-1.webp | Artigiano con il contratto di subappalto in mano davanti a un cantiere con ponteggi montati
+contratto-subappalto-clausole-2.webp | Pagina di contratto di subappalto con la clausola sui termini di pagamento evidenziata a pennarello
+congruita-manodopera-durc-1.webp | Cantiere edile con squadra di operai al lavoro e cartello di cantiere in primo piano
+congruita-manodopera-durc-2.webp | Scrivania con fatture di forniture, contratti di nolo e prospetto di calcolo della congruità della manodopera
+sospensione-illegittima-lavori-1.webp | Cantiere fermo con gru immobile e ponteggi montati, nessun operaio al lavoro
+sospensione-illegittima-lavori-2.webp | Verbale di sospensione dei lavori compilato con l'elenco dei mezzi e delle maestranze presenti in cantiere
+vizi-appalto-condominiale-1.webp | Facciata condominiale appena rifatta con distacchi di intonaco e macchie di umidità, con ponteggio smontato da poco
+vizi-appalto-condominiale-2.webp | Verbale di assemblea condominiale aperto sul punto relativo alla contestazione dei lavori, con la relazione tecnica allegata
+polizza-decennale-postuma-1.webp | Cartellina del rogito aperta sul tavolo con l'atto notarile e un fascicolo di polizza assicurativa allegato
+polizza-decennale-postuma-2.webp | Facciata di una palazzina recente con transenne e rete di protezione sotto un cornicione con intonaco distaccato
+sconto-in-fattura-non-applicato-1.webp | Contratto di appalto aperto sulla clausola dello sconto in fattura, accanto a una fattura emessa per l'intero importo
+sconto-in-fattura-non-applicato-2.webp | Facciata con cappotto termico posato solo su una porzione e ponteggio ancora montato
+tetto-rifatto-infiltrazioni-1.webp | Falda di tetto rifatto vista dall'alto: manto in tegole, camino con risvolto della guaina e lucernario
+tetto-rifatto-infiltrazioni-2.webp | Sottotetto con isolante bagnato e macchia di infiltrazione sul cartongesso, illuminato da una torcia
+parquet-posato-male-1.webp | Doghe di parquet sollevate al centro della stanza con fughe aperte e battiscopa staccato
+parquet-posato-male-2.webp | Tecnico che preleva un campione di massetto per la prova dell'umidità con il metodo al carburo di calcio
+mediazione-obbligatoria-edilizia-1.webp | Tavolo di mediazione con due parti sedute ai lati, i rispettivi avvocati e il mediatore al centro
+mediazione-obbligatoria-edilizia-2.webp | Verbale di mediazione sul tavolo con la relazione tecnica di parte e le fotografie dei difetti
+quanto-dura-causa-difetti-1.webp | Fascicolo processuale voluminoso su una scrivania di tribunale, con faldoni e perizie tecniche
+quanto-dura-causa-difetti-2.webp | Consulente tecnico d'ufficio che esegue un saggio su una parete durante un sopralluogo peritale, con i tecnici di parte presenti
+contenzioso-ristrutturazione-1.webp | Appartamento in ristrutturazione a lavori fermi: pavimento sventrato, tracce impiantistiche aperte nei muri e materiali accatastati
+contenzioso-ristrutturazione-2.webp | Tecnico con termocamera e umidimetro che documenta una macchia di infiltrazione sul soffitto di un bagno ristrutturato
+contenzioso-serramenti-1.webp | Dettaglio del nodo di posa di una finestra: telaio, controtelaio e nastro di tenuta interno interrotto in corrispondenza dell'angolo
+contenzioso-serramenti-2.webp | Immagine termografica di una finestra con la fascia fredda continua lungo il perimetro del telaio e l'angolo inferiore in evidenza
+contenzioso-fotovoltaico-1.webp | Tetto a falda in tegole con moduli fotovoltaici installati e staffe di fissaggio in vista, fotografato dall'alto in una giornata limpida
+contenzioso-fotovoltaico-2.webp | Schermata del portale di monitoraggio dell'inverter con il grafico della produzione mensile, affiancata al prospetto cartaceo di producibilità consegnato alla firma

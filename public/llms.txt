@@ -2,30 +2,91 @@
 
 > Studio legale italiano specializzato in diritto dell'edilizia. Assiste imprese
 > edili su appalti, subappalti, recupero crediti e contenzioso tributario, e
-> privati nei contenziosi con imprese di costruzione. Contenuti aggiornati alla
-> normativa vigente, con riferimenti al codice civile e al D.lgs. 36/2023.
+> privati nei contenziosi con imprese di costruzione. Le due parti non vengono
+> mai assistite nella stessa vicenda.
 
-## Imprese
-- [Recupero crediti edilizia](https://www.edilizialegale.it/guide/recupero-crediti-edilizia): strumenti per farsi pagare SAL, saldi e ritenute a garanzia
-- [Subappaltatore non pagato](https://www.edilizialegale.it/guide/subappaltatore-non-pagato): perché l'art. 1676 c.c. non spetta all'impresa e quali strumenti funzionano
-- [SAL non pagato](https://www.edilizialegale.it/guide/sal-non-pagato): quando è legittimo sospendere i lavori e con quale procedura
-- [Accertamenti Superbonus](https://www.edilizialegale.it/guide/accertamento-superbonus-imprese): difesa dell'impresa nel contenzioso sui crediti d'imposta
-- [DURC irregolare](https://www.edilizialegale.it/guide/durc-irregolare): sblocco di pagamenti e aggiudicazioni nei 15 giorni dal preavviso
-- [Varianti in corso d'opera](https://www.edilizialegale.it/guide/varianti-in-corso-opera): come farsi pagare i lavori extra ordinati a voce
-- [Contratto d'appalto](https://www.edilizialegale.it/guide/contratto-appalto-impresa): le dodici clausole che proteggono l'impresa
+> Ogni guida indica i termini di decadenza e prescrizione applicabili, i
+> riferimenti al codice civile e alla normativa vigente, e i passi concreti.
+> I contenuti sono firmati da un avvocato e aggiornati alla data indicata in
+> ciascuna pagina.
 
-## Privati
-- [Difetti costruttivi](https://www.edilizialegale.it/guide/difetti-costruttivi-casa-nuova): diritti e termini per chi ha comprato casa con vizi
-- [Annullare il contratto](https://www.edilizialegale.it/guide/annullare-contratto-impresa-edile): le cinque strade per sciogliere un contratto con un'impresa edile
-- [Impresa sparita](https://www.edilizialegale.it/guide/impresa-sparita-cantiere-abbandonato): i cinque passi quando il cantiere viene abbandonato
-- [Decreto ingiuntivo](https://www.edilizialegale.it/guide/opposizione-decreto-ingiuntivo-impresa-edile): opposizione entro 40 giorni
-- [Fotovoltaico che non produce](https://www.edilizialegale.it/guide/fotovoltaico-non-produce): cosa chiedere quando l'impianto rende meno del promesso
-- [Recesso fotovoltaico](https://www.edilizialegale.it/guide/recesso-contratto-fotovoltaico): contratti firmati a casa, fino a 12 mesi e 14 giorni per recedere
-- [Cappotto termico difettoso](https://www.edilizialegale.it/guide/cappotto-termico-difettoso): responsabilità di impresa, progettista e direttore dei lavori
+## Imprese — Imprese edili, appaltatori e subappaltatori
+- [Il cliente contesta i lavori per non pagare: come si smonta la contestazione pretestuosa](https://www.edilizialegale.it/guide/committente-contesta-i-lavori): Il committente trattiene il saldo lamentando difetti? Proporzionalità della ritenuta, decadenza per i vizi apparenti, termini di denuncia già scaduti: come si valuta e si smonta una contestazione pretestuosa.
+- [Congruità della manodopera: come si giustifica un'incongruenza](https://www.edilizialegale.it/guide/congruita-manodopera-durc): Il DURC di congruità verifica se il costo del lavoro denunciato in cantiere raggiunge l'incidenza minima di categoria. Quando scatta l'incongruenza e come si giustifica in quindici giorni.
+- [Il contratto d'appalto che protegge l'impresa: le dodici clausole che contano](https://www.edilizialegale.it/guide/contratto-appalto-impresa): A corpo o a misura, penale con tetto, collaudo con silenzio-assenso, varianti solo per iscritto, clausola risolutiva espressa: le dodici clausole che decidono chi sopporta i rischi del cantiere.
+- [Contratto di subappalto: le clausole che salvano l'artigiano](https://www.edilizialegale.it/guide/contratto-subappalto-clausole): Chi esegue il lavoro è l'ultimo a incassare e il primo a rischiare. Termini di pagamento certi, limiti al pay when paid, ritenute e penali speculari: le clausole da pretendere prima di firmare.
+- [DURC irregolare: come sbloccare pagamenti e gare prima che sia tardi](https://www.edilizialegale.it/guide/durc-irregolare): Hai ricevuto il preavviso di accertamento negativo? Hai quindici giorni per pagare, rateizzare o contestare. Cosa blocca davvero un DURC irregolare e come si regolarizza in tempo.
+- [Iscrizione delle riserve: come non perdere il diritto ai maggiori compensi](https://www.edilizialegale.it/guide/iscrizione-riserve-appalto): Nei lavori pubblici ogni pretesa va iscritta a riserva sul registro di contabilità, esplicitata e quantificata entro termini brevi. Chi firma senza riserva perde il diritto anche se ha ragione.
+- [Come recuperare un credito da un cliente che non paga i lavori](https://www.edilizialegale.it/guide/recupero-crediti-edilizia): Il committente non paga SAL, saldo o fatture? Diffida, decreto ingiuntivo con provvisoria esecutorietà, sequestro conservativo e privilegio dell'appaltatore: gli strumenti per farsi pagare i lavori edili, nell'ordine giusto.
+- [Ritenuta a garanzia non svincolata: come farsi restituire il 5% trattenuto](https://www.edilizialegale.it/guide/ritenuta-a-garanzia): Il committente trattiene il 5% a garanzia e non lo restituisce mai? La ritenuta è esigibile alla scadenza della garanzia contrattuale: come chiedere lo svincolo, da quando decorrono gli interessi e quando conviene la fideiussione.
+- [SAL non pagato: posso sospendere i lavori senza rischiare?](https://www.edilizialegale.it/guide/sal-non-pagato): Il committente non paga lo stato di avanzamento? Sospendere si può, ma solo con l'eccezione di inadempimento fatta bene: costituzione in mora, proporzionalità, buona fede. La procedura corretta passo per passo.
+- [Sospensione illegittima dei lavori: come si quantificano i maggiori oneri](https://www.edilizialegale.it/guide/sospensione-illegittima-lavori): Il cantiere è fermo per cause non imputabili all'impresa? I maggiori oneri si recuperano solo con un verbale completo e la riserva iscritta subito: le voci di danno riconosciute e come si provano.
+- [Subappaltatore non pagato: perché l'art. 1676 non ti serve e cosa funziona davvero](https://www.edilizialegale.it/guide/subappaltatore-non-pagato): L'appaltatore non ti paga? L'azione diretta dell'art. 1676 c.c. spetta ai dipendenti, non alla tua impresa: la Cassazione lo dice da anni. Gli strumenti veri: surrogatoria, sequestro conservativo, pagamento diretto nel pubblico.
+- [Lavori extra ordinati a voce dal direttore lavori: si possono farsi pagare?](https://www.edilizialegale.it/guide/varianti-in-corso-opera): L'art. 1659 c.c. chiede l'autorizzazione scritta per le varianti, ma messaggi, giornale dei lavori e comportamento del committente possono provare l'ordine verbale. Come farsi pagare i lavori extra.
+
+## Privati — Committenti, acquirenti e condòmini
+- [Accertamento tecnico preventivo: perché conviene farlo per primi](https://www.edilizialegale.it/guide/accertamento-tecnico-preventivo): Crepe o infiltrazioni da far accertare prima che qualcuno metta mano ai luoghi? Come funziona l'ATP ex art. 696 e 696-bis c.p.c., i quesiti da porre, costi, tempi e quando non conviene.
+- [Come annullare un contratto con un'azienda edile: le cinque strade e quale scegliere](https://www.edilizialegale.it/guide/annullare-contratto-impresa-edile): Recesso, ripensamento di 14 giorni, risoluzione per inadempimento, opera inadatta, annullamento: le cinque strade per sciogliere il contratto con l'impresa edile e i costi di ciascuna.
+- [Contenzioso da ristrutturazione: la mappa completa delle contestazioni](https://www.edilizialegale.it/guide/contenzioso-ristrutturazione): Lavori non finiti, vizi di esecuzione, preventivo sforato, ritardi, danni al condominio, opere difformi dal titolo: le sei famiglie di contestazione in una ristrutturazione, con la norma applicabile, il termine da rispettare e il rimedio che funziona davvero.
+- [Difetti costruttivi in una casa nuova: cosa puoi pretendere e quanto tempo hai](https://www.edilizialegale.it/guide/difetti-costruttivi-casa-nuova): Crepe, infiltrazioni, distacchi in una casa appena comprata? La garanzia dell'art. 1669 c.c. dura dieci anni, ma la denuncia ha termini stretti: cosa puoi pretendere, da chi e con quali scadenze.
+- [Differenza tra art. 1667 e art. 1669 del codice civile: la tabella che chiarisce tutto](https://www.edilizialegale.it/guide/differenza-1667-1669): Vizi e difformità o gravi difetti? L'art. 1667 c.c. e l'art. 1669 c.c. hanno termini e legittimati diversi: la tabella comparativa e i casi pratici per capire quale norma vale nel tuo caso.
+- [L'impresa ha abbandonato il cantiere: i cinque passi nell'ordine giusto](https://www.edilizialegale.it/guide/impresa-sparita-cantiere-abbandonato): Cantiere fermo e impresa irraggiungibile? Prima documenta lo stato dei lavori, poi diffida ad adempiere: i cinque passi nell'ordine giusto per far completare l'opera e recuperare acconti e danni.
+- [Mediazione obbligatoria nelle controversie edilizie: come funziona davvero](https://www.edilizialegale.it/guide/mediazione-obbligatoria-edilizia): La mediazione è obbligatoria solo in alcune materie: condominio, diritti reali, locazione, contratto d'opera. Sull'appalto no. Quando serve, quanto costa e cosa rischi se non partecipi.
+- [Decreto ingiuntivo dall'impresa edile: hai 40 giorni, ecco cosa fare](https://www.edilizialegale.it/guide/opposizione-decreto-ingiuntivo-impresa-edile): L'impresa ti ha notificato un decreto ingiuntivo ma i lavori hanno difetti? Hai 40 giorni perentori per opporti: eccezione di inadempimento, riconvenzionale per i danni, sospensione dell'esecuzione.
+- [Ordinanza di demolizione: cosa fare nei primi trenta giorni](https://www.edilizialegale.it/guide/ordinanza-demolizione-cosa-fare): Il Comune ha notificato l'ordine di demolire: novanta giorni per ottemperare, sessanta per il ricorso al TAR. Cosa verificare subito, quali vizi contano e quando la sanatoria è ancora percorribile.
+- [Il costruttore ha chiuso la società: come si attiva la polizza decennale postuma](https://www.edilizialegale.it/guide/polizza-decennale-postuma): Se l'impresa che ha costruito casa tua non esiste più, la polizza indennitaria decennale del D.lgs. 122/2005 può restare l'unica strada: come scoprirla, cosa copre e come si denuncia il sinistro.
+- [Il preventivo è raddoppiato: devo pagare i lavori extra che non ho autorizzato?](https://www.edilizialegale.it/guide/preventivo-sforato): La fattura finale è molto più alta del preventivo? Nell'appalto a corpo il prezzo è fisso e l'art. 1659 c.c. richiede l'autorizzazione scritta per le variazioni: ecco cosa è dovuto e cosa no.
+- [Quanto costa davvero fare causa a un costruttore](https://www.edilizialegale.it/guide/quanto-costa-causa-costruttore): Compenso dell'avvocato, contributo unificato, CTU, consulente di parte e mediazione: tutte le voci di spesa di una causa per difetti costruttivi, chi le anticipa e chi le paga alla fine.
+- [Quanto dura una causa per difetti costruttivi in Italia](https://www.edilizialegale.it/guide/quanto-dura-causa-difetti): Introduzione, memorie, istruttoria, CTU, decisione: quanto pesa ciascuna fase in una causa per difetti costruttivi, perché la consulenza tecnica dilata i tempi e cosa accorcia il percorso.
+- [Ritardo nella consegna: come si calcola la penale e cosa puoi chiedere in più](https://www.edilizialegale.it/guide/ritardo-consegna-lavori): Il cantiere è in ritardo di mesi? Come si calcola la penale giornaliera, quali sospensioni l'impresa può scomputare, quando puoi chiedere l'affitto pagato nel frattempo e quando il ritardo permette di risolvere il contratto.
+- [Sconto in fattura promesso e mai applicato: cosa si può fare](https://www.edilizialegale.it/guide/sconto-in-fattura-non-applicato): L'impresa aveva promesso lo sconto in fattura, poi ha emesso fattura piena o ha lasciato il cantiere a metà. Quando è inadempimento, quali rimedi restano e come si recuperano gli acconti versati.
+- [Superbonus: l'Agenzia chiede i soldi a me, che sono solo il proprietario](https://www.edilizialegale.it/guide/superbonus-recupero-agenzia-privato): L'Agenzia notifica l'atto di recupero al beneficiario, non all'impresa. Perché accade, quando risponde davvero il privato, cosa lo tutela e come si costruisce la rivalsa verso chi ha sbagliato.
+- [Vizi nell'appalto condominiale: può agire anche il singolo condomino?](https://www.edilizialegale.it/guide/vizi-appalto-condominiale): I lavori sulle parti comuni sono venuti male e l'assemblea non decide. Quando può muoversi il singolo condomino, che cosa può chiedere e quali termini corrono anche senza delibera.
+
+## Tributario — Fisco di cantiere e crediti d'imposta
+- [Accertamento Superbonus all'impresa: come si costruisce la difesa](https://www.edilizialegale.it/guide/accertamento-superbonus-imprese): L'Agenzia delle Entrate contesta i crediti da bonus edilizi? Il primo nodo è la qualificazione — credito non spettante o inesistente — perché da lì dipendono termini, sanzioni e rischio penale. La guida completa alla difesa.
+- [Reverse charge applicato male in edilizia: quali sanzioni rischi e come si esce](https://www.edilizialegale.it/guide/reverse-charge-edilizia): Fatture senza IVA emesse per anni nel regime sbagliato? Quando il reverse charge si applica davvero, quanto rischiano emittente e destinatario, come si rimedia col ravvedimento e come ci si difende dopo l'accertamento.
+
+## Verticali — Contenziosi di settore
+- [Il cappotto termico si stacca: chi paga tra impresa, progettista e direttore dei lavori](https://www.edilizialegale.it/guide/cappotto-termico-difettoso): Rasatura che si stacca, crepe sui giunti, macchie di umidità: il cappotto difettoso è un grave difetto ex art. 1669 c.c. con garanzia decennale. E il responsabile non è quasi mai uno solo.
+- [Contenzioso fotovoltaico: le cinque cause più frequenti e come si affrontano](https://www.edilizialegale.it/guide/contenzioso-fotovoltaico): Produzione sotto le promesse, infiltrazioni dal tetto, contratti firmati a casa, aziende sparite a impianto incompleto, pratiche GSE mai presentate: le cinque liti tipiche del fotovoltaico, con le prove che servono e i rimedi nell'ordine giusto.
+- [Contenzioso sui serramenti: chi risponde, in che termini, con quali prove](https://www.edilizialegale.it/guide/contenzioso-serramenti): Vendita con posa o appalto? Da questa qualificazione dipendono otto giorni o sessanta per denunciare, un anno o due per agire. Chi risponde tra produttore, posatore e venditore, quali prove tecniche reggono e quando conviene l'ATP.
+- [Cucina su misura difettosa: il tuo contratto è vendita o appalto? Cambia tutto](https://www.edilizialegale.it/guide/cucina-su-misura-difettosa): Misure sbagliate, top crepato, modello diverso dall'ordine? Prima del difetto conta la natura del contratto: vendita o appalto cambiano termini, rimedi e possibilità di risoluzione.
+- [Il fotovoltaico non produce quanto promesso: cosa puoi chiedere davvero](https://www.edilizialegale.it/guide/fotovoltaico-non-produce): Bollette che non calano e produzione lontana dal piano di rientro? Se la producibilità era promessa in contratto è inadempimento: come si misura il divario e cosa puoi chiedere, dall'adeguamento alla risoluzione.
+- [Infissi montati male: spifferi, condensa e la detrazione che rischi di perdere](https://www.edilizialegale.it/guide/infissi-montati-male): Spifferi, condensa e muffa sui serramenti nuovi? Quasi sempre è la posa, non il prodotto. Chi risponde, quanti giorni hai per contestare e perché il danno include anche la detrazione fiscale.
+- [Parquet posato male che si solleva: prodotto o posa?](https://www.edilizialegale.it/guide/parquet-posato-male): Il parquet si solleva o si imbarca dopo pochi mesi? Quasi sempre la causa è a monte: umidità residua del massetto e prova igrometrica mai eseguita. Chi risponde, con quali termini e quali prove.
+- [La piscina perde acqua: hai dieci anni di garanzia, non due](https://www.edilizialegale.it/guide/piscina-difetti-costruttore): La piscina interrata perde, il rivestimento si stacca, compaiono crepe? È un'opera destinata a lunga durata: la garanzia è quella decennale dell'art. 1669 c.c., non i due anni che molte imprese invocano per chiudere la pratica.
+- [La pompa di calore non scalda: quando è un errore di dimensionamento e chi ne risponde](https://www.edilizialegale.it/guide/pompa-di-calore-non-scalda): Termosifoni tiepidi, blocchi nelle giornate fredde, bolletta raddoppiata? Spesso non è la macchina né la posa: è un errore di dimensionamento. Chi ne risponde e cosa puoi chiedere.
+- [Contratto fotovoltaico firmato a casa: puoi annullarlo fino a 12 mesi dopo](https://www.edilizialegale.it/guide/recesso-contratto-fotovoltaico): Firmato in salotto o a distanza? Hai 14 giorni per recedere senza motivazione, che diventano 12 mesi e 14 giorni se manca l'informativa. E il recesso travolge anche il finanziamento collegato.
+- [Il terrazzo rifatto perde ancora: chi paga tra impresa, condominio e proprietario](https://www.edilizialegale.it/guide/terrazzo-infiltrazioni): Guaina rifatta da poco e infiltrazioni di nuovo sul soffitto? Prima di dividere le spese con l'art. 1126 c.c. va individuato il responsabile: se il rifacimento è difettoso, paga l'impresa, e la garanzia è di dieci anni.
+- [Il tetto rifatto infiltra ancora: garanzia e responsabilità](https://www.edilizialegale.it/guide/tetto-rifatto-infiltrazioni): Hai rifatto la copertura e l'acqua entra ancora? Le infiltrazioni dal tetto rientrano di norma nei gravi difetti dell'art. 1669 c.c.: dieci anni di garanzia, non due. Cause, responsabili e termini.
+
+## Domande frequenti — una URL per domanda
+- [Quanto tempo ho per denunciare i difetti di una casa nuova?](https://www.edilizialegale.it/domande-frequenti/quanto-tempo-denunciare-difetti-casa-nuova)
+- [Posso non pagare l'impresa se i lavori sono fatti male?](https://www.edilizialegale.it/domande-frequenti/posso-non-pagare-impresa-lavori-fatti-male)
+- [Quanto costa fare causa a un costruttore?](https://www.edilizialegale.it/domande-frequenti/quanto-costa-fare-causa-costruttore)
+- [Cosa succede se il committente non paga il SAL?](https://www.edilizialegale.it/domande-frequenti/cosa-succede-se-committente-non-paga-sal)
+- [Il subappaltatore può chiedere i soldi direttamente al committente?](https://www.edilizialegale.it/domande-frequenti/subappaltatore-puo-chiedere-soldi-committente)
+- [Quanto dura una causa per difetti costruttivi?](https://www.edilizialegale.it/domande-frequenti/quanto-dura-causa-difetti-costruttivi)
+- [Posso sospendere i lavori se non mi pagano?](https://www.edilizialegale.it/domande-frequenti/posso-sospendere-lavori-se-non-mi-pagano)
+- [L'impresa è sparita con l'acconto: cosa devo fare?](https://www.edilizialegale.it/domande-frequenti/impresa-sparita-con-acconto-cosa-fare)
+- [Ho ricevuto un decreto ingiuntivo dall'impresa: quanto tempo ho?](https://www.edilizialegale.it/domande-frequenti/decreto-ingiuntivo-impresa-quanto-tempo-per-opporsi)
+- [DURC irregolare: quanto tempo ho per regolarizzare?](https://www.edilizialegale.it/domande-frequenti/durc-irregolare-quanto-tempo-per-regolarizzare)
+- [Ho firmato il contratto del fotovoltaico a casa mia: posso annullarlo?](https://www.edilizialegale.it/domande-frequenti/contratto-fotovoltaico-firmato-a-casa-posso-annullarlo)
+- [Chi paga le infiltrazioni dal lastrico solare o dal terrazzo?](https://www.edilizialegale.it/domande-frequenti/chi-paga-infiltrazioni-lastrico-solare)
+- [La ritenuta a garanzia: quando va restituita?](https://www.edilizialegale.it/domande-frequenti/ritenuta-a-garanzia-quando-va-restituita)
+- [I lavori extra ordinati a voce vanno pagati?](https://www.edilizialegale.it/domande-frequenti/lavori-extra-ordinati-a-voce-vanno-pagati)
+- [L'Agenzia contesta i crediti Superbonus alla mia impresa: cosa faccio subito?](https://www.edilizialegale.it/domande-frequenti/accertamento-superbonus-cosa-fare-subito)
+- [La piscina ha due o dieci anni di garanzia?](https://www.edilizialegale.it/domande-frequenti/garanzia-piscina-quanti-anni)
+- [Gli infissi nuovi fanno spifferi: di chi è la colpa?](https://www.edilizialegale.it/domande-frequenti/infissi-nuovi-spifferi-di-chi-e-la-colpa)
+- [Quando si applica il reverse charge in edilizia?](https://www.edilizialegale.it/domande-frequenti/reverse-charge-quando-si-applica-edilizia)
+- [Il contratto della cucina su misura è vendita o appalto?](https://www.edilizialegale.it/domande-frequenti/cucina-su-misura-vendita-o-appalto)
 
 ## Riferimenti
-- [Tutte le guide](https://www.edilizialegale.it/guide): indice completo per imprese, privati, verticali e fisco
-- [Domande frequenti](https://www.edilizialegale.it/domande-frequenti): risposte brevi con riferimenti normativi, una pagina per domanda
+- [Indice di tutte le guide](https://www.edilizialegale.it/guide)
+- [Indice delle domande frequenti](https://www.edilizialegale.it/domande-frequenti)
+- [Area imprese](https://www.edilizialegale.it/imprese): dieci aree di assistenza alle imprese edili
+- [Area privati](https://www.edilizialegale.it/privati): dieci aree di assistenza ai committenti
 
 ## Optional
 - [Lo studio](https://www.edilizialegale.it/studio)

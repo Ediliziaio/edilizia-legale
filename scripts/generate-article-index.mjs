@@ -131,9 +131,14 @@ export const getArticleSeo = (slug: string): ArticleSeo | undefined => ARTICLE_S
 const imagesPath = path.join(root, "src/data/articleImages.ts");
 const existing = {};
 try {
+  // Solo il corpo di `articleImages`: il file contiene anche la mappa dei testi
+  // alternativi, che ha la stessa forma e verrebbe scambiata per percorsi.
+  const testo = readFileSync(imagesPath, "utf-8");
+  const inizio = testo.indexOf("export const articleImages:");
+  const corpo = inizio === -1 ? "" : testo.slice(inizio, testo.indexOf("\n};", inizio));
   // Riga per riga, saltando i commenti: un esempio dentro un commento non
   // deve essere scambiato per un percorso realmente collegato.
-  for (const line of readFileSync(imagesPath, "utf-8").split("\n")) {
+  for (const line of corpo.split("\n")) {
     const code = line.trim();
     if (code.startsWith("//") || code.startsWith("*") || code.startsWith("/*")) continue;
     const m = code.match(/^"([^"]+)":\s*(?:"([^"]*)"|null),?$/);
@@ -144,6 +149,7 @@ try {
 }
 
 const figureLines = [];
+const altLines = [];
 let pending = 0;
 for (const e of entries) {
   if (!e.figures.length) continue;
@@ -153,6 +159,8 @@ for (const e of entries) {
     if (val == null) pending++;
     figureLines.push(`  // ${fig.alt}`);
     figureLines.push(`  ${JSON.stringify(fig.slot)}: ${val == null ? "null" : JSON.stringify(val)},`);
+    // il prefisso "Copertina —" e' un'etichetta di produzione, non descrive la scena
+    altLines.push(`  ${JSON.stringify(fig.slot)}: ${JSON.stringify(fig.alt.replace(/^Copertina — /, ""))},`);
   }
 }
 
@@ -171,6 +179,17 @@ export const articleImages: Record<string, string | null> = {${figureLines.join(
 };
 
 export const getArticleImage = (slot: string): string | null => articleImages[slot] ?? null;
+
+/**
+ * Testo alternativo di ogni immagine: e' il brief con cui e' stata prodotta,
+ * quindi descrive davvero la scena. Serve all'accessibilita' e a Google
+ * Immagini, dove il titolo dell'articolo ripetuto su tre foto non dice nulla.
+ */
+export const articleImageAlt: Record<string, string> = {
+${altLines.join("\n")}
+};
+
+export const getArticleImageAlt = (slot: string): string | undefined => articleImageAlt[slot];
 `;
 
 writeFileSync(imagesPath, imagesOut);

@@ -99,14 +99,41 @@ export const getArticle = async (slug: string): Promise<Article | undefined> => 
   return loader();
 };
 
+/**
+ * Guide correlate per affinita' reale, non per ordine di file.
+ *
+ * Prima si prendevano i primi della stessa categoria: su 43 guide voleva dire
+ * proporre sempre le stesse tre. Ora pesa le parole chiave in comune — che e'
+ * il segnale piu' vicino al "parla dello stesso problema" — e usa il silo solo
+ * come spareggio. Cambiano i link interni di ogni guida, e cambia dove passa
+ * l'autorita' dentro il sito.
+ */
 export const getRelated = (slug: string, limit = 3): ArticleMeta[] => {
   const current = articlesMeta.find((a) => a.slug === slug);
   const others = articlesMeta.filter((a) => a.slug !== slug);
   if (!current) return others.slice(0, limit);
-  // Prima gli articoli della stessa categoria (stesso silo), poi gli altri.
-  const same = others.filter((a) => a.category === current.category);
-  const rest = others.filter((a) => a.category !== current.category);
-  return [...same, ...rest].slice(0, limit);
+
+  const parole = (a: ArticleMeta) =>
+    new Set(
+      (a.keywords ?? [])
+        .join(" ")
+        .toLowerCase()
+        .split(/[^a-zà-ù0-9]+/)
+        .filter((w) => w.length > 3),
+    );
+
+  const mie = parole(current);
+  const punteggio = (a: ArticleMeta) => {
+    let n = 0;
+    for (const w of parole(a)) if (mie.has(w)) n++;
+    return n * 2 + (a.category === current.category ? 1 : 0);
+  };
+
+  return [...others]
+    .map((a) => ({ a, p: punteggio(a) }))
+    .sort((x, y) => y.p - x.p || x.a.slug.localeCompare(y.a.slug))
+    .slice(0, limit)
+    .map((x) => x.a);
 };
 
 // Article `date` fields are human-readable Italian strings ("Maggio 2026").

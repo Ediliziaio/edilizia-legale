@@ -1,5 +1,5 @@
 import { Banknote, Home, Wrench, Landmark, type LucideIcon } from "lucide-react";
-import { getArticleImage } from "@/data/articleImages";
+import { getArticleImage, getArticleImageAlt } from "@/data/articleImages";
 import type { ArticleMeta, Category } from "@/data/articles";
 
 /** Identità visiva per silo: la copertina dice a colpo d'occhio di chi parla la guida. */
@@ -24,7 +24,10 @@ interface ArticleCoverProps {
  * resta piena e riconoscibile anche prima che le foto esistano.
  */
 const ArticleCover = ({ article, className = "", eager = false }: ArticleCoverProps) => {
-  const src = getArticleImage(`${article.slug}-cover`);
+  const slot = `${article.slug}-cover`;
+  const src = getArticleImage(slot);
+  // Il brief della foto descrive la scena; il titolo dell'articolo no.
+  const alt = getArticleImageAlt(slot) ?? article.title;
   const { from, to, icon: Icon } = CAT[article.category];
 
   if (src) {
@@ -32,7 +35,7 @@ const ArticleCover = ({ article, className = "", eager = false }: ArticleCoverPr
       <div className={`relative overflow-hidden bg-muted ${className}`}>
         <img
           src={src}
-          alt={article.title}
+          alt={alt}
           loading={eager ? "eager" : "lazy"}
           decoding="async"
           {...(eager ? { fetchPriority: "high" as const } : {})}

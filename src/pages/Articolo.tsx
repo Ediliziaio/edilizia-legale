@@ -268,7 +268,21 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
     "isAccessibleForFree": true,
     ...(Number.isFinite(minutes) ? { "timeRequired": `PT${minutes}M` } : {}),
     ...(content ? { "wordCount": wordCountOf(content) } : {}),
-    ...(content && estraiFonti(content).length ? { "citation": estraiFonti(content) } : {}),
+    // Le norme citate come entita' tipizzate, non come stringhe: e' cosi' che
+    // un motore collega la guida all'articolo di legge invece di leggerne il
+    // nome come testo qualsiasi.
+    ...(content && estraiFonti(content).length
+      ? {
+          "citation": estraiFonti(content).map((f) => ({
+            "@type": "Legislation",
+            "name": f,
+            "legislationJurisdiction": "IT",
+          })),
+        }
+      : {}),
+    ...(article.keywords?.length
+      ? { "about": { "@type": "Thing", "name": article.keywords[0] } }
+      : {}),
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": url,
@@ -294,6 +308,15 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
       {
         "@type": "ListItem",
         "position": 3,
+        "name": article.category,
+        "item":
+          article.category === "Imprese" || article.category === "Tributario"
+            ? "https://www.edilizialegale.it/imprese"
+            : "https://www.edilizialegale.it/privati",
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
         "name": article.title,
         "item": url,
       },
@@ -619,6 +642,7 @@ const Articolo = () => {
         ogTitle={article.title}
         ogDescription={article.excerpt}
         image={ogImage}
+        preloadImage={getArticleImage(`${article.slug}-cover`) ?? undefined}
         extraMeta={[
           { name: "author", content: article.author },
           { property: "article:author", content: article.author },
@@ -636,9 +660,27 @@ const Articolo = () => {
           {/* Article Hero — navy band; l'intro è il blocco di risposta diretta */}
           <section className="bg-navy text-white border-b border-white/10">
             <div className="container mx-auto px-4 py-10 lg:py-14">
-              <Link to="/guide" className="inline-flex items-center gap-1.5 text-white/70 hover:text-gold text-sm font-semibold mb-6">
-                <ArrowLeft className="w-4 h-4" /> Tutte le guide
-              </Link>
+              {/* Briciole visibili: lo schema BreadcrumbList dichiarava un
+                  percorso che in pagina non esisteva. Ora sono la stessa cosa,
+                  e danno a Google due link interni contestuali in piu'. */}
+              <nav aria-label="Percorso" className="mb-6">
+                <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-white/60">
+                  <li><Link to="/" className="hover:text-gold">Home</Link></li>
+                  <li aria-hidden="true" className="text-white/30">/</li>
+                  <li><Link to="/guide" className="hover:text-gold">Guide</Link></li>
+                  <li aria-hidden="true" className="text-white/30">/</li>
+                  <li>
+                    <Link
+                      to={article.category === "Imprese" || article.category === "Tributario" ? "/imprese" : "/privati"}
+                      className="hover:text-gold"
+                    >
+                      {article.category}
+                    </Link>
+                  </li>
+                  <li aria-hidden="true" className="text-white/30">/</li>
+                  <li aria-current="page" className="text-white/85 max-w-full truncate">{article.title}</li>
+                </ol>
+              </nav>
               <div className="grid lg:grid-cols-[1.35fr_1fr] gap-8 lg:gap-12 items-center">
                 <div className="max-w-4xl">
                 <div className="flex items-center gap-3 flex-wrap mb-5">

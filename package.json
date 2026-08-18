@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite-react-ssg dev",
-    "prebuild": "node scripts/generate-article-index.mjs && node scripts/generate-sitemap.mjs",
+    "prebuild": "node scripts/generate-article-index.mjs && node scripts/generate-discovery.mjs && node scripts/generate-sitemap.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
     "build": "vite-react-ssg build",
     "build:spa": "vite build",
     "build:dev": "vite-react-ssg build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "articles": "node scripts/generate-article-index.mjs"
+    "articles": "node scripts/generate-article-index.mjs",
+    "discovery": "node scripts/generate-discovery.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

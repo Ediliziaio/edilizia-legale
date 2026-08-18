@@ -35,6 +35,12 @@ export interface SEOProps {
   jsonLd?: (object | null | undefined)[];
   /** Extra per-page meta tags (e.g. article:published_time). */
   extraMeta?: { name?: string; property?: string; content?: string }[];
+  /**
+   * Immagine LCP della pagina, da precaricare. Sulle guide la copertina e' il
+   * piu' grande elemento sopra la piega: dichiararla qui la fa partire con
+   * l'HTML invece che a fine parsing, ed e' la leva piu' diretta sull'LCP.
+   */
+  preloadImage?: string;
 }
 
 const SEO = ({
@@ -49,6 +55,7 @@ const SEO = ({
   image = DEFAULT_IMAGE,
   jsonLd,
   extraMeta,
+  preloadImage,
 }: SEOProps) => {
   const schemas = (jsonLd ?? []).filter(Boolean) as object[];
   const extras = (extraMeta ?? []).filter((m) => m.content != null);
@@ -123,6 +130,7 @@ const SEO = ({
       <meta name="robots" content={robots} />
       {canonical && <link rel="canonical" href={canonical} />}
       {canonical && <link rel="alternate" hrefLang="it-IT" href={canonical} />}
+      {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchPriority="high" />}
 
       {/* Open Graph / Twitter — only for shareable, canonical pages. */}
       {canonical && <meta property="og:type" content={ogType} />}
