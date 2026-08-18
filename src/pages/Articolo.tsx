@@ -656,7 +656,7 @@ const Articolo = () => {
       <div className="min-h-screen bg-background flex flex-col">
         <ELHeader onOpenContact={openContact} />
 
-        <main className="flex-1">
+        <main id="contenuto" className="flex-1">
           {/* Article Hero — navy band; l'intro è il blocco di risposta diretta */}
           <section className="bg-navy text-white border-b border-white/10">
             <div className="container mx-auto px-4 py-10 lg:py-14">

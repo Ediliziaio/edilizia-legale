@@ -8,8 +8,6 @@
 
 export type ImageSlotId =
   | "home-due-lati"
-  | "imprese-hero"
-  | "privati-hero"
   | "studio-team"
   | "contatti-studio"
   | "guide-hero"
@@ -18,10 +16,6 @@ export type ImageSlotId =
 export const imageSlots: Record<ImageSlotId, string | null> = {
   /** Home, sezione "due lati": foto cantiere + scrivania, o stretta di mano in cantiere */
   "home-due-lati": null,
-  /** Hub imprese: cantiere reale, gru, operai (no stock finto-americano) */
-  "imprese-hero": null,
-  /** Hub privati: casa/famiglia o dettaglio difetto (crepa, infiltrazione) */
-  "privati-hero": null,
   /** Pagina studio: foto vera del team / dello studio */
   "studio-team": null,
   /** Contatti: ingresso o sala riunioni dello studio */
@@ -35,8 +29,6 @@ export const imageSlots: Record<ImageSlotId, string | null> = {
 /** Didascalie/alt di default per ogni slot (usate anche dal segnaposto). */
 export const imageSlotLabels: Record<ImageSlotId, string> = {
   "home-due-lati": "Il cantiere e le carte: i due lati del contenzioso edilizio",
-  "imprese-hero": "Cantiere di un'impresa edile",
-  "privati-hero": "La casa del committente",
   "studio-team": "Il team dello studio",
   "contatti-studio": "Lo studio",
   "guide-hero": "Fascicoli e codice civile",

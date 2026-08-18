@@ -130,7 +130,10 @@ const SEO = ({
       <meta name="robots" content={robots} />
       {canonical && <link rel="canonical" href={canonical} />}
       {canonical && <link rel="alternate" hrefLang="it-IT" href={canonical} />}
-      {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchPriority="high" />}
+      {preloadImage && (
+        // attributo HTML minuscolo: React 18 scarterebbe la forma camelCase
+        <link rel="preload" as="image" href={preloadImage} {...({ fetchpriority: "high" } as Record<string, string>)} />
+      )}
 
       {/* Open Graph / Twitter — only for shareable, canonical pages. */}
       {canonical && <meta property="og:type" content={ogType} />}

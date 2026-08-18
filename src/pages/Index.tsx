@@ -38,7 +38,7 @@ const Index = () => {
       <div className="min-h-screen bg-background flex flex-col">
         <ELHeader onOpenContact={openContact} />
 
-        <main className="flex-1">
+        <main id="contenuto" className="flex-1">
           <ELHero />
           <ELTrustStrip />
           <ELStats />

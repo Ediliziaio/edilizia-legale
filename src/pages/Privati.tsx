@@ -78,7 +78,7 @@ const Privati = () => {
       <div className="min-h-screen bg-background flex flex-col">
         <ELHeader onOpenContact={openContact} />
 
-        <main className="flex-1">
+        <main id="contenuto" className="flex-1">
           {/* Hero */}
           <section className="relative bg-navy text-white overflow-hidden border-b border-white/10">
             <ELHeroBackdrop />

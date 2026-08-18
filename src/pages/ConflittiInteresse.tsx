@@ -30,7 +30,7 @@ const ConflittiInteresse = () => {
       <div className="min-h-screen bg-background flex flex-col">
         <ELHeader onOpenContact={() => setIsContactOpen(true)} />
 
-        <main className="flex-1 py-14 lg:py-20">
+        <main id="contenuto" className="flex-1 py-14 lg:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto legal-content">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy leading-tight mb-6">

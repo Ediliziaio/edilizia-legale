@@ -15,7 +15,7 @@ const NotFound = () => {
       <SEO title="Pagina non trovata | Edilizia Legale" robots="noindex, follow" />
       <div className="min-h-screen bg-background flex flex-col">
         <ELHeader onOpenContact={() => setIsContactOpen(true)} />
-        <main className="flex-1 flex items-center justify-center py-24">
+        <main id="contenuto" className="flex-1 flex items-center justify-center py-24">
           <div className="text-center px-4">
             <p className="text-7xl font-extrabold text-navy/10 mb-4">404</p>
             <h1 className="text-3xl font-bold text-navy mb-3">Questa pagina non esiste.</h1>

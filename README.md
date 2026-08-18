@@ -3,7 +3,7 @@
 Sito dello studio legale **Edilizia Legale** — diritto dell'edilizia e degli appalti, doppio target
 (imprese edili / committenti privati) con due percorsi separati.
 
-- Stack: Vite + React + TypeScript + Tailwind + shadcn/ui, **SSG con vite-react-ssg** (54 pagine prerenderizzate).
+- Stack: Vite + React + TypeScript + Tailwind + shadcn/ui, **SSG con vite-react-ssg** (74 pagine prerenderizzate, 404 compresa).
 - Design: palette navy/gold, font Inter Tight (ereditati dal design system di partenza).
 - Dominio previsto: `https://www.edilizialegale.it` (placeholder — un solo punto di modifica, vedi sotto).
 
@@ -12,7 +12,7 @@ Sito dello studio legale **Edilizia Legale** — diritto dell'edilizia e degli a
 ```bash
 npm ci            # installa le dipendenze
 npm run dev       # dev server (vite-react-ssg dev)
-npm run build     # prebuild (indice articoli + sitemap) + build SSG in dist/
+npm run build     # prebuild (indice articoli + llms.txt/feed + sitemap) + build SSG in dist/
 npm run preview   # serve la build da dist/
 ```
 
@@ -20,7 +20,7 @@ npm run preview   # serve la build da dist/
 
 - **Home a bivio** (`/`): due porte, "Sono un'impresa" / "Sono un privato".
 - **Hub silo**: `/imprese` (10 aree, schema Service) e `/privati` (10 aree + verticali).
-- **Guide** (`/guide`, `/guide/[slug]`): 24 articoli in `src/data/articles/*.ts` — formato a blocchi
+- **Guide** (`/guide`, `/guide/[slug]`): 43 articoli in `src/data/articles/*.ts` — formato a blocchi
   (risposta diretta come intro, riquadro "In sintesi", tabelle, passi numerati, esempio con bivio,
   FAQ visibili, CTA + disclaimer). Schema Article + FAQPage + BreadcrumbList.
 - **Domande frequenti** (`/domande-frequenti`, una URL per domanda): 19 pagine da `src/data/faq.ts`,
@@ -41,7 +41,7 @@ npm run preview   # serve la build da dist/
 1. Crea `src/data/articles/<slug>.ts` copiando il formato di `recupero-crediti-edilizia.ts`
    (slug = nome file; esporta `meta`, `seo`, `article`).
 2. Aggiungi lo slug in `ORDER` dentro `scripts/generate-article-index.mjs` (ordine di listing).
-3. `npm run build` — indice, sitemap e route statica si aggiornano da soli.
+3. `npm run build` — indice articoli, `llms.txt`, `feed.xml`, sitemap e route statiche si aggiornano da soli.
 
 ## [DA VERIFICARE] citazioni giurisprudenziali
 

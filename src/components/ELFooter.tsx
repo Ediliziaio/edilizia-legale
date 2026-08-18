@@ -32,7 +32,7 @@ const ELFooter = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Per le imprese</h4>
+            <h2 className="font-semibold text-white mb-4">Per le imprese</h2>
             <ul className="space-y-2.5 text-sm">
               <li><Link to="/guide/recupero-crediti-edilizia" className="text-white/70 hover:text-gold">Recupero crediti edilizia</Link></li>
               <li><Link to="/guide/sal-non-pagato" className="text-white/70 hover:text-gold">SAL non pagato</Link></li>
@@ -44,7 +44,7 @@ const ELFooter = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Per i privati</h4>
+            <h2 className="font-semibold text-white mb-4">Per i privati</h2>
             <ul className="space-y-2.5 text-sm">
               <li><Link to="/guide/difetti-costruttivi-casa-nuova" className="text-white/70 hover:text-gold">Difetti costruttivi casa nuova</Link></li>
               <li><Link to="/guide/impresa-sparita-cantiere-abbandonato" className="text-white/70 hover:text-gold">Impresa sparita</Link></li>
@@ -56,7 +56,7 @@ const ELFooter = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Contatti e studio</h4>
+            <h2 className="font-semibold text-white mb-4">Contatti e studio</h2>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-gold mt-0.5 shrink-0" />

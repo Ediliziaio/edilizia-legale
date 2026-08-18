@@ -38,7 +38,9 @@ const ArticleCover = ({ article, className = "", eager = false }: ArticleCoverPr
           alt={alt}
           loading={eager ? "eager" : "lazy"}
           decoding="async"
-          {...(eager ? { fetchPriority: "high" as const } : {})}
+          // React 18 scarta fetchPriority in camelCase con un avviso: va passato
+          // come attributo HTML minuscolo.
+          {...(eager ? ({ fetchpriority: "high" } as Record<string, string>) : {})}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>

@@ -68,7 +68,7 @@ const DomandaSingola = () => {
       <div className="min-h-screen bg-background flex flex-col">
         <ELHeader onOpenContact={() => setIsContactOpen(true)} />
 
-        <main className="flex-1">
+        <main id="contenuto" className="flex-1">
           <section className="py-12 lg:py-16 bg-white">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto">
