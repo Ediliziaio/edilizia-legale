@@ -61,13 +61,26 @@ const articoli = articleFiles.map((f) => {
 });
 
 // Immagini realmente collegate, dal registro degli slot.
-const immaginiSrc = readFileSync(join(root, "src/data/articleImages.ts"), "utf-8");
+const immaginiFile = readFileSync(join(root, "src/data/articleImages.ts"), "utf-8");
+// Solo il corpo di `articleImages`: il file contiene anche la mappa dei testi
+// alternativi, che ha la stessa forma e finirebbe in sitemap come URL inventate.
+const daQui = immaginiFile.indexOf("export const articleImages:");
+const immaginiSrc = daQui === -1 ? "" : immaginiFile.slice(daQui, immaginiFile.indexOf("\n};", daQui));
+// I testi alternativi, che descrivono la singola scena: come didascalia in
+// sitemap valgono piu' del titolo dell'articolo ripetuto su tre immagini.
+const daAlt = immaginiFile.indexOf("export const articleImageAlt:");
+const altSrc = daAlt === -1 ? "" : immaginiFile.slice(daAlt, immaginiFile.indexOf("\n};", daAlt));
+const altPerSlot = new Map();
+for (const m of altSrc.matchAll(/"([a-z0-9-]+)":\s*"((?:[^"\\]|\\.)*)"/g)) {
+  altPerSlot.set(m[1], m[2].replace(/\\"/g, '"'));
+}
+
 const immaginiPerSlug = new Map();
 for (const m of immaginiSrc.matchAll(/"([a-z0-9-]+)":\s*"([^"]+)"/g)) {
   const [, slot, path] = m;
   const slug = slot.replace(/-(cover|\d+)$/, "");
   if (!immaginiPerSlug.has(slug)) immaginiPerSlug.set(slug, []);
-  immaginiPerSlug.get(slug).push(path);
+  immaginiPerSlug.get(slug).push({ path, alt: altPerSlot.get(slot) });
 }
 
 // slug FAQ estratti dal data file (slug: "...")
@@ -90,7 +103,10 @@ const urls = [
     lastmod: a.lastmod,
     changefreq: "monthly",
     priority: "0.7",
-    images: (immaginiPerSlug.get(a.slug) ?? []).map((p) => ({ loc: `${BASE}${p}`, title: a.title })),
+    images: (immaginiPerSlug.get(a.slug) ?? []).map((i) => ({
+      loc: `${BASE}${i.path}`,
+      title: i.alt ?? a.title,
+    })),
   })),
   ...faqSlugs.map((slug) => ({
     loc: `${BASE}/domande-frequenti/${slug}`,

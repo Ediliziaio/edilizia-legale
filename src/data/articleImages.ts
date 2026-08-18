@@ -246,113 +246,113 @@ export const articleImages: Record<string, string | null> = {
   // Copertina — Registro di contabilità di cantiere aperto con la firma dell'impresa e l'annotazione manoscritta con riserva
   "iscrizione-riserve-appalto-cover": "/images/guide/iscrizione-riserve-appalto-cover.webp",
   // Registro di contabilità di cantiere aperto con la firma dell'impresa e l'annotazione manoscritta con riserva
-  "iscrizione-riserve-appalto-1": null,
+  "iscrizione-riserve-appalto-1": "/images/guide/iscrizione-riserve-appalto-1.webp",
   // Tavolo di cantiere con il conto finale, la memoria di quantificazione delle riserve e una calcolatrice
-  "iscrizione-riserve-appalto-2": null,
+  "iscrizione-riserve-appalto-2": "/images/guide/iscrizione-riserve-appalto-2.webp",
 
   // contratto-subappalto-clausole
   // Copertina — Artigiano con il contratto di subappalto in mano davanti a un cantiere con ponteggi montati
-  "contratto-subappalto-clausole-cover": null,
+  "contratto-subappalto-clausole-cover": "/images/guide/contratto-subappalto-clausole-cover.webp",
   // Artigiano con il contratto di subappalto in mano davanti a un cantiere con ponteggi montati
-  "contratto-subappalto-clausole-1": null,
+  "contratto-subappalto-clausole-1": "/images/guide/contratto-subappalto-clausole-1.webp",
   // Pagina di contratto di subappalto con la clausola sui termini di pagamento evidenziata a pennarello
-  "contratto-subappalto-clausole-2": null,
+  "contratto-subappalto-clausole-2": "/images/guide/contratto-subappalto-clausole-2.webp",
 
   // congruita-manodopera-durc
   // Copertina — Cantiere edile con squadra di operai al lavoro e cartello di cantiere in primo piano
-  "congruita-manodopera-durc-cover": null,
+  "congruita-manodopera-durc-cover": "/images/guide/congruita-manodopera-durc-cover.webp",
   // Cantiere edile con squadra di operai al lavoro e cartello di cantiere in primo piano
-  "congruita-manodopera-durc-1": null,
+  "congruita-manodopera-durc-1": "/images/guide/congruita-manodopera-durc-1.webp",
   // Scrivania con fatture di forniture, contratti di nolo e prospetto di calcolo della congruità della manodopera
-  "congruita-manodopera-durc-2": null,
+  "congruita-manodopera-durc-2": "/images/guide/congruita-manodopera-durc-2.webp",
 
   // sospensione-illegittima-lavori
   // Copertina — Cantiere fermo con gru immobile e ponteggi montati, nessun operaio al lavoro
-  "sospensione-illegittima-lavori-cover": null,
+  "sospensione-illegittima-lavori-cover": "/images/guide/sospensione-illegittima-lavori-cover.webp",
   // Cantiere fermo con gru immobile e ponteggi montati, nessun operaio al lavoro
-  "sospensione-illegittima-lavori-1": null,
+  "sospensione-illegittima-lavori-1": "/images/guide/sospensione-illegittima-lavori-1.webp",
   // Verbale di sospensione dei lavori compilato con l'elenco dei mezzi e delle maestranze presenti in cantiere
-  "sospensione-illegittima-lavori-2": null,
+  "sospensione-illegittima-lavori-2": "/images/guide/sospensione-illegittima-lavori-2.webp",
 
   // vizi-appalto-condominiale
   // Copertina — Facciata condominiale appena rifatta con distacchi di intonaco e macchie di umidità, con ponteggio smontato da poco
-  "vizi-appalto-condominiale-cover": null,
+  "vizi-appalto-condominiale-cover": "/images/guide/vizi-appalto-condominiale-cover.webp",
   // Facciata condominiale appena rifatta con distacchi di intonaco e macchie di umidità, con ponteggio smontato da poco
-  "vizi-appalto-condominiale-1": null,
+  "vizi-appalto-condominiale-1": "/images/guide/vizi-appalto-condominiale-1.webp",
   // Verbale di assemblea condominiale aperto sul punto relativo alla contestazione dei lavori, con la relazione tecnica allegata
-  "vizi-appalto-condominiale-2": null,
+  "vizi-appalto-condominiale-2": "/images/guide/vizi-appalto-condominiale-2.webp",
 
   // polizza-decennale-postuma
   // Copertina — Cartellina del rogito aperta sul tavolo con l'atto notarile e un fascicolo di polizza assicurativa allegato
-  "polizza-decennale-postuma-cover": null,
+  "polizza-decennale-postuma-cover": "/images/guide/polizza-decennale-postuma-cover.webp",
   // Cartellina del rogito aperta sul tavolo con l'atto notarile e un fascicolo di polizza assicurativa allegato
-  "polizza-decennale-postuma-1": null,
+  "polizza-decennale-postuma-1": "/images/guide/polizza-decennale-postuma-1.webp",
   // Facciata di una palazzina recente con transenne e rete di protezione sotto un cornicione con intonaco distaccato
-  "polizza-decennale-postuma-2": null,
+  "polizza-decennale-postuma-2": "/images/guide/polizza-decennale-postuma-2.webp",
 
   // sconto-in-fattura-non-applicato
   // Copertina — Contratto di appalto aperto sulla clausola dello sconto in fattura, accanto a una fattura emessa per l'intero importo
-  "sconto-in-fattura-non-applicato-cover": null,
+  "sconto-in-fattura-non-applicato-cover": "/images/guide/sconto-in-fattura-non-applicato-cover.webp",
   // Contratto di appalto aperto sulla clausola dello sconto in fattura, accanto a una fattura emessa per l'intero importo
-  "sconto-in-fattura-non-applicato-1": null,
+  "sconto-in-fattura-non-applicato-1": "/images/guide/sconto-in-fattura-non-applicato-1.webp",
   // Facciata con cappotto termico posato solo su una porzione e ponteggio ancora montato
-  "sconto-in-fattura-non-applicato-2": null,
+  "sconto-in-fattura-non-applicato-2": "/images/guide/sconto-in-fattura-non-applicato-2.webp",
 
   // tetto-rifatto-infiltrazioni
   // Copertina — Falda di tetto rifatto vista dall'alto: manto in tegole, camino con risvolto della guaina e lucernario
-  "tetto-rifatto-infiltrazioni-cover": null,
+  "tetto-rifatto-infiltrazioni-cover": "/images/guide/tetto-rifatto-infiltrazioni-cover.webp",
   // Falda di tetto rifatto vista dall'alto: manto in tegole, camino con risvolto della guaina e lucernario
-  "tetto-rifatto-infiltrazioni-1": null,
+  "tetto-rifatto-infiltrazioni-1": "/images/guide/tetto-rifatto-infiltrazioni-1.webp",
   // Sottotetto con isolante bagnato e macchia di infiltrazione sul cartongesso, illuminato da una torcia
-  "tetto-rifatto-infiltrazioni-2": null,
+  "tetto-rifatto-infiltrazioni-2": "/images/guide/tetto-rifatto-infiltrazioni-2.webp",
 
   // parquet-posato-male
   // Copertina — Doghe di parquet sollevate al centro della stanza con fughe aperte e battiscopa staccato
-  "parquet-posato-male-cover": null,
+  "parquet-posato-male-cover": "/images/guide/parquet-posato-male-cover.webp",
   // Doghe di parquet sollevate al centro della stanza con fughe aperte e battiscopa staccato
-  "parquet-posato-male-1": null,
+  "parquet-posato-male-1": "/images/guide/parquet-posato-male-1.webp",
   // Tecnico che preleva un campione di massetto per la prova dell'umidità con il metodo al carburo di calcio
-  "parquet-posato-male-2": null,
+  "parquet-posato-male-2": "/images/guide/parquet-posato-male-2.webp",
 
   // mediazione-obbligatoria-edilizia
   // Copertina — Tavolo di mediazione con due parti sedute ai lati, i rispettivi avvocati e il mediatore al centro
-  "mediazione-obbligatoria-edilizia-cover": null,
+  "mediazione-obbligatoria-edilizia-cover": "/images/guide/mediazione-obbligatoria-edilizia-cover.webp",
   // Tavolo di mediazione con due parti sedute ai lati, i rispettivi avvocati e il mediatore al centro
-  "mediazione-obbligatoria-edilizia-1": null,
+  "mediazione-obbligatoria-edilizia-1": "/images/guide/mediazione-obbligatoria-edilizia-1.webp",
   // Verbale di mediazione sul tavolo con la relazione tecnica di parte e le fotografie dei difetti
-  "mediazione-obbligatoria-edilizia-2": null,
+  "mediazione-obbligatoria-edilizia-2": "/images/guide/mediazione-obbligatoria-edilizia-2.webp",
 
   // quanto-dura-causa-difetti
   // Copertina — Fascicolo processuale voluminoso su una scrivania di tribunale, con faldoni e perizie tecniche
-  "quanto-dura-causa-difetti-cover": null,
+  "quanto-dura-causa-difetti-cover": "/images/guide/quanto-dura-causa-difetti-cover.webp",
   // Fascicolo processuale voluminoso su una scrivania di tribunale, con faldoni e perizie tecniche
-  "quanto-dura-causa-difetti-1": null,
+  "quanto-dura-causa-difetti-1": "/images/guide/quanto-dura-causa-difetti-1.webp",
   // Consulente tecnico d'ufficio che esegue un saggio su una parete durante un sopralluogo peritale, con i tecnici di parte presenti
-  "quanto-dura-causa-difetti-2": null,
+  "quanto-dura-causa-difetti-2": "/images/guide/quanto-dura-causa-difetti-2.webp",
 
   // contenzioso-ristrutturazione
   // Copertina — Appartamento in ristrutturazione a lavori fermi: pavimento sventrato, tracce impiantistiche aperte nei muri e materiali accatastati
-  "contenzioso-ristrutturazione-cover": null,
+  "contenzioso-ristrutturazione-cover": "/images/guide/contenzioso-ristrutturazione-cover.webp",
   // Appartamento in ristrutturazione a lavori fermi: pavimento sventrato, tracce impiantistiche aperte nei muri e materiali accatastati
-  "contenzioso-ristrutturazione-1": null,
+  "contenzioso-ristrutturazione-1": "/images/guide/contenzioso-ristrutturazione-1.webp",
   // Tecnico con termocamera e umidimetro che documenta una macchia di infiltrazione sul soffitto di un bagno ristrutturato
-  "contenzioso-ristrutturazione-2": null,
+  "contenzioso-ristrutturazione-2": "/images/guide/contenzioso-ristrutturazione-2.webp",
 
   // contenzioso-serramenti
   // Copertina — Dettaglio del nodo di posa di una finestra: telaio, controtelaio e nastro di tenuta interno interrotto in corrispondenza dell'angolo
-  "contenzioso-serramenti-cover": null,
+  "contenzioso-serramenti-cover": "/images/guide/contenzioso-serramenti-cover.webp",
   // Dettaglio del nodo di posa di una finestra: telaio, controtelaio e nastro di tenuta interno interrotto in corrispondenza dell'angolo
-  "contenzioso-serramenti-1": null,
+  "contenzioso-serramenti-1": "/images/guide/contenzioso-serramenti-1.webp",
   // Immagine termografica di una finestra con la fascia fredda continua lungo il perimetro del telaio e l'angolo inferiore in evidenza
-  "contenzioso-serramenti-2": null,
+  "contenzioso-serramenti-2": "/images/guide/contenzioso-serramenti-2.webp",
 
   // contenzioso-fotovoltaico
   // Copertina — Tetto a falda in tegole con moduli fotovoltaici installati e staffe di fissaggio in vista, fotografato dall'alto in una giornata limpida
-  "contenzioso-fotovoltaico-cover": null,
+  "contenzioso-fotovoltaico-cover": "/images/guide/contenzioso-fotovoltaico-cover.webp",
   // Tetto a falda in tegole con moduli fotovoltaici installati e staffe di fissaggio in vista, fotografato dall'alto in una giornata limpida
-  "contenzioso-fotovoltaico-1": null,
+  "contenzioso-fotovoltaico-1": "/images/guide/contenzioso-fotovoltaico-1.webp",
   // Schermata del portale di monitoraggio dell'inverter con il grafico della produzione mensile, affiancata al prospetto cartaceo di producibilità consegnato alla firma
-  "contenzioso-fotovoltaico-2": null,
+  "contenzioso-fotovoltaico-2": "/images/guide/contenzioso-fotovoltaico-2.webp",
 };
 
 export const getArticleImage = (slot: string): string | null => articleImages[slot] ?? null;
