@@ -215,7 +215,7 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.edilizialegale.it/brand/marchio-edilizia-legale.png",
-        "width": 388,
+        "width": 391,
         "height": 512,
       },
     },

@@ -28,7 +28,7 @@ export const ELLogo = ({ light = false }: { light?: boolean }) => (
   <span className="flex items-center gap-2.5">
     <img
       src={light ? "/brand/marchio-edilizia-legale-chiaro.png" : "/brand/marchio-edilizia-legale.png"}
-      width={light ? 392 : 388}
+      width={light ? 392 : 391}
       height={512}
       alt=""
       aria-hidden="true"
