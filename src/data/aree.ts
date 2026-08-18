@@ -62,7 +62,7 @@ export const areeImprese: Area[] = [
   {
     icon: Landmark,
     title: "Contenzioso tributario dell'edilizia",
-    desc: "Accertamenti Superbonus, sequestro dei crediti d'imposta, reverse charge applicato male, IVA agevolata contestata, responsabilità solidale fiscale.",
+    desc: "Avvisi di recupero sui crediti d'imposta e relativi sequestri, reverse charge applicato male, IVA agevolata contestata, responsabilità solidale fiscale, accertamenti sui bonus edilizi.",
     guida: "accertamento-superbonus-imprese",
     badge: "Presidio dedicato",
   },
@@ -125,7 +125,7 @@ export const areePrivati: Area[] = [
   },
   {
     icon: Sun,
-    title: "Fotovoltaico, Superbonus e bonus edilizi",
+    title: "Fotovoltaico e bonus edilizi",
     desc: "Impianto che non produce quanto promesso, recesso dai contratti firmati a casa, finanziamento collegato, general contractor sparito, recuperi dell'Agenzia.",
     guida: "fotovoltaico-non-produce",
   },
