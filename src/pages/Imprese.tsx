@@ -7,6 +7,8 @@ import ELFooter from "@/components/ELFooter";
 import ELContactModal from "@/components/ELContactModal";
 import ELStickyCTA from "@/components/ELStickyCTA";
 import ELFinalCTA from "@/components/ELFinalCTA";
+import ELBandaFoto from "@/components/ELBandaFoto";
+import ELFaqSilo from "@/components/ELFaqSilo";
 import Reveal from "@/components/Reveal";
 import { AreaCard } from "@/components/ELServicesCards";
 import { Button } from "@/components/ui/button";
@@ -209,6 +211,21 @@ const Imprese = () => {
               </div>
             </div>
           </section>
+
+          <ELBandaFoto
+            slot="imprese-banda"
+            occhiello="Come si lavora insieme"
+            titolo="Il fascicolo prima della strategia. Sempre in quest'ordine."
+            testo="Non esistono due cantieri uguali, e la stessa clausola in due contratti diversi produce esiti opposti. Per questo la prima cosa che chiediamo non è di raccontare, ma di mandare le carte: dal contratto ai SAL, dalle PEC alle fotografie."
+            punti={[
+              "Ricostruzione delle date: quali termini corrono e quanti giorni restano",
+              "Verifica dei documenti che reggono in giudizio e di quelli che non servono",
+              "Scelta della strada, e se non conviene muoversi te lo diciamo",
+            ]}
+            link={{ to: "/studio", label: "Il metodo di lavoro dello studio" }}
+          />
+
+          <ELFaqSilo silo="imprese" titolo="Le domande che ci fanno più spesso le imprese" />
 
           {/* Guide per le imprese */}
           <section className="py-16 lg:py-20 bg-white">

@@ -12,6 +12,7 @@ import ELVerticali from "@/components/ELVerticali";
 import ELProcessFlow from "@/components/ELProcessFlow";
 import ELWhyUs from "@/components/ELWhyUs";
 import ELGuidePilastro from "@/components/ELGuidePilastro";
+import ELBandaFoto from "@/components/ELBandaFoto";
 import ELAvvocato from "@/components/ELAvvocato";
 import ELFAQ from "@/components/ELFAQ";
 import ELFinalCTA from "@/components/ELFinalCTA";
@@ -49,6 +50,19 @@ const Index = () => {
           </Suspense>
           <ELVerticali />
           <ELProcessFlow />
+          <ELBandaFoto
+            slot="home-metodo"
+            occhiello="Il fascicolo prima di tutto"
+            titolo="Nessuna strategia prima di aver letto le carte."
+            testo="Chi promette una linea difensiva al telefono, prima di vedere un documento, sta indovinando. Nel contenzioso edilizio la partita si decide su date, firme e clausole: quando è avvenuta la consegna, cosa è stato contestato per iscritto, quale termine è già scaduto."
+            punti={[
+              "Entro 48 ore lavorative sai quali termini corrono nel tuo caso",
+              "Quali strade sono praticabili e quali sono già chiuse",
+              "Se conviene muoversi, o se la cosa più onesta è dirti di no",
+            ]}
+            link={{ to: "/contatti", label: "Come mandare il fascicolo" }}
+            invertita
+          />
           <ELGuidePilastro />
           <ELAvvocato />
           <ELWhyUs />

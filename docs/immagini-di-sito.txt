@@ -1,0 +1,36 @@
+# IMMAGINI DI SITO ANCORA DA PRODURRE — Edilizia Legale
+# Le 129 immagini delle guide sono complete. Queste sono le foto di ambiente
+# e di persona, che vivono negli slot di src/data/imageSlots.ts.
+#
+# Dove metterle:  public/images/sito/
+# Come collegarle: in src/data/imageSlots.ts sostituire null con il percorso,
+#                  es. "guide-hero": "/images/sito/guide-hero.webp"
+#
+# Finche' uno slot e' vuoto, in produzione il riquadro mostra il marchio in
+# filigrana: la pagina resta pubblicabile e non dichiara nulla di incompiuto.
+
+## FOTO REALI — non si possono generare, servono quelle vere
+avvocato-ritratto      1200x1500 (4:5)   Ritratto dell'Avv. Armando Rossi su fondo scuro.
+                                         Compare in 45 punti: firma di ogni guida, home, pagina studio.
+studio-team            1600x1200 (4:3)   Lo studio o il team, foto vera. Fondo che regge il navy.
+contatti-studio        2100x800 (21:8)   Ingresso o sala riunioni dello studio, taglio panoramico.
+
+## FOTO DI AMBIENTE — generabili
+home-due-lati          1600x1200 (4:3)   Il cantiere e le carte insieme: scrivania con contratto e
+                                         planimetrie in primo piano, cantiere sfocato sullo sfondo.
+                                         E' l'immagine del posizionamento "due lati".
+home-metodo            1600x1200 (4:3)   Esame del fascicolo documentale: due persone al tavolo,
+                                         faldoni aperti, PEC stampate, evidenziatore. Nessun volto in primo piano.
+imprese-banda          1600x1200 (4:3)   Cantiere di un'impresa edile al lavoro: ponteggi montati,
+                                         squadra in attivita', mezzo in cantiere. Luce di giornata reale.
+privati-banda          1600x1200 (4:3)   Casa in ristrutturazione dal punto di vista del proprietario:
+                                         stanza a lavori in corso, materiali accatastati, non abbandonata.
+guide-hero             1600x1200 (4:3)   Scrivania con fascicoli e codice civile aperto, penna, faldoni.
+                                         Sta su fondo navy: soggetto luminoso, niente sfondi scuri.
+domande-hero           1600x1200 (4:3)   Appunti manoscritti e codice civile su scrivania, dettaglio
+                                         ravvicinato. Sta su fondo navy.
+
+# FORMATO: WebP q82 (o JPG q85), massimo 180 kB per file.
+# STILE: cantiere e studio italiani reali. Nessuno stock nordamericano,
+#        nessun casco lucido con pollice in su, nessun sorriso in posa.
+# NOMI:  esattamente quelli della prima colonna, minuscoli con trattini.

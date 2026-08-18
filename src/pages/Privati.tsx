@@ -7,6 +7,8 @@ import ELFooter from "@/components/ELFooter";
 import ELContactModal from "@/components/ELContactModal";
 import ELStickyCTA from "@/components/ELStickyCTA";
 import ELFinalCTA from "@/components/ELFinalCTA";
+import ELBandaFoto from "@/components/ELBandaFoto";
+import ELFaqSilo from "@/components/ELFaqSilo";
 import ELVerticali from "@/components/ELVerticali";
 import Reveal from "@/components/Reveal";
 import { AreaCard } from "@/components/ELServicesCards";
@@ -216,7 +218,23 @@ const Privati = () => {
             </div>
           </section>
 
+          <ELBandaFoto
+            slot="privati-banda"
+            occhiello="Come si lavora insieme"
+            titolo="Prima di dirti se hai ragione, guardiamo le carte."
+            testo="Le crepe, le infiltrazioni, il cantiere fermo: quello che vedi in casa è il punto di partenza, non la prova. La prova sta nel contratto, nel preventivo, nelle date delle contestazioni scritte e nelle fotografie datate. È da lì che si capisce cosa puoi ancora chiedere."
+            punti={[
+              "Quali termini corrono e quanto tempo resta per farli valere",
+              "Chi risponde tra impresa, progettista, direttore dei lavori e costruttore",
+              "Se conviene una causa, una mediazione, o nessuna delle due",
+            ]}
+            link={{ to: "/studio", label: "Il metodo di lavoro dello studio" }}
+            invertita
+          />
+
           <ELVerticali />
+
+          <ELFaqSilo silo="privati" titolo="Le domande che ci fanno più spesso i committenti" />
 
           {/* Guide per i privati */}
           <section className="py-16 lg:py-20 bg-muted/40">

@@ -4,6 +4,7 @@ import SEO from "@/components/SEO";
 import ELHeader from "@/components/ELHeader";
 import ELHeroBackdrop from "@/components/ELHeroBackdrop";
 import ELFooter from "@/components/ELFooter";
+import ELImageSlot from "@/components/ELImageSlot";
 import ELContactModal from "@/components/ELContactModal";
 import ELStickyCTA from "@/components/ELStickyCTA";
 import ELFinalCTA from "@/components/ELFinalCTA";
@@ -56,6 +57,7 @@ const DomandeFrequenti = () => {
           <section className="relative bg-navy text-white overflow-hidden border-b border-white/10">
             <ELHeroBackdrop />
             <div className="container mx-auto px-4 py-14 lg:py-16 relative">
+              <div className="grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-14 items-center">
               <div className="max-w-3xl">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur rounded-full text-xs font-semibold mb-6 uppercase tracking-wider border border-white/15">
                   <HelpCircle className="w-4 h-4 text-gold" />
@@ -68,6 +70,8 @@ const DomandeFrequenti = () => {
                   Ogni domanda ha una risposta diretta e una pagina di approfondimento con i riferimenti normativi.
                   Sono risposte generali: il tuo caso va sempre verificato sui documenti.
                 </p>
+              </div>
+              <ELImageSlot id="domande-hero" tone="dark" className="hidden lg:flex rounded-2xl aspect-[4/3]" />
               </div>
             </div>
           </section>
