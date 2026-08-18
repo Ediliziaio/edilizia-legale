@@ -11,7 +11,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "16 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "recupero crediti edilizia",
@@ -29,7 +29,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "17 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "difetti costruttivi casa nuova",
@@ -47,7 +47,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "15 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "annullare contratto con impresa edile",
@@ -65,7 +65,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Tributario",
     "date": "Agosto 2026",
     "readTime": "15 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "accertamento superbonus impresa edile",
@@ -84,7 +84,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "17 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "contratto di appalto edile modello",
@@ -102,7 +102,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "12 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "impresa sparita dopo acconto cosa fare",
@@ -120,7 +120,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "12 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "SAL non pagato cosa fare",
@@ -139,7 +139,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "14 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "subappaltatore non pagato cosa fare",
@@ -158,7 +158,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "13 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "committente contesta i lavori per non pagare",
@@ -177,7 +177,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "13 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "durc irregolare cosa fare",
@@ -195,7 +195,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "11 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "varianti in corso d'opera chi le paga",
@@ -213,7 +213,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "8 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "ritenuta a garanzia appalto svincolo",
@@ -231,7 +231,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Tributario",
     "date": "Agosto 2026",
     "readTime": "10 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "reverse charge edilizia sanzioni errore",
@@ -249,7 +249,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "15 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "opposizione decreto ingiuntivo impresa edile",
@@ -267,7 +267,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "13 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "preventivo sforato lavori extra non concordati",
@@ -286,7 +286,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "14 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "ritardo consegna casa costruttore risarcimento",
@@ -304,7 +304,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "12 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "infissi montati male cosa fare",
@@ -324,7 +324,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "14 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "impianto fotovoltaico non produce quanto promesso",
@@ -343,7 +343,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "12 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "recesso contratto fotovoltaico firmato a casa",
@@ -362,7 +362,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "14 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "cappotto termico si stacca chi paga",
@@ -381,7 +381,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "12 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "cucina su misura difettosa cosa posso fare",
@@ -400,7 +400,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "13 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "terrazzo rifatto perde ancora acqua",
@@ -418,7 +418,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "12 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "pompa di calore non scalda abbastanza cosa fare",
@@ -436,7 +436,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "11 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "piscina perde acqua responsabilità costruttore",
@@ -454,7 +454,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "17 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "differenza 1667 e 1669 codice civile",
@@ -472,7 +472,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "17 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "quanto costa fare causa al costruttore",
@@ -491,7 +491,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "17 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "accertamento tecnico preventivo difetti casa",
@@ -510,7 +510,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "17 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "agenzia entrate chiede restituzione superbonus privato",
@@ -528,7 +528,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "17 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "ordinanza demolizione cosa fare ricorso",
@@ -546,7 +546,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "17 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "iscrizione riserve appalto termini",
@@ -564,7 +564,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "15 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "contratto subappalto edile cosa deve contenere",
@@ -582,7 +582,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "14 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "durc di congruità manodopera incongruenza",
@@ -600,7 +600,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Imprese",
     "date": "Agosto 2026",
     "readTime": "15 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "sospensione lavori illegittima maggiori oneri",
@@ -618,7 +618,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "16 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "vizi lavori condominio chi può agire",
@@ -636,7 +636,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "17 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "polizza decennale postuma come attivarla",
@@ -654,7 +654,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "15 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "sconto in fattura non applicato cosa fare",
@@ -672,7 +672,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "15 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "tetto rifatto infiltra ancora chi risponde",
@@ -690,7 +690,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "14 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "parquet posato male si solleva rimedi",
@@ -708,7 +708,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "15 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "mediazione obbligatoria appalto edilizia",
@@ -727,7 +727,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "14 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "quanto dura una causa per difetti costruttivi",
@@ -745,7 +745,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Privati",
     "date": "Agosto 2026",
     "readTime": "18 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "contenzioso ristrutturazione",
@@ -764,7 +764,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "19 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "contenzioso serramenti",
@@ -783,7 +783,7 @@ export const articlesMeta: ArticleMeta[] = [
     "category": "Verticali",
     "date": "Agosto 2026",
     "readTime": "15 min",
-    "author": "Redazione Edilizia Legale",
+    "author": "Avv. Armando Rossi",
     "cover": "from-navy to-navy-light",
     "keywords": [
       "contenzioso fotovoltaico",

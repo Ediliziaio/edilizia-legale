@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Verticali",
   date: "Agosto 2026",
   readTime: "12 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "recesso contratto fotovoltaico firmato a casa",
@@ -102,7 +102,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Mandaci il contratto: la prima cosa da verificare è se contiene l'informativa sul recesso. Se manca, i tempi cambiano completamente, e con loro la strategia. Puoi allegare il plico dalla pagina contatti e ricevere un riscontro sulla verifica dei termini. Se invece i termini sono decorsi ma l'impianto produce meno del promesso, leggi la guida su cosa chiedere quando il fotovoltaico non rende; per il quadro generale sull'annullamento dei contratti, c'è la guida dedicata. È disponibile anche il modello di comunicazione di recesso da adattare al tuo caso." },
+    { type: "p", text: "Mandaci il contratto: la prima cosa da verificare è se contiene l'informativa sul recesso. Se manca, i tempi cambiano completamente, e con loro la strategia. Puoi allegare il plico dalla pagina contatti e ricevere un riscontro sulla verifica dei termini. Se invece i termini sono decorsi ma l'impianto produce meno del promesso, leggi [la guida su cosa chiedere quando il fotovoltaico non rende](/guide/fotovoltaico-non-produce); per il quadro generale sull'annullamento dei contratti, c'è la guida dedicata. È disponibile anche il modello di comunicazione di recesso da adattare al tuo caso." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

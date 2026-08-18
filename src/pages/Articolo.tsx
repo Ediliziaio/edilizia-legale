@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import SEO from "@/components/SEO";
 import ELHeader from "@/components/ELHeader";
 import ELFooter from "@/components/ELFooter";
 import ELContactModal from "@/components/ELContactModal";
 import ELStickyCTA from "@/components/ELStickyCTA";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import {
   Calendar,
@@ -26,17 +25,55 @@ import {
   Phone,
   Sparkles,
   ChevronRight,
+  ChevronDown,
   FileText,
+  Scale,
+  BadgeCheck,
 } from "lucide-react";
 import { articlesMeta, getRelated, toISODate, type Block, type Article, type ArticleMeta } from "@/data/articles";
 import { getArticleContent } from "@/data/articlesContent";
 import { getArticleSeo } from "@/data/articleSeo";
 import { getArticleImage } from "@/data/articleImages";
-import { PHONE_TEL, PHONE_DISPLAY } from "@/data/site";
+import { SITE_URL, PHONE_TEL, PHONE_DISPLAY, AUTHOR_ID, AUTHOR_URL, AUTHOR_ROLE, AUTHOR_FORO, AUTHOR_SAMEAS } from "@/data/site";
 import ArticleFigure from "@/components/ArticleFigure";
 import ArticleTimeline from "@/components/ArticleTimeline";
 import ArticleCover from "@/components/ArticleCover";
 import ArticleCaselaw from "@/components/ArticleCaselaw";
+import ELAuthorBox from "@/components/ELAuthorBox";
+import ArticleSources, { estraiFonti } from "@/components/ArticleSources";
+
+/**
+ * Link inline nel testo dei blocchi, con sintassi `[testo](/guide/slug)`.
+ * Serve a rendere cliccabili i rimandi tra guide, che finora esistevano solo
+ * a parole: senza, l'architettura a silo non trasferisce nessuna autorità.
+ */
+const LINK_RE = /\[([^\]]+)\]\((\/[^)\s]+|https?:\/\/[^)\s]+)\)/g;
+
+const renderInline = (text: string): ReactNode => {
+  if (!text.includes("](")) return text;
+  const out: ReactNode[] = [];
+  let last = 0;
+  let m: RegExpExecArray | null;
+  LINK_RE.lastIndex = 0;
+  while ((m = LINK_RE.exec(text)) !== null) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    const [, label, href] = m;
+    out.push(
+      href.startsWith("/") ? (
+        <Link key={`${m.index}`} to={href} className="text-navy underline decoration-gold decoration-2 underline-offset-2 hover:text-gold-dark">
+          {label}
+        </Link>
+      ) : (
+        <a key={`${m.index}`} href={href} target="_blank" rel="noopener noreferrer" className="text-navy underline decoration-gold decoration-2 underline-offset-2 hover:text-gold-dark">
+          {label}
+        </a>
+      ),
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+};
 
 const renderBlock = (block: Block, i: number) => {
   switch (block.type) {
@@ -55,7 +92,7 @@ const renderBlock = (block: Block, i: number) => {
     case "p":
       return (
         <p key={i} className="text-foreground/80 leading-relaxed mb-5 text-lg">
-          {block.text}
+          {renderInline(block.text)}
         </p>
       );
     case "ul":
@@ -64,7 +101,7 @@ const renderBlock = (block: Block, i: number) => {
           {block.items.map((it, j) => (
             <li key={j} className="flex items-start gap-3 text-foreground/80 text-lg">
               <span className="text-gold-dark mt-2 text-xs">●</span>
-              <span>{it}</span>
+              <span>{renderInline(it)}</span>
             </li>
           ))}
         </ul>
@@ -74,7 +111,7 @@ const renderBlock = (block: Block, i: number) => {
         <ol key={i} className="mb-6 space-y-2.5 list-decimal pl-6 marker:text-gold-dark marker:font-bold">
           {block.items.map((it, j) => (
             <li key={j} className="text-foreground/80 text-lg pl-2 leading-relaxed">
-              {it}
+              {renderInline(it)}
             </li>
           ))}
         </ol>
@@ -90,7 +127,7 @@ const renderBlock = (block: Block, i: number) => {
       return (
         <div key={i} className="bg-gold/10 border-l-4 border-gold rounded-r-xl p-5 my-7 flex items-start gap-3">
           <Info className="w-5 h-5 text-gold-dark mt-0.5 shrink-0" />
-          <p className="text-navy leading-relaxed">{block.text}</p>
+          <p className="text-navy leading-relaxed">{renderInline(block.text)}</p>
         </div>
       );
     case "table":
@@ -117,23 +154,23 @@ const renderBlock = (block: Block, i: number) => {
         </div>
       );
     case "faq":
+      // <details> nativo, non accordion JS: le risposte devono stare nell'HTML
+      // statico. Lo schema FAQPage le dichiara, e i crawler AI non eseguono JS.
       return (
-        <Accordion key={i} type="single" collapsible className="my-7 space-y-3">
+        <div key={i} className="my-7 space-y-3">
           {block.items.map((f, j) => (
-            <AccordionItem
+            <details
               key={j}
-              value={`faq-${i}-${j}`}
-              className="bg-muted/40 rounded-xl border border-border px-5"
+              className="group bg-muted/40 rounded-xl border border-border px-5 open:pb-1"
             >
-              <AccordionTrigger className="text-left font-semibold text-navy hover:text-gold-dark py-4 text-base">
+              <summary className="flex items-center justify-between gap-4 cursor-pointer list-none py-4 font-semibold text-navy hover:text-gold-dark [&::-webkit-details-marker]:hidden">
                 {f.q}
-              </AccordionTrigger>
-              <AccordionContent className="text-foreground/75 leading-relaxed pb-4 text-base">
-                {f.a}
-              </AccordionContent>
-            </AccordionItem>
+                <ChevronDown className="w-4 h-4 shrink-0 transition-transform group-open:rotate-180" />
+              </summary>
+              <p className="text-foreground/75 leading-relaxed pb-4 text-base">{renderInline(f.a)}</p>
+            </details>
           ))}
-        </Accordion>
+        </div>
       );
     case "figure":
       return <ArticleFigure key={i} slot={block.slot} alt={block.alt} caption={block.caption} />;
@@ -204,8 +241,12 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
     "image": [image],
     "author": {
       "@type": "Person",
+      "@id": AUTHOR_ID,
       "name": article.author,
-      "url": "https://www.edilizialegale.it/studio",
+      "url": AUTHOR_URL,
+      "jobTitle": AUTHOR_ROLE,
+      ...(AUTHOR_FORO ? { "memberOf": { "@type": "Organization", "name": AUTHOR_FORO } } : {}),
+      ...(AUTHOR_SAMEAS.length ? { "sameAs": AUTHOR_SAMEAS } : {}),
     },
     "publisher": {
       "@type": "Organization",
@@ -227,6 +268,7 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
     "isAccessibleForFree": true,
     ...(Number.isFinite(minutes) ? { "timeRequired": `PT${minutes}M` } : {}),
     ...(content ? { "wordCount": wordCountOf(content) } : {}),
+    ...(content && estraiFonti(content).length ? { "citation": estraiFonti(content) } : {}),
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": url,
@@ -288,7 +330,10 @@ const Sidebar = ({ article, related, onOpenContact }: SidebarProps) => {
     (b): b is { type: "h2"; text: string; id?: string } => b.type === "h2" && !!b.id
   );
 
-  const articleUrl = typeof window !== "undefined" ? window.location.href : "";
+  // URL canonico, non window.location: è identico in prerender e nel browser
+  // (niente disallineamento di idratazione) e chi condivide manda il link di
+  // produzione, non l'indirizzo su cui sta navigando.
+  const articleUrl = `${SITE_URL}/guide/${article.slug}`;
 
   // Scrollspy: track active section
   useEffect(() => {
@@ -545,6 +590,10 @@ const Articolo = () => {
   if (!article) return <Navigate to="/guide" replace />;
 
   const related = getRelated(slug, 3);
+  const toc = article.content.filter(
+    (b): b is { type: "h2"; text: string; id?: string } & { id: string } =>
+      b.type === "h2" && typeof b.id === "string" && b.id.length > 0,
+  );
   const { articleSchema, breadcrumbSchema, faqSchema } = buildSchemas(article, article.content);
   // SERP-length title/description (fallback to the long H1/excerpt if not tuned).
   const seo = getArticleSeo(slug);
@@ -622,7 +671,34 @@ const Articolo = () => {
               <div className="grid lg:grid-cols-[1fr_320px] gap-8 lg:gap-12 max-w-7xl mx-auto">
                 {/* Main content */}
                 <div className="min-w-0">
+                  {/* Indice su mobile: la sidebar è nascosta sotto lg, e senza
+                      questo una guida da 3.000 parole non ha navigazione dove
+                      arriva la maggior parte del traffico. */}
+                  {toc.length > 2 && (
+                    <details className="lg:hidden group mb-8 bg-muted/40 border border-border rounded-xl px-5">
+                      <summary className="flex items-center justify-between gap-4 cursor-pointer list-none py-4 font-bold text-navy [&::-webkit-details-marker]:hidden">
+                        <span className="flex items-center gap-2">
+                          <List className="w-4 h-4 text-gold-dark" /> In questa guida
+                        </span>
+                        <ChevronDown className="w-4 h-4 shrink-0 transition-transform group-open:rotate-180" />
+                      </summary>
+                      <ol className="pb-4 space-y-2 list-decimal pl-5 marker:text-gold-dark marker:font-bold">
+                        {toc.map((h) => (
+                          <li key={h.id}>
+                            <a href={`#${h.id}`} className="text-foreground/75 hover:text-gold-dark leading-snug">
+                              {h.text}
+                            </a>
+                          </li>
+                        ))}
+                      </ol>
+                    </details>
+                  )}
+
                   <article>{article.content.map(renderBlock)}</article>
+
+                  <ArticleSources content={article.content} />
+
+                  <ELAuthorBox />
 
                   {/* CTA box */}
                   <div className="mt-12 bg-navy text-white rounded-2xl p-7 lg:p-9">

@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "15 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "contratto subappalto edile cosa deve contenere",
@@ -140,7 +140,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Se hai un contratto di subappalto da firmare o un pagamento fermo su un cantiere già chiuso, il primo passo è leggere le clausole su pagamenti, ritenute e penali. Contattaci dalla pagina contatti: analizziamo il testo, indichiamo le modifiche da chiedere e valutiamo le azioni possibili sul credito già maturato. Se il problema riguarda la regolarità contributiva del cantiere, leggi anche la guida sulla congruità della manodopera." },
+    { type: "p", text: "Se hai un contratto di subappalto da firmare o un pagamento fermo su un cantiere già chiuso, il primo passo è leggere le clausole su pagamenti, ritenute e penali. Contattaci dalla pagina contatti: analizziamo il testo, indichiamo le modifiche da chiedere e valutiamo le azioni possibili sul credito già maturato. Se il problema riguarda la regolarità contributiva del cantiere, leggi anche [la guida sulla congruità della manodopera](/guide/congruita-manodopera-durc)." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

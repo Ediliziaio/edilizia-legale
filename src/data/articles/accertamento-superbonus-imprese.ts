@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Tributario",
   date: "Agosto 2026",
   readTime: "15 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "accertamento superbonus impresa edile",
@@ -109,7 +109,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Se hai ricevuto uno schema di atto o un atto di recupero, mandaci l'atto: la prima cosa da stabilire è la qualificazione del credito, perché da quella dipendono termini, sanzioni e rischio penale — e i 60 giorni corrono già. Dalla pagina contatti puoi fissare una valutazione del fascicolo documentale. Per il quadro generale delle liti con il Fisco, parti dall'hub sul contenzioso tributario; se il tuo problema oggi è il cassetto fiscale bloccato, leggi l'approfondimento sul sequestro dei crediti d'imposta; e se le contestazioni toccano le fatture dei subappalti, c'è la guida al reverse charge in edilizia." },
+    { type: "p", text: "Se hai ricevuto uno schema di atto o un atto di recupero, mandaci l'atto: la prima cosa da stabilire è la qualificazione del credito, perché da quella dipendono termini, sanzioni e rischio penale — e i 60 giorni corrono già. Dalla pagina contatti puoi fissare una valutazione del fascicolo documentale. Per il quadro generale delle liti con il Fisco, parti dall'hub sul contenzioso tributario; se il tuo problema oggi è il cassetto fiscale bloccato, leggi l'approfondimento sul sequestro dei crediti d'imposta; e se le contestazioni toccano le fatture dei subappalti, c'è [la guida al reverse charge in edilizia](/guide/reverse-charge-edilizia)." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

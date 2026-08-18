@@ -9,7 +9,7 @@ import ELStickyCTA from "@/components/ELStickyCTA";
 import ELFinalCTA from "@/components/ELFinalCTA";
 import Reveal from "@/components/Reveal";
 import { BookOpen, ArrowRight, Clock, Search, X, Star, HelpCircle } from "lucide-react";
-import { articlesMeta, isPillar, type ArticleMeta, type Category } from "@/data/articles";
+import { articlesMeta, isPillar, type ArticleMeta, type Category, aggiornamentoConPreposizione } from "@/data/articles";
 import { SITE_URL } from "@/data/site";
 import ELImageSlot from "@/components/ELImageSlot";
 import ArticleCover from "@/components/ArticleCover";
@@ -186,7 +186,7 @@ const Guide = () => {
                   <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/60">
                     <span><strong className="text-gold">{articlesMeta.length}</strong> guide pubblicate</span>
                     <span><strong className="text-gold">{pillars.length}</strong> guide pilastro</span>
-                    <span>Aggiornate ad <strong className="text-white/80">agosto 2026</strong></span>
+                    <span>Aggiornate <strong className="text-white/80">{aggiornamentoConPreposizione()}</strong></span>
                   </div>
                 </div>
                 <ELImageSlot id="guide-hero" tone="dark" className="hidden lg:flex rounded-2xl aspect-[4/3]" />

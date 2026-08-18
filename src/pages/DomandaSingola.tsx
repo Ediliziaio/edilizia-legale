@@ -8,7 +8,7 @@ import ELStickyCTA from "@/components/ELStickyCTA";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, BookOpen } from "lucide-react";
 import { getFaq, faqEntries } from "@/data/faq";
-import { getArticleMeta } from "@/data/articles";
+import { getArticleMeta, aggiornamentoConPreposizione } from "@/data/articles";
 import { SITE_URL } from "@/data/site";
 
 /**
@@ -153,7 +153,7 @@ const DomandaSingola = () => {
 
                 <p className="text-xs text-foreground/50 mt-10 leading-relaxed">
                   Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto.
-                  Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti.
+                  Aggiornato {aggiornamentoConPreposizione()} sulla base della normativa e della giurisprudenza vigenti.
                 </p>
               </div>
             </div>

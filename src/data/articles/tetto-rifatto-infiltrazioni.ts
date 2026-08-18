@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Verticali",
   date: "Agosto 2026",
   readTime: "15 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "tetto rifatto infiltra ancora chi risponde",
@@ -129,7 +129,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Se la copertura che hai fatto rifare infiltra ancora, i primi due passi sono sempre gli stessi: fissare la data di scoperta con una relazione tecnica e denunciare i gravi difetti prima che l'anno decorra. Contattaci dalla pagina contatti con contratto, capitolato e foto: valutiamo se il caso rientra nell'art. 1669 c.c. e quale sequenza ha senso. Se il problema riguarda invece il terrazzo o il lastrico solare, la guida dedicata alle infiltrazioni da terrazzo affronta le regole sul riparto delle spese in condominio." },
+    { type: "p", text: "Se la copertura che hai fatto rifare infiltra ancora, i primi due passi sono sempre gli stessi: fissare la data di scoperta con una relazione tecnica e denunciare i gravi difetti prima che l'anno decorra. Contattaci dalla pagina contatti con contratto, capitolato e foto: valutiamo se il caso rientra nell'art. 1669 c.c. e quale sequenza ha senso. Se il problema riguarda invece il terrazzo o il lastrico solare, [la guida dedicata alle infiltrazioni da terrazzo](/guide/terrazzo-infiltrazioni) affronta le regole sul riparto delle spese in condominio." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

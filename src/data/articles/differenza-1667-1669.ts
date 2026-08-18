@@ -9,7 +9,7 @@ export const meta: ArticleMeta = {
   category: "Privati",
   date: "Agosto 2026",
   readTime: "17 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "differenza 1667 e 1669 codice civile",
@@ -157,7 +157,7 @@ export const article: Article = {
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
     { type: "p", text: "Se hai un difetto in casa e non sai sotto quale norma ricada, il primo passo è ricostruire tre date: quando l'opera è stata compiuta, quando hai constatato il problema e quando un tecnico ne ha individuato la causa. Da quelle tre date dipende quale finestra è ancora aperta. Contattaci dalla pagina contatti con i documenti che hai: rogito, capitolato, verbale di consegna e fotografie del difetto." },
-    { type: "p", text: "Se stai valutando come far accertare il difetto prima che qualcuno intervenga sui luoghi, leggi anche la guida all'accertamento tecnico preventivo: è lo strumento che, nella maggior parte dei casi, precede utilmente la causa." },
+    { type: "p", text: "Se stai valutando come far accertare il difetto prima che qualcuno intervenga sui luoghi, leggi anche [la guida all'accertamento tecnico preventivo](/guide/accertamento-tecnico-preventivo): è lo strumento che, nella maggior parte dei casi, precede utilmente la causa." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

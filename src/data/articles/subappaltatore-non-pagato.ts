@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "14 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "subappaltatore non pagato cosa fare",
@@ -112,7 +112,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Se l'appaltatore non paga, la prima cosa da capire è se il committente gli deve ancora qualcosa: è su quel credito che si costruisce il recupero, ed è un credito che si esaurisce in fretta. Contattaci dalla pagina contatti con contratto di subappalto, SAL e fatture: verifichiamo la situazione del rapporto principale e ti diciamo se la strada è la surrogatoria con sequestro, il pagamento diretto pubblico o il solo decreto ingiuntivo. Leggi anche la guida al recupero crediti nell'edilizia e, prima della prossima firma, le clausole da inserire nel contratto di subappalto." },
+    { type: "p", text: "Se l'appaltatore non paga, la prima cosa da capire è se il committente gli deve ancora qualcosa: è su quel credito che si costruisce il recupero, ed è un credito che si esaurisce in fretta. Contattaci dalla pagina contatti con contratto di subappalto, SAL e fatture: verifichiamo la situazione del rapporto principale e ti diciamo se la strada è la surrogatoria con sequestro, il pagamento diretto pubblico o il solo decreto ingiuntivo. Leggi anche [la guida al recupero crediti nell'edilizia](/guide/recupero-crediti-edilizia) e, prima della prossima firma, le clausole da inserire nel contratto di subappalto." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

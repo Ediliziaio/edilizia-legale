@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Privati",
   date: "Agosto 2026",
   readTime: "17 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "accertamento tecnico preventivo difetti casa",
@@ -147,7 +147,7 @@ export const article: Article = {
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
     { type: "p", text: "Se hai un difetto in casa e temi che i luoghi vengano modificati, la valutazione da fare è duplice: quale delle due norme si adatta alla tua situazione e chi va chiamato perché l'accertamento sia opponibile a tutti. Contattaci dalla pagina contatti portando fotografie datate, rogito o contratto d'appalto, capitolato e la relazione del tuo tecnico se già l'hai." },
-    { type: "p", text: "Prima di decidere, può esserti utile anche la guida sulla differenza tra l'art. 1667 e l'art. 1669 del codice civile: la qualificazione del difetto orienta i quesiti da proporre e le parti da chiamare nel ricorso." },
+    { type: "p", text: "Prima di decidere, può esserti utile anche [la guida sulla differenza tra l'art](/guide/differenza-1667-1669). 1667 e l'art. 1669 del codice civile: la qualificazione del difetto orienta i quesiti da proporre e le parti da chiamare nel ricorso." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

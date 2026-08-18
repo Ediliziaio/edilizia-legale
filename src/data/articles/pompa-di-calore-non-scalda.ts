@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Verticali",
   date: "Agosto 2026",
   readTime: "12 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "pompa di calore non scalda abbastanza cosa fare",

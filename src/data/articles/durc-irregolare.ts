@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "13 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "durc irregolare cosa fare",

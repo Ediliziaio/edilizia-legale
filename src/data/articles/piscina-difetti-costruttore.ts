@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Verticali",
   date: "Agosto 2026",
   readTime: "11 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "piscina perde acqua responsabilità costruttore",
@@ -57,7 +57,7 @@ export const article: Article = {
 
     { type: "h2", text: "Il secondo fronte: titolo edilizio e distanze", id: "titolo-edilizio" },
     { type: "p", text: "Prima di chiedere il rifacimento, controlla la pratica edilizia. La piscina interrata comporta una trasformazione permanente del territorio e richiede di regola un titolo abilitativo, spesso il permesso di costruire; i regolamenti comunali impongono inoltre distanze minime dal confine. Non è raro scoprire, proprio in occasione della perizia, che il titolo manca o che la distanza non è rispettata: è un problema autonomo, che può diventare un'arma del vicino o del Comune." },
-    { type: "p", text: "Il punto operativo: non ha senso chiedere il rifacimento di un'opera che rischia un ordine di rimessa in pristino. I due fronti vanno gestiti in parallelo — verifica di sanabilità da un lato, azione contro il costruttore dall'altro. Sul tema rinviamo alla guida dedicata agli abusi edilizi." },
+    { type: "p", text: "Il punto operativo: non ha senso chiedere il rifacimento di un'opera che rischia un ordine di rimessa in pristino. I due fronti vanno gestiti in parallelo — verifica di sanabilità da un lato, azione contro il costruttore dall'altro. Sul tema rinviamo al[la guida dedicata agli abusi edilizi](/guide/ordinanza-demolizione-cosa-fare)." },
 
     { type: "h2", text: "Cosa puoi chiedere al costruttore?", id: "cosa-chiedere" },
     { type: "p", text: "Sotto l'art. 1669 c.c. la domanda è risarcitoria: il costo del ripristino quantificato dalla perizia (che nei difetti strutturali può avvicinarsi al valore dell'opera), il danno da mancato godimento delle stagioni perse, le spese vive di riempimento e trattamento dell'acqua dispersa. Su una perdita di qualche centimetro al giorno per un'intera stagione, l'acqua e i prodotti chimici diventano una voce tutt'altro che simbolica. Se preferisci la via contrattuale e sei nei termini dell'art. 1667 c.c., puoi chiedere in alternativa l'eliminazione dei vizi a spese dell'impresa o la riduzione del prezzo (art. 1668 c.c.)." },
@@ -98,7 +98,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Molti proprietari si arrendono convinti di essere fuori garanzia: verifichiamo prima in che termine sei davvero. Contattaci dalla pagina contatti con l'anno di realizzazione, i sintomi e le comunicazioni ricevute dall'impresa: ti diciamo se sei dentro i dieci anni e quale prova serve. Per il quadro generale sulle responsabilità del costruttore leggi la guida ai difetti costruttivi; se il problema riguarda guaine e coperture, la guida alle infiltrazioni dal terrazzo affronta il caso speculare." },
+    { type: "p", text: "Molti proprietari si arrendono convinti di essere fuori garanzia: verifichiamo prima in che termine sei davvero. Contattaci dalla pagina contatti con l'anno di realizzazione, i sintomi e le comunicazioni ricevute dall'impresa: ti diciamo se sei dentro i dieci anni e quale prova serve. Per il quadro generale sulle responsabilità del costruttore leggi la guida ai difetti costruttivi; se il problema riguarda guaine e coperture, [la guida alle infiltrazioni dal terrazzo](/guide/terrazzo-infiltrazioni) affronta il caso speculare." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Verticali",
   date: "Agosto 2026",
   readTime: "12 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "cucina su misura difettosa cosa posso fare",
@@ -96,7 +96,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Mandaci l'ordine firmato, il modulo di rilievo misure e le foto della consegna: dalla qualificazione del contratto — vendita o appalto — dipendono i termini che hai davanti e il rimedio con cui partire. Contattaci dalla pagina contatti per una valutazione del fascicolo. Sul tema puoi leggere anche la guida sugli infissi difettosi, che segue la stessa logica contrattuale, e quella su come annullare un contratto firmato in casa o in fiera." },
+    { type: "p", text: "Mandaci l'ordine firmato, il modulo di rilievo misure e le foto della consegna: dalla qualificazione del contratto — vendita o appalto — dipendono i termini che hai davanti e il rimedio con cui partire. Contattaci dalla pagina contatti per una valutazione del fascicolo. Sul tema puoi leggere anche [la guida sugli infissi difettosi](/guide/infissi-montati-male), che segue la stessa logica contrattuale, e quella su come annullare un contratto firmato in casa o in fiera." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

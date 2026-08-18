@@ -12,7 +12,8 @@ export type ImageSlotId =
   | "privati-hero"
   | "studio-team"
   | "contatti-studio"
-  | "guide-hero";
+  | "guide-hero"
+  | "avvocato-ritratto";
 
 export const imageSlots: Record<ImageSlotId, string | null> = {
   /** Home, sezione "due lati": foto cantiere + scrivania, o stretta di mano in cantiere */
@@ -27,6 +28,8 @@ export const imageSlots: Record<ImageSlotId, string | null> = {
   "contatti-studio": null,
   /** Guide: scrivania con fascicoli / codice civile */
   "guide-hero": null,
+  /** Ritratto dell'avvocato: usato in home, pagina studio e firma degli articoli */
+  "avvocato-ritratto": null,
 };
 
 /** Didascalie/alt di default per ogni slot (usate anche dal segnaposto). */
@@ -37,4 +40,5 @@ export const imageSlotLabels: Record<ImageSlotId, string> = {
   "studio-team": "Il team dello studio",
   "contatti-studio": "Lo studio",
   "guide-hero": "Fascicoli e codice civile",
+  "avvocato-ritratto": "Avv. Armando Rossi",
 };

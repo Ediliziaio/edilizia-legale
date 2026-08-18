@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "17 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "contratto di appalto edile modello",
@@ -93,7 +93,7 @@ export const article: Article = {
 
     { type: "h2", text: "Cosa cambia nel subappalto?", id: "subappalto" },
     { type: "p", text: "Se lavori come appaltatore che affida parti dell'opera in subappalto, il contratto a valle deve ribaltare le condizioni di quello a monte — termini, penali, disciplina delle varianti, collaudo — perché ogni disallineamento è un rischio che resta in mezzo, cioè su di te. In più vanno presidiati due punti che il codice e le leggi speciali rendono ineludibili. Il primo: la responsabilità solidale per retribuzioni e contributi dei dipendenti del subappaltatore, che l'art. 29, comma 2, del D.lgs. 276/2003 estende al committente imprenditore entro due anni dalla cessazione dell'appalto — da gestire con verifica periodica del DURC del subappaltatore e clausole di sospensione dei pagamenti in caso di irregolarità." },
-    { type: "p", text: "Il secondo è il regresso per i vizi: l'art. 1670 c.c. concede all'appaltatore l'azione verso il subappaltatore solo se gli comunica la denunzia ricevuta dal committente entro sessanta giorni, a pena di decadenza. È un termine che nessun gestionale ricorda da solo: va scritto nel contratto di subappalto e in una procedura interna, perché perderlo significa pagare al committente vizi causati da altri senza poterli ribaltare. Se lavori spesso in subappalto, il tema merita la guida dedicata al contratto di subappalto." },
+    { type: "p", text: "Il secondo è il regresso per i vizi: l'art. 1670 c.c. concede all'appaltatore l'azione verso il subappaltatore solo se gli comunica la denunzia ricevuta dal committente entro sessanta giorni, a pena di decadenza. È un termine che nessun gestionale ricorda da solo: va scritto nel contratto di subappalto e in una procedura interna, perché perderlo significa pagare al committente vizi causati da altri senza poterli ribaltare. Se lavori spesso in subappalto, il tema merita [la guida dedicata al contratto di subappalto](/guide/contratto-subappalto-clausole)." },
 
     { type: "figure", slot: "contratto-appalto-impresa-2", alt: "Due contratti a confronto, uno generico e uno con le clausole di tutela evidenziate", caption: "Stesso cantiere, stesso ritardo, esiti economici opposti: la differenza è nel testo firmato." },
 

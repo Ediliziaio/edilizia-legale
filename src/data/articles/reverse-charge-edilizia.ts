@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Tributario",
   date: "Agosto 2026",
   readTime: "10 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "reverse charge edilizia sanzioni errore",
@@ -87,7 +87,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Facciamo un controllo a campione sulle fatture degli ultimi tre anni: gli errori di reverse charge si annidano nei cantieri misti, si replicano in silenzio e costano molto meno da sistemare oggi che da difendere dopo una verifica. Contattaci dalla pagina contatti per una revisione della qualificazione IVA dei tuoi contratti in corso. Per il quadro generale delle liti con il Fisco parti dall'hub sul contenzioso tributario; se l'Agenzia ti ha già contestato crediti d'imposta, leggi la guida all'accertamento Superbonus per le imprese; e sul fronte dei rapporti con i subappaltatori c'è l'approfondimento sulla responsabilità solidale fiscale." },
+    { type: "p", text: "Facciamo un controllo a campione sulle fatture degli ultimi tre anni: gli errori di reverse charge si annidano nei cantieri misti, si replicano in silenzio e costano molto meno da sistemare oggi che da difendere dopo una verifica. Contattaci dalla pagina contatti per una revisione della qualificazione IVA dei tuoi contratti in corso. Per il quadro generale delle liti con il Fisco parti dal[l'hub sul contenzioso tributario](/guide/accertamento-superbonus-imprese); se l'Agenzia ti ha già contestato crediti d'imposta, leggi la guida all'accertamento Superbonus per le imprese; e sul fronte dei rapporti con i subappaltatori c'è l'approfondimento sulla responsabilità solidale fiscale." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

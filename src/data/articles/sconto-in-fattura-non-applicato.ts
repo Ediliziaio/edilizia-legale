@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Privati",
   date: "Agosto 2026",
   readTime: "15 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "sconto in fattura non applicato cosa fare",
@@ -120,7 +120,7 @@ export const article: Article = {
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
     { type: "p", text: "Se lo sconto promesso non è stato applicato, il primo passo è capire se l'obbligazione era formulata come impegno pieno o come promessa condizionata, e se le date rendono credibile la difesa dell'impossibilità. Contattaci dalla pagina contatti con contratto, fatture e corrispondenza: analizziamo la clausola, ricostruiamo la cronologia e ti indichiamo quale rimedio ha senso nel tuo caso." },
-    { type: "p", text: "Se invece hai già ricevuto una contestazione dall'Agenzia delle Entrate sulla detrazione, la guida dedicata al recupero presso il beneficiario spiega perché l'atto arriva al proprietario e come impostare la difesa nei sessanta giorni." },
+    { type: "p", text: "Se invece hai già ricevuto una contestazione dall'Agenzia delle Entrate sulla detrazione, [la guida dedicata al recupero presso il beneficiario](/guide/superbonus-recupero-agenzia-privato) spiega perché l'atto arriva al proprietario e come impostare la difesa nei sessanta giorni." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

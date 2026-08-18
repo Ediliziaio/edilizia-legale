@@ -134,3 +134,28 @@ export const toISODate = (display: string): string | undefined => {
   if (!mm) return undefined;
   return `${m[2]}-${mm}-01`;
 };
+
+/**
+ * Data dell'aggiornamento più recente tra tutte le guide, in forma leggibile.
+ * Le pagine che dichiarano "aggiornato a…" la leggono da qui invece di
+ * scriverla a mano: una data falsa, su un sito legale, è una dichiarazione falsa.
+ */
+export const ultimoAggiornamentoContenuti = (): string => {
+  let migliore = "";
+  let iso = "";
+  for (const a of articlesMeta) {
+    const d = toISODate(a.date);
+    if (d && d > iso) {
+      iso = d;
+      migliore = a.date;
+    }
+  }
+  return migliore || articlesMeta[0]?.date || "";
+};
+
+/** "ad agosto 2026" / "a maggio 2026": la d eufonica davanti a vocale. */
+export const aggiornamentoConPreposizione = (): string => {
+  const d = ultimoAggiornamentoContenuti().toLowerCase();
+  if (!d) return "";
+  return `${/^[aeiou]/.test(d) ? "ad" : "a"} ${d}`;
+};

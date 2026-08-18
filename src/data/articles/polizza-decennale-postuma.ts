@@ -9,7 +9,7 @@ export const meta: ArticleMeta = {
   category: "Privati",
   date: "Agosto 2026",
   readTime: "17 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "polizza decennale postuma come attivarla",
@@ -146,7 +146,7 @@ export const article: Article = {
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
     { type: "p", text: "Se il costruttore non esiste più, la prima cosa da fare non è rassegnarsi ma cercare la polizza: rogito, notaio, amministratore di condominio e altri acquirenti dello stesso edificio. Contattaci dalla pagina contatti portando il rogito completo di allegati, le fotografie datate del difetto e, se ce l'hai, la relazione del tuo tecnico: verifichiamo quali coperture sono attivabili e con quali termini." },
-    { type: "p", text: "Se non hai ancora fatto accertare la causa del difetto, leggi anche la guida all'accertamento tecnico preventivo: è lo strumento che permette di quantificare il danno in contraddittorio quando la compagnia contesta l'origine del problema." },
+    { type: "p", text: "Se non hai ancora fatto accertare la causa del difetto, leggi anche [la guida all'accertamento tecnico preventivo](/guide/accertamento-tecnico-preventivo): è lo strumento che permette di quantificare il danno in contraddittorio quando la compagnia contesta l'origine del problema." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

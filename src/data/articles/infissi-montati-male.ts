@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Verticali",
   date: "Agosto 2026",
   readTime: "12 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "infissi montati male cosa fare",
@@ -103,7 +103,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Mandaci le foto dei nodi di posa e il contratto: nella maggior parte dei casi si capisce in mezz'ora se è un problema di prodotto o di installazione, e quali termini stanno correndo. Dalla pagina contatti puoi allegare i documenti direttamente. Se il difetto riguarda parti strutturali o infiltrazioni, leggi anche la guida ai difetti costruttivi e alla responsabilità decennale; per capire come si qualifica un contratto misto di fornitura e posa, la guida sulla cucina su misura affronta lo stesso criterio della prevalenza. Puoi anche scaricare il modello di denuncia dei vizi da adattare al tuo caso." },
+    { type: "p", text: "Mandaci le foto dei nodi di posa e il contratto: nella maggior parte dei casi si capisce in mezz'ora se è un problema di prodotto o di installazione, e quali termini stanno correndo. Dalla pagina contatti puoi allegare i documenti direttamente. Se il difetto riguarda parti strutturali o infiltrazioni, leggi anche la guida ai difetti costruttivi e alla responsabilità decennale; per capire come si qualifica un contratto misto di fornitura e posa, [la guida sulla cucina su misura](/guide/cucina-su-misura-difettosa) affronta lo stesso criterio della prevalenza. Puoi anche scaricare il modello di denuncia dei vizi da adattare al tuo caso." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

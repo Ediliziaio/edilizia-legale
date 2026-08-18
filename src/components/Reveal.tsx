@@ -66,7 +66,7 @@ const Reveal = ({
   return (
     <div
       ref={ref}
-      className={`will-change-[transform,opacity] transition-all ease-out ${
+      className={`el-reveal will-change-[transform,opacity] transition-all ease-out ${
         visible ? directionFinal : directionInitial[direction]
       } ${className}`}
       style={{

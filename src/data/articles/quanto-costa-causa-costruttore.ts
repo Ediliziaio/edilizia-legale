@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Privati",
   date: "Agosto 2026",
   readTime: "17 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "quanto costa fare causa al costruttore",
@@ -149,7 +149,7 @@ export const article: Article = {
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
     { type: "p", text: "Se stai valutando se agire, il primo passo non è scegliere l'avvocato: è avere un numero. Fai quantificare il difetto da un tecnico con un computo analitico, poi chiedi un preventivo scritto per fasi e confronta le due cifre. Contattaci dalla pagina contatti: sulla base dei documenti che hai, indichiamo quale percorso è proporzionato al tuo caso e quali spese comporta." },
-    { type: "p", text: "Se non hai ancora fatto accertare i difetti, leggi anche la guida all'accertamento tecnico preventivo: è il passaggio che, nella maggior parte delle situazioni, consente di decidere con cognizione di causa prima di impegnarsi in un giudizio." },
+    { type: "p", text: "Se non hai ancora fatto accertare i difetti, leggi anche [la guida all'accertamento tecnico preventivo](/guide/accertamento-tecnico-preventivo): è il passaggio che, nella maggior parte delle situazioni, consente di decidere con cognizione di causa prima di impegnarsi in un giudizio." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

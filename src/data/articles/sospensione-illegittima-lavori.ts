@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "15 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "sospensione lavori illegittima maggiori oneri",
@@ -127,7 +127,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Se hai un cantiere fermo o una sospensione appena chiusa, la prima verifica riguarda i documenti: che cosa dice il verbale, quali riserve sono state iscritte, quali giorni sono realmente imputabili alla committenza. Contattaci dalla pagina contatti: ricostruiamo il periodo risarcibile e le voci sostenibili. Se non hai ancora iscritto riserva, leggi prima la guida sui termini di iscrizione delle riserve: è lì che si decide se la pretesa esiste." },
+    { type: "p", text: "Se hai un cantiere fermo o una sospensione appena chiusa, la prima verifica riguarda i documenti: che cosa dice il verbale, quali riserve sono state iscritte, quali giorni sono realmente imputabili alla committenza. Contattaci dalla pagina contatti: ricostruiamo il periodo risarcibile e le voci sostenibili. Se non hai ancora iscritto riserva, leggi prima [la guida sui termini di iscrizione delle riserve](/guide/iscrizione-riserve-appalto): è lì che si decide se la pretesa esiste." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

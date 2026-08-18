@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "8 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "ritenuta a garanzia appalto svincolo",
@@ -95,7 +95,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Fai il conto delle ritenute mai svincolate degli ultimi cinque anni: nella maggior parte delle imprese è una cifra a cinque zeri dimenticata nei conti dei committenti. Contattaci dalla pagina contatti: ricostruiamo con te il quadro cantiere per cantiere e ti diciamo quali somme sono esigibili subito. Se il committente ha smesso di pagare anche SAL e saldi, leggi la guida al recupero crediti nell'edilizia; e prima del prossimo contratto, verifica le clausole su ritenute e garanzie: è lì che il problema si previene." },
+    { type: "p", text: "Fai il conto delle ritenute mai svincolate degli ultimi cinque anni: nella maggior parte delle imprese è una cifra a cinque zeri dimenticata nei conti dei committenti. Contattaci dalla pagina contatti: ricostruiamo con te il quadro cantiere per cantiere e ti diciamo quali somme sono esigibili subito. Se il committente ha smesso di pagare anche SAL e saldi, leggi [la guida al recupero crediti nell'edilizia](/guide/recupero-crediti-edilizia); e prima del prossimo contratto, verifica le clausole su ritenute e garanzie: è lì che il problema si previene." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

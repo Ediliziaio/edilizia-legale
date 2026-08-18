@@ -11,6 +11,8 @@ import ELServicesCards from "@/components/ELServicesCards";
 import ELVerticali from "@/components/ELVerticali";
 import ELProcessFlow from "@/components/ELProcessFlow";
 import ELWhyUs from "@/components/ELWhyUs";
+import ELGuidePilastro from "@/components/ELGuidePilastro";
+import ELAvvocato from "@/components/ELAvvocato";
 import ELFAQ from "@/components/ELFAQ";
 import ELFinalCTA from "@/components/ELFinalCTA";
 import ELFooter from "@/components/ELFooter";
@@ -47,6 +49,8 @@ const Index = () => {
           </Suspense>
           <ELVerticali />
           <ELProcessFlow />
+          <ELGuidePilastro />
+          <ELAvvocato />
           <ELWhyUs />
           <ELFAQ />
           <ELFinalCTA onOpenContact={openContact} />

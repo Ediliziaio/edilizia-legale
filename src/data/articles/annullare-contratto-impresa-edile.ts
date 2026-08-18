@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Privati",
   date: "Agosto 2026",
   readTime: "15 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "annullare contratto con impresa edile",
@@ -53,11 +53,11 @@ export const article: Article = {
     { type: "h2", text: "Strada 3 — La risoluzione per inadempimento dell'impresa", id: "risoluzione-inadempimento" },
     { type: "p", text: "Se l'impresa è inadempiente — non ha iniziato alla data pattuita, ha abbandonato il cantiere, esegue lavori difformi dal capitolato, non consegna la documentazione promessa — puoi chiedere la risoluzione del contratto ex art. 1453 c.c. L'inadempimento deve essere di non scarsa importanza (art. 1455 c.c.): un ritardo di pochi giorni su un cronoprogramma indicativo di norma non basta, un cantiere fermo da settimane sì." },
     { type: "p", text: "Lo strumento operativo è la diffida ad adempiere dell'art. 1454 c.c.: una intimazione scritta ad adempiere entro un termine non inferiore a quindici giorni, con la dichiarazione espressa che, decorso inutilmente il termine, il contratto si intenderà risolto di diritto. Quella formula è essenziale: senza, la lettera è solo un sollecito." },
-    { type: "p", text: "La risoluzione non ti costa nulla: nessun indennizzo all'impresa, restituzione dell'acconto nella parte non coperta da lavori utilmente eseguiti, e in più il diritto al risarcimento del danno — per esempio la maggiore spesa per far completare l'opera da un'altra impresa. Se il cantiere è stato abbandonato, il percorso ha passaggi propri che abbiamo descritto nella guida dedicata all'impresa sparita dal cantiere." },
+    { type: "p", text: "La risoluzione non ti costa nulla: nessun indennizzo all'impresa, restituzione dell'acconto nella parte non coperta da lavori utilmente eseguiti, e in più il diritto al risarcimento del danno — per esempio la maggiore spesa per far completare l'opera da un'altra impresa. Se il cantiere è stato abbandonato, il percorso ha passaggi propri che abbiamo descritto nel[la guida dedicata all'impresa sparita dal cantiere](/guide/impresa-sparita-cantiere-abbandonato)." },
 
     { type: "h2", text: "Strada 4 — L'opera del tutto inadatta al suo scopo (art. 1668 c.c.)", id: "opera-inadatta" },
     { type: "p", text: "Quando i lavori sono stati eseguiti ma male, la regola generale non è la risoluzione: l'art. 1668, primo comma, c.c. ti dà diritto all'eliminazione dei vizi a spese dell'impresa oppure alla riduzione proporzionale del prezzo, oltre al risarcimento. La risoluzione scatta solo nel caso previsto dal secondo comma: quando le difformità o i vizi sono tali da rendere l'opera del tutto inadatta alla sua destinazione." },
-    { type: "p", text: "La soglia è alta. Un bagno con piastrelle storte non è un'opera inadatta; un impianto termico che non riscalda, un massetto che non consente la posa di alcun pavimento o una copertura che non tiene l'acqua possono esserlo. Restano fermi i termini dell'art. 1667 c.c.: denuncia dei vizi entro sessanta giorni dalla scoperta e azione entro due anni dalla consegna dell'opera. Per i difetti gravi su immobili di lunga durata entra in gioco l'art. 1669 c.c., di cui parliamo nella guida sui difetti costruttivi." },
+    { type: "p", text: "La soglia è alta. Un bagno con piastrelle storte non è un'opera inadatta; un impianto termico che non riscalda, un massetto che non consente la posa di alcun pavimento o una copertura che non tiene l'acqua possono esserlo. Restano fermi i termini dell'art. 1667 c.c.: denuncia dei vizi entro sessanta giorni dalla scoperta e azione entro due anni dalla consegna dell'opera. Per i difetti gravi su immobili di lunga durata entra in gioco l'art. 1669 c.c., di cui parliamo nel[la guida sui difetti costruttivi](/guide/difetti-costruttivi-casa-nuova)." },
 
     { type: "h2", text: "Strada 5 — L'annullamento per dolo o errore", id: "annullamento-dolo-errore" },
     { type: "p", text: "L'annullamento vero e proprio riguarda i vizi nella formazione del contratto. Il caso tipico è il dolo (art. 1439 c.c.): l'impresa ti ha indotto a firmare con raggiri determinanti — qualifiche o certificazioni inventate, cantieri di referenza mai eseguiti, la falsa prospettazione di una cessione del credito fiscale ormai impossibile. C'è poi l'errore essenziale e riconoscibile (artt. 1428 e 1429 c.c.), più raro nella pratica edilizia." },
@@ -115,7 +115,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Prima di scrivere all'impresa, verifica quale strada ti conviene: sbagliare rimedio può trasformarti da creditore in debitore. Contattaci dalla pagina contatti con il contratto e le ricevute dei versamenti: ti diciamo quale rimedio sostengono i tuoi documenti e come formulare la prima lettera. Se il problema è un cantiere fermo, leggi anche la guida sull'impresa sparita dal cantiere; se l'impresa ti chiede più soldi del pattuito, quella sul preventivo sforato; e scarica il modello di diffida ad adempiere per capire come è costruita." },
+    { type: "p", text: "Prima di scrivere all'impresa, verifica quale strada ti conviene: sbagliare rimedio può trasformarti da creditore in debitore. Contattaci dalla pagina contatti con il contratto e le ricevute dei versamenti: ti diciamo quale rimedio sostengono i tuoi documenti e come formulare la prima lettera. Se il problema è un cantiere fermo, leggi anche [la guida sull'impresa sparita dal cantiere](/guide/impresa-sparita-cantiere-abbandonato); se l'impresa ti chiede più soldi del pattuito, quella sul preventivo sforato; e scarica il modello di diffida ad adempiere per capire come è costruita." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

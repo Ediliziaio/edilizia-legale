@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Privati",
   date: "Agosto 2026",
   readTime: "15 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "mediazione obbligatoria appalto edilizia",
@@ -136,7 +136,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Prima di depositare qualunque domanda, la verifica da fare è una sola: la tua controversia rientra o no in una delle materie dell'art. 5 del D.lgs. 28/2010? Da questa risposta dipendono l'organismo da scegliere, i tempi e il rischio di improcedibilità. Contattaci dalla pagina contatti con il contratto e le comunicazioni scambiate: qualifichiamo la controversia e indichiamo se la mediazione è dovuta e come prepararla. Se stai valutando invece una causa per difetti, leggi anche la guida sui tempi reali del giudizio civile." },
+    { type: "p", text: "Prima di depositare qualunque domanda, la verifica da fare è una sola: la tua controversia rientra o no in una delle materie dell'art. 5 del D.lgs. 28/2010? Da questa risposta dipendono l'organismo da scegliere, i tempi e il rischio di improcedibilità. Contattaci dalla pagina contatti con il contratto e le comunicazioni scambiate: qualifichiamo la controversia e indichiamo se la mediazione è dovuta e come prepararla. Se stai valutando invece una causa per difetti, leggi anche [la guida sui tempi reali del giudizio civile](/guide/quanto-dura-causa-difetti)." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

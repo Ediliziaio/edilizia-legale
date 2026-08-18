@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "14 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "durc di congruità manodopera incongruenza",
@@ -129,7 +129,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Se hai ricevuto una comunicazione di incongruenza, il tempo utile è di quindici giorni e va usato bene. Contattaci dalla pagina contatti: verifichiamo la categoria applicata, ricostruiamo la base di calcolo e prepariamo l'istanza di regolarizzazione con i documenti che la sostengono. Se il problema nasce dalle denunce dei subappaltatori, leggi anche la guida sulle clausole del contratto di subappalto." },
+    { type: "p", text: "Se hai ricevuto una comunicazione di incongruenza, il tempo utile è di quindici giorni e va usato bene. Contattaci dalla pagina contatti: verifichiamo la categoria applicata, ricostruiamo la base di calcolo e prepariamo l'istanza di regolarizzazione con i documenti che la sostengono. Se il problema nasce dalle denunce dei subappaltatori, leggi anche [la guida sulle clausole del contratto di subappalto](/guide/contratto-subappalto-clausole)." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

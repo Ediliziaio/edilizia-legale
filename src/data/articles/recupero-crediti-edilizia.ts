@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "16 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "recupero crediti edilizia",
@@ -112,7 +112,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Se hai SAL o fatture non pagati, il primo passo è una valutazione del fascicolo: quali documenti esistono, se il credito è ingiungibile e con quali probabilità di esecutorietà immediata. Contattaci dalla pagina contatti: analizziamo i documenti e ti diciamo quale strumento ha senso nel tuo caso. Prima di firmare il prossimo contratto, leggi anche la guida alle clausole del contratto d'appalto che proteggono l'impresa: la maggior parte dei crediti difficili nasce da contratti scritti male." },
+    { type: "p", text: "Se hai SAL o fatture non pagati, il primo passo è una valutazione del fascicolo: quali documenti esistono, se il credito è ingiungibile e con quali probabilità di esecutorietà immediata. Contattaci dalla pagina contatti: analizziamo i documenti e ti diciamo quale strumento ha senso nel tuo caso. Prima di firmare il prossimo contratto, leggi anche [la guida alle clausole del contratto d'appalto](/guide/contratto-appalto-impresa) che proteggono l'impresa: la maggior parte dei crediti difficili nasce da contratti scritti male." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

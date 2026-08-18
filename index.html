@@ -19,15 +19,16 @@
     <meta name="geo.region" content="IT" />
     <meta name="theme-color" content="#2a3f5f" />
 
-    <!-- Resource hints -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <!-- Senza JavaScript le sezioni con animazione d'ingresso resterebbero a
+         opacità zero: qui vengono forzate visibili. -->
+    <noscript><style>.el-reveal{opacity:1!important;transform:none!important}</style></noscript>
 
-    <!-- Fonts -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet" />
+    <!-- Resource hints -->
+    <!-- Caratteri ospitati sul sito: nessuna richiesta a fonts.googleapis.com,
+         quindi nessun indirizzo IP dei visitatori inviato a terzi (il punto su
+         cui il Garante tedesco ha già sanzionato) e un round-trip in meno. -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-tight-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/inter-tight.css" />
 
     <!-- Organization / LegalService JSON-LD -->
     <script type="application/ld+json">
@@ -50,6 +51,9 @@
         "closes": "18:30"
       },
       "email": "info@edilizialegale.it",
+      "telephone": "+390200000000",
+      "founder": { "@id": "https://www.edilizialegale.it/studio#avvocato" },
+      "employee": { "@id": "https://www.edilizialegale.it/studio#avvocato" },
       "knowsAbout": [
         "Diritto dell'edilizia",
         "Contratto di appalto",

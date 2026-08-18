@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "12 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "SAL non pagato cosa fare",
@@ -100,7 +100,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Prima di fermare il cantiere, fatti dire se la sospensione regge: una valutazione sbagliata trasforma il creditore in inadempiente. Inviaci contratto e situazione dei SAL dalla pagina contatti: verifichiamo gravità, proporzionalità e i passaggi già fatti, e ti indichiamo se la strada è la sospensione, il recupero immediato o la risoluzione. Per la fase successiva leggi la guida al recupero crediti nell'edilizia e, se il committente contesta i lavori per giustificare il mancato pagamento, la guida su come smontare la contestazione pretestuosa." },
+    { type: "p", text: "Prima di fermare il cantiere, fatti dire se la sospensione regge: una valutazione sbagliata trasforma il creditore in inadempiente. Inviaci contratto e situazione dei SAL dalla pagina contatti: verifichiamo gravità, proporzionalità e i passaggi già fatti, e ti indichiamo se la strada è la sospensione, il recupero immediato o la risoluzione. Per la fase successiva leggi [la guida al recupero crediti nell'edilizia](/guide/recupero-crediti-edilizia) e, se il committente contesta i lavori per giustificare il mancato pagamento, [la guida su come smontare la contestazione pretestuosa](/guide/committente-contesta-i-lavori)." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "13 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "committente contesta i lavori per non pagare",
@@ -110,7 +110,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Se hai ricevuto una contestazione e il saldo è bloccato, il primo passo è una diagnosi del documento: inviaci la contestazione ricevuta insieme al verbale di consegna e ti diciamo se è tardiva, sproporzionata o fondata, e quale delle tre strategie ha senso nel tuo caso. Per il recupero del saldo leggi anche la guida al recupero crediti nell'edilizia, e prima del prossimo cantiere la guida alle clausole del contratto d'appalto: un verbale di consegna ben scritto previene la maggior parte di queste situazioni." },
+    { type: "p", text: "Se hai ricevuto una contestazione e il saldo è bloccato, il primo passo è una diagnosi del documento: inviaci la contestazione ricevuta insieme al verbale di consegna e ti diciamo se è tardiva, sproporzionata o fondata, e quale delle tre strategie ha senso nel tuo caso. Per il recupero del saldo leggi anche [la guida al recupero crediti nell'edilizia](/guide/recupero-crediti-edilizia), e prima del prossimo cantiere [la guida alle clausole del contratto d'appalto](/guide/contratto-appalto-impresa): un verbale di consegna ben scritto previene la maggior parte di queste situazioni." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

@@ -8,7 +8,7 @@ export const meta: ArticleMeta = {
   category: "Imprese",
   date: "Agosto 2026",
   readTime: "17 min",
-  author: "Redazione Edilizia Legale",
+  author: "Avv. Armando Rossi",
   cover: "from-navy to-navy-light",
   keywords: [
     "iscrizione riserve appalto termini",
@@ -143,7 +143,7 @@ export const article: Article = {
     ] },
 
     { type: "h2", text: "Il passo successivo", id: "cta" },
-    { type: "p", text: "Se hai un cantiere in corso con maggiori oneri non riconosciuti, il momento per intervenire è ora, non a conto finale. Contattaci dalla pagina contatti: verifichiamo quali riserve sono ancora nei termini, come vanno esplicitate e quantificate e quali documenti servono per sostenerle. Se il problema nasce da una sospensione dei lavori, leggi anche la guida sulla quantificazione dei maggiori oneri da sospensione illegittima." },
+    { type: "p", text: "Se hai un cantiere in corso con maggiori oneri non riconosciuti, il momento per intervenire è ora, non a conto finale. Contattaci dalla pagina contatti: verifichiamo quali riserve sono ancora nei termini, come vanno esplicitate e quantificate e quali documenti servono per sostenerle. Se il problema nasce da una sospensione dei lavori, leggi anche [la guida sulla quantificazione dei maggiori oneri da sospensione](/guide/sospensione-illegittima-lavori) illegittima." },
     { type: "p", text: "Questo contenuto ha finalità informative e non sostituisce una consulenza legale sul caso concreto. Aggiornato ad agosto 2026 sulla base della normativa e della giurisprudenza vigenti." },
   ],
 };

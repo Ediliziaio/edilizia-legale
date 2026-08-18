@@ -10,8 +10,9 @@ import ELProcessFlow from "@/components/ELProcessFlow";
 import ELFinalCTA from "@/components/ELFinalCTA";
 import Reveal from "@/components/Reveal";
 import { Scale, ShieldCheck, BookOpen, ArrowRight, Landmark } from "lucide-react";
-import { SITE_URL } from "@/data/site";
+import { SITE_URL, DEFAULT_AUTHOR, AUTHOR_ROLE, AUTHOR_FORO, AUTHOR_ANNO, AUTHOR_ID, AUTHOR_SAMEAS } from "@/data/site";
 import ELImageSlot from "@/components/ELImageSlot";
+import ELAvvocato from "@/components/ELAvvocato";
 
 const Studio = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -26,13 +27,35 @@ const Studio = () => {
     ],
   };
 
+  // Ancora della persona: gli articoli puntano qui come autore. È il nodo che
+  // lega firma, qualifica e studio in un unico grafo verificabile.
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": AUTHOR_ID,
+    "name": DEFAULT_AUTHOR,
+    "jobTitle": AUTHOR_ROLE,
+    "url": `${SITE_URL}/studio`,
+    "worksFor": { "@id": `${SITE_URL}/#studio` },
+    "knowsLanguage": "it",
+    "knowsAbout": [
+      "Diritto dell'edilizia",
+      "Contratto di appalto",
+      "Subappalto",
+      "Difetti costruttivi",
+      "Contenzioso tributario edile",
+    ],
+    ...(AUTHOR_FORO ? { "memberOf": { "@type": "Organization", "name": AUTHOR_FORO } } : {}),
+    ...(AUTHOR_SAMEAS.length ? { "sameAs": AUTHOR_SAMEAS } : {}),
+  };
+
   return (
     <>
       <SEO
         title="Lo Studio | Edilizia Legale — Diritto dell'Edilizia e degli Appalti"
         description="Edilizia Legale è uno studio verticale sul diritto dell'edilizia: appalti, vizi, riserve, fisco di cantiere. Metodo, valori e policy sui conflitti di interesse."
         canonical="https://www.edilizialegale.it/studio"
-        jsonLd={[breadcrumbSchema]}
+        jsonLd={[breadcrumbSchema, personSchema]}
       />
 
       <div className="min-h-screen bg-background flex flex-col">
@@ -128,6 +151,8 @@ const Studio = () => {
           </section>
 
           <ELProcessFlow />
+          <ELAvvocato />
+
           <ELFinalCTA onOpenContact={openContact} />
         </main>
 
