@@ -1,0 +1,16 @@
+Foto di ambiente e di persona del sito.
+
+Trascina qui i file con QUESTI nomi esatti (l'estensione può essere .jpg o .webp):
+
+  avvocato-ritratto.jpg    1200x1500  ritratto dell'Avv. Armando Rossi
+  studio-team.jpg          1600x1200  lo studio o il team
+  contatti-studio.jpg      2100x800   ingresso o sala riunioni
+  home-due-lati.jpg        1600x1200  scrivania con contratto, cantiere sullo sfondo
+  home-metodo.jpg          1600x1200  esame del fascicolo documentale
+  imprese-banda.jpg        1600x1200  cantiere di un'impresa al lavoro
+  privati-banda.jpg        1600x1200  casa in ristrutturazione
+  guide-hero.jpg           1600x1200  fascicoli e codice civile
+  domande-hero.jpg         1600x1200  appunti e codice civile
+
+Poi basta dirmelo: converto in WebP, ottimizzo e collego gli slot in
+src/data/imageSlots.ts. Il dettaglio completo è in docs/immagini-di-sito.txt.
