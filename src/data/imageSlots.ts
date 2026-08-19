@@ -29,13 +29,13 @@ export const imageSlots: Record<ImageSlotId, string | null> = {
   /** Hub domande frequenti: scrivania con appunti e codice civile */
   "domande-hero": null,
   /** Pagina studio: foto vera del team / dello studio */
-  "studio-team": null,
+  "studio-team": "/images/sito/studio-team.webp",
   /** Contatti: ingresso o sala riunioni dello studio */
   "contatti-studio": null,
   /** Guide: scrivania con fascicoli / codice civile */
   "guide-hero": null,
   /** Ritratto dell'avvocato: usato in home, pagina studio e firma degli articoli */
-  "avvocato-ritratto": null,
+  "avvocato-ritratto": "/images/sito/avvocato-ritratto.webp",
 };
 
 /** Didascalie/alt di default per ogni slot (usate anche dal segnaposto). */

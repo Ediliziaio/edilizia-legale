@@ -22,7 +22,7 @@ const ELAuthorBox = () => {
           height={200}
           loading="lazy"
           decoding="async"
-          className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl object-cover shrink-0"
+          className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl object-cover object-[50%_18%] shrink-0"
         />
       ) : (
         <ELImageSlot id="avvocato-ritratto" className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl shrink-0" />
