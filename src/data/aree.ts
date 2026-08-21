@@ -76,11 +76,13 @@ export const areeImprese: Area[] = [
     icon: Siren,
     title: "Sicurezza in cantiere e penale",
     desc: "Difesa del datore di lavoro dopo un infortunio, sequestro del cantiere e istanza di dissequestro, deleghe di funzioni, modelli 231.",
+    guida: "infortunio-in-cantiere-difesa-datore",
   },
   {
     icon: Gavel,
     title: "Appalti pubblici e gare",
     desc: "Ricorso al TAR contro esclusioni e aggiudicazioni, anomalia dell'offerta, annotazioni ANAC, risoluzione del contratto pubblico, ATI e consorzi.",
+    guida: "esclusione-gara-appalto-ricorso",
   },
   {
     icon: FileText,
@@ -92,6 +94,7 @@ export const areeImprese: Area[] = [
     icon: TrendingDown,
     title: "Crisi d'impresa nel settore edile",
     desc: "Committente in concordato o liquidazione giudiziale: insinuazione al passivo, crediti privilegiati dell'appaltatore, sorte del contratto in corso.",
+    guida: "committente-in-crisi-liquidazione",
   },
 ];
 
@@ -133,6 +136,7 @@ export const areePrivati: Area[] = [
     icon: KeyRound,
     title: "Acquisto di immobile da costruire",
     desc: "Fideiussione obbligatoria e nullità del preliminare (D.lgs. 122/2005), polizza decennale postuma, tutela contro il fallimento del costruttore.",
+    guida: "acquisto-immobile-da-costruire",
   },
   {
     icon: Building,
@@ -144,11 +148,13 @@ export const areePrivati: Area[] = [
     icon: AlertTriangle,
     title: "Abusi edilizi e difformità",
     desc: "Ordinanze di demolizione, sanatorie e doppia conformità, difformità scoperte dopo il rogito, responsabilità del venditore.",
+    guida: "ordinanza-demolizione-cosa-fare",
   },
   {
     icon: Truck,
     title: "Danni dal cantiere del vicino",
     desc: "Crepe da scavi e demolizioni, accertamento tecnico preventivo urgente, distanze legali, immissioni intollerabili di rumore e polveri.",
+    guida: "danni-cantiere-vicino",
   },
   {
     icon: ScrollText,

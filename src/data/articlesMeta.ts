@@ -794,5 +794,119 @@ export const articlesMeta: ArticleMeta[] = [
       "finanziamento collegato fotovoltaico"
     ],
     "intro": "Il contenzioso fotovoltaico nasce quasi sempre da cinque situazioni: produzione inferiore a quella promessa, infiltrazioni dal tetto dopo il fissaggio, contratti firmati fuori dai locali commerciali, aziende sparite a impianto incompleto e pratiche GSE mai presentate. Ognuna ha una prova tipica e un rimedio diverso: sbagliare la qualificazione è l'errore che fa perdere la causa."
+  },
+  {
+    "slug": "lavori-senza-contratto-scritto",
+    "title": "Lavori edili senza contratto scritto: cosa puoi ancora dimostrare e come",
+    "excerpt": "L'appalto verbale è valido, ma quando il rapporto si rompe la partita si gioca tutta sulla prova: bonifici, messaggi, preventivi, testimoni. Cosa vale davanti a un giudice, cosa non vale, e come ricostruire un accordo che non è mai stato firmato.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "15 min",
+    "author": "Avv. Armando Rossi",
+    "cover": "from-navy to-gold",
+    "keywords": [
+      "lavori edili senza contratto scritto",
+      "appalto verbale valido prova",
+      "impresa senza contratto come tutelarsi",
+      "messaggi whatsapp prova lavori edili",
+      "preventivo accettato vale come contratto",
+      "lavori in nero contestazione difetti"
+    ],
+    "intro": "Il contratto d'appalto privato non richiede la forma scritta: l'accordo verbale con l'impresa è pienamente valido. Il problema non è la validità, è la prova: quando qualcosa va storto, chi afferma un patto deve dimostrarlo. Bonifici, preventivi anche non firmati, messaggi, DDT e fotografie ricostruiscono l'accordo più spesso di quanto si creda — mentre i pagamenti in contanti e le intese a voce sui prezzi restano parole contro parole."
+  },
+  {
+    "slug": "danni-cantiere-vicino",
+    "title": "Crepe da scavi e demolizioni: cosa fare quando il cantiere del vicino danneggia casa tua",
+    "excerpt": "Il cantiere accanto scava, demolisce, vibra — e sui tuoi muri compaiono crepe. Chi risponde tra impresa e committente, come si blocca un danno che avanza e perché le fotografie datate valgono più di dieci lettere.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "16 min",
+    "author": "Avv. Armando Rossi",
+    "cover": "from-navy to-gold",
+    "keywords": [
+      "crepe muro cantiere vicino chi paga",
+      "danni da scavi edificio confinante",
+      "vibrazioni cantiere danni casa risarcimento",
+      "denuncia nuova opera cantiere confinante",
+      "distanze legali costruzioni vicino",
+      "immissioni rumore polvere cantiere"
+    ],
+    "intro": "Dei danni provocati dal cantiere confinante risponde in prima battuta l'impresa che esegue i lavori, ai sensi dell'art. 2043 c.c.; il committente vicino risponde in solido nei casi di attività pericolosa, di ingerenza nell'esecuzione o di incarico affidato a un'impresa palesemente inadeguata. La mossa che decide la partita non è la diffida: è fissare la prova subito, con fotografie datate e, se il danno avanza, con un accertamento tecnico preventivo."
+  },
+  {
+    "slug": "acquisto-immobile-da-costruire",
+    "title": "Comprare casa sulla carta: le tutele del D.lgs. 122/2005 che il costruttore deve darti",
+    "excerpt": "Fideiussione sugli acconti, polizza decennale, contratto preliminare con contenuti obbligatori: chi compra un immobile da costruire ha una corazza di tutele che funziona solo se pretesa prima della firma. Ecco cosa controllare, clausola per clausola.",
+    "category": "Privati",
+    "date": "Agosto 2026",
+    "readTime": "17 min",
+    "author": "Avv. Armando Rossi",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "acquisto immobile da costruire tutele",
+      "fideiussione acquisto casa in costruzione",
+      "comprare casa sulla carta rischi",
+      "preliminare immobile da costruire contenuti obbligatori",
+      "costruttore fallisce prima del rogito acconti",
+      "nullità preliminare senza fideiussione"
+    ],
+    "intro": "Chi compra un immobile da costruire da un'impresa è protetto dal D.lgs. 122/2005: il costruttore deve consegnare una fideiussione che garantisce tutti gli acconti versati fino al rogito e, al trasferimento, una polizza decennale sui gravi difetti. Il preliminare senza fideiussione è nullo, ma la nullità può farla valere solo l'acquirente. Il punto critico: queste tutele vanno pretese prima di firmare, perché dopo il fallimento del costruttore una fideiussione mai consegnata non si recupera."
+  },
+  {
+    "slug": "infortunio-in-cantiere-difesa-datore",
+    "title": "Infortunio in cantiere: le prime 48 ore che decidono la difesa del datore di lavoro",
+    "excerpt": "Dopo un infortunio grave arrivano ispettori, sequestro del cantiere e un fascicolo penale con il tuo nome. Cosa fare e cosa non fare nelle prime 48 ore, come funziona il dissequestro e perché la delega di funzioni scritta due anni prima vale più di qualunque difesa costruita dopo.",
+    "category": "Imprese",
+    "date": "Agosto 2026",
+    "readTime": "17 min",
+    "author": "Avv. Armando Rossi",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "infortunio in cantiere responsabilità datore di lavoro",
+      "sequestro cantiere infortunio come sbloccare",
+      "delega di funzioni sicurezza requisiti",
+      "indagato lesioni colpose cantiere cosa fare",
+      "dvr pos cantiere difesa penale",
+      "responsabilità coordinatore sicurezza infortunio"
+    ],
+    "intro": "Dopo un infortunio grave in cantiere, il datore di lavoro è quasi sempre iscritto nel registro degli indagati per lesioni o omicidio colposo: è un atto dovuto, non una condanna anticipata. La partita si gioca su tre piani insieme — il penale, il sequestro dell'area, il rapporto con INAIL e ispettorato — e su tutti e tre le prime 48 ore contano più dei mesi successivi: dichiarazioni rese a caldo e documenti prodotti in disordine sono gli errori che nessuna difesa recupera del tutto."
+  },
+  {
+    "slug": "committente-in-crisi-liquidazione",
+    "title": "Il committente è in concordato o liquidazione giudiziale: come l'impresa salva il salvabile",
+    "excerpt": "Cantiere in corso, SAL maturati e un committente che deposita i libri in tribunale. Cosa succede al contratto d'appalto, come e quando insinuarsi al passivo, quali crediti hanno privilegio e perché i materiali in cantiere vanno rivendicati subito.",
+    "category": "Imprese",
+    "date": "Agosto 2026",
+    "readTime": "16 min",
+    "author": "Avv. Armando Rossi",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "committente fallito lavori in corso cosa fare",
+      "insinuazione al passivo impresa edile",
+      "privilegio artigiano 2751 bis crediti",
+      "appalto liquidazione giudiziale scioglimento",
+      "committente in concordato preventivo pagamenti",
+      "rivendica materiali cantiere fallimento"
+    ],
+    "intro": "Quando il committente entra in liquidazione giudiziale, il contratto d'appalto si scioglie salvo che il curatore dichiari di subentrare; i crediti maturati prima dell'apertura si fanno valere solo con l'insinuazione al passivo, e le azioni esecutive individuali si fermano. La differenza tra recuperare una parte seria del credito e perdere quasi tutto sta in quattro mosse rapide: fotografare il cantiere e la contabilità, rivendicare i materiali propri, verificare il privilegio ex art. 2751-bis c.c. e rispettare i termini della domanda di ammissione."
+  },
+  {
+    "slug": "esclusione-gara-appalto-ricorso",
+    "title": "Esclusa da una gara d'appalto: quando conviene il ricorso al TAR e quando no",
+    "excerpt": "Trenta giorni per impugnare, un contributo unificato pesante e una gara che nel frattempo va avanti: il ricorso contro l'esclusione è una decisione economica prima che giuridica. I vizi che si vincono, quelli che non si vincono e le alternative che quasi nessuno usa.",
+    "category": "Imprese",
+    "date": "Agosto 2026",
+    "readTime": "16 min",
+    "author": "Avv. Armando Rossi",
+    "cover": "from-navy to-navy-light",
+    "keywords": [
+      "esclusione gara appalto ricorso tar termini",
+      "ricorso tar appalti conviene costi",
+      "soccorso istruttorio esclusione illegittima",
+      "anomalia offerta esclusione giustificativi",
+      "grave illecito professionale esclusione gara",
+      "accesso agli atti gara appalto"
+    ],
+    "intro": "Contro l'esclusione da una gara pubblica il ricorso al TAR va notificato entro trenta giorni, con il rito accelerato degli appalti. Ma la vera domanda non è se l'esclusione sia contestabile: è se il ricorso conviene, e la risposta dipende da tre numeri — la probabilità di vittoria sul vizio concreto, il valore della commessa e il costo pieno del giudizio, contributo unificato incluso. Prima di decidere: accesso agli atti immediato, perché senza i verbali integrali si impugna alla cieca."
   }
 ];

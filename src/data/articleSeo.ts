@@ -177,6 +177,30 @@ export const ARTICLE_SEO: Record<string, ArticleSeo> = {
   "contenzioso-fotovoltaico": {
     "seoTitle": "Contenzioso fotovoltaico: le 5 cause più frequenti",
     "metaDescription": "Impianto che produce poco, infiltrazioni dal tetto, recesso, azienda sparita, pratiche GSE: le 5 liti tipiche del fotovoltaico, le prove e i rimedi."
+  },
+  "lavori-senza-contratto-scritto": {
+    "seoTitle": "Lavori Senza Contratto Scritto: Come Dimostrarli",
+    "metaDescription": "L'appalto verbale è valido, ma va provato: cosa valgono bonifici, WhatsApp, preventivi e testimoni quando i lavori vanno male e non c'è una firma."
+  },
+  "danni-cantiere-vicino": {
+    "seoTitle": "Crepe da Cantiere del Vicino: Chi Paga i Danni",
+    "metaDescription": "Scavi e demolizioni del vicino hanno crepato i tuoi muri? Chi risponde tra impresa e committente, come fermare i lavori e i termini per agire."
+  },
+  "acquisto-immobile-da-costruire": {
+    "seoTitle": "Comprare Casa in Costruzione: le Tutele Obbligatorie",
+    "metaDescription": "Fideiussione sugli acconti, polizza decennale, preliminare trascritto: cosa deve darti il costruttore per legge e cosa controllare prima di firmare."
+  },
+  "infortunio-in-cantiere-difesa-datore": {
+    "seoTitle": "Infortunio in Cantiere: la Difesa del Datore di Lavoro",
+    "metaDescription": "Indagine penale, cantiere sotto sequestro, ispettori: cosa fare nelle prime 48 ore dopo un infortunio e come si costruisce la difesa del datore."
+  },
+  "committente-in-crisi-liquidazione": {
+    "seoTitle": "Committente in Liquidazione: la Guida per l'Impresa",
+    "metaDescription": "Il committente è fallito o in concordato con il cantiere aperto? Sorte del contratto, insinuazione al passivo, privilegi e rivendica dei materiali."
+  },
+  "esclusione-gara-appalto-ricorso": {
+    "seoTitle": "Esclusione da Gara d'Appalto: Ricorso al TAR in 30 Giorni",
+    "metaDescription": "Esclusa da una gara pubblica? Termini del ricorso al TAR, costi reali, vizi che si vincono e alternative: la valutazione da fare nei primi giorni."
   }
 };
 

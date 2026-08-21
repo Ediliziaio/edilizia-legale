@@ -353,6 +353,54 @@ export const articleImages: Record<string, string | null> = {
   "contenzioso-fotovoltaico-1": "/images/guide/contenzioso-fotovoltaico-1.webp",
   // Schermata del portale di monitoraggio dell'inverter con il grafico della produzione mensile, affiancata al prospetto cartaceo di producibilità consegnato alla firma
   "contenzioso-fotovoltaico-2": "/images/guide/contenzioso-fotovoltaico-2.webp",
+
+  // lavori-senza-contratto-scritto
+  // Copertina — Tavolo di casa con smartphone aperto su una chat di messaggi con l'impresa, accanto a un preventivo stampato e ricevute di bonifico
+  "lavori-senza-contratto-scritto-cover": null,
+  // Tavolo di casa con smartphone aperto su una chat di messaggi con l'impresa, accanto a un preventivo stampato e ricevute di bonifico
+  "lavori-senza-contratto-scritto-1": null,
+  // Bagno ristrutturato da poco con piastrelle rimosse in un angolo e macchia di umidità alla base della parete
+  "lavori-senza-contratto-scritto-2": null,
+
+  // danni-cantiere-vicino
+  // Copertina — Crepa diagonale su una parete interna con fessurimetro a vetrino applicato per monitorarne l'evoluzione
+  "danni-cantiere-vicino-cover": null,
+  // Crepa diagonale su una parete interna con fessurimetro a vetrino applicato per monitorarne l'evoluzione
+  "danni-cantiere-vicino-1": null,
+  // Scavo di fondazione aperto a ridosso del muro di confine, con paratia di micropali a sostegno del fronte
+  "danni-cantiere-vicino-2": null,
+
+  // acquisto-immobile-da-costruire
+  // Copertina — Contratto preliminare di vendita di immobile da costruire sul tavolo con la fideiussione bancaria allegata
+  "acquisto-immobile-da-costruire-cover": null,
+  // Contratto preliminare di vendita di immobile da costruire sul tavolo con la fideiussione bancaria allegata
+  "acquisto-immobile-da-costruire-1": null,
+  // Cantiere residenziale fermo con edificio al grezzo e gru smontata, recinzione chiusa con catena
+  "acquisto-immobile-da-costruire-2": null,
+
+  // infortunio-in-cantiere-difesa-datore
+  // Copertina — Cantiere edile con area delimitata da nastro bianco e rosso dopo un infortunio, ponteggio sullo sfondo
+  "infortunio-in-cantiere-difesa-datore-cover": null,
+  // Cantiere edile con area delimitata da nastro bianco e rosso dopo un infortunio, ponteggio sullo sfondo
+  "infortunio-in-cantiere-difesa-datore-1": null,
+  // Scrivania con documenti della sicurezza aziendale: DVR, verbali di formazione firmati e organigramma delle deleghe
+  "infortunio-in-cantiere-difesa-datore-2": null,
+
+  // committente-in-crisi-liquidazione
+  // Copertina — Cantiere edile fermo con gru e materiali accatastati, cancello chiuso con lucchetto e cartello di cantiere sbiadito
+  "committente-in-crisi-liquidazione-cover": null,
+  // Cantiere edile fermo con gru e materiali accatastati, cancello chiuso con lucchetto e cartello di cantiere sbiadito
+  "committente-in-crisi-liquidazione-1": null,
+  // Scrivania con fascicolo della domanda di insinuazione al passivo: SAL, fatture e computo metrico affiancati alla PEC pronta per l'invio
+  "committente-in-crisi-liquidazione-2": null,
+
+  // esclusione-gara-appalto-ricorso
+  // Copertina — Scrivania con il provvedimento di esclusione dalla gara, il bando evidenziato e un calendario con il termine di trenta giorni cerchiato
+  "esclusione-gara-appalto-ricorso-cover": null,
+  // Scrivania con il provvedimento di esclusione dalla gara, il bando evidenziato e un calendario con il termine di trenta giorni cerchiato
+  "esclusione-gara-appalto-ricorso-1": null,
+  // Aula del tribunale amministrativo con banchi vuoti e fascicoli di gara impilati sul tavolo dei difensori
+  "esclusione-gara-appalto-ricorso-2": null,
 };
 
 export const getArticleImage = (slot: string): string | null => articleImages[slot] ?? null;
@@ -492,6 +540,24 @@ export const articleImageAlt: Record<string, string> = {
   "contenzioso-fotovoltaico-cover": "Tetto a falda in tegole con moduli fotovoltaici installati e staffe di fissaggio in vista, fotografato dall'alto in una giornata limpida",
   "contenzioso-fotovoltaico-1": "Tetto a falda in tegole con moduli fotovoltaici installati e staffe di fissaggio in vista, fotografato dall'alto in una giornata limpida",
   "contenzioso-fotovoltaico-2": "Schermata del portale di monitoraggio dell'inverter con il grafico della produzione mensile, affiancata al prospetto cartaceo di producibilità consegnato alla firma",
+  "lavori-senza-contratto-scritto-cover": "Tavolo di casa con smartphone aperto su una chat di messaggi con l'impresa, accanto a un preventivo stampato e ricevute di bonifico",
+  "lavori-senza-contratto-scritto-1": "Tavolo di casa con smartphone aperto su una chat di messaggi con l'impresa, accanto a un preventivo stampato e ricevute di bonifico",
+  "lavori-senza-contratto-scritto-2": "Bagno ristrutturato da poco con piastrelle rimosse in un angolo e macchia di umidità alla base della parete",
+  "danni-cantiere-vicino-cover": "Crepa diagonale su una parete interna con fessurimetro a vetrino applicato per monitorarne l'evoluzione",
+  "danni-cantiere-vicino-1": "Crepa diagonale su una parete interna con fessurimetro a vetrino applicato per monitorarne l'evoluzione",
+  "danni-cantiere-vicino-2": "Scavo di fondazione aperto a ridosso del muro di confine, con paratia di micropali a sostegno del fronte",
+  "acquisto-immobile-da-costruire-cover": "Contratto preliminare di vendita di immobile da costruire sul tavolo con la fideiussione bancaria allegata",
+  "acquisto-immobile-da-costruire-1": "Contratto preliminare di vendita di immobile da costruire sul tavolo con la fideiussione bancaria allegata",
+  "acquisto-immobile-da-costruire-2": "Cantiere residenziale fermo con edificio al grezzo e gru smontata, recinzione chiusa con catena",
+  "infortunio-in-cantiere-difesa-datore-cover": "Cantiere edile con area delimitata da nastro bianco e rosso dopo un infortunio, ponteggio sullo sfondo",
+  "infortunio-in-cantiere-difesa-datore-1": "Cantiere edile con area delimitata da nastro bianco e rosso dopo un infortunio, ponteggio sullo sfondo",
+  "infortunio-in-cantiere-difesa-datore-2": "Scrivania con documenti della sicurezza aziendale: DVR, verbali di formazione firmati e organigramma delle deleghe",
+  "committente-in-crisi-liquidazione-cover": "Cantiere edile fermo con gru e materiali accatastati, cancello chiuso con lucchetto e cartello di cantiere sbiadito",
+  "committente-in-crisi-liquidazione-1": "Cantiere edile fermo con gru e materiali accatastati, cancello chiuso con lucchetto e cartello di cantiere sbiadito",
+  "committente-in-crisi-liquidazione-2": "Scrivania con fascicolo della domanda di insinuazione al passivo: SAL, fatture e computo metrico affiancati alla PEC pronta per l'invio",
+  "esclusione-gara-appalto-ricorso-cover": "Scrivania con il provvedimento di esclusione dalla gara, il bando evidenziato e un calendario con il termine di trenta giorni cerchiato",
+  "esclusione-gara-appalto-ricorso-1": "Scrivania con il provvedimento di esclusione dalla gara, il bando evidenziato e un calendario con il termine di trenta giorni cerchiato",
+  "esclusione-gara-appalto-ricorso-2": "Aula del tribunale amministrativo con banchi vuoti e fascicoli di gara impilati sul tavolo dei difensori",
 };
 
 export const getArticleImageAlt = (slot: string): string | undefined => articleImageAlt[slot];

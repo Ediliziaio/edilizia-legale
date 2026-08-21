@@ -56,6 +56,13 @@ const ORDER = [
   "contenzioso-ristrutturazione",
   "contenzioso-serramenti",
   "contenzioso-fotovoltaico",
+  // Terza ondata: le aree degli hub che non avevano una guida a supporto
+  "lavori-senza-contratto-scritto",
+  "danni-cantiere-vicino",
+  "acquisto-immobile-da-costruire",
+  "infortunio-in-cantiere-difesa-datore",
+  "committente-in-crisi-liquidazione",
+  "esclusione-gara-appalto-ricorso",
 ];
 
 const files = readdirSync(dir).filter((f) => f.endsWith(".ts"));

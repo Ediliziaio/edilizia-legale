@@ -33,37 +33,37 @@
   </url>
   <url>
     <loc>https://www.edilizialegale.it/studio</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.edilizialegale.it/studio/conflitti-di-interesse</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.edilizialegale.it/contatti</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.edilizialegale.it/privacy</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.edilizialegale.it/cookie</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.edilizialegale.it/note-legali</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -102,6 +102,12 @@
       <image:loc>https://www.edilizialegale.it/images/guide/accertamento-tecnico-preventivo-2.webp</image:loc>
       <image:title>Saggio esplorativo su un solaio: porzione di massetto rimossa che mostra la stratigrafia e la guaina impermeabilizzante</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/acquisto-immobile-da-costruire</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.edilizialegale.it/guide/annullare-contratto-impresa-edile</loc>
@@ -156,6 +162,12 @@
       <image:loc>https://www.edilizialegale.it/images/guide/committente-contesta-i-lavori-2.webp</image:loc>
       <image:title>Verbale di consegna dei lavori firmato, in primo piano la riga delle riserve</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/committente-in-crisi-liquidazione</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.edilizialegale.it/guide/congruita-manodopera-durc</loc>
@@ -284,6 +296,12 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.edilizialegale.it/guide/danni-cantiere-vicino</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.edilizialegale.it/guide/difetti-costruttivi-casa-nuova</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -336,6 +354,12 @@
       <image:loc>https://www.edilizialegale.it/images/guide/durc-irregolare-2.webp</image:loc>
       <image:title>Preavviso di accertamento negativo con la data di ricezione in evidenza</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/esclusione-gara-appalto-ricorso</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.edilizialegale.it/guide/fotovoltaico-non-produce</loc>
@@ -392,6 +416,12 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.edilizialegale.it/guide/infortunio-in-cantiere-difesa-datore</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.edilizialegale.it/guide/iscrizione-riserve-appalto</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -408,6 +438,12 @@
       <image:loc>https://www.edilizialegale.it/images/guide/iscrizione-riserve-appalto-2.webp</image:loc>
       <image:title>Tavolo di cantiere con il conto finale, la memoria di quantificazione delle riserve e una calcolatrice</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://www.edilizialegale.it/guide/lavori-senza-contratto-scritto</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.edilizialegale.it/guide/mediazione-obbligatoria-edilizia</loc>
