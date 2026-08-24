@@ -19,21 +19,21 @@ export type ImageSlotId =
 
 export const imageSlots: Record<ImageSlotId, string | null> = {
   /** Home, sezione "due lati": foto cantiere + scrivania, o stretta di mano in cantiere */
-  "home-due-lati": null,
+  "home-due-lati": "/images/sito/home-due-lati.webp",
   /** Home, sezione "come lavoriamo": esame del fascicolo documentale sul tavolo */
-  "home-metodo": null,
+  "home-metodo": "/images/sito/home-metodo.webp",
   /** Hub imprese, banda tra le aree e le guide: cantiere di un'impresa al lavoro */
-  "imprese-banda": null,
+  "imprese-banda": "/images/sito/imprese-banda.webp",
   /** Hub privati, banda tra le aree e i verticali: casa in ristrutturazione */
-  "privati-banda": null,
+  "privati-banda": "/images/sito/privati-banda.webp",
   /** Hub domande frequenti: scrivania con appunti e codice civile */
-  "domande-hero": null,
+  "domande-hero": "/images/sito/domande-hero.webp",
   /** Pagina studio: foto vera del team / dello studio */
   "studio-team": "/images/sito/studio-team.webp",
   /** Contatti: ingresso o sala riunioni dello studio */
-  "contatti-studio": null,
+  "contatti-studio": "/images/sito/contatti-studio.webp",
   /** Guide: scrivania con fascicoli / codice civile */
-  "guide-hero": null,
+  "guide-hero": "/images/sito/guide-hero.webp",
   /** Ritratto dell'avvocato: usato in home, pagina studio e firma degli articoli */
   "avvocato-ritratto": "/images/sito/avvocato-ritratto.webp",
 };
