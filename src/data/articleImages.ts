@@ -356,51 +356,51 @@ export const articleImages: Record<string, string | null> = {
 
   // lavori-senza-contratto-scritto
   // Copertina — Tavolo di casa con smartphone aperto su una chat di messaggi con l'impresa, accanto a un preventivo stampato e ricevute di bonifico
-  "lavori-senza-contratto-scritto-cover": null,
+  "lavori-senza-contratto-scritto-cover": "/images/guide/lavori-senza-contratto-scritto-cover.webp",
   // Tavolo di casa con smartphone aperto su una chat di messaggi con l'impresa, accanto a un preventivo stampato e ricevute di bonifico
-  "lavori-senza-contratto-scritto-1": null,
+  "lavori-senza-contratto-scritto-1": "/images/guide/lavori-senza-contratto-scritto-1.webp",
   // Bagno ristrutturato da poco con piastrelle rimosse in un angolo e macchia di umidità alla base della parete
-  "lavori-senza-contratto-scritto-2": null,
+  "lavori-senza-contratto-scritto-2": "/images/guide/lavori-senza-contratto-scritto-2.webp",
 
   // danni-cantiere-vicino
   // Copertina — Crepa diagonale su una parete interna con fessurimetro a vetrino applicato per monitorarne l'evoluzione
-  "danni-cantiere-vicino-cover": null,
+  "danni-cantiere-vicino-cover": "/images/guide/danni-cantiere-vicino-cover.webp",
   // Crepa diagonale su una parete interna con fessurimetro a vetrino applicato per monitorarne l'evoluzione
-  "danni-cantiere-vicino-1": null,
+  "danni-cantiere-vicino-1": "/images/guide/danni-cantiere-vicino-1.webp",
   // Scavo di fondazione aperto a ridosso del muro di confine, con paratia di micropali a sostegno del fronte
-  "danni-cantiere-vicino-2": null,
+  "danni-cantiere-vicino-2": "/images/guide/danni-cantiere-vicino-2.webp",
 
   // acquisto-immobile-da-costruire
   // Copertina — Contratto preliminare di vendita di immobile da costruire sul tavolo con la fideiussione bancaria allegata
-  "acquisto-immobile-da-costruire-cover": null,
+  "acquisto-immobile-da-costruire-cover": "/images/guide/acquisto-immobile-da-costruire-cover.webp",
   // Contratto preliminare di vendita di immobile da costruire sul tavolo con la fideiussione bancaria allegata
-  "acquisto-immobile-da-costruire-1": null,
+  "acquisto-immobile-da-costruire-1": "/images/guide/acquisto-immobile-da-costruire-1.webp",
   // Cantiere residenziale fermo con edificio al grezzo e gru smontata, recinzione chiusa con catena
-  "acquisto-immobile-da-costruire-2": null,
+  "acquisto-immobile-da-costruire-2": "/images/guide/acquisto-immobile-da-costruire-2.webp",
 
   // infortunio-in-cantiere-difesa-datore
   // Copertina — Cantiere edile con area delimitata da nastro bianco e rosso dopo un infortunio, ponteggio sullo sfondo
-  "infortunio-in-cantiere-difesa-datore-cover": null,
+  "infortunio-in-cantiere-difesa-datore-cover": "/images/guide/infortunio-in-cantiere-difesa-datore-cover.webp",
   // Cantiere edile con area delimitata da nastro bianco e rosso dopo un infortunio, ponteggio sullo sfondo
-  "infortunio-in-cantiere-difesa-datore-1": null,
+  "infortunio-in-cantiere-difesa-datore-1": "/images/guide/infortunio-in-cantiere-difesa-datore-1.webp",
   // Scrivania con documenti della sicurezza aziendale: DVR, verbali di formazione firmati e organigramma delle deleghe
-  "infortunio-in-cantiere-difesa-datore-2": null,
+  "infortunio-in-cantiere-difesa-datore-2": "/images/guide/infortunio-in-cantiere-difesa-datore-2.webp",
 
   // committente-in-crisi-liquidazione
   // Copertina — Cantiere edile fermo con gru e materiali accatastati, cancello chiuso con lucchetto e cartello di cantiere sbiadito
-  "committente-in-crisi-liquidazione-cover": null,
+  "committente-in-crisi-liquidazione-cover": "/images/guide/committente-in-crisi-liquidazione-cover.webp",
   // Cantiere edile fermo con gru e materiali accatastati, cancello chiuso con lucchetto e cartello di cantiere sbiadito
-  "committente-in-crisi-liquidazione-1": null,
+  "committente-in-crisi-liquidazione-1": "/images/guide/committente-in-crisi-liquidazione-1.webp",
   // Scrivania con fascicolo della domanda di insinuazione al passivo: SAL, fatture e computo metrico affiancati alla PEC pronta per l'invio
-  "committente-in-crisi-liquidazione-2": null,
+  "committente-in-crisi-liquidazione-2": "/images/guide/committente-in-crisi-liquidazione-2.webp",
 
   // esclusione-gara-appalto-ricorso
   // Copertina — Scrivania con il provvedimento di esclusione dalla gara, il bando evidenziato e un calendario con il termine di trenta giorni cerchiato
-  "esclusione-gara-appalto-ricorso-cover": null,
+  "esclusione-gara-appalto-ricorso-cover": "/images/guide/esclusione-gara-appalto-ricorso-cover.webp",
   // Scrivania con il provvedimento di esclusione dalla gara, il bando evidenziato e un calendario con il termine di trenta giorni cerchiato
-  "esclusione-gara-appalto-ricorso-1": null,
+  "esclusione-gara-appalto-ricorso-1": "/images/guide/esclusione-gara-appalto-ricorso-1.webp",
   // Aula del tribunale amministrativo con banchi vuoti e fascicoli di gara impilati sul tavolo dei difensori
-  "esclusione-gara-appalto-ricorso-2": null,
+  "esclusione-gara-appalto-ricorso-2": "/images/guide/esclusione-gara-appalto-ricorso-2.webp",
 };
 
 export const getArticleImage = (slot: string): string | null => articleImages[slot] ?? null;
