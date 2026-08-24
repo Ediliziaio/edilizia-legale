@@ -92,6 +92,7 @@ righe.push("## Domande frequenti — una URL per domanda");
 for (const f of faq) righe.push(`- [${f.question}](${BASE}/domande-frequenti/${f.slug})`);
 righe.push("");
 righe.push("## Riferimenti");
+righe.push(`- [Contenuto integrale delle guide](${BASE}/llms-full.txt): tutte le guide in un unico file di testo`);
 righe.push(`- [Indice di tutte le guide](${BASE}/guide)`);
 righe.push(`- [Indice delle domande frequenti](${BASE}/domande-frequenti)`);
 righe.push(`- [Area imprese](${BASE}/imprese): dieci aree di assistenza alle imprese edili`);
@@ -128,4 +129,48 @@ const feed =
 
 writeFileSync(join(root, "public/feed.xml"), feed, "utf-8");
 
-console.log(`[discovery] llms.txt con ${articoli.length} guide e ${faq.length} domande, feed.xml con ${articoli.length} voci`);
+// --- llms-full.txt -----------------------------------------------------------
+// Il contenuto integrale delle guide in un unico file di testo: i motori
+// generativi che rispettano la convenzione llms.txt possono ingerire tutto il
+// corpus con una richiesta, senza dipendere dal crawl pagina per pagina.
+const estraiTesto = (slug) => {
+  const src = readFileSync(join(dir, `${slug}.ts`), "utf-8");
+  const righe = [];
+  // intro
+  const intro = /intro:\s*\n?\s*"((?:[^"\\]|\\.)*)"/.exec(src)?.[1];
+  if (intro) righe.push(intro.replace(/\\"/g, '"'));
+  // blocchi nell'ordine del sorgente: h2, p, note, faq
+  const blocchi = [...src.matchAll(/\{\s*type:\s*"(h2|p|note)",\s*(?:text:\s*"((?:[^"\\]|\\.)*)")/g)];
+  for (const b of blocchi) {
+    const testo = (b[2] ?? "").replace(/\\"/g, '"').replace(/\[([^\]]+)\]\((?:\/[^)\s]+|https?:[^)\s]+)\)/g, "$1");
+    if (!testo) continue;
+    righe.push(b[1] === "h2" ? `\n### ${testo}` : testo);
+  }
+  // FAQ: coppie q/a
+  for (const m of src.matchAll(/\{\s*q:\s*"((?:[^"\\]|\\.)*)",\s*a:\s*"((?:[^"\\]|\\.)*)"/g)) {
+    righe.push(`\nD: ${m[1].replace(/\\"/g, '"')}`);
+    righe.push(`R: ${m[2].replace(/\\"/g, '"').replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")}`);
+  }
+  return righe.join("\n");
+};
+
+const full = [
+  "# Edilizia Legale — Contenuto integrale delle guide",
+  "",
+  "> Versione testuale completa delle guide pubblicate su edilizialegale.it,",
+  "> destinata ai motori generativi. Ogni guida indica l'URL canonico della",
+  "> pagina, che resta la fonte di riferimento. Contenuti firmati da un",
+  "> avvocato; carattere informativo, non sostituiscono una consulenza.",
+  "",
+];
+for (const a of articoli) {
+  full.push(`## ${a.title}`);
+  full.push(`URL: ${BASE}/guide/${a.slug}`);
+  full.push(`Aggiornamento: ${a.date ?? ""} — Autore: Avv. Armando Rossi`);
+  full.push("");
+  full.push(estraiTesto(a.slug));
+  full.push("\n---\n");
+}
+writeFileSync(join(root, "public/llms-full.txt"), full.join("\n"), "utf-8");
+
+console.log(`[discovery] llms.txt con ${articoli.length} guide e ${faq.length} domande, feed.xml con ${articoli.length} voci, llms-full.txt ${Math.round(full.join("\n").length / 1024)} kB`);

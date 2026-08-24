@@ -249,6 +249,78 @@ export const faqEntries: FaqEntry[] = [
     guida: "cucina-su-misura-difettosa",
     silo: "privati",
   },
+  {
+    slug: "crepe-da-cantiere-del-vicino-chi-paga",
+    question: "Il cantiere del vicino ha crepato i muri di casa: chi paga?",
+    answer:
+      "In prima battuta l'impresa che esegue i lavori, per fatto illecito; il vicino committente risponde in solido se ha scelto un'impresa palesemente inadeguata o si è ingerito nell'esecuzione. Per gli scavi profondi l'attività può qualificarsi pericolosa: l'onere della prova si inverte. La mossa decisiva è documentare subito, con fotografie datate e fessurimetri.",
+    detail: [
+      "Il danno da cantiere ha una particolarità: la scena cambia ogni giorno. Reinterrato lo scavo, dimostrare il nesso tra lavorazione e crepa diventa una battaglia di perizie. L'accertamento tecnico preventivo va fatto mentre il cantiere è aperto.",
+      "Quasi ogni cantiere ha una polizza di responsabilità verso terzi: chiederne gli estremi nella prima PEC sposta la trattativa dal patrimonio dell'impresa a quello di una compagnia assicurativa.",
+    ],
+    guida: "danni-cantiere-vicino",
+    silo: "privati",
+  },
+  {
+    slug: "fideiussione-casa-in-costruzione-obbligatoria",
+    question: "La fideiussione per comprare una casa in costruzione è obbligatoria?",
+    answer:
+      "Sì: per gli immobili da costruire venduti da un'impresa a una persona fisica, il costruttore deve consegnare alla firma del preliminare una fideiussione che garantisce tutte le somme versate prima del rogito (D.lgs. 122/2005). Il contratto senza fideiussione è nullo, ma la nullità può farla valere solo l'acquirente.",
+    detail: [
+      "La garanzia copre la crisi del costruttore prima del trasferimento: se l'impresa fallisce, la banca o l'assicurazione restituisce gli acconti con gli interessi, a prima richiesta.",
+      "Il punto debole è comportamentale: la fideiussione mai chiesta o di importo inferiore agli acconti reali. Dopo il fallimento non si recupera più: va pretesa alla firma, quando hai ancora potere negoziale.",
+    ],
+    guida: "acquisto-immobile-da-costruire",
+    silo: "privati",
+  },
+  {
+    slug: "lavori-senza-contratto-posso-contestare",
+    question: "Ho fatto lavori senza contratto scritto: posso contestare i difetti?",
+    answer:
+      "Sì: l'appalto non richiede la forma scritta, quindi l'accordo verbale vincola e le garanzie per i vizi si applicano per legge — denuncia entro 60 giorni dalla scoperta, prescrizione in due anni dalla consegna. Cambia solo il percorso probatorio: l'accordo si ricostruisce con bonifici, preventivo, messaggi e testimoni.",
+    detail: [
+      "Il preventivo non firmato seguito dall'inizio dei lavori vale come contratto accettato: le sue voci diventano il contenuto dell'accordo. I messaggi sono utilizzabili come prova documentale.",
+      "Anche senza capitolato, l'opera deve rispettare la regola d'arte: un'impermeabilizzazione che infiltra o un impianto non a norma sono contestabili a prescindere da cosa era stato pattuito a voce.",
+    ],
+    guida: "lavori-senza-contratto-scritto",
+    silo: "privati",
+  },
+  {
+    slug: "infortunio-cantiere-datore-sempre-indagato",
+    question: "Dopo un infortunio in cantiere il datore di lavoro è sempre indagato?",
+    answer:
+      "Quasi sempre, ed è un atto dovuto, non una condanna anticipata: l'iscrizione serve anche a garantire la partecipazione agli accertamenti tecnici irripetibili. La difesa si gioca sui documenti anteriori al fatto — DVR, formazione tracciata, deleghe effettive — e sulle prime 48 ore: niente dichiarazioni a caldo, nessuna integrazione postuma dei documenti.",
+    detail: [
+      "Contro il sequestro del cantiere il riesame va chiesto entro dieci giorni; in parallelo, l'istanza di dissequestro fondata su un piano di messa in sicurezza eseguito riapre l'area in settimane.",
+      "La delega di funzioni protegge solo se è effettiva: atto scritto, delegato competente, autonomia di spesa reale. Una delega a chi deve chiedere il permesso per ogni acquisto è carta.",
+    ],
+    guida: "infortunio-in-cantiere-difesa-datore",
+    silo: "imprese",
+  },
+  {
+    slug: "committente-fallito-come-recupero-credito",
+    question: "Il committente è fallito: come recupero il credito dei lavori?",
+    answer:
+      "Con la domanda di insinuazione al passivo, da trasmettere al curatore di regola entro trenta giorni prima dell'udienza di verifica: le azioni esecutive individuali sono vietate. Se l'impresa è artigiana, il credito può godere del privilegio ex art. 2751-bis c.c., che nelle procedure cambia radicalmente le percentuali di recupero.",
+    detail: [
+      "Il contratto d'appalto pendente si scioglie salvo che il curatore subentri: le opere eseguite e non liquidate diventano credito concorsuale, e vale solo ciò che è misurato e documentato — SAL, libretti, riserve.",
+      "I materiali e le attrezzature tue in cantiere non entrano nell'attivo, ma vanno rivendicati formalmente con fatture e documenti di trasporto, prima che finiscano inventariati.",
+    ],
+    guida: "committente-in-crisi-liquidazione",
+    silo: "imprese",
+  },
+  {
+    slug: "esclusione-gara-appalto-termini-ricorso",
+    question: "Quanto tempo ho per impugnare l'esclusione da una gara d'appalto?",
+    answer:
+      "Trenta giorni dalla comunicazione, con il rito accelerato degli appalti davanti al TAR: è un termine perentorio, e le istanze bonarie di riammissione non lo sospendono. L'accesso agli atti va chiesto il giorno stesso, perché senza i verbali integrali si impugna alla cieca.",
+    detail: [
+      "I motivi con più margine: l'omesso soccorso istruttorio sulle carenze documentali sanabili, l'esclusione per anomalia senza contraddittorio reale, gli automatismi espulsivi applicati fuori dai casi tassativi.",
+      "La decisione è economica prima che giuridica: probabilità sul vizio concreto, utile atteso della commessa e costo pieno del giudizio, contributo unificato incluso. Un ricorso senza margine costa più dell'esclusione.",
+    ],
+    guida: "esclusione-gara-appalto-ricorso",
+    silo: "imprese",
+  },
 ];
 
 export const getFaq = (slug: string) => faqEntries.find((f) => f.slug === slug);

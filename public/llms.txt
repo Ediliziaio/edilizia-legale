@@ -87,8 +87,15 @@
 - [Gli infissi nuovi fanno spifferi: di chi è la colpa?](https://www.edilizialegale.it/domande-frequenti/infissi-nuovi-spifferi-di-chi-e-la-colpa)
 - [Quando si applica il reverse charge in edilizia?](https://www.edilizialegale.it/domande-frequenti/reverse-charge-quando-si-applica-edilizia)
 - [Il contratto della cucina su misura è vendita o appalto?](https://www.edilizialegale.it/domande-frequenti/cucina-su-misura-vendita-o-appalto)
+- [Il cantiere del vicino ha crepato i muri di casa: chi paga?](https://www.edilizialegale.it/domande-frequenti/crepe-da-cantiere-del-vicino-chi-paga)
+- [La fideiussione per comprare una casa in costruzione è obbligatoria?](https://www.edilizialegale.it/domande-frequenti/fideiussione-casa-in-costruzione-obbligatoria)
+- [Ho fatto lavori senza contratto scritto: posso contestare i difetti?](https://www.edilizialegale.it/domande-frequenti/lavori-senza-contratto-posso-contestare)
+- [Dopo un infortunio in cantiere il datore di lavoro è sempre indagato?](https://www.edilizialegale.it/domande-frequenti/infortunio-cantiere-datore-sempre-indagato)
+- [Il committente è fallito: come recupero il credito dei lavori?](https://www.edilizialegale.it/domande-frequenti/committente-fallito-come-recupero-credito)
+- [Quanto tempo ho per impugnare l'esclusione da una gara d'appalto?](https://www.edilizialegale.it/domande-frequenti/esclusione-gara-appalto-termini-ricorso)
 
 ## Riferimenti
+- [Contenuto integrale delle guide](https://www.edilizialegale.it/llms-full.txt): tutte le guide in un unico file di testo
 - [Indice di tutte le guide](https://www.edilizialegale.it/guide)
 - [Indice delle domande frequenti](https://www.edilizialegale.it/domande-frequenti)
 - [Area imprese](https://www.edilizialegale.it/imprese): dieci aree di assistenza alle imprese edili
