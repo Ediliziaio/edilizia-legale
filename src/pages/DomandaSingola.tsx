@@ -8,8 +8,8 @@ import ELStickyCTA from "@/components/ELStickyCTA";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, BookOpen } from "lucide-react";
 import { getFaq, faqEntries } from "@/data/faq";
-import { getArticleMeta, aggiornamentoConPreposizione } from "@/data/articles";
-import { SITE_URL } from "@/data/site";
+import { getArticleMeta, aggiornamentoConPreposizione, ultimoAggiornamentoContenuti, toISODate } from "@/data/articles";
+import { SITE_URL, DEFAULT_AUTHOR, AUTHOR_ID, AUTHOR_URL } from "@/data/site";
 
 /**
  * Pagina dedicata a UNA sola domanda (/domande-frequenti/[slug]):
@@ -27,6 +27,14 @@ const DomandaSingola = () => {
   const guida = faq.guida ? getArticleMeta(faq.guida) : undefined;
   const related = faqEntries.filter((f) => f.slug !== faq.slug && f.silo === faq.silo).slice(0, 3);
 
+  // Data di pubblicazione: la stessa "aggiornato a..." mostrata in pagina —
+  // le risposte vengono riviste insieme al corpus delle guide.
+  const dataISO = toISODate(ultimoAggiornamentoContenuti());
+
+  // Search Console segnala come "da migliorare" i campi author, datePublished
+  // e upvoteCount: li dichiariamo con valori veri. La domanda e' redatta dallo
+  // studio, la risposta e' dell'avvocato; upvoteCount e' 0 perche' il sito non
+  // ha un sistema di voti — meglio uno zero onesto che un numero inventato.
   const qaSchema = {
     "@context": "https://schema.org",
     "@type": "QAPage",
@@ -35,10 +43,15 @@ const DomandaSingola = () => {
       "name": faq.question,
       "text": faq.question,
       "answerCount": 1,
+      ...(dataISO ? { "datePublished": dataISO } : {}),
+      "author": { "@type": "Organization", "@id": `${SITE_URL}/#studio`, "name": "Edilizia Legale" },
       "acceptedAnswer": {
         "@type": "Answer",
         "text": faq.answer,
         "url": url,
+        "upvoteCount": 0,
+        ...(dataISO ? { "datePublished": dataISO } : {}),
+        "author": { "@type": "Person", "@id": AUTHOR_ID, "name": DEFAULT_AUTHOR, "url": AUTHOR_URL },
       },
     },
   };
