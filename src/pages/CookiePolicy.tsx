@@ -23,14 +23,19 @@ const CookiePolicy = () => (
     </ul>
     <p>
       Il sito <strong>non utilizza cookie di profilazione</strong> né strumenti di tracciamento pubblicitario.
-      Qualora in futuro venissero introdotti strumenti di analisi statistica o marketing, questa informativa sarà
-      aggiornata e, dove richiesto, sarà attivato un banner di raccolta del consenso preventivo.
+      Per le statistiche di visita è impiegato uno strumento di misurazione aggregata <strong>privo di
+      cookie</strong> (Vercel Web Analytics), che non identifica il singolo visitatore e non ne segue la
+      navigazione su altri siti: per questo non richiede un banner di consenso. Qualora in futuro venissero
+      introdotti strumenti di profilazione o marketing, questa informativa sarà aggiornata e, dove richiesto,
+      sarà attivato un banner di raccolta del consenso preventivo.
     </p>
 
     <h2>3. Cookie di terze parti</h2>
     <p>
-      Le pagine possono incorporare risorse tecniche di terze parti (es. font). Tali fornitori possono
-      trattare dati tecnici di navigazione in qualità di autonomi titolari: si rinvia alle rispettive informative.
+      I caratteri tipografici sono serviti direttamente dal dominio del sito: la navigazione non comporta
+      richieste verso fornitori di font esterni. L'infrastruttura di hosting (Vercel) tratta i dati tecnici di
+      connessione — indirizzo IP, log del server — necessari all'erogazione del servizio, in qualità di
+      responsabile del trattamento.
     </p>
 
     <h2>4. Gestione dei cookie dal browser</h2>
