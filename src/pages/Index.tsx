@@ -1,4 +1,4 @@
-import { useState, lazy, Suspense } from "react";
+import { useState, useRef, useEffect, lazy, Suspense } from "react";
 import SEO from "@/components/SEO";
 import ELHeader from "@/components/ELHeader";
 import ELHero from "@/components/ELHero";
@@ -25,6 +25,27 @@ const Index = () => {
   const openContact = () => setIsContactOpen(true);
   const closeContact = () => setIsContactOpen(false);
 
+  // Il grafico usa recharts (~360 kB): senza questo cancello il chunk partiva
+  // al primo paint della home anche se la sezione sta molto sotto la piega.
+  // Si scarica solo quando il visitatore le si avvicina.
+  const chartRef = useRef<HTMLDivElement>(null);
+  const [chartVicino, setChartVicino] = useState(false);
+  useEffect(() => {
+    const el = chartRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([e]) => {
+        if (e.isIntersecting) {
+          setChartVicino(true);
+          obs.disconnect();
+        }
+      },
+      { rootMargin: "600px" },
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
   return (
     <>
       <SEO
@@ -45,9 +66,15 @@ const Index = () => {
           <ELStats />
           <ELProblemSolution />
           <ELServicesCards />
-          <Suspense fallback={<div className="min-h-[400px]" aria-hidden="true" />}>
-            <ELDeadlinesChart />
-          </Suspense>
+          <div ref={chartRef}>
+            {chartVicino ? (
+              <Suspense fallback={<div className="min-h-[400px]" aria-hidden="true" />}>
+                <ELDeadlinesChart />
+              </Suspense>
+            ) : (
+              <div className="min-h-[400px]" aria-hidden="true" />
+            )}
+          </div>
           <ELVerticali />
           <ELProcessFlow />
           <ELBandaFoto

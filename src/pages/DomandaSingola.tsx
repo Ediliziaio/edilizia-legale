@@ -85,12 +85,16 @@ const DomandaSingola = () => {
           <section className="py-12 lg:py-16 bg-white">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto">
-                <Link
-                  to="/domande-frequenti"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-foreground/60 hover:text-navy mb-6"
-                >
-                  <ArrowLeft className="w-4 h-4" /> Tutte le domande frequenti
-                </Link>
+                {/* Briciole visibili, allineate al BreadcrumbList dichiarato. */}
+                <nav aria-label="Percorso" className="mb-6">
+                  <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-foreground/60">
+                    <li><Link to="/" className="hover:text-navy font-semibold">Home</Link></li>
+                    <li aria-hidden="true" className="text-foreground/30">/</li>
+                    <li><Link to="/domande-frequenti" className="hover:text-navy font-semibold">Domande frequenti</Link></li>
+                    <li aria-hidden="true" className="text-foreground/30">/</li>
+                    <li aria-current="page" className="text-foreground/80 max-w-full truncate">{faq.question}</li>
+                  </ol>
+                </nav>
 
                 <span className="block text-xs uppercase tracking-wider font-bold text-gold-dark mb-3">
                   {faq.silo === "imprese" ? "Per le imprese" : "Per i privati"}

@@ -145,6 +145,14 @@ const SEO = ({
       {canonical && <meta property="og:site_name" content="Edilizia Legale" />}
       {canonical && <meta property="og:locale" content="it_IT" />}
       {canonical && <meta property="og:image" content={image} />}
+      {canonical && (
+        // Le copertine delle guide sono 1600x900, l'immagine di sito 1200x630:
+        // dichiararlo evita il layout probe dei crawler social.
+        <meta property="og:image:width" content={image.endsWith("og-image.png") ? "1200" : "1600"} />
+      )}
+      {canonical && (
+        <meta property="og:image:height" content={image.endsWith("og-image.png") ? "630" : "900"} />
+      )}
       {canonical && <meta name="twitter:card" content="summary_large_image" />}
       {canonical && <meta name="twitter:title" content={ogTitle ?? title} />}
       {canonical && description && (

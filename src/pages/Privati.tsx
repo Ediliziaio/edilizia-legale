@@ -85,6 +85,14 @@ const Privati = () => {
           <section className="relative bg-navy text-white overflow-hidden border-b border-white/10">
             <ELHeroBackdrop />
             <div className="container mx-auto px-4 py-14 lg:py-20 relative">
+              {/* Briciole visibili, allineate al BreadcrumbList dichiarato. */}
+              <nav aria-label="Percorso" className="mb-6">
+                <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-white/60">
+                  <li><Link to="/" className="hover:text-gold">Home</Link></li>
+                  <li aria-hidden="true" className="text-white/30">/</li>
+                  <li aria-current="page" className="text-white/85">Per i privati</li>
+                </ol>
+              </nav>
               <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14 items-start">
                 <div className="max-w-3xl">
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur rounded-full text-xs font-semibold mb-6 uppercase tracking-wider border border-white/15">

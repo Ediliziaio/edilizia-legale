@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ShieldCheck, CheckCircle2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { CONTACT_ENDPOINT, EMAIL, PHONE_DISPLAY } from "@/data/site";
 
 interface ELContactModalProps {
   isOpen: boolean;
@@ -18,25 +19,60 @@ const ELContactModal = ({ isOpen, onClose }: ELContactModalProps) => {
   const [isSuccess, setIsSuccess] = useState(false);
   const { toast } = useToast();
 
+  /**
+   * Invio reale. Prima questo handler fingeva: aspettava 1,2 secondi e
+   * mostrava "Richiesta inviata" senza inviare nulla — il modo peggiore di
+   * perdere un cliente. Ora: con un endpoint configurato fa una POST vera e
+   * dichiara il successo solo su risposta ok; senza endpoint apre il client
+   * di posta del visitatore con la richiesta già scritta.
+   */
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    const dati = Object.fromEntries(new FormData(e.currentTarget).entries());
 
-    // TODO [DA CONFERMARE]: collegare a un endpoint reale (form provider / email).
-    await new Promise((r) => setTimeout(r, 1200));
+    if (CONTACT_ENDPOINT) {
+      setIsSubmitting(true);
+      try {
+        const res = await fetch(CONTACT_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(dati),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        setIsSuccess(true);
+        toast({ title: "Richiesta inviata", description: "Ti ricontattiamo entro 48 ore lavorative." });
+        setTimeout(() => {
+          setIsSuccess(false);
+          onClose();
+        }, 2200);
+      } catch {
+        toast({
+          title: "Invio non riuscito",
+          description: `Riprova tra qualche minuto, oppure scrivici direttamente a ${EMAIL} o chiama il ${PHONE_DISPLAY}.`,
+          variant: "destructive",
+        });
+      } finally {
+        setIsSubmitting(false);
+      }
+      return;
+    }
 
-    setIsSubmitting(false);
-    setIsSuccess(true);
-
+    // Nessun endpoint: la richiesta parte dalla posta del visitatore.
+    const oggetto = `Analisi del caso — ${dati.profile ?? ""} / ${dati.topic ?? ""}`.trim();
+    const corpo = [
+      `Nome: ${dati.name ?? ""}`,
+      `Telefono: ${dati.phone ?? ""}`,
+      `Email: ${dati.email ?? ""}`,
+      `Profilo: ${dati.profile ?? ""}`,
+      `Il problema riguarda: ${dati.topic ?? ""}`,
+      "",
+      `${dati.message ?? ""}`,
+    ].join("\n");
+    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(oggetto)}&body=${encodeURIComponent(corpo)}`;
     toast({
-      title: "Richiesta inviata",
-      description: "Ti ricontattiamo entro 48 ore lavorative.",
+      title: "Si sta aprendo la tua app di posta",
+      description: "La richiesta è già scritta: controlla e premi Invia. Se non si apre, scrivici a " + EMAIL + ".",
     });
-
-    setTimeout(() => {
-      setIsSuccess(false);
-      onClose();
-    }, 2200);
   };
 
   return (

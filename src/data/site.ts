@@ -31,4 +31,12 @@ export const AUTHOR_SAMEAS: string[] = [];
 export const AUTHOR_ID = `${SITE_URL}/studio#avvocato`;
 export const AUTHOR_URL = `${SITE_URL}/studio`;
 
+/**
+ * Endpoint del modulo contatti (Formspree, Web3Forms, funzione serverless...).
+ * [DA CONFERMARE] Finché resta null, il modulo apre il client di posta del
+ * visitatore con la richiesta già scritta: nessun invio nel vuoto e nessun
+ * messaggio di successo non veritiero.
+ */
+export const CONTACT_ENDPOINT: string | null = null;
+
 export const abs = (path: string) => `${SITE_URL}${path}`;
