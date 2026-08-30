@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, Shield, Linkedin } from "lucide-react";
+import { Mail, Phone, Shield, Linkedin, MapPin } from "lucide-react";
 import { ELLogo } from "@/components/ELHeader";
-import { PHONE_TEL, PHONE_DISPLAY, EMAIL, PEC } from "@/data/site";
+import { PHONE_TEL, PHONE_DISPLAY, PHONE_MOBILE_TEL, PHONE_MOBILE_DISPLAY, EMAIL, PEC, SEDI } from "@/data/site";
 
 const ELFooter = () => {
   const year = new Date().getFullYear();
@@ -60,7 +60,10 @@ const ELFooter = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-gold mt-0.5 shrink-0" />
-                <a href={`tel:${PHONE_TEL}`} className="text-white/70 hover:text-gold">{PHONE_DISPLAY}</a>
+                <div className="text-white/70 leading-snug">
+                  <a href={`tel:${PHONE_TEL}`} className="hover:text-gold block">{PHONE_DISPLAY}</a>
+                  <a href={`tel:${PHONE_MOBILE_TEL}`} className="hover:text-gold block">{PHONE_MOBILE_DISPLAY}</a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-gold mt-0.5 shrink-0" />
@@ -77,6 +80,26 @@ const ELFooter = () => {
               <li><Link to="/studio/conflitti-di-interesse" className="text-white/70 hover:text-gold">Conflitti di interesse</Link></li>
               <li><Link to="/domande-frequenti" className="text-white/70 hover:text-gold">Domande frequenti</Link></li>
             </ul>
+          </div>
+        </div>
+
+        {/* Sedi operative: indirizzo fisico verificabile, segnale di affidabilità */}
+        <div className="border-t border-white/10 pt-10 mb-10">
+          <h2 className="font-semibold text-white mb-5 flex items-center gap-2">
+            <MapPin className="w-5 h-5 text-gold" />
+            Le nostre sedi
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {SEDI.map((s) => (
+              <div key={s.citta} className="bg-white/5 border border-white/10 rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="w-2 h-2 rounded-full bg-gold" />
+                  <span className="text-xs font-bold uppercase tracking-wider text-gold">{s.citta}</span>
+                </div>
+                <p className="text-sm text-white/85 leading-snug">{s.via}</p>
+                <p className="text-sm text-white/60 leading-snug">{s.cap} {s.citta}</p>
+              </div>
+            ))}
           </div>
         </div>
 

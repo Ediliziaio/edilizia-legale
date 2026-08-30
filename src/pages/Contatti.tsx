@@ -8,7 +8,7 @@ import ELStickyCTA from "@/components/ELStickyCTA";
 import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Shield, Clock, FileText, ArrowRight } from "lucide-react";
-import { PHONE_TEL, PHONE_DISPLAY, EMAIL, PEC, SITE_URL } from "@/data/site";
+import { PHONE_TEL, PHONE_DISPLAY, PHONE_MOBILE_TEL, PHONE_MOBILE_DISPLAY, EMAIL, PEC, SITE_URL, SEDI } from "@/data/site";
 import ELImageSlot from "@/components/ELImageSlot";
 
 const Contatti = () => {
@@ -82,7 +82,7 @@ const Contatti = () => {
                         <span className="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center shrink-0">
                           <Phone className="w-4 h-4 text-navy" />
                         </span>
-                        <span><strong className="text-navy">{PHONE_DISPLAY}</strong><br /><span className="text-sm text-foreground/60">lun-ven, 9:00-18:30</span></span>
+                        <span><strong className="text-navy">{PHONE_DISPLAY}</strong> · <a href={`tel:${PHONE_MOBILE_TEL}`} className="text-navy hover:text-gold-dark font-semibold">{PHONE_MOBILE_DISPLAY}</a><br /><span className="text-sm text-foreground/60">lun-ven, 9:00-18:30</span></span>
                       </a>
                       <a href={`mailto:${EMAIL}`} className="flex items-center gap-3 text-foreground/80 hover:text-navy">
                         <span className="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center shrink-0">
@@ -100,7 +100,7 @@ const Contatti = () => {
                         <span className="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center shrink-0">
                           <Clock className="w-4 h-4 text-navy" />
                         </span>
-                        <span><strong className="text-navy">In tutta Italia</strong><br /><span className="text-sm text-foreground/60">colloqui in studio o da remoto</span></span>
+                        <span><strong className="text-navy">{SEDI.map((x) => x.citta).join(" · ")}</strong><br /><span className="text-sm text-foreground/60">colloqui in sede o da remoto, in tutta Italia</span></span>
                       </div>
                     </div>
                   </div>
