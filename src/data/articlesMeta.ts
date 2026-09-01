@@ -21,7 +21,7 @@ export const articlesMeta: ArticleMeta[] = [
       "fatture insolute impresa edile"
     ],
     "intro": "Un'impresa edile che non viene pagata può chiedere il decreto ingiuntivo se ha prova scritta del credito: contratto o preventivo accettato, SAL controfirmati, fatture e verbale di fine lavori. Con documenti di questo tipo il giudice concede di norma la provvisoria esecutorietà, che permette di agire subito senza attendere l'esito dell'eventuale opposizione.",
-    "updatedAt": "2026-08-18"
+    "updatedAt": "2026-09-01"
   },
   {
     "slug": "difetti-costruttivi-casa-nuova",

@@ -66,6 +66,33 @@ const ORDER = [
   "esclusione-gara-appalto-ricorso",
 ];
 
+/**
+ * Su Vercel il repo e' clonato shallow (depth 1): `git log` su un file
+ * restituirebbe sempre la data dell'ultimo commit, cioe' quella del deploy, e
+ * dichiarerebbe TUTTE le guide "aggiornate oggi". Un dato falso. Quando la
+ * storia non c'e', si riusa il valore gia' calcolato in locale e committato in
+ * articlesMeta.ts.
+ */
+let storiaCompleta = false;
+try {
+  storiaCompleta =
+    execFileSync("git", ["rev-parse", "--is-shallow-repository"], { encoding: "utf-8" }).trim() ===
+    "false";
+} catch {
+  /* nessun git: si ricade sui valori committati */
+}
+
+/** updatedAt gia' presenti nell'indice committato, per slug. */
+const updatedPrecedenti = {};
+try {
+  const prev = readFileSync(path.join(root, "src/data/articlesMeta.ts"), "utf-8");
+  const re = /"slug":\s*"([^"]+)"[\s\S]*?"updatedAt":\s*(?:"([^"]*)"|null)/g;
+  let m;
+  while ((m = re.exec(prev)) !== null) updatedPrecedenti[m[1]] = m[2] ?? null;
+} catch {
+  /* primo giro */
+}
+
 const files = readdirSync(dir).filter((f) => f.endsWith(".ts"));
 const entries = [];
 
@@ -87,13 +114,15 @@ for (const f of files) {
   // Data dell'ultima modifica reale del file: alimenta dateModified nello
   // schema Article. Senza, dateModified copierebbe datePublished e il segnale
   // di freschezza — che pesa parecchio sulle citazioni AI — sarebbe finto.
-  let updatedAt = null;
-  try {
-    updatedAt =
-      execFileSync("git", ["log", "-1", "--format=%cs", "--", full], { encoding: "utf-8" }).trim() ||
-      null;
-  } catch {
-    /* fuori da un repo git: si ricade su datePublished */
+  let updatedAt = updatedPrecedenti[slug] ?? null;
+  if (storiaCompleta) {
+    try {
+      updatedAt =
+        execFileSync("git", ["log", "-1", "--format=%cs", "--", full], { encoding: "utf-8" }).trim() ||
+        updatedAt;
+    } catch {
+      /* file non ancora tracciato: resta il valore precedente */
+    }
   }
 
   const figures = (mod.article.content ?? [])
