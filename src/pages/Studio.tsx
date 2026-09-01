@@ -10,7 +10,7 @@ import ELProcessFlow from "@/components/ELProcessFlow";
 import ELFinalCTA from "@/components/ELFinalCTA";
 import Reveal from "@/components/Reveal";
 import { Scale, ShieldCheck, BookOpen, ArrowRight, Landmark } from "lucide-react";
-import { SITE_URL, DEFAULT_AUTHOR, AUTHOR_ROLE, AUTHOR_FORO, AUTHOR_ANNO, AUTHOR_ID, AUTHOR_SAMEAS } from "@/data/site";
+import { SITE_URL, DEFAULT_AUTHOR, AUTHOR_ROLE, AUTHOR_FORO, AUTHOR_ANNO, AUTHOR_ID, AUTHOR_SAMEAS , AUTHOR_TITOLO } from "@/data/site";
 import ELImageSlot from "@/components/ELImageSlot";
 import ELAvvocato from "@/components/ELAvvocato";
 
@@ -31,7 +31,9 @@ const Studio = () => {
   // lega firma, qualifica e studio in un unico grafo verificabile.
   const personSchema = {
     "@context": "https://schema.org",
-    "@type": "Person",
+    // Attorney e' il sottotipo di Person per i professionisti legali: dice al
+    // Knowledge Graph *che tipo* di entita' e', non solo che e' una persona.
+    "@type": ["Attorney", "Person"],
     "@id": AUTHOR_ID,
     "name": DEFAULT_AUTHOR,
     "jobTitle": AUTHOR_ROLE,
@@ -45,15 +47,27 @@ const Studio = () => {
       "Difetti costruttivi",
       "Contenzioso tributario edile",
     ],
-    ...(AUTHOR_FORO ? { "memberOf": { "@type": "Organization", "name": AUTHOR_FORO } } : {}),
+    ...(AUTHOR_FORO
+      ? {
+          "memberOf": { "@type": "Organization", "name": AUTHOR_FORO },
+          // L'iscrizione all'albo e' la credenziale verificabile che regge
+          // l'E-E-A-T in un settore YMYL come il diritto.
+          "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Iscrizione all'Albo degli Avvocati",
+            "recognizedBy": { "@type": "Organization", "name": AUTHOR_FORO },
+          },
+        }
+      : {}),
+    ...(AUTHOR_TITOLO ? { "honorificSuffix": AUTHOR_TITOLO } : {}),
     ...(AUTHOR_SAMEAS.length ? { "sameAs": AUTHOR_SAMEAS } : {}),
   };
 
   return (
     <>
       <SEO
-        title="Lo Studio | Edilizia Legale — Diritto dell'Edilizia e degli Appalti"
-        description="Edilizia Legale è uno studio verticale sul diritto dell'edilizia: appalti, vizi, riserve, fisco di cantiere. Metodo, valori e policy sui conflitti di interesse."
+        title="Lo Studio | Edilizia Legale"
+        description="Studio verticale sul diritto dell'edilizia: appalti, vizi, riserve, fisco di cantiere. Il metodo di lavoro e la policy sui conflitti di interesse."
         canonical="https://www.edilizialegale.it/studio"
         jsonLd={[breadcrumbSchema, personSchema]}
       />

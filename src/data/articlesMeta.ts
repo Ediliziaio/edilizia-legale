@@ -20,7 +20,8 @@ export const articlesMeta: ArticleMeta[] = [
       "decreto ingiuntivo lavori edili",
       "fatture insolute impresa edile"
     ],
-    "intro": "Un'impresa edile che non viene pagata può chiedere il decreto ingiuntivo se ha prova scritta del credito: contratto o preventivo accettato, SAL controfirmati, fatture e verbale di fine lavori. Con documenti di questo tipo il giudice concede di norma la provvisoria esecutorietà, che permette di agire subito senza attendere l'esito dell'eventuale opposizione."
+    "intro": "Un'impresa edile che non viene pagata può chiedere il decreto ingiuntivo se ha prova scritta del credito: contratto o preventivo accettato, SAL controfirmati, fatture e verbale di fine lavori. Con documenti di questo tipo il giudice concede di norma la provvisoria esecutorietà, che permette di agire subito senza attendere l'esito dell'eventuale opposizione.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "difetti-costruttivi-casa-nuova",
@@ -38,7 +39,8 @@ export const articlesMeta: ArticleMeta[] = [
       "denuncia vizi costruttore entro quanto tempo",
       "gravi difetti art 1669 cosa rientra"
     ],
-    "intro": "L'art. 1669 c.c. rende il costruttore responsabile per dieci anni dal compimento dell'opera per i gravi difetti che ne compromettono solidità, durata o godimento. Chi li scopre ha un anno dalla scoperta per denunciarli, a pena di decadenza, e un anno dalla denuncia per agire in giudizio. Per i vizi meno gravi valgono i sessanta giorni e i due anni dell'art. 1667 c.c."
+    "intro": "L'art. 1669 c.c. rende il costruttore responsabile per dieci anni dal compimento dell'opera per i gravi difetti che ne compromettono solidità, durata o godimento. Chi li scopre ha un anno dalla scoperta per denunciarli, a pena di decadenza, e un anno dalla denuncia per agire in giudizio. Per i vizi meno gravi valgono i sessanta giorni e i due anni dell'art. 1667 c.c.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "annullare-contratto-impresa-edile",
@@ -56,7 +58,8 @@ export const articlesMeta: ArticleMeta[] = [
       "recesso committente art 1671 codice civile",
       "annullare contratto firmato a casa lavori"
     ],
-    "intro": "Il committente può sciogliere il contratto d'appalto in cinque modi diversi. Il recesso dell'art. 1671 c.c. è sempre possibile ma obbliga a indennizzare l'impresa per spese, lavori eseguiti e mancato guadagno. La risoluzione per inadempimento non costa nulla, ma va provata. Se hai firmato a casa tua o a distanza, hai anche quattordici giorni di ripensamento senza motivazione."
+    "intro": "Il committente può sciogliere il contratto d'appalto in cinque modi diversi. Il recesso dell'art. 1671 c.c. è sempre possibile ma obbliga a indennizzare l'impresa per spese, lavori eseguiti e mancato guadagno. La risoluzione per inadempimento non costa nulla, ma va provata. Se hai firmato a casa tua o a distanza, hai anche quattordici giorni di ripensamento senza motivazione.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "accertamento-superbonus-imprese",
@@ -75,7 +78,8 @@ export const articlesMeta: ArticleMeta[] = [
       "ricorso accertamento bonus edilizi termini",
       "difendersi controlli superbonus impresa"
     ],
-    "intro": "Quando l'Agenzia delle Entrate contesta crediti da bonus edilizi, il primo nodo è la qualificazione: credito non spettante o inesistente. La differenza incide su termini di accertamento, misura delle sanzioni e possibile rilevanza penale, e va aggredita nel ricorso prima ancora del merito della contestazione."
+    "intro": "Quando l'Agenzia delle Entrate contesta crediti da bonus edilizi, il primo nodo è la qualificazione: credito non spettante o inesistente. La differenza incide su termini di accertamento, misura delle sanzioni e possibile rilevanza penale, e va aggredita nel ricorso prima ancora del merito della contestazione.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "contratto-appalto-impresa",
@@ -93,7 +97,8 @@ export const articlesMeta: ArticleMeta[] = [
       "appalto a corpo o a misura differenza",
       "capitolato speciale appalto privato"
     ],
-    "intro": "Un contratto d'appalto che protegge l'impresa definisce oggetto e allegati, sceglie consapevolmente tra corpo e misura, fissa pagamenti per SAL con interessi di mora, impone la forma scritta per le varianti e prevede penale con tetto, collaudo con silenzio-assenso e clausola risolutiva espressa. Dodici clausole che decidono chi sopporta i rischi del cantiere, prima che nascano."
+    "intro": "Un contratto d'appalto che protegge l'impresa definisce oggetto e allegati, sceglie consapevolmente tra corpo e misura, fissa pagamenti per SAL con interessi di mora, impone la forma scritta per le varianti e prevede penale con tetto, collaudo con silenzio-assenso e clausola risolutiva espressa. Dodici clausole che decidono chi sopporta i rischi del cantiere, prima che nascano.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "impresa-sparita-cantiere-abbandonato",
@@ -111,7 +116,8 @@ export const articlesMeta: ArticleMeta[] = [
       "recuperare acconto versato impresa",
       "diffida ad adempiere impresa edile"
     ],
-    "intro": "Quando l'impresa abbandona il cantiere, il committente deve prima documentare lo stato dei lavori, poi diffidarla ad adempiere assegnando un termine non inferiore a quindici giorni. Scaduto inutilmente il termine, il contratto si risolve di diritto e diventa possibile far completare l'opera a terzi addebitando all'impresa la maggiore spesa."
+    "intro": "Quando l'impresa abbandona il cantiere, il committente deve prima documentare lo stato dei lavori, poi diffidarla ad adempiere assegnando un termine non inferiore a quindici giorni. Scaduto inutilmente il termine, il contratto si risolve di diritto e diventa possibile far completare l'opera a terzi addebitando all'impresa la maggiore spesa.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "sal-non-pagato",
@@ -130,7 +136,8 @@ export const articlesMeta: ArticleMeta[] = [
       "eccezione di inadempimento appaltatore",
       "risoluzione contratto appalto mancato pagamento"
     ],
-    "intro": "L'appaltatore può sospendere i lavori per mancato pagamento invocando l'eccezione di inadempimento prevista dall'art. 1460 c.c., ma solo se l'inadempimento del committente è grave e se la sospensione è proporzionata e conforme a buona fede. Va sempre preceduta da una costituzione in mora scritta con termine."
+    "intro": "L'appaltatore può sospendere i lavori per mancato pagamento invocando l'eccezione di inadempimento prevista dall'art. 1460 c.c., ma solo se l'inadempimento del committente è grave e se la sospensione è proporzionata e conforme a buona fede. Va sempre preceduta da una costituzione in mora scritta con termine.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "subappaltatore-non-pagato",
@@ -149,7 +156,8 @@ export const articlesMeta: ArticleMeta[] = [
       "pagamento diretto subappaltatore appalto pubblico",
       "artigiano non pagato dall'impresa principale"
     ],
-    "intro": "L'impresa subappaltatrice non può agire direttamente contro il committente: la Cassazione (sentenze n. 12048/2003 e n. 24368/2017) riserva l'azione diretta dell'art. 1676 c.c. ai soli lavoratori alle dipendenze dell'appaltatore. Il subappaltatore deve invece usare l'azione surrogatoria ex art. 2900 c.c. sul credito dell'appaltatore verso il committente, o — negli appalti pubblici — il pagamento diretto della stazione appaltante."
+    "intro": "L'impresa subappaltatrice non può agire direttamente contro il committente: la Cassazione (sentenze n. 12048/2003 e n. 24368/2017) riserva l'azione diretta dell'art. 1676 c.c. ai soli lavoratori alle dipendenze dell'appaltatore. Il subappaltatore deve invece usare l'azione surrogatoria ex art. 2900 c.c. sul credito dell'appaltatore verso il committente, o — negli appalti pubblici — il pagamento diretto della stazione appaltante.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "committente-contesta-i-lavori",
@@ -168,7 +176,8 @@ export const articlesMeta: ArticleMeta[] = [
       "vizi apparenti accettazione dell'opera",
       "verbale fine lavori senza riserve valore"
     ],
-    "intro": "Il committente non può trattenere l'intero saldo per un vizio di modesta entità: la ritenuta deve essere proporzionata al costo di eliminazione del difetto. Inoltre i vizi apparenti non contestati al momento della verifica si considerano accettati, e per i vizi occulti dell'appalto la denuncia va fatta entro sessanta giorni dalla scoperta."
+    "intro": "Il committente non può trattenere l'intero saldo per un vizio di modesta entità: la ritenuta deve essere proporzionata al costo di eliminazione del difetto. Inoltre i vizi apparenti non contestati al momento della verifica si considerano accettati, e per i vizi occulti dell'appalto la denuncia va fatta entro sessanta giorni dalla scoperta.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "durc-irregolare",
@@ -186,7 +195,8 @@ export const articlesMeta: ArticleMeta[] = [
       "regolarizzare durc rateizzazione",
       "durc di congruità manodopera"
     ],
-    "intro": "Prima di emettere un DURC irregolare gli enti devono inviare un invito a regolarizzare, con un termine di quindici giorni. In quel periodo l'impresa può pagare, ottenere una rateizzazione o contestare l'addebito. Superato il termine senza intervento, il DURC diventa negativo e blocca pagamenti degli appalti e partecipazione alle gare."
+    "intro": "Prima di emettere un DURC irregolare gli enti devono inviare un invito a regolarizzare, con un termine di quindici giorni. In quel periodo l'impresa può pagare, ottenere una rateizzazione o contestare l'addebito. Superato il termine senza intervento, il DURC diventa negativo e blocca pagamenti degli appalti e partecipazione alle gare.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "varianti-in-corso-opera",
@@ -204,7 +214,8 @@ export const articlesMeta: ArticleMeta[] = [
       "farsi pagare lavori non previsti in contratto",
       "prova ordine verbale variante appalto"
     ],
-    "intro": "L'art. 1659 c.c. richiede l'autorizzazione scritta del committente per le variazioni al progetto, ma la giurisprudenza ammette che la prova possa emergere da altri elementi: corrispondenza, annotazioni nel giornale dei lavori controfirmate, contabilità accettata, messaggi e comportamento concludente del committente che ha usato l'opera modificata."
+    "intro": "L'art. 1659 c.c. richiede l'autorizzazione scritta del committente per le variazioni al progetto, ma la giurisprudenza ammette che la prova possa emergere da altri elementi: corrispondenza, annotazioni nel giornale dei lavori controfirmate, contabilità accettata, messaggi e comportamento concludente del committente che ha usato l'opera modificata.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "ritenuta-a-garanzia",
@@ -222,7 +233,8 @@ export const articlesMeta: ArticleMeta[] = [
       "svincolo ritenute a garanzia termini",
       "sostituire la ritenuta con fideiussione"
     ],
-    "intro": "La ritenuta a garanzia va restituita alla scadenza del periodo di garanzia contrattuale, salvo che il committente abbia contestato per tempo vizi specifici e quantificati. Una contestazione generica non giustifica il trattenimento. Il credito resta esigibile e produce interessi dalla richiesta formale di svincolo."
+    "intro": "La ritenuta a garanzia va restituita alla scadenza del periodo di garanzia contrattuale, salvo che il committente abbia contestato per tempo vizi specifici e quantificati. Una contestazione generica non giustifica il trattenimento. Il credito resta esigibile e produce interessi dalla richiesta formale di svincolo.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "reverse-charge-edilizia",
@@ -240,7 +252,8 @@ export const articlesMeta: ArticleMeta[] = [
       "fattura senza iva sbagliata edilizia",
       "ravvedimento reverse charge errato"
     ],
-    "intro": "Il reverse charge in edilizia si applica ai subappalti nel settore delle costruzioni (art. 17, comma 6, lett. a, D.P.R. 633/1972) e, verso qualsiasi committente soggetto passivo, a pulizia, demolizione, installazione di impianti e completamento di edifici (lett. a-ter). Se l'IVA è stata comunque assolta, l'errore di regime si sanziona in misura fissa, non proporzionale."
+    "intro": "Il reverse charge in edilizia si applica ai subappalti nel settore delle costruzioni (art. 17, comma 6, lett. a, D.P.R. 633/1972) e, verso qualsiasi committente soggetto passivo, a pulizia, demolizione, installazione di impianti e completamento di edifici (lett. a-ter). Se l'IVA è stata comunque assolta, l'errore di regime si sanziona in misura fissa, non proporzionale.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "opposizione-decreto-ingiuntivo-impresa-edile",
@@ -258,7 +271,8 @@ export const articlesMeta: ArticleMeta[] = [
       "sospensione provvisoria esecuzione decreto ingiuntivo",
       "decreto ingiuntivo 40 giorni scaduti cosa succede"
     ],
-    "intro": "Chi riceve un decreto ingiuntivo ha quaranta giorni dalla notifica per proporre opposizione. È un termine perentorio: scaduto, il decreto diventa definitivo e non è più contestabile nel merito. Nell'opposizione si possono eccepire i vizi dei lavori e chiedere in via riconvenzionale il risarcimento dei danni."
+    "intro": "Chi riceve un decreto ingiuntivo ha quaranta giorni dalla notifica per proporre opposizione. È un termine perentorio: scaduto, il decreto diventa definitivo e non è più contestabile nel merito. Nell'opposizione si possono eccepire i vizi dei lavori e chiedere in via riconvenzionale il risarcimento dei danni.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "preventivo-sforato",
@@ -277,7 +291,8 @@ export const articlesMeta: ArticleMeta[] = [
       "preventivo non vincolante è vero",
       "contestare fattura impresa edile troppo alta"
     ],
-    "intro": "Nell'appalto a corpo il prezzo pattuito è fisso e l'impresa non può chiedere di più per maggiori quantità, salvo variazioni richieste per iscritto dal committente. L'art. 1659 c.c. vieta all'appaltatore di apportare variazioni senza autorizzazione scritta: i lavori extra non concordati, di regola, non vanno pagati."
+    "intro": "Nell'appalto a corpo il prezzo pattuito è fisso e l'impresa non può chiedere di più per maggiori quantità, salvo variazioni richieste per iscritto dal committente. L'art. 1659 c.c. vieta all'appaltatore di apportare variazioni senza autorizzazione scritta: i lavori extra non concordati, di regola, non vanno pagati.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "ritardo-consegna-lavori",
@@ -295,7 +310,8 @@ export const articlesMeta: ArticleMeta[] = [
       "risoluzione contratto per ritardo termine essenziale",
       "risarcimento affitto doppio ritardo consegna"
     ],
-    "intro": "La penale per il ritardo si calcola moltiplicando l'importo giornaliero pattuito per i giorni di ritardo imputabili all'impresa, scomputando le sospensioni legittime documentate. Di regola la penale limita il risarcimento a quell'importo, salvo che il contratto preveda espressamente il maggior danno. Se la penale non c'è, si può chiedere il risarcimento integrale del danno provato."
+    "intro": "La penale per il ritardo si calcola moltiplicando l'importo giornaliero pattuito per i giorni di ritardo imputabili all'impresa, scomputando le sospensioni legittime documentate. Di regola la penale limita il risarcimento a quell'importo, salvo che il contratto preveda espressamente il maggior danno. Se la penale non c'è, si può chiedere il risarcimento integrale del danno provato.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "infissi-montati-male",
@@ -315,7 +331,8 @@ export const articlesMeta: ArticleMeta[] = [
       "detrazione infissi persa lavori non conformi",
       "posa in opera infissi difettosa rimedi"
     ],
-    "intro": "Spifferi, condensa sui contorni e muffa intorno ai nuovi serramenti indicano quasi sempre un difetto di posa in opera, non del prodotto. Il responsabile è l'installatore, e se il contratto prevedeva anche opere murarie di adattamento si applica la disciplina dell'appalto: sessanta giorni dalla scoperta per denunciare e due anni dalla consegna per agire."
+    "intro": "Spifferi, condensa sui contorni e muffa intorno ai nuovi serramenti indicano quasi sempre un difetto di posa in opera, non del prodotto. Il responsabile è l'installatore, e se il contratto prevedeva anche opere murarie di adattamento si applica la disciplina dell'appalto: sessanta giorni dalla scoperta per denunciare e due anni dalla consegna per agire.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "fotovoltaico-non-produce",
@@ -334,7 +351,8 @@ export const articlesMeta: ArticleMeta[] = [
       "producibilità garantita fotovoltaico contratto",
       "accumulo non installato contratto fotovoltaico"
     ],
-    "intro": "Se la producibilità annua è indicata nel contratto o nel materiale promozionale su cui il cliente ha fatto affidamento, uno scostamento significativo e non giustificabile con l'irraggiamento dell'anno costituisce inadempimento. Il committente può chiedere l'adeguamento dell'impianto, la riduzione del prezzo o, se il divario è rilevante, la risoluzione del contratto."
+    "intro": "Se la producibilità annua è indicata nel contratto o nel materiale promozionale su cui il cliente ha fatto affidamento, uno scostamento significativo e non giustificabile con l'irraggiamento dell'anno costituisce inadempimento. Il committente può chiedere l'adeguamento dell'impianto, la riduzione del prezzo o, se il divario è rilevante, la risoluzione del contratto.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "recesso-contratto-fotovoltaico",
@@ -353,7 +371,8 @@ export const articlesMeta: ArticleMeta[] = [
       "azienda fotovoltaico fallita impianto non finito",
       "disdire contratto fotovoltaico porta a porta"
     ],
-    "intro": "Chi firma un contratto per un impianto fotovoltaico fuori dai locali commerciali dell'azienda — a casa propria, in fiera, a distanza — ha quattordici giorni per recedere senza motivazione. Se il venditore non ha fornito l'informativa sul diritto di recesso, il termine si estende a dodici mesi e quattordici giorni, e il recesso travolge anche il finanziamento collegato."
+    "intro": "Chi firma un contratto per un impianto fotovoltaico fuori dai locali commerciali dell'azienda — a casa propria, in fiera, a distanza — ha quattordici giorni per recedere senza motivazione. Se il venditore non ha fornito l'informativa sul diritto di recesso, il termine si estende a dodici mesi e quattordici giorni, e il recesso travolge anche il finanziamento collegato.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "cappotto-termico-difettoso",
@@ -372,7 +391,8 @@ export const articlesMeta: ArticleMeta[] = [
       "responsabilità direttore lavori cappotto",
       "superbonus salto di classe non raggiunto"
     ],
-    "intro": "Il distacco della rasatura o dei pannelli di un cappotto termico è di regola un grave difetto ai sensi dell'art. 1669 c.c., con garanzia decennale e non biennale. La responsabilità è quasi sempre concorrente tra impresa esecutrice, progettista e direttore dei lavori: conviene chiamarli tutti, anche per contare sulle loro polizze professionali obbligatorie."
+    "intro": "Il distacco della rasatura o dei pannelli di un cappotto termico è di regola un grave difetto ai sensi dell'art. 1669 c.c., con garanzia decennale e non biennale. La responsabilità è quasi sempre concorrente tra impresa esecutrice, progettista e direttore dei lavori: conviene chiamarli tutti, anche per contare sulle loro polizze professionali obbligatorie.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "cucina-su-misura-difettosa",
@@ -391,7 +411,8 @@ export const articlesMeta: ArticleMeta[] = [
       "cucina consegnata in ritardo penale",
       "top cucina crepato garanzia"
     ],
-    "intro": "La Cassazione distingue vendita e appalto in base alla prevalenza dell'obbligazione di dare su quella di fare. Una cucina composta con moduli standard è vendita; una cucina progettata e realizzata su misura per quello spazio è appalto. La distinzione cambia i termini per contestare e i rimedi disponibili, incluso il diritto di chiedere subito la risoluzione se l'opera è del tutto inadatta allo scopo."
+    "intro": "La Cassazione distingue vendita e appalto in base alla prevalenza dell'obbligazione di dare su quella di fare. Una cucina composta con moduli standard è vendita; una cucina progettata e realizzata su misura per quello spazio è appalto. La distinzione cambia i termini per contestare e i rimedi disponibili, incluso il diritto di chiedere subito la risoluzione se l'opera è del tutto inadatta allo scopo.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "terrazzo-infiltrazioni",
@@ -409,7 +430,8 @@ export const articlesMeta: ArticleMeta[] = [
       "terrazza a livello riparto spese art 1126",
       "infiltrazioni dal terrazzo del vicino risarcimento"
     ],
-    "intro": "Se il terrazzo rifatto da poco perde ancora, la richiesta va rivolta prima di tutto all'impresa che ha eseguito il rifacimento: le infiltrazioni da difetto di impermeabilizzazione rientrano nei gravi difetti dell'art. 1669 c.c., con responsabilità decennale. Il riparto un terzo/due terzi dell'art. 1126 c.c. tra condòmini vale solo quando non c'è un responsabile da cui recuperare."
+    "intro": "Se il terrazzo rifatto da poco perde ancora, la richiesta va rivolta prima di tutto all'impresa che ha eseguito il rifacimento: le infiltrazioni da difetto di impermeabilizzazione rientrano nei gravi difetti dell'art. 1669 c.c., con responsabilità decennale. Il riparto un terzo/due terzi dell'art. 1126 c.c. tra condòmini vale solo quando non c'è un responsabile da cui recuperare.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "pompa-di-calore-non-scalda",
@@ -427,7 +449,8 @@ export const articlesMeta: ArticleMeta[] = [
       "pompa di calore va in blocco freddo",
       "termosifoni tiepidi con pompa di calore"
     ],
-    "intro": "Se la pompa di calore non scalda abbastanza e la bolletta è aumentata, nella maggior parte dei casi non è un difetto della macchina ma un errore di dimensionamento: un vizio del progetto, di cui risponde chi ha proposto la soluzione. Hai 60 giorni dalla scoperta per denunciare il vizio all'azienda (art. 1667 c.c.)."
+    "intro": "Se la pompa di calore non scalda abbastanza e la bolletta è aumentata, nella maggior parte dei casi non è un difetto della macchina ma un errore di dimensionamento: un vizio del progetto, di cui risponde chi ha proposto la soluzione. Hai 60 giorni dalla scoperta per denunciare il vizio all'azienda (art. 1667 c.c.).",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "piscina-difetti-costruttore",
@@ -445,7 +468,8 @@ export const articlesMeta: ArticleMeta[] = [
       "piscina interrata difetti costruttivi",
       "impianto filtrazione piscina sottodimensionato"
     ],
-    "intro": "La piscina interrata è un'opera immobiliare destinata per sua natura a lunga durata: rientra quindi nell'art. 1669 c.c., con responsabilità del costruttore per dieci anni dal completamento e non nei due anni della garanzia ordinaria dell'appalto. Perdite strutturali, cedimenti e distacchi del rivestimento sono inquadrabili tra i gravi difetti."
+    "intro": "La piscina interrata è un'opera immobiliare destinata per sua natura a lunga durata: rientra quindi nell'art. 1669 c.c., con responsabilità del costruttore per dieci anni dal completamento e non nei due anni della garanzia ordinaria dell'appalto. Perdite strutturali, cedimenti e distacchi del rivestimento sono inquadrabili tra i gravi difetti.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "differenza-1667-1669",
@@ -463,7 +487,8 @@ export const articlesMeta: ArticleMeta[] = [
       "termini denuncia vizi appalto",
       "garanzia decennale differenza"
     ],
-    "intro": "L'art. 1667 c.c. copre vizi e difformità dell'opera appaltata: vanno denunciati entro 60 giorni dalla scoperta e l'azione si prescrive in due anni dalla consegna. L'art. 1669 c.c. copre invece rovina e gravi difetti degli immobili destinati a lunga durata: si applica per dieci anni dal compimento, con denuncia entro un anno dalla scoperta."
+    "intro": "L'art. 1667 c.c. copre vizi e difformità dell'opera appaltata: vanno denunciati entro 60 giorni dalla scoperta e l'azione si prescrive in due anni dalla consegna. L'art. 1669 c.c. copre invece rovina e gravi difetti degli immobili destinati a lunga durata: si applica per dieci anni dal compimento, con denuncia entro un anno dalla scoperta.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "quanto-costa-causa-costruttore",
@@ -482,7 +507,8 @@ export const articlesMeta: ArticleMeta[] = [
       "compenso avvocato causa edilizia",
       "recupero spese legali"
     ],
-    "intro": "Una causa per difetti costruttivi comporta il compenso dell'avvocato secondo i parametri forensi, il contributo unificato per scaglione di valore, le anticipazioni forfettarie, il consulente tecnico di parte e il fondo spese del consulente d'ufficio. Chi perde è di regola condannato a rimborsare le spese, ma l'anticipo resta a carico di chi agisce."
+    "intro": "Una causa per difetti costruttivi comporta il compenso dell'avvocato secondo i parametri forensi, il contributo unificato per scaglione di valore, le anticipazioni forfettarie, il consulente tecnico di parte e il fondo spese del consulente d'ufficio. Chi perde è di regola condannato a rimborsare le spese, ma l'anticipo resta a carico di chi agisce.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "accertamento-tecnico-preventivo",
@@ -501,7 +527,8 @@ export const articlesMeta: ArticleMeta[] = [
       "consulenza tecnica preventiva",
       "ATP o causa ordinaria"
     ],
-    "intro": "L'accertamento tecnico preventivo è un procedimento con cui il tribunale nomina un consulente per accertare difetti e cause prima della causa di merito. Si chiede con ricorso ex art. 696 c.p.c. in caso di urgenza, oppure ex art. 696-bis c.p.c. anche senza urgenza, con tentativo di conciliazione affidato al consulente stesso."
+    "intro": "L'accertamento tecnico preventivo è un procedimento con cui il tribunale nomina un consulente per accertare difetti e cause prima della causa di merito. Si chiede con ricorso ex art. 696 c.p.c. in caso di urgenza, oppure ex art. 696-bis c.p.c. anche senza urgenza, con tentativo di conciliazione affidato al consulente stesso.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "superbonus-recupero-agenzia-privato",
@@ -519,7 +546,8 @@ export const articlesMeta: ArticleMeta[] = [
       "sconto in fattura contestato",
       "dolo o colpa grave superbonus"
     ],
-    "intro": "L'Agenzia delle Entrate recupera la detrazione non spettante presso il beneficiario, cioè il proprietario che ha commissionato i lavori: è lui il titolare del diritto contestato. L'impresa e il cessionario del credito rispondono in solido soltanto se hanno concorso alla violazione, e nei limiti del dolo o della colpa grave previsti dall'art. 121 del D.L. 34/2020."
+    "intro": "L'Agenzia delle Entrate recupera la detrazione non spettante presso il beneficiario, cioè il proprietario che ha commissionato i lavori: è lui il titolare del diritto contestato. L'impresa e il cessionario del credito rispondono in solido soltanto se hanno concorso alla violazione, e nei limiti del dolo o della colpa grave previsti dall'art. 121 del D.L. 34/2020.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "ordinanza-demolizione-cosa-fare",
@@ -537,7 +565,8 @@ export const articlesMeta: ArticleMeta[] = [
       "sanatoria abuso edilizio",
       "sospensiva TAR demolizione"
     ],
-    "intro": "Con l'ordinanza di demolizione hai novanta giorni per demolire e ripristinare, e sessanta giorni dalla notifica per impugnare l'atto davanti al TAR. I due termini corrono insieme: se lasci scadere il primo senza ottemperare né agire, il bene e l'area di sedime possono essere acquisiti gratuitamente al patrimonio del Comune ai sensi dell'art. 31 del D.P.R. 380/2001."
+    "intro": "Con l'ordinanza di demolizione hai novanta giorni per demolire e ripristinare, e sessanta giorni dalla notifica per impugnare l'atto davanti al TAR. I due termini corrono insieme: se lasci scadere il primo senza ottemperare né agire, il bene e l'area di sedime possono essere acquisiti gratuitamente al patrimonio del Comune ai sensi dell'art. 31 del D.P.R. 380/2001.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "iscrizione-riserve-appalto",
@@ -555,7 +584,8 @@ export const articlesMeta: ArticleMeta[] = [
       "quantificazione riserva",
       "esplicitazione riserve"
     ],
-    "intro": "Nei lavori pubblici la riserva va iscritta al momento della firma del documento contabile che registra il fatto contestato, poi esplicitata e quantificata entro quindici giorni. Se manca uno di questi tre passaggi la pretesa economica decade, anche se l'impresa ha ragione nel merito: il giudice non potrà più esaminarla."
+    "intro": "Nei lavori pubblici la riserva va iscritta al momento della firma del documento contabile che registra il fatto contestato, poi esplicitata e quantificata entro quindici giorni. Se manca uno di questi tre passaggi la pretesa economica decade, anche se l'impresa ha ragione nel merito: il giudice non potrà più esaminarla.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "contratto-subappalto-clausole",
@@ -573,7 +603,8 @@ export const articlesMeta: ArticleMeta[] = [
       "responsabilità solidale subappalto",
       "autorizzazione al subappalto"
     ],
-    "intro": "Un contratto di subappalto edile deve indicare le lavorazioni, i prezzi, i tempi, le modalità di contabilizzazione e i termini di pagamento. Le clausole che proteggono davvero chi esegue sono altre: termini di pagamento non subordinati all'incasso dell'appaltatore, penali speculari, limiti alle ritenute e consenso preventivo alla cessione del credito."
+    "intro": "Un contratto di subappalto edile deve indicare le lavorazioni, i prezzi, i tempi, le modalità di contabilizzazione e i termini di pagamento. Le clausole che proteggono davvero chi esegue sono altre: termini di pagamento non subordinati all'incasso dell'appaltatore, penali speculari, limiti alle ritenute e consenso preventivo alla cessione del credito.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "congruita-manodopera-durc",
@@ -591,7 +622,8 @@ export const articlesMeta: ArticleMeta[] = [
       "giustificare incongruenza manodopera",
       "CNCE Edilconnect"
     ],
-    "intro": "Il DURC di congruità verifica se la manodopera denunciata in un cantiere raggiunge l'incidenza minima prevista per quella categoria di lavori dal D.M. 143/2021. Se l'esito è negativo, la Cassa Edile invita l'impresa affidataria a regolarizzare entro quindici giorni: in quella finestra si presentano le giustificazioni documentate."
+    "intro": "Il DURC di congruità verifica se la manodopera denunciata in un cantiere raggiunge l'incidenza minima prevista per quella categoria di lavori dal D.M. 143/2021. Se l'esito è negativo, la Cassa Edile invita l'impresa affidataria a regolarizzare entro quindici giorni: in quella finestra si presentano le giustificazioni documentate.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "sospensione-illegittima-lavori",
@@ -609,7 +641,8 @@ export const articlesMeta: ArticleMeta[] = [
       "ripresa lavori",
       "danno da fermo cantiere"
     ],
-    "intro": "Quando il cantiere si ferma per cause non imputabili all'impresa, i maggiori oneri si recuperano su quattro voci: spese generali infruttifere, mancato ammortamento di macchine e attrezzature, retribuzioni al personale rimasto inoperoso e mancata utilizzazione della capacità produttiva. Servono però un verbale di sospensione compilato correttamente e la riserva iscritta subito."
+    "intro": "Quando il cantiere si ferma per cause non imputabili all'impresa, i maggiori oneri si recuperano su quattro voci: spese generali infruttifere, mancato ammortamento di macchine e attrezzature, retribuzioni al personale rimasto inoperoso e mancata utilizzazione della capacità produttiva. Servono però un verbale di sospensione compilato correttamente e la riserva iscritta subito.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "vizi-appalto-condominiale",
@@ -627,7 +660,8 @@ export const articlesMeta: ArticleMeta[] = [
       "delibera per agire in giudizio condominio",
       "difetti lavori parti comuni"
     ],
-    "intro": "Il committente formale è il condominio, rappresentato dall'amministratore, ma il singolo condomino non è spettatore: per la tutela delle parti comuni la Cassazione gli riconosce una legittimazione concorrente, con maggiori certezze per l'azione sui gravi difetti dell'art. 1669 c.c. I termini di denuncia, però, corrono anche se l'assemblea resta ferma."
+    "intro": "Il committente formale è il condominio, rappresentato dall'amministratore, ma il singolo condomino non è spettatore: per la tutela delle parti comuni la Cassazione gli riconosce una legittimazione concorrente, con maggiori certezze per l'azione sui gravi difetti dell'art. 1669 c.c. I termini di denuncia, però, corrono anche se l'assemblea resta ferma.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "polizza-decennale-postuma",
@@ -645,7 +679,8 @@ export const articlesMeta: ArticleMeta[] = [
       "D.lgs 122/2005 polizza",
       "denuncia sinistro polizza decennale"
     ],
-    "intro": "La polizza decennale postuma è l'assicurazione indennitaria che il costruttore deve consegnare all'acquirente al rogito, prevista dall'art. 4 del D.lgs. 122/2005. Copre per dieci anni dall'ultimazione dei lavori i danni da rovina e gravi difetti, e consente di rivolgersi direttamente all'assicuratore anche se l'impresa non esiste più."
+    "intro": "La polizza decennale postuma è l'assicurazione indennitaria che il costruttore deve consegnare all'acquirente al rogito, prevista dall'art. 4 del D.lgs. 122/2005. Copre per dieci anni dall'ultimazione dei lavori i danni da rovina e gravi difetti, e consente di rivolgersi direttamente all'assicuratore anche se l'impresa non esiste più.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "sconto-in-fattura-non-applicato",
@@ -663,7 +698,8 @@ export const articlesMeta: ArticleMeta[] = [
       "recupero acconti superbonus",
       "cessione credito non perfezionata"
     ],
-    "intro": "La promessa di sconto in fattura è un'obbligazione contrattuale: se l'impresa non la rispetta, sei di fronte a un inadempimento e puoi chiedere l'esecuzione, la risoluzione con restituzione degli acconti o il risarcimento. La difesa dell'impresa che invoca il blocco normativo delle cessioni regge solo se quel blocco ha reso l'obbligazione davvero impossibile."
+    "intro": "La promessa di sconto in fattura è un'obbligazione contrattuale: se l'impresa non la rispetta, sei di fronte a un inadempimento e puoi chiedere l'esecuzione, la risoluzione con restituzione degli acconti o il risarcimento. La difesa dell'impresa che invoca il blocco normativo delle cessioni regge solo se quel blocco ha reso l'obbligazione davvero impossibile.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "tetto-rifatto-infiltrazioni",
@@ -681,7 +717,8 @@ export const articlesMeta: ArticleMeta[] = [
       "guaina tetto difetti",
       "coibentazione tetto condensa"
     ],
-    "intro": "Se dopo il rifacimento la copertura infiltra ancora, l'impresa risponde di norma ai sensi dell'art. 1669 c.c.: le infiltrazioni dal tetto sono considerate gravi difetti perché compromettono la funzionalità dell'edificio. La garanzia è di dieci anni dal compimento dell'opera, ma devi denunciare il difetto entro un anno dalla scoperta."
+    "intro": "Se dopo il rifacimento la copertura infiltra ancora, l'impresa risponde di norma ai sensi dell'art. 1669 c.c.: le infiltrazioni dal tetto sono considerate gravi difetti perché compromettono la funzionalità dell'edificio. La garanzia è di dieci anni dal compimento dell'opera, ma devi denunciare il difetto entro un anno dalla scoperta.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "parquet-posato-male",
@@ -699,7 +736,8 @@ export const articlesMeta: ArticleMeta[] = [
       "posa parquet a regola d'arte",
       "contestare posatore parquet"
     ],
-    "intro": "Un parquet che si solleva o si imbarca pochi mesi dopo la posa indica quasi sempre umidità residua nel massetto, non un difetto del legno. Il posatore professionista deve misurare l'umidità prima di posare e rifiutare la posa se è troppo alta: se non l'ha fatto, la responsabilità è sua."
+    "intro": "Un parquet che si solleva o si imbarca pochi mesi dopo la posa indica quasi sempre umidità residua nel massetto, non un difetto del legno. Il posatore professionista deve misurare l'umidità prima di posare e rifiutare la posa se è troppo alta: se non l'ha fatto, la responsabilità è sua.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "mediazione-obbligatoria-edilizia",
@@ -718,7 +756,8 @@ export const articlesMeta: ArticleMeta[] = [
       "mancata partecipazione mediazione conseguenze",
       "D.lgs 28/2010"
     ],
-    "intro": "Nelle controversie edilizie la mediazione è condizione di procedibilità solo per le materie elencate dall'art. 5 del D.lgs. 28/2010: condominio, diritti reali, divisione, locazione, comodato e contratto d'opera. L'appalto non è nell'elenco. Se la materia rientra, senza mediazione la domanda giudiziale è improcedibile."
+    "intro": "Nelle controversie edilizie la mediazione è condizione di procedibilità solo per le materie elencate dall'art. 5 del D.lgs. 28/2010: condominio, diritti reali, divisione, locazione, comodato e contratto d'opera. L'appalto non è nell'elenco. Se la materia rientra, senza mediazione la domanda giudiziale è improcedibile.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "quanto-dura-causa-difetti",
@@ -736,7 +775,8 @@ export const articlesMeta: ArticleMeta[] = [
       "legge Pinto irragionevole durata",
       "tempi appello causa civile"
     ],
-    "intro": "Una causa per difetti costruttivi in primo grado dura di norma tra due e quattro anni, con differenze rilevanti tra tribunali. La fase che pesa di più è la consulenza tecnica d'ufficio, che da sola assorbe spesso più di un anno. La legge Pinto considera ragionevole una durata di tre anni in primo grado."
+    "intro": "Una causa per difetti costruttivi in primo grado dura di norma tra due e quattro anni, con differenze rilevanti tra tribunali. La fase che pesa di più è la consulenza tecnica d'ufficio, che da sola assorbe spesso più di un anno. La legge Pinto considera ragionevole una durata di tre anni in primo grado.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "contenzioso-ristrutturazione",
@@ -755,7 +795,8 @@ export const articlesMeta: ArticleMeta[] = [
       "perizia lavori ristrutturazione",
       "risoluzione contratto ristrutturazione"
     ],
-    "intro": "Chi ha subito una ristrutturazione eseguita male può chiedere l'eliminazione dei vizi a spese dell'impresa, la riduzione del prezzo o, nei casi più gravi, la risoluzione del contratto. Il termine cambia con la qualificazione del difetto: due anni dalla consegna per i vizi comuni (art. 1667 c.c.), dieci anni dal compimento dell'opera per i gravi difetti (art. 1669 c.c.)."
+    "intro": "Chi ha subito una ristrutturazione eseguita male può chiedere l'eliminazione dei vizi a spese dell'impresa, la riduzione del prezzo o, nei casi più gravi, la risoluzione del contratto. Il termine cambia con la qualificazione del difetto: due anni dalla consegna per i vizi comuni (art. 1667 c.c.), dieci anni dal compimento dell'opera per i gravi difetti (art. 1669 c.c.).",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "contenzioso-serramenti",
@@ -774,7 +815,8 @@ export const articlesMeta: ArticleMeta[] = [
       "perizia infissi contenzioso",
       "contestare fornitura e posa infissi"
     ],
-    "intro": "Nel contenzioso sui serramenti la prima domanda non è chi ha sbagliato, ma come è qualificato il contratto: se prevale la fornitura si applicano gli otto giorni e l'anno della vendita, se prevale la posa con opere di adattamento valgono i sessanta giorni e i due anni dell'appalto. Da questa qualificazione dipendono termini, rimedi e soggetto responsabile."
+    "intro": "Nel contenzioso sui serramenti la prima domanda non è chi ha sbagliato, ma come è qualificato il contratto: se prevale la fornitura si applicano gli otto giorni e l'anno della vendita, se prevale la posa con opere di adattamento valgono i sessanta giorni e i due anni dell'appalto. Da questa qualificazione dipendono termini, rimedi e soggetto responsabile.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "contenzioso-fotovoltaico",
@@ -793,7 +835,8 @@ export const articlesMeta: ArticleMeta[] = [
       "perizia impianto fotovoltaico",
       "finanziamento collegato fotovoltaico"
     ],
-    "intro": "Il contenzioso fotovoltaico nasce quasi sempre da cinque situazioni: produzione inferiore a quella promessa, infiltrazioni dal tetto dopo il fissaggio, contratti firmati fuori dai locali commerciali, aziende sparite a impianto incompleto e pratiche GSE mai presentate. Ognuna ha una prova tipica e un rimedio diverso: sbagliare la qualificazione è l'errore che fa perdere la causa."
+    "intro": "Il contenzioso fotovoltaico nasce quasi sempre da cinque situazioni: produzione inferiore a quella promessa, infiltrazioni dal tetto dopo il fissaggio, contratti firmati fuori dai locali commerciali, aziende sparite a impianto incompleto e pratiche GSE mai presentate. Ognuna ha una prova tipica e un rimedio diverso: sbagliare la qualificazione è l'errore che fa perdere la causa.",
+    "updatedAt": "2026-08-18"
   },
   {
     "slug": "lavori-senza-contratto-scritto",
@@ -812,7 +855,8 @@ export const articlesMeta: ArticleMeta[] = [
       "preventivo accettato vale come contratto",
       "lavori in nero contestazione difetti"
     ],
-    "intro": "Il contratto d'appalto privato non richiede la forma scritta: l'accordo verbale con l'impresa è pienamente valido. Il problema non è la validità, è la prova: quando qualcosa va storto, chi afferma un patto deve dimostrarlo. Bonifici, preventivi anche non firmati, messaggi, DDT e fotografie ricostruiscono l'accordo più spesso di quanto si creda — mentre i pagamenti in contanti e le intese a voce sui prezzi restano parole contro parole."
+    "intro": "Il contratto d'appalto privato non richiede la forma scritta: l'accordo verbale con l'impresa è pienamente valido. Il problema non è la validità, è la prova: quando qualcosa va storto, chi afferma un patto deve dimostrarlo. Bonifici, preventivi anche non firmati, messaggi, DDT e fotografie ricostruiscono l'accordo più spesso di quanto si creda — mentre i pagamenti in contanti e le intese a voce sui prezzi restano parole contro parole.",
+    "updatedAt": "2026-08-21"
   },
   {
     "slug": "danni-cantiere-vicino",
@@ -831,7 +875,8 @@ export const articlesMeta: ArticleMeta[] = [
       "distanze legali costruzioni vicino",
       "immissioni rumore polvere cantiere"
     ],
-    "intro": "Dei danni provocati dal cantiere confinante risponde in prima battuta l'impresa che esegue i lavori, ai sensi dell'art. 2043 c.c.; il committente vicino risponde in solido nei casi di attività pericolosa, di ingerenza nell'esecuzione o di incarico affidato a un'impresa palesemente inadeguata. La mossa che decide la partita non è la diffida: è fissare la prova subito, con fotografie datate e, se il danno avanza, con un accertamento tecnico preventivo."
+    "intro": "Dei danni provocati dal cantiere confinante risponde in prima battuta l'impresa che esegue i lavori, ai sensi dell'art. 2043 c.c.; il committente vicino risponde in solido nei casi di attività pericolosa, di ingerenza nell'esecuzione o di incarico affidato a un'impresa palesemente inadeguata. La mossa che decide la partita non è la diffida: è fissare la prova subito, con fotografie datate e, se il danno avanza, con un accertamento tecnico preventivo.",
+    "updatedAt": "2026-08-21"
   },
   {
     "slug": "acquisto-immobile-da-costruire",
@@ -850,7 +895,8 @@ export const articlesMeta: ArticleMeta[] = [
       "costruttore fallisce prima del rogito acconti",
       "nullità preliminare senza fideiussione"
     ],
-    "intro": "Chi compra un immobile da costruire da un'impresa è protetto dal D.lgs. 122/2005: il costruttore deve consegnare una fideiussione che garantisce tutti gli acconti versati fino al rogito e, al trasferimento, una polizza decennale sui gravi difetti. Il preliminare senza fideiussione è nullo, ma la nullità può farla valere solo l'acquirente. Il punto critico: queste tutele vanno pretese prima di firmare, perché dopo il fallimento del costruttore una fideiussione mai consegnata non si recupera."
+    "intro": "Chi compra un immobile da costruire da un'impresa è protetto dal D.lgs. 122/2005: il costruttore deve consegnare una fideiussione che garantisce tutti gli acconti versati fino al rogito e, al trasferimento, una polizza decennale sui gravi difetti. Il preliminare senza fideiussione è nullo, ma la nullità può farla valere solo l'acquirente. Il punto critico: queste tutele vanno pretese prima di firmare, perché dopo il fallimento del costruttore una fideiussione mai consegnata non si recupera.",
+    "updatedAt": "2026-08-21"
   },
   {
     "slug": "infortunio-in-cantiere-difesa-datore",
@@ -869,7 +915,8 @@ export const articlesMeta: ArticleMeta[] = [
       "dvr pos cantiere difesa penale",
       "responsabilità coordinatore sicurezza infortunio"
     ],
-    "intro": "Dopo un infortunio grave in cantiere, il datore di lavoro è quasi sempre iscritto nel registro degli indagati per lesioni o omicidio colposo: è un atto dovuto, non una condanna anticipata. La partita si gioca su tre piani insieme — il penale, il sequestro dell'area, il rapporto con INAIL e ispettorato — e su tutti e tre le prime 48 ore contano più dei mesi successivi: dichiarazioni rese a caldo e documenti prodotti in disordine sono gli errori che nessuna difesa recupera del tutto."
+    "intro": "Dopo un infortunio grave in cantiere, il datore di lavoro è quasi sempre iscritto nel registro degli indagati per lesioni o omicidio colposo: è un atto dovuto, non una condanna anticipata. La partita si gioca su tre piani insieme — il penale, il sequestro dell'area, il rapporto con INAIL e ispettorato — e su tutti e tre le prime 48 ore contano più dei mesi successivi: dichiarazioni rese a caldo e documenti prodotti in disordine sono gli errori che nessuna difesa recupera del tutto.",
+    "updatedAt": "2026-08-21"
   },
   {
     "slug": "committente-in-crisi-liquidazione",
@@ -888,7 +935,8 @@ export const articlesMeta: ArticleMeta[] = [
       "committente in concordato preventivo pagamenti",
       "rivendica materiali cantiere fallimento"
     ],
-    "intro": "Quando il committente entra in liquidazione giudiziale, il contratto d'appalto si scioglie salvo che il curatore dichiari di subentrare; i crediti maturati prima dell'apertura si fanno valere solo con l'insinuazione al passivo, e le azioni esecutive individuali si fermano. La differenza tra recuperare una parte seria del credito e perdere quasi tutto sta in quattro mosse rapide: fotografare il cantiere e la contabilità, rivendicare i materiali propri, verificare il privilegio ex art. 2751-bis c.c. e rispettare i termini della domanda di ammissione."
+    "intro": "Quando il committente entra in liquidazione giudiziale, il contratto d'appalto si scioglie salvo che il curatore dichiari di subentrare; i crediti maturati prima dell'apertura si fanno valere solo con l'insinuazione al passivo, e le azioni esecutive individuali si fermano. La differenza tra recuperare una parte seria del credito e perdere quasi tutto sta in quattro mosse rapide: fotografare il cantiere e la contabilità, rivendicare i materiali propri, verificare il privilegio ex art. 2751-bis c.c. e rispettare i termini della domanda di ammissione.",
+    "updatedAt": "2026-08-21"
   },
   {
     "slug": "esclusione-gara-appalto-ricorso",
@@ -907,6 +955,7 @@ export const articlesMeta: ArticleMeta[] = [
       "grave illecito professionale esclusione gara",
       "accesso agli atti gara appalto"
     ],
-    "intro": "Contro l'esclusione da una gara pubblica il ricorso al TAR va notificato entro trenta giorni, con il rito accelerato degli appalti. Ma la vera domanda non è se l'esclusione sia contestabile: è se il ricorso conviene, e la risposta dipende da tre numeri — la probabilità di vittoria sul vizio concreto, il valore della commessa e il costo pieno del giudizio, contributo unificato incluso. Prima di decidere: accesso agli atti immediato, perché senza i verbali integrali si impugna alla cieca."
+    "intro": "Contro l'esclusione da una gara pubblica il ricorso al TAR va notificato entro trenta giorni, con il rito accelerato degli appalti. Ma la vera domanda non è se l'esclusione sia contestabile: è se il ricorso conviene, e la risposta dipende da tre numeri — la probabilità di vittoria sul vizio concreto, il valore della commessa e il costo pieno del giudizio, contributo unificato incluso. Prima di decidere: accesso agli atti immediato, perché senza i verbali integrali si impugna alla cieca.",
+    "updatedAt": "2026-08-21"
   }
 ];

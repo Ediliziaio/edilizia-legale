@@ -92,7 +92,15 @@
       "url": "https://www.edilizialegale.it",
       "name": "Edilizia Legale",
       "inLanguage": "it-IT",
-      "publisher": { "@id": "https://www.edilizialegale.it/#studio" }
+      "publisher": { "@id": "https://www.edilizialegale.it/#studio" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.edilizialegale.it/guide?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
   </head>

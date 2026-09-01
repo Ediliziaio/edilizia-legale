@@ -66,7 +66,11 @@ const DomandaSingola = () => {
     ],
   };
 
-  const seoTitle = faq.question.length <= 52 ? `${faq.question} | Edilizia Legale` : faq.question;
+  // Il suffisso del brand entra solo se il title resta sotto i ~60 caratteri che
+  // Google mostra: oltre, verrebbe troncato proprio dove sta la keyword.
+  const seoTitle =
+    faq.seoTitle ??
+    (faq.question.length <= 42 ? `${faq.question} | Edilizia Legale` : faq.question);
 
   return (
     <>

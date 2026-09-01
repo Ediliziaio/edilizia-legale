@@ -70,8 +70,8 @@ const Privati = () => {
   return (
     <>
       <SEO
-        title="Avvocato contro Impresa Edile: Difetti, Ritardi, Contratti | Edilizia Legale"
-        description="Assistenza legale ai privati: difetti costruttivi e garanzia decennale, cantiere abbandonato, preventivo sforato, fotovoltaico, bonus edilizi e decreto ingiuntivo."
+        title="Avvocato contro Impresa Edile: Difetti e Ritardi"
+        description="Difetti costruttivi e garanzia decennale, cantiere abbandonato, preventivo sforato, fotovoltaico, decreto ingiuntivo: i tuoi diritti e i termini."
         keywords="avvocato contro impresa edile, difetti costruttivi casa nuova, impresa sparita, preventivo sforato, avvocato difetti costruttivi, opposizione decreto ingiuntivo"
         canonical="https://www.edilizialegale.it/privati"
         jsonLd={[serviceSchema, breadcrumbSchema]}

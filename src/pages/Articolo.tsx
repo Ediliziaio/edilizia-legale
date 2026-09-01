@@ -30,7 +30,7 @@ import {
   Scale,
   BadgeCheck,
 } from "lucide-react";
-import { articlesMeta, getRelated, toISODate, type Block, type Article, type ArticleMeta } from "@/data/articles";
+import { articlesMeta, getArticleMeta, getRelated, toISODate, type Block, type Article, type ArticleMeta } from "@/data/articles";
 import { getArticleContent } from "@/data/articlesContent";
 import { getArticleSeo } from "@/data/articleSeo";
 import { getArticleImage } from "@/data/articleImages";
@@ -261,7 +261,9 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
       },
     },
     "datePublished": toISODate(article.date) ?? article.date,
-    "dateModified": toISODate(article.date) ?? article.date,
+    // Data reale dell'ultima revisione (da git), non una copia della pubblicazione:
+    // la freschezza è uno dei segnali che pesa di più sulle citazioni AI.
+    "dateModified": article.updatedAt ?? toISODate(article.date) ?? article.date,
     "keywords": article.keywords?.join(", "),
     "articleSection": article.category,
     "inLanguage": "it-IT",
@@ -286,6 +288,12 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": url,
+    },
+    // Il titolo e il blocco di risposta diretta sono le due parti che un
+    // assistente vocale deve poter leggere ad alta voce da sole.
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", "[data-speakable]"],
     },
   };
 
@@ -336,7 +344,33 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
       }
     : null;
 
-  return { articleSchema, breadcrumbSchema, faqSchema };
+  /**
+   * HowTo: le guide contengono una procedura con termini in giorni espliciti.
+   * Si dichiara solo quando i passi sono davvero una sequenza operativa (il
+   * blocco `ol` che segue un h3/h2 di passi), non per ogni elenco numerato.
+   */
+  const stepBlock = content?.find(
+    (b): b is Extract<Block, { type: "ol" }> => b.type === "ol" && b.items.length >= 3,
+  );
+  const howToSchema = stepBlock
+    ? {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": article.title,
+        "description": article.excerpt,
+        "inLanguage": "it-IT",
+        "totalTime": Number.isFinite(minutes) ? `PT${minutes}M` : undefined,
+        "step": stepBlock.items.map((testo, i) => ({
+          "@type": "HowToStep",
+          "position": i + 1,
+          "name": `Passo ${i + 1}`,
+          "text": testo,
+          "url": `${url}#passi`,
+        })),
+      }
+    : null;
+
+  return { articleSchema, breadcrumbSchema, faqSchema, howToSchema };
 };
 
 interface SidebarProps {
@@ -617,7 +651,13 @@ const Articolo = () => {
     (b): b is { type: "h2"; text: string; id?: string } & { id: string } =>
       b.type === "h2" && typeof b.id === "string" && b.id.length > 0,
   );
-  const { articleSchema, breadcrumbSchema, faqSchema } = buildSchemas(article, article.content);
+  // `updatedAt` (data reale dell'ultima revisione) vive solo nell'indice generato
+  // in build, non nel modulo dell'articolo: va unito qui, altrimenti dateModified
+  // ricadrebbe sulla data di pubblicazione.
+  const { articleSchema, breadcrumbSchema, faqSchema, howToSchema } = buildSchemas(
+    { ...article, updatedAt: getArticleMeta(slug)?.updatedAt },
+    article.content,
+  );
   // SERP-length title/description (fallback to the long H1/excerpt if not tuned).
   const seo = getArticleSeo(slug);
   const seoTitle = seo?.seoTitle ?? `${article.title} | Edilizia Legale`;
@@ -650,7 +690,7 @@ const Articolo = () => {
           { property: "article:published_time", content: toISODate(article.date) ?? article.date },
           { property: "article:modified_time", content: toISODate(article.date) ?? article.date },
         ]}
-        jsonLd={[articleSchema, breadcrumbSchema, faqSchema]}
+        jsonLd={[articleSchema, breadcrumbSchema, faqSchema, howToSchema]}
       />
 
       <div className="min-h-screen bg-background flex flex-col">
@@ -695,7 +735,7 @@ const Articolo = () => {
                   {article.title}
                 </h1>
                 <div className="bg-white/5 border-l-4 border-gold rounded-r-xl p-5 lg:p-6">
-                  <p className="text-lg lg:text-xl text-white/90 leading-relaxed">
+                  <p data-speakable className="text-lg lg:text-xl text-white/90 leading-relaxed">
                     {article.intro}
                   </p>
                 </div>

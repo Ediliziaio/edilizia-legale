@@ -68,7 +68,7 @@ const Imprese = () => {
   return (
     <>
       <SEO
-        title="Avvocato per Imprese Edili: Appalti, Crediti, Fisco | Edilizia Legale"
+        title="Avvocato per Imprese Edili: Appalti, Crediti, Fisco"
         description="Assistenza legale alle imprese edili: recupero crediti, riserve e varianti, difesa da contestazioni di vizi, DURC, contenzioso tributario e appalti pubblici."
         keywords="avvocato per imprese edili, recupero crediti edilizia, impresa edile non pagata, riserve appalto, durc irregolare, accertamento superbonus impresa"
         canonical="https://www.edilizialegale.it/imprese"

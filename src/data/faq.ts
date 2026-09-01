@@ -11,6 +11,11 @@ export type FaqEntry = {
   answer: string;
   /** Approfondimento: 2-4 paragrafi. */
   detail: string[];
+  /**
+   * Title per la SERP quando la domanda supera i ~60 caratteri: Google tronca,
+   * e un title tagliato a metà perde la keyword. Se assente si usa `question`.
+   */
+  seoTitle?: string;
   /** Slug della guida correlata, se esiste. */
   guida?: string;
   silo: "imprese" | "privati";
@@ -58,6 +63,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "cosa-succede-se-committente-non-paga-sal",
+    seoTitle: "SAL non pagato dal committente: cosa succede",
     question: "Cosa succede se il committente non paga il SAL?",
     answer:
       "Il credito da SAL maturato produce interessi di mora commerciali automatici (D.lgs. 231/2002). L'impresa può costituire in mora il committente con un termine scritto e, se il SAL è documentato e controfirmato, chiedere decreto ingiuntivo. La sospensione dei lavori è possibile ma va gestita con la procedura corretta.",
@@ -70,6 +76,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "subappaltatore-puo-chiedere-soldi-committente",
+    seoTitle: "Subappaltatore può chiedere i soldi al committente?",
     question: "Il subappaltatore può chiedere i soldi direttamente al committente?",
     answer:
       "No, non con l'azione diretta dell'art. 1676 c.c.: la Cassazione la riserva ai lavoratori dipendenti dell'appaltatore, non all'impresa subappaltatrice. Gli strumenti veri sono l'azione surrogatoria ex art. 2900 c.c. sul credito dell'appaltatore verso il committente e, negli appalti pubblici, il pagamento diretto della stazione appaltante.",
@@ -82,6 +89,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "quanto-dura-causa-difetti-costruttivi",
+    seoTitle: "Quanto dura una causa per difetti costruttivi",
     question: "Quanto dura una causa per difetti costruttivi?",
     answer:
       "Un giudizio ordinario di primo grado dura in media due o tre anni, a cui si aggiunge la consulenza tecnica d'ufficio. L'accertamento tecnico preventivo è molto più rapido — di norma alcuni mesi — e in una parte significativa dei casi porta a una definizione senza causa.",
@@ -106,6 +114,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "impresa-sparita-con-acconto-cosa-fare",
+    seoTitle: "Impresa sparita con l'acconto: cosa fare",
     question: "L'impresa è sparita con l'acconto: cosa devo fare?",
     answer:
       "Tre passi, nell'ordine: far documentare da un tecnico lo stato dei lavori con foto datate e computo di quanto eseguito; inviare diffida ad adempiere via PEC con termine di almeno quindici giorni e dichiarazione di risoluzione automatica; alla scadenza, affidare il completamento a terzi addebitando all'impresa la maggiore spesa.",
@@ -119,6 +128,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "decreto-ingiuntivo-impresa-quanto-tempo-per-opporsi",
+    seoTitle: "Decreto ingiuntivo impresa edile: quanto tempo hai",
     question: "Ho ricevuto un decreto ingiuntivo dall'impresa: quanto tempo ho?",
     answer:
       "Quaranta giorni dalla notifica, e il termine è perentorio: scaduto, il decreto diventa definitivo e non è più contestabile nel merito. Nell'opposizione puoi eccepire i vizi e l'incompletezza dei lavori e chiedere in via riconvenzionale i danni. Se il decreto è provvisoriamente esecutivo va chiesta subito la sospensione.",
@@ -131,6 +141,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "durc-irregolare-quanto-tempo-per-regolarizzare",
+    seoTitle: "DURC irregolare: quanto tempo per regolarizzare",
     question: "DURC irregolare: quanto tempo ho per regolarizzare?",
     answer:
       "Quindici giorni dal preavviso di accertamento negativo. In quel periodo puoi pagare, ottenere una rateizzazione o contestare l'addebito documentando l'errore dell'ente. Superato il termine senza intervento, il DURC diventa negativo e blocca contemporaneamente i pagamenti degli appalti e la partecipazione alle gare.",
@@ -143,6 +154,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "contratto-fotovoltaico-firmato-a-casa-posso-annullarlo",
+    seoTitle: "Contratto fotovoltaico firmato a casa: si annulla?",
     question: "Ho firmato il contratto del fotovoltaico a casa mia: posso annullarlo?",
     answer:
       "Sì. Per i contratti conclusi fuori dai locali commerciali il Codice del Consumo dà quattordici giorni di recesso senza motivazione. Se il venditore non ti ha informato correttamente del diritto di recesso, il termine si estende fino a dodici mesi e quattordici giorni, e il recesso travolge anche il finanziamento collegato.",
@@ -167,6 +179,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "ritenuta-a-garanzia-quando-va-restituita",
+    seoTitle: "Ritenuta a garanzia: quando va restituita",
     question: "La ritenuta a garanzia: quando va restituita?",
     answer:
       "Alla scadenza del periodo di garanzia contrattuale, salvo che il committente abbia contestato per tempo vizi specifici e quantificati. Una contestazione generica non giustifica il trattenimento. Dal momento della richiesta formale di svincolo il credito produce interessi di mora commerciali.",
@@ -191,6 +204,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "accertamento-superbonus-cosa-fare-subito",
+    seoTitle: "Accertamento Superbonus all'impresa: cosa fare subito",
     question: "L'Agenzia contesta i crediti Superbonus alla mia impresa: cosa faccio subito?",
     answer:
       "La prima cosa da stabilire è la qualificazione: credito non spettante o inesistente. Da lì dipendono termini, sanzioni e rischio penale. In parallelo vanno valutate l'istanza di sospensione della riscossione e, se il vizio è dell'asseverazione, la rivalsa verso il tecnico asseveratore e la sua polizza.",
@@ -215,6 +229,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "infissi-nuovi-spifferi-di-chi-e-la-colpa",
+    seoTitle: "Infissi nuovi che fanno spifferi: di chi è la colpa",
     question: "Gli infissi nuovi fanno spifferi: di chi è la colpa?",
     answer:
       "Spifferi, condensa e muffa intorno ai serramenti nuovi indicano quasi sempre un difetto di posa in opera, non del prodotto. Il responsabile è l'installatore. Se il contratto prevedeva opere murarie di adattamento si applica l'appalto: sessanta giorni dalla scoperta per denunciare e due anni dalla consegna per agire.",
@@ -227,6 +242,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "reverse-charge-quando-si-applica-edilizia",
+    seoTitle: "Reverse charge in edilizia: quando si applica",
     question: "Quando si applica il reverse charge in edilizia?",
     answer:
       "Dipende dal tipo di prestazione e dalla posizione nella catena contrattuale, non dal nome dato al contratto: tipicamente si applica ai servizi resi in subappalto nel comparto edile e a specifiche prestazioni su edifici, mentre resta esclusa la fornitura con posa in cui prevale la cessione del bene. L'errore si moltiplica su tutte le fatture successive.",
@@ -263,6 +279,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "fideiussione-casa-in-costruzione-obbligatoria",
+    seoTitle: "Fideiussione casa in costruzione: è obbligatoria?",
     question: "La fideiussione per comprare una casa in costruzione è obbligatoria?",
     answer:
       "Sì: per gli immobili da costruire venduti da un'impresa a una persona fisica, il costruttore deve consegnare alla firma del preliminare una fideiussione che garantisce tutte le somme versate prima del rogito (D.lgs. 122/2005). Il contratto senza fideiussione è nullo, ma la nullità può farla valere solo l'acquirente.",
@@ -275,6 +292,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "lavori-senza-contratto-posso-contestare",
+    seoTitle: "Lavori senza contratto scritto: puoi contestare?",
     question: "Ho fatto lavori senza contratto scritto: posso contestare i difetti?",
     answer:
       "Sì: l'appalto non richiede la forma scritta, quindi l'accordo verbale vincola e le garanzie per i vizi si applicano per legge — denuncia entro 60 giorni dalla scoperta, prescrizione in due anni dalla consegna. Cambia solo il percorso probatorio: l'accordo si ricostruisce con bonifici, preventivo, messaggi e testimoni.",
@@ -287,6 +305,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "infortunio-cantiere-datore-sempre-indagato",
+    seoTitle: "Infortunio in cantiere: il datore è sempre indagato?",
     question: "Dopo un infortunio in cantiere il datore di lavoro è sempre indagato?",
     answer:
       "Quasi sempre, ed è un atto dovuto, non una condanna anticipata: l'iscrizione serve anche a garantire la partecipazione agli accertamenti tecnici irripetibili. La difesa si gioca sui documenti anteriori al fatto — DVR, formazione tracciata, deleghe effettive — e sulle prime 48 ore: niente dichiarazioni a caldo, nessuna integrazione postuma dei documenti.",
@@ -299,6 +318,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "committente-fallito-come-recupero-credito",
+    seoTitle: "Committente fallito: come recuperare il credito",
     question: "Il committente è fallito: come recupero il credito dei lavori?",
     answer:
       "Con la domanda di insinuazione al passivo, da trasmettere al curatore di regola entro trenta giorni prima dell'udienza di verifica: le azioni esecutive individuali sono vietate. Se l'impresa è artigiana, il credito può godere del privilegio ex art. 2751-bis c.c., che nelle procedure cambia radicalmente le percentuali di recupero.",
@@ -311,6 +331,7 @@ export const faqEntries: FaqEntry[] = [
   },
   {
     slug: "esclusione-gara-appalto-termini-ricorso",
+    seoTitle: "Esclusione da gara d'appalto: termini per il ricorso",
     question: "Quanto tempo ho per impugnare l'esclusione da una gara d'appalto?",
     answer:
       "Trenta giorni dalla comunicazione, con il rito accelerato degli appalti davanti al TAR: è un termine perentorio, e le istanze bonarie di riammissione non lo sospendono. L'accesso agli atti va chiesto il giorno stesso, perché senza i verbali integrali si impugna alla cieca.",

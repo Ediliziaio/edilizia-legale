@@ -56,7 +56,14 @@ export type Article = {
 };
 
 /** Article without the heavy `content` — used for listing, related cards, category counts. */
-export type ArticleMeta = Omit<Article, "content">;
+export type ArticleMeta = Omit<Article, "content"> & {
+  /**
+   * Data ISO dell'ultima modifica del file sorgente, ricavata da git in fase di
+   * build. Alimenta `dateModified`: è un dato reale, non una copia della data
+   * di pubblicazione.
+   */
+  updatedAt?: string | null;
+};
 
 /**
  * Guide pilastro: aprono un cluster tematico e rispondono alla query madre.

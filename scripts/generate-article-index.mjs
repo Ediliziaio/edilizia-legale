@@ -3,6 +3,7 @@
 // Eseguito in prebuild, prima del sitemap.
 import { build } from "esbuild";
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -83,6 +84,18 @@ for (const f of files) {
   if (!mod.meta || !mod.article) throw new Error(`${f}: export meta/article mancante`);
   if (mod.meta.slug !== slug) throw new Error(`${f}: slug "${mod.meta.slug}" != filename`);
   if (!mod.seo?.seoTitle || !mod.seo?.metaDescription) throw new Error(`${f}: export seo mancante`);
+  // Data dell'ultima modifica reale del file: alimenta dateModified nello
+  // schema Article. Senza, dateModified copierebbe datePublished e il segnale
+  // di freschezza — che pesa parecchio sulle citazioni AI — sarebbe finto.
+  let updatedAt = null;
+  try {
+    updatedAt =
+      execFileSync("git", ["log", "-1", "--format=%cs", "--", full], { encoding: "utf-8" }).trim() ||
+      null;
+  } catch {
+    /* fuori da un repo git: si ricade su datePublished */
+  }
+
   const figures = (mod.article.content ?? [])
     .filter((b) => b?.type === "figure")
     .map((b) => ({ slot: b.slot, alt: b.alt }));
@@ -93,7 +106,7 @@ for (const f of files) {
     : `Copertina di «${mod.meta.title}»`;
   entries.push({
     slug,
-    meta: mod.meta,
+    meta: { ...mod.meta, updatedAt },
     seo: mod.seo,
     figures: [{ slot: `${slug}-cover`, alt: coverBrief }, ...figures],
   });

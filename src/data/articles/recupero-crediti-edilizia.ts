@@ -24,7 +24,7 @@ export const meta: ArticleMeta = {
 export const seo = {
   seoTitle: "Recupero Crediti Edilizia: Come Farsi Pagare i Lavori",
   metaDescription:
-    "Il committente non paga SAL o fatture? Diffida, decreto ingiuntivo con provvisoria esecutorietà, sequestro conservativo. Gli strumenti che funzionano davvero.",
+    "Il committente non paga SAL o fatture? Diffida, decreto ingiuntivo con provvisoria esecutorietà, sequestro conservativo: gli strumenti che funzionano.",
 };
 
 export const article: Article = {

@@ -8,7 +8,7 @@ export type ArticleSeo = {
 export const ARTICLE_SEO: Record<string, ArticleSeo> = {
   "recupero-crediti-edilizia": {
     "seoTitle": "Recupero Crediti Edilizia: Come Farsi Pagare i Lavori",
-    "metaDescription": "Il committente non paga SAL o fatture? Diffida, decreto ingiuntivo con provvisoria esecutorietà, sequestro conservativo. Gli strumenti che funzionano davvero."
+    "metaDescription": "Il committente non paga SAL o fatture? Diffida, decreto ingiuntivo con provvisoria esecutorietà, sequestro conservativo: gli strumenti che funzionano."
   },
   "difetti-costruttivi-casa-nuova": {
     "seoTitle": "Difetti Costruttivi Casa Nuova: Diritti e Termini",

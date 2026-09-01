@@ -86,7 +86,17 @@ const GuideCard = ({ a, featured = false }: { a: ArticleMeta; featured?: boolean
 const Guide = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [params, setParams] = useSearchParams();
-  const [query, setQuery] = useState("");
+
+  // Anche la ricerca vive nell'URL (?q=): il risultato e' condivisibile e la
+  // SearchAction dichiarata nei dati strutturati punta a un indirizzo che
+  // funziona davvero.
+  const query = params.get("q") ?? "";
+  const setQuery = (value: string) => {
+    const next = new URLSearchParams(params);
+    if (value.trim()) next.set("q", value);
+    else next.delete("q");
+    setParams(next, { replace: true });
+  };
 
   // Il filtro vive nell'URL (?c=Imprese): condivisibile, e il tasto Indietro funziona.
   const raw = params.get("c");
@@ -155,7 +165,7 @@ const Guide = () => {
   return (
     <>
       <SEO
-        title="Guide di Diritto dell'Edilizia: Appalti, Vizi, Crediti | Edilizia Legale"
+        title="Guide di Diritto dell'Edilizia: Appalti, Vizi, Crediti"
         description="Guide pratiche su appalti, difetti costruttivi, recupero crediti, DURC, Superbonus e verticali di settore. Termini, passi operativi e riferimenti normativi."
         keywords="guide diritto edilizia, appalto privato, difetti costruttivi, recupero crediti edilizia, garanzia decennale, superbonus contenzioso"
         canonical="https://www.edilizialegale.it/guide"
