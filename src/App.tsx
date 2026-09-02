@@ -6,6 +6,7 @@ import type { RouteRecord } from "vite-react-ssg";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import ELVerificationMeta from "@/components/ELVerificationMeta";
 
 import Index from "./pages/Index";
 import Imprese from "./pages/Imprese";
@@ -51,6 +52,7 @@ function RootLayout() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <ELVerificationMeta />
         {/* Salta la navigazione: obbligo di accessibilita' (WCAG 2.4.1), e su
             queste pagine il menu davanti al contenuto e' lungo. Invisibile
             finche' non riceve il fuoco da tastiera. */}

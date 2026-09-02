@@ -10,7 +10,8 @@
 //  - le guide dichiarano le proprie immagini con l'estensione image-sitemap:
 //    è il canale con cui le copertine entrano in Google Immagini.
 
-import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
+import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -49,6 +50,52 @@ const dataISO = (leggibile) => {
   return mese ? `${m[2]}-${mese}-01` : today;
 };
 
+/**
+ * `lastmod` reale, non la data "di copertina" dell'articolo.
+ *
+ * Google usa lastmod solo se lo trova coerente nel tempo: una sitemap dove 49
+ * guide dichiarano tutte la stessa data e' un segnale che viene ignorato. Le
+ * guide prendono la data dell'ultimo commit del file, gia' calcolata in modo
+ * shallow-safe dal generatore dell'indice; FAQ e pagine statiche la leggono
+ * da git quando la storia c'e', altrimenti riusano il valore della sitemap
+ * precedente (committata), cosi' un clone shallow non le fa "cambiare tutte".
+ */
+const updatedAtPerSlug = new Map();
+try {
+  const idx = readFileSync(join(root, "src/data/articlesMeta.ts"), "utf-8");
+  for (const m of idx.matchAll(/"slug":\s*"([^"]+)"[\s\S]*?"updatedAt":\s*(?:"([^"]*)"|null)/g)) {
+    if (m[2]) updatedAtPerSlug.set(m[1], m[2]);
+  }
+} catch { /* indice non ancora generato */ }
+
+let storiaCompleta = false;
+try {
+  storiaCompleta =
+    execFileSync("git", ["rev-parse", "--is-shallow-repository"], { encoding: "utf-8" }).trim() === "false";
+} catch { /* nessun git */ }
+
+const dataGit = (relPath) => {
+  if (!storiaCompleta) return null;
+  try {
+    return execFileSync("git", ["log", "-1", "--format=%cs", "--", relPath], { cwd: root, encoding: "utf-8" }).trim() || null;
+  } catch { return null; }
+};
+
+/** loc -> lastmod della sitemap precedente, per i cloni shallow. */
+const lastmodPrecedente = new Map();
+for (const f of ["sitemap-pagine.xml", "sitemap-guide.xml", "sitemap-faq.xml", "sitemap.xml"]) {
+  const fp = join(root, "public", f);
+  if (!existsSync(fp)) continue;
+  const xml = readFileSync(fp, "utf-8");
+  for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)) {
+    if (!lastmodPrecedente.has(m[1])) lastmodPrecedente.set(m[1], m[2]);
+  }
+}
+
+/** Data migliore disponibile per una URL, con la sua fonte sorgente su disco. */
+const lastmodDi = (loc, relPath, fallback) =>
+  dataGit(relPath) ?? lastmodPrecedente.get(loc) ?? fallback;
+
 const articleDir = join(root, "src/data/articles");
 const articleFiles = readdirSync(articleDir).filter((f) => f.endsWith(".ts")).sort();
 
@@ -57,7 +104,7 @@ const articoli = articleFiles.map((f) => {
   const src = readFileSync(join(articleDir, f), "utf-8");
   const date = /date:\s*"([^"]+)"/.exec(src)?.[1];
   const title = /title:\s*"((?:[^"\\]|\\.)*)"/.exec(src)?.[1]?.replace(/\\"/g, '"');
-  return { slug, lastmod: dataISO(date), title };
+  return { slug, lastmod: updatedAtPerSlug.get(slug) ?? dataISO(date), title };
 });
 
 // Immagini realmente collegate, dal registro degli slot.
@@ -91,56 +138,103 @@ const faqSlugs = [...faqSource.matchAll(/^\s*slug:\s*"([^"]+)"/gm)].map((m) => m
 const lastmodContenuti = articoli.reduce((max, a) => (a.lastmod > max ? a.lastmod : max), "1970-01-01");
 const lastmodHub = { "/": lastmodContenuti, "/guide": lastmodContenuti, "/imprese": lastmodContenuti, "/privati": lastmodContenuti, "/domande-frequenti": lastmodContenuti };
 
+/** File sorgente di ogni pagina statica, per leggerne la data reale. */
+const sorgentePagina = {
+  "/": "src/pages/Index.tsx",
+  "/imprese": "src/pages/Imprese.tsx",
+  "/privati": "src/pages/Privati.tsx",
+  "/guide": "src/pages/Guide.tsx",
+  "/domande-frequenti": "src/pages/DomandeFrequenti.tsx",
+  "/studio": "src/pages/Studio.tsx",
+  "/studio/conflitti-di-interesse": "src/pages/ConflittiInteresse.tsx",
+  "/contatti": "src/pages/Contatti.tsx",
+  "/privacy": "src/pages/Privacy.tsx",
+  "/cookie": "src/pages/CookiePolicy.tsx",
+  "/note-legali": "src/pages/NoteLegali.tsx",
+};
+
+const piuRecente = (...d) => d.filter(Boolean).sort().at(-1) ?? today;
+
+const urlPagine = staticPages.map(([path, changefreq, priority]) => {
+  const loc = `${BASE}${path}`;
+  // gli hub elencano contenuti: cambiano quando cambia il contenuto piu' recente O la pagina stessa
+  const propria = lastmodDi(loc, sorgentePagina[path], null);
+  const lastmod = lastmodHub[path] ? piuRecente(lastmodHub[path], propria) : (propria ?? lastmodPrecedente.get(loc) ?? today);
+  return { loc, lastmod, changefreq, priority };
+});
+
+const lastmodFaq = lastmodDi(`${BASE}/domande-frequenti`, "src/data/faq.ts", lastmodContenuti);
+
+const urlGuide = articoli.map((a) => ({
+  loc: `${BASE}/guide/${a.slug}`,
+  lastmod: a.lastmod,
+  changefreq: "monthly",
+  priority: "0.7",
+  images: (immaginiPerSlug.get(a.slug) ?? []).map((i) => ({
+    loc: `${BASE}${i.path}`,
+    title: i.alt ?? a.title,
+  })),
+}));
+
+const urlFaq = faqSlugs.map((slug) => ({
+  loc: `${BASE}/domande-frequenti/${slug}`,
+  lastmod: lastmodFaq,
+  changefreq: "monthly",
+  priority: "0.6",
+}));
+
 const urls = [
-  ...staticPages.map(([path, changefreq, priority]) => ({
-    loc: `${BASE}${path}`,
-    lastmod: lastmodHub[path] ?? today,
-    changefreq,
-    priority,
-  })),
-  ...articoli.map((a) => ({
-    loc: `${BASE}/guide/${a.slug}`,
-    lastmod: a.lastmod,
-    changefreq: "monthly",
-    priority: "0.7",
-    images: (immaginiPerSlug.get(a.slug) ?? []).map((i) => ({
-      loc: `${BASE}${i.path}`,
-      title: i.alt ?? a.title,
-    })),
-  })),
-  ...faqSlugs.map((slug) => ({
-    loc: `${BASE}/domande-frequenti/${slug}`,
-    lastmod: lastmodContenuti,
-    changefreq: "monthly",
-    priority: "0.6",
-  })),
+  ...urlPagine,
+  ...urlGuide,
+  ...urlFaq,
 ];
 
-const body = urls
-  .map((u) => {
-    const img = (u.images ?? [])
-      .map(
-        (i) =>
-          `\n    <image:image>\n      <image:loc>${esc(i.loc)}</image:loc>` +
-          (i.title ? `\n      <image:title>${esc(i.title)}</image:title>` : "") +
-          `\n    </image:image>`,
-      )
-      .join("");
-    return (
-      `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>` +
-      `\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>${img}\n  </url>`
-    );
-  })
-  .join("\n");
+const renderUrl = (u) => {
+  const img = (u.images ?? [])
+    .map(
+      (i) =>
+        `\n    <image:image>\n      <image:loc>${esc(i.loc)}</image:loc>` +
+        (i.title ? `\n      <image:title>${esc(i.title)}</image:title>` : "") +
+        `\n    </image:image>`,
+    )
+    .join("");
+  return (
+    `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>` +
+    `\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>${img}\n  </url>`
+  );
+};
 
-const xml =
+const urlset = (lista) =>
   `<?xml version="1.0" encoding="UTF-8"?>\n` +
   `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n` +
-  `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${body}\n</urlset>\n`;
+  `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${lista.map(renderUrl).join("\n")}\n</urlset>\n`;
 
-writeFileSync(join(root, "public/sitemap.xml"), xml, "utf-8");
+/**
+ * Sitemap index con tre sezioni: Search Console riporta copertura ed errori
+ * per file, quindi si vede subito se e' un problema delle guide, delle FAQ o
+ * delle pagine istituzionali. Con un unico urlset i numeri si mescolano.
+ */
+const sezioni = [
+  ["sitemap-pagine.xml", urlPagine],
+  ["sitemap-guide.xml", urlGuide],
+  ["sitemap-faq.xml", urlFaq],
+];
+for (const [nome, lista] of sezioni) writeFileSync(join(root, "public", nome), urlset(lista), "utf-8");
+
+const indice =
+  `<?xml version="1.0" encoding="UTF-8"?>\n` +
+  `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+  sezioni
+    .map(([nome, lista]) => {
+      const lm = lista.map((u) => u.lastmod).sort().at(-1) ?? today;
+      return `  <sitemap>\n    <loc>${BASE}/${nome}</loc>\n    <lastmod>${lm}</lastmod>\n  </sitemap>`;
+    })
+    .join("\n") +
+  `\n</sitemapindex>\n`;
+writeFileSync(join(root, "public/sitemap.xml"), indice, "utf-8");
 
 const nImg = urls.reduce((n, u) => n + (u.images?.length ?? 0), 0);
+const dateDistinte = new Set(urls.map((u) => u.lastmod)).size;
 console.log(
-  `[sitemap] ${urls.length} URL (${articoli.length} guide, ${faqSlugs.length} FAQ), ${nImg} immagini dichiarate`,
+  `[sitemap] index + 3 sezioni: ${urls.length} URL (${articoli.length} guide, ${faqSlugs.length} FAQ), ${nImg} immagini, ${dateDistinte} lastmod distinti`,
 );

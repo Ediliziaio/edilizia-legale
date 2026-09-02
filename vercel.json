@@ -55,6 +55,19 @@
       ]
     },
     {
+      "source": "/sitemap-:section(pagine|guide|faq).xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        }
+      ]
+    },
+    {
       "source": "/robots.txt",
       "headers": [
         {

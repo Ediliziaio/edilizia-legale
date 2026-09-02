@@ -8,12 +8,14 @@
     "prebuild": "node scripts/generate-article-index.mjs && node scripts/generate-discovery.mjs && node scripts/generate-sitemap.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
     "build": "vite-react-ssg build",
+    "postbuild": "node scripts/indexnow-submit.mjs --if-production",
     "build:spa": "vite build",
     "build:dev": "vite-react-ssg build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
     "articles": "node scripts/generate-article-index.mjs",
-    "discovery": "node scripts/generate-discovery.mjs"
+    "discovery": "node scripts/generate-discovery.mjs",
+    "indexnow": "node scripts/indexnow-submit.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

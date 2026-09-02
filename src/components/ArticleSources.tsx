@@ -1,5 +1,6 @@
 import { Scale } from "lucide-react";
 import type { Block } from "@/data/articles";
+import { fonteNormattiva } from "@/data/normattiva";
 
 /**
  * Riferimenti normativi citati nella guida, estratti dal testo.
@@ -67,14 +68,30 @@ const ArticleSources = ({ content }: { content: Block[] }) => {
         Riferimenti normativi citati in questa guida
       </h2>
       <ul className="px-6 py-5 flex flex-wrap gap-x-2 gap-y-2.5">
-        {fonti.map((f) => (
-          <li
-            key={f}
-            className="text-sm font-medium text-navy bg-muted/50 border border-border rounded-lg px-2.5 py-1"
-          >
-            {f}
-          </li>
-        ))}
+        {fonti.map((f) => {
+          // Link alla fonte primaria quando l'atto e' certo: per il lettore e'
+          // il testo vigente a un clic, per i motori e' la citazione verificabile.
+          const fonte = fonteNormattiva(f);
+          const cls =
+            "text-sm font-medium text-navy bg-muted/50 border border-border rounded-lg px-2.5 py-1";
+          return (
+            <li key={f}>
+              {fonte ? (
+                <a
+                  href={fonte.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={`Testo vigente su Normattiva: ${f}`}
+                  className={`${cls} inline-block hover:border-gold hover:text-gold-dark underline decoration-gold/50 decoration-1 underline-offset-2`}
+                >
+                  {f}
+                </a>
+              ) : (
+                <span className={`${cls} inline-block`}>{f}</span>
+              )}
+            </li>
+          );
+        })}
       </ul>
       <p className="px-6 pb-5 text-xs text-foreground/50 leading-relaxed">
         Il testo vigente delle norme è consultabile su Normattiva. La normativa è in costante evoluzione: le

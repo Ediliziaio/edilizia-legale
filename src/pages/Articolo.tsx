@@ -41,6 +41,8 @@ import ArticleCover from "@/components/ArticleCover";
 import ArticleCaselaw from "@/components/ArticleCaselaw";
 import ELAuthorBox from "@/components/ELAuthorBox";
 import ArticleSources, { estraiFonti } from "@/components/ArticleSources";
+import { fonteNormattiva } from "@/data/normattiva";
+import { entitaCitate } from "@/data/entities";
 
 /**
  * Link inline nel testo dei blocchi, con sintassi `[testo](/guide/slug)`.
@@ -275,19 +277,40 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
     // nome come testo qualsiasi.
     ...(content && estraiFonti(content).length
       ? {
-          "citation": estraiFonti(content).map((f) => ({
-            "@type": "Legislation",
-            "name": f,
-            "legislationJurisdiction": "IT",
-          })),
+          "citation": estraiFonti(content).map((f) => {
+            // URN e URL Normattiva solo quando l'atto e' identificato con certezza:
+            // e' il link alla fonte primaria che i motori generativi verificano.
+            const fonte = fonteNormattiva(f);
+            return {
+              "@type": "Legislation",
+              "name": f,
+              "legislationJurisdiction": "IT",
+              ...(fonte ? { "legislationIdentifier": fonte.urn, "url": fonte.url } : {}),
+            };
+          }),
         }
       : {}),
     ...(article.keywords?.length
       ? { "about": { "@type": "Thing", "name": article.keywords[0] } }
       : {}),
+    // Entity linking: le entita' note di cui la guida parla, agganciate alla
+    // voce Wikipedia. E' cosi' che Gemini e il Knowledge Graph capiscono che
+    // "appalto" qui e' l'istituto giuridico, non una parola qualsiasi.
+    ...(() => {
+      const testo = [article.title, article.intro, article.excerpt, (article.keywords ?? []).join(" "), ...(content ? estraiFonti(content) : [])].join(" ");
+      const ent = entitaCitate(testo);
+      return ent.length
+        ? { "mentions": ent.map((e) => ({ "@type": "Thing", "name": e.name, "sameAs": e.sameAs })) }
+        : {};
+    })(),
+    "isPartOf": { "@id": `${SITE_URL}/#website` },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": url,
+      // Revisione professionale dichiarata: chi ha controllato il contenuto e
+      // quando. In materia YMYL e' il segnale di affidabilita' piu' diretto.
+      "reviewedBy": { "@id": AUTHOR_ID },
+      "lastReviewed": article.updatedAt ?? toISODate(article.date) ?? article.date,
     },
     // Il titolo e il blocco di risposta diretta sono le due parti che un
     // assistente vocale deve poter leggere ad alta voce da sole.

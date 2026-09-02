@@ -43,6 +43,37 @@ npm run preview   # serve la build da dist/
 2. Aggiungi lo slug in `ORDER` dentro `scripts/generate-article-index.mjs` (ordine di listing).
 3. `npm run build` — indice articoli, `llms.txt`, `feed.xml`, sitemap e route statiche si aggiornano da soli.
 
+## Indicizzazione: canali di scoperta e verifiche
+
+**Sitemap segmentata.** `/sitemap.xml` e' un indice che punta a `sitemap-pagine.xml`,
+`sitemap-guide.xml` e `sitemap-faq.xml`. In Search Console si vede la copertura per
+sezione. Il `lastmod` e' la data reale dell'ultima modifica del file sorgente (da git,
+shallow-safe): non e' la data di build, altrimenti Google smetterebbe di fidarsene.
+
+**IndexNow.** Dopo ogni build di produzione (`postbuild`, solo con `VERCEL_ENV=production`)
+le URL delle tre sezioni vengono inviate a IndexNow: Bing, e da li' ChatGPT Search, Copilot
+e DuckDuckGo, ricrawlano in ore. La chiave e' il file `public/<32 hex>.txt`. A mano:
+`npm run indexnow` oppure `npm run indexnow -- /guide/slug`.
+
+**Search Console e Bing Webmaster.** Il tag di verifica e' letto da due variabili d'ambiente
+di build, da impostare su Vercel (Settings → Environment Variables, ambiente Production):
+
+| Variabile | Tag emesso |
+|---|---|
+| `VITE_GSC_VERIFICATION` | `<meta name="google-site-verification">` |
+| `VITE_BING_VERIFICATION` | `<meta name="msvalidate.01">` |
+
+Poi, in entrambi gli strumenti, inviare `https://www.edilizialegale.it/sitemap.xml`.
+
+**Fonti primarie.** I riferimenti normativi citati nelle guide sono link a Normattiva
+(URN + URL nello schema `Legislation`, e link visibili nel box "Riferimenti normativi").
+La mappa atto → data di emanazione e' in `src/data/normattiva.ts`: contiene solo atti con
+data certa; un riferimento non in tabella resta testo, senza link. Per aggiungerne uno,
+aggiungere la riga con la data esatta di emanazione.
+
+**Entity linking.** Le guide dichiarano in `mentions` le entita' Wikipedia di cui parlano
+(`src/data/entities.ts`): lista corta, solo voci con titolo certo.
+
 ## [DA VERIFICARE] citazioni giurisprudenziali
 
 Il blocco `caselaw` mostra i principi di diritto con gli estremi della pronuncia: è il
