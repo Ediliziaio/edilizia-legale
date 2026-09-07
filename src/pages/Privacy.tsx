@@ -47,6 +47,12 @@ const Privacy = () => (
       studio vincolati al segreto, consulenti tecnici, domiciliatari, controparti e uffici giudiziari nell'ambito
       dell'eventuale incarico, fornitori di servizi tecnici del sito nominati responsabili del trattamento.
     </p>
+    <p>
+      Le richieste inviate tramite il modulo di contatto presente nelle pagine dedicate a imprese e privati sono
+      raccolte e conservate sulla piattaforma <strong>EdiliziaInCloud</strong> (app.ediliziaincloud.com), che
+      fornisce il servizio di gestione dei contatti per conto dello studio. I dati inseriti nel modulo — nome,
+      recapiti e descrizione del caso — sono trattati per le sole finalità di riscontro alla richiesta.
+    </p>
 
     <h2>6. Diritti dell'interessato</h2>
     <p>

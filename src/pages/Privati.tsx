@@ -9,6 +9,7 @@ import ELStickyCTA from "@/components/ELStickyCTA";
 import ELFinalCTA from "@/components/ELFinalCTA";
 import ELBandaFoto from "@/components/ELBandaFoto";
 import ELFaqSilo from "@/components/ELFaqSilo";
+import ELFormLead from "@/components/ELFormLead";
 import ELVerticali from "@/components/ELVerticali";
 import Reveal from "@/components/Reveal";
 import { AreaCard } from "@/components/ELServicesCards";
@@ -243,6 +244,14 @@ const Privati = () => {
           <ELVerticali />
 
           <ELFaqSilo silo="privati" titolo="Le domande che ci fanno più spesso i committenti" />
+
+          <ELFormLead
+            slug="edilizia-legale-privati"
+            occhiello="Raccontaci il tuo caso"
+            titolo="Prima di capire se hai ragione, servono le carte."
+            testo="Contratto o preventivo, foto dei difetti, messaggi con l'impresa: mandaci quello che hai. Entro 48 ore lavorative ti diciamo in che termine sei e se conviene muoversi."
+            titoloModulo="Hai un problema con l'impresa che ha fatto i lavori?"
+          />
 
           {/* Guide per i privati */}
           <section className="py-16 lg:py-20 bg-muted/40">

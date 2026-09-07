@@ -37,6 +37,14 @@ const CookiePolicy = () => (
       connessione — indirizzo IP, log del server — necessari all'erogazione del servizio, in qualità di
       responsabile del trattamento.
     </p>
+    <p>
+      Le pagine <a href="/imprese">Per le imprese</a> e <a href="/privati">Per i privati</a> incorporano un
+      modulo di richiesta contatto ospitato su <strong>app.ediliziaincloud.com</strong> (EdiliziaInCloud). Il
+      caricamento del modulo comporta una connessione a quel dominio, che può trattare dati tecnici di
+      navigazione e installare cookie tecnici propri, necessari al funzionamento del modulo stesso: si rinvia
+      all'informativa del fornitore. Il modulo si carica insieme alla pagina e non effettua profilazione
+      pubblicitaria per conto di questo sito.
+    </p>
 
     <h2>4. Gestione dei cookie dal browser</h2>
     <p>

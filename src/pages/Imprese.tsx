@@ -9,6 +9,7 @@ import ELStickyCTA from "@/components/ELStickyCTA";
 import ELFinalCTA from "@/components/ELFinalCTA";
 import ELBandaFoto from "@/components/ELBandaFoto";
 import ELFaqSilo from "@/components/ELFaqSilo";
+import ELFormLead from "@/components/ELFormLead";
 import Reveal from "@/components/Reveal";
 import { AreaCard } from "@/components/ELServicesCards";
 import { Button } from "@/components/ui/button";
@@ -234,6 +235,14 @@ const Imprese = () => {
           />
 
           <ELFaqSilo silo="imprese" titolo="Le domande che ci fanno più spesso le imprese" />
+
+          <ELFormLead
+            slug="edilizia-legale-imprese"
+            occhiello="Mandaci il fascicolo"
+            titolo="Raccontaci il caso in due minuti."
+            testo="Contratto, SAL, PEC, foto: più documenti ci dai, più precisa è la risposta. Entro 48 ore lavorative sai quali termini corrono e quali strade sono ancora aperte."
+            titoloModulo="Consulenza legale per la tua impresa"
+          />
 
           {/* Guide per le imprese */}
           <section className="py-16 lg:py-20 bg-white">
