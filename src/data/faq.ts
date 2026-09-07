@@ -345,3 +345,11 @@ export const faqEntries: FaqEntry[] = [
 ];
 
 export const getFaq = (slug: string) => faqEntries.find((f) => f.slug === slug);
+
+/**
+ * Le domande collegate a una guida. Serve alla guida per linkarle: senza,
+ * le 25 pagine domanda ricevevano un solo link interno — quello dell'hub —
+ * e restavano in coda alla scansione di Google.
+ */
+export const getFaqPerGuida = (slugGuida: string) =>
+  faqEntries.filter((f) => f.guida === slugGuida);

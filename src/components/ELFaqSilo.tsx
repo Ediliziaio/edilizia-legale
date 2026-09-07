@@ -44,7 +44,9 @@ const ELFaqSilo = ({ silo, titolo }: ELFaqSiloProps) => {
           </Reveal>
 
           <div className="grid md:grid-cols-2 gap-4">
-            {domande.slice(0, 6).map((f, i) => (
+            {/* tutte, non le prime sei: ogni pagina domanda ha bisogno di
+                link interni da una pagina forte per essere scansionata */}
+            {domande.map((f, i) => (
               <Reveal key={f.slug} delay={(i % 2) * 70}>
                 <div className="h-full bg-white rounded-xl border border-border p-5 lg:p-6 flex flex-col">
                   <h3 className="font-bold text-navy leading-snug mb-2">{f.question}</h3>

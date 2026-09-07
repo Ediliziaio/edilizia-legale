@@ -26,6 +26,7 @@ import {
   Sparkles,
   ChevronRight,
   ChevronDown,
+  HelpCircle,
   FileText,
   Scale,
   BadgeCheck,
@@ -33,6 +34,7 @@ import {
 import { articlesMeta, getArticleMeta, getRelated, toISODate, type Block, type Article, type ArticleMeta } from "@/data/articles";
 import { getArticleContent } from "@/data/articlesContent";
 import { getArticleSeo } from "@/data/articleSeo";
+import { getFaqPerGuida } from "@/data/faq";
 import { getArticleImage } from "@/data/articleImages";
 import { SITE_URL, PHONE_TEL, PHONE_DISPLAY, AUTHOR_ID, AUTHOR_URL, AUTHOR_ROLE, AUTHOR_FORO, AUTHOR_SAMEAS } from "@/data/site";
 import ArticleFigure from "@/components/ArticleFigure";
@@ -670,6 +672,10 @@ const Articolo = () => {
   if (!article) return <Navigate to="/guide" replace />;
 
   const related = getRelated(slug, 3);
+  // Le domande frequenti che fanno capo a questa guida: il link dalla guida
+  // alla pagina domanda mancava del tutto, e lasciava quelle pagine con un
+  // solo link interno in entrata.
+  const domande = getFaqPerGuida(article.slug);
   const toc = article.content.filter(
     (b): b is { type: "h2"; text: string; id?: string } & { id: string } =>
       b.type === "h2" && typeof b.id === "string" && b.id.length > 0,
@@ -804,6 +810,35 @@ const Articolo = () => {
                   <article>{article.content.map(renderBlock)}</article>
 
                   <ArticleSources content={article.content} />
+
+                  {domande.length > 0 && (
+                    <section className="mt-12 border border-border rounded-2xl overflow-hidden">
+                      <h2 className="flex items-center gap-2.5 bg-muted/60 px-6 py-4 text-base font-bold text-navy border-b border-border">
+                        <HelpCircle className="w-4 h-4 text-gold-dark shrink-0" />
+                        Risposte brevi sullo stesso tema
+                      </h2>
+                      <ul className="divide-y divide-border">
+                        {domande.map((d) => (
+                          <li key={d.slug}>
+                            <Link
+                              to={`/domande-frequenti/${d.slug}`}
+                              className="group flex items-start justify-between gap-4 px-6 py-4 hover:bg-muted/40 transition-colors"
+                            >
+                              <span>
+                                <span className="block font-semibold text-navy group-hover:text-gold-dark leading-snug">
+                                  {d.question}
+                                </span>
+                                <span className="block text-sm text-foreground/65 leading-relaxed mt-1 line-clamp-2">
+                                  {d.answer}
+                                </span>
+                              </span>
+                              <ArrowRight className="w-4 h-4 text-foreground/30 group-hover:text-gold-dark shrink-0 mt-1" />
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
 
                   <ELAuthorBox />
 

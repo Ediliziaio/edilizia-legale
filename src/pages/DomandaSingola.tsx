@@ -6,8 +6,9 @@ import ELFooter from "@/components/ELFooter";
 import ELContactModal from "@/components/ELContactModal";
 import ELStickyCTA from "@/components/ELStickyCTA";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight, BookOpen } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Scale } from "lucide-react";
 import { getFaq, faqEntries } from "@/data/faq";
+import { estraiFonti } from "@/components/ArticleSources";
 import { getArticleMeta, aggiornamentoConPreposizione, ultimoAggiornamentoContenuti, toISODate } from "@/data/articles";
 import { SITE_URL, DEFAULT_AUTHOR, AUTHOR_ID, AUTHOR_URL } from "@/data/site";
 
@@ -25,7 +26,35 @@ const DomandaSingola = () => {
 
   const url = `${SITE_URL}/domande-frequenti/${faq.slug}`;
   const guida = faq.guida ? getArticleMeta(faq.guida) : undefined;
-  const related = faqEntries.filter((f) => f.slug !== faq.slug && f.silo === faq.silo).slice(0, 3);
+  /**
+   * Domande correlate per parole in comune, non per ordine di file.
+   * Prima si prendevano sempre le prime tre dello stesso silo: le stesse tre
+   * pagine raccoglievano tutti i link e le altre restavano con il solo link
+   * dell'hub — un link interno e' poco per finire in coda alla scansione.
+   */
+  const parole = (t: string) =>
+    new Set(
+      t.toLowerCase().split(/[^a-zà-ù0-9]+/).filter((w) => w.length > 4),
+    );
+  const mie = parole(`${faq.question} ${faq.answer}`);
+  const related = [...faqEntries]
+    .filter((f) => f.slug !== faq.slug)
+    .map((f) => {
+      const sue = parole(`${f.question} ${f.answer}`);
+      let n = 0;
+      for (const w of sue) if (mie.has(w)) n++;
+      return { f, punti: n * 2 + (f.silo === faq.silo ? 1 : 0) };
+    })
+    .sort((a, b) => b.punti - a.punti || a.f.slug.localeCompare(b.f.slug))
+    .slice(0, 4)
+    .map((x) => x.f);
+
+  // Norme citate nella risposta: stesso blocco delle guide, costruito sui
+  // testi della domanda. E' contenuto verificabile, non riempitivo.
+  const fonti = estraiFonti([
+    { type: "p", text: faq.answer },
+    ...faq.detail.map((t) => ({ type: "p" as const, text: t })),
+  ]);
 
   // Data di pubblicazione: la stessa "aggiornato a..." mostrata in pagina —
   // le risposte vengono riviste insieme al corpus delle guide.
@@ -135,6 +164,25 @@ const DomandaSingola = () => {
                       </span>
                     </div>
                   </Link>
+                )}
+
+                {fonti.length > 0 && (
+                  <section className="mt-9 border border-border rounded-2xl overflow-hidden">
+                    <h2 className="flex items-center gap-2.5 bg-muted/60 px-5 py-3.5 text-sm font-bold text-navy border-b border-border">
+                      <Scale className="w-4 h-4 text-gold-dark shrink-0" />
+                      Riferimenti normativi
+                    </h2>
+                    <ul className="px-5 py-4 flex flex-wrap gap-2">
+                      {fonti.map((f) => (
+                        <li
+                          key={f}
+                          className="text-sm font-medium text-navy bg-muted/50 border border-border rounded-lg px-2.5 py-1"
+                        >
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
                 )}
 
                 {/* CTA */}
