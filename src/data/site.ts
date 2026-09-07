@@ -6,10 +6,20 @@ export const SITE_URL = "https://www.edilizialegale.it";
 export const SITE_NAME = "Edilizia Legale";
 
 // Recapiti reali dello Studio Legale Avv. Armando Rossi (fonte: tuteladebito.it).
-export const PHONE_TEL = "+390818671862";
+/**
+ * Il numero da chiamare si deriva da quello mostrato, non si scrive due volte.
+ * Prima divergevano: si leggeva "081 18671862" ma il link componeva
+ * "+390818671862" — una cifra in meno — quindi il tocca-per-chiamare su
+ * telefono portava altrove. [DA CONFERMARE] quale delle due sia la cifratura
+ * giusta: qui vale quella mostrata, coerente con i dati strutturati.
+ */
+const daMostrato = (display: string, prefisso = "+39") =>
+  `${prefisso}${display.replace(/\D/g, "")}`;
+
 export const PHONE_DISPLAY = "081 18671862";
-export const PHONE_MOBILE_TEL = "+393386115394";
+export const PHONE_TEL = daMostrato(PHONE_DISPLAY);
 export const PHONE_MOBILE_DISPLAY = "338 6115394";
+export const PHONE_MOBILE_TEL = daMostrato(PHONE_MOBILE_DISPLAY);
 export const EMAIL = "info@studioavvocatorossi.it";
 export const PEC = "armandorossi@avvocatinapoli.legalmail.it";
 

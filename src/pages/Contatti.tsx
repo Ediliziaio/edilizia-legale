@@ -78,12 +78,26 @@ const Contatti = () => {
                     </Button>
 
                     <div className="space-y-4 border-t border-border pt-6">
-                      <a href={`tel:${PHONE_TEL}`} className="flex items-center gap-3 text-foreground/80 hover:text-navy">
+                      {/* Due recapiti, due link affiancati: annidare il cellulare
+                          dentro il link del fisso produceva <a> dentro <a>, HTML
+                          non valido che faceva fallire l'idratazione dell'intera
+                          pagina e la rimandava al rendering lato client. */}
+                      <div className="flex items-center gap-3 text-foreground/80">
                         <span className="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center shrink-0">
                           <Phone className="w-4 h-4 text-navy" />
                         </span>
-                        <span><strong className="text-navy">{PHONE_DISPLAY}</strong> · <a href={`tel:${PHONE_MOBILE_TEL}`} className="text-navy hover:text-gold-dark font-semibold">{PHONE_MOBILE_DISPLAY}</a><br /><span className="text-sm text-foreground/60">lun-ven, 9:00-18:30</span></span>
-                      </a>
+                        <span>
+                          <a href={`tel:${PHONE_TEL}`} className="font-bold text-navy hover:text-gold-dark">
+                            {PHONE_DISPLAY}
+                          </a>
+                          {" · "}
+                          <a href={`tel:${PHONE_MOBILE_TEL}`} className="text-navy hover:text-gold-dark font-semibold">
+                            {PHONE_MOBILE_DISPLAY}
+                          </a>
+                          <br />
+                          <span className="text-sm text-foreground/60">lun-ven, 9:00-18:30</span>
+                        </span>
+                      </div>
                       <a href={`mailto:${EMAIL}`} className="flex items-center gap-3 text-foreground/80 hover:text-navy">
                         <span className="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center shrink-0">
                           <Mail className="w-4 h-4 text-navy" />

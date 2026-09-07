@@ -385,13 +385,20 @@ const buildSchemas = (article: ArticleMeta, content?: Block[]) => {
         "description": article.excerpt,
         "inLanguage": "it-IT",
         "totalTime": Number.isFinite(minutes) ? `PT${minutes}M` : undefined,
-        "step": stepBlock.items.map((testo, i) => ({
-          "@type": "HowToStep",
-          "position": i + 1,
-          "name": `Passo ${i + 1}`,
-          "text": testo,
-          "url": `${url}#passi`,
-        })),
+        // Il nome dello step e' la sua prima parte — "Entro 7 giorni", "Verificare
+        // la tempestivita' della denuncia" — non "Passo 1": e' quello che un
+        // motore mostra o legge ad alta voce, e un'etichetta numerica non dice nulla.
+        "step": stepBlock.items.map((testo, i) => {
+          const primo = testo.split(/[:;.]|\s—\s/)[0].trim();
+          const nome = primo.length >= 8 && primo.length <= 70 ? primo : `Passo ${i + 1}`;
+          return {
+            "@type": "HowToStep",
+            "position": i + 1,
+            "name": nome,
+            "text": testo,
+            "url": `${url}#passi`,
+          };
+        }),
       }
     : null;
 
