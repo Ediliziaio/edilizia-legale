@@ -1,185 +1,122 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ShieldCheck, CheckCircle2 } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
-import { CONTACT_ENDPOINT, EMAIL, PHONE_DISPLAY } from "@/data/site";
+import { Building2, HomeIcon, ArrowLeft, ArrowRight, ShieldCheck, Phone } from "lucide-react";
+import { ELFormEmbed, type SlugModulo } from "@/components/ELFormLead";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/data/site";
 
 interface ELContactModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
+const PORTE: {
+  slug: SlugModulo;
+  icona: typeof Building2;
+  titolo: string;
+  sottotitolo: string;
+  esempio: string;
+  titoloModulo: string;
+}[] = [
+  {
+    slug: "edilizia-legale-imprese",
+    icona: Building2,
+    titolo: "Sono un'impresa",
+    sottotitolo: "Imprese edili, subappaltatori, artigiani",
+    esempio: "Saldo non pagato, lavori contestati, DURC, gare, fisco di cantiere",
+    titoloModulo: "Consulenza legale per la tua impresa",
+  },
+  {
+    slug: "edilizia-legale-privati",
+    icona: HomeIcon,
+    titolo: "Sono un privato",
+    sottotitolo: "Committenti, acquirenti, condòmini",
+    esempio: "Difetti, cantiere fermo, preventivo sforato, decreto ingiuntivo",
+    titoloModulo: "Hai un problema con l'impresa che ha fatto i lavori?",
+  },
+];
+
+/**
+ * Bivio e poi modulo. Le due parti hanno moduli distinti su EdiliziaInCloud,
+ * quindi chiedere prima chi sei evita di raccogliere richieste nel posto
+ * sbagliato — ed è la stessa domanda che la home fa già in apertura.
+ */
 const ELContactModal = ({ isOpen, onClose }: ELContactModalProps) => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const { toast } = useToast();
+  const [scelta, setScelta] = useState<SlugModulo | null>(null);
 
-  /**
-   * Invio reale. Prima questo handler fingeva: aspettava 1,2 secondi e
-   * mostrava "Richiesta inviata" senza inviare nulla — il modo peggiore di
-   * perdere un cliente. Ora: con un endpoint configurato fa una POST vera e
-   * dichiara il successo solo su risposta ok; senza endpoint apre il client
-   * di posta del visitatore con la richiesta già scritta.
-   */
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const dati = Object.fromEntries(new FormData(e.currentTarget).entries());
-
-    if (CONTACT_ENDPOINT) {
-      setIsSubmitting(true);
-      try {
-        const res = await fetch(CONTACT_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json", Accept: "application/json" },
-          body: JSON.stringify(dati),
-        });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        setIsSuccess(true);
-        toast({ title: "Richiesta inviata", description: "Ti ricontattiamo entro 48 ore lavorative." });
-        setTimeout(() => {
-          setIsSuccess(false);
-          onClose();
-        }, 2200);
-      } catch {
-        toast({
-          title: "Invio non riuscito",
-          description: `Riprova tra qualche minuto, oppure scrivici direttamente a ${EMAIL} o chiama il ${PHONE_DISPLAY}.`,
-          variant: "destructive",
-        });
-      } finally {
-        setIsSubmitting(false);
-      }
-      return;
+  // Alla chiusura si torna al bivio: riaprendo, la scelta precedente non deve
+  // restare impressa — chi torna può avere un caso dell'altro tipo.
+  useEffect(() => {
+    if (!isOpen) {
+      const t = setTimeout(() => setScelta(null), 200);
+      return () => clearTimeout(t);
     }
+  }, [isOpen]);
 
-    // Nessun endpoint: la richiesta parte dalla posta del visitatore.
-    const oggetto = `Analisi del caso — ${dati.profile ?? ""} / ${dati.topic ?? ""}`.trim();
-    const corpo = [
-      `Nome: ${dati.name ?? ""}`,
-      `Telefono: ${dati.phone ?? ""}`,
-      `Email: ${dati.email ?? ""}`,
-      `Profilo: ${dati.profile ?? ""}`,
-      `Il problema riguarda: ${dati.topic ?? ""}`,
-      `Privacy policy: ${dati.privacy ? "accettata" : "non accettata"}`,
-      "",
-      `${dati.message ?? ""}`,
-    ].join("\n");
-    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(oggetto)}&body=${encodeURIComponent(corpo)}`;
-    toast({
-      title: "Si sta aprendo la tua app di posta",
-      description: "La richiesta è già scritta: controlla e premi Invia. Se non si apre, scrivici a " + EMAIL + ".",
-    });
-  };
+  const porta = PORTE.find((p) => p.slug === scelta);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-lg">
+      <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <div className="flex items-center gap-3 mb-1">
             <div className="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center shrink-0">
               <ShieldCheck className="w-5 h-5 text-navy" />
             </div>
-            <DialogTitle className="text-xl text-navy text-left">Raccontaci il tuo caso</DialogTitle>
+            <DialogTitle className="text-xl text-navy text-left">
+              {porta ? porta.titolo : "Raccontaci il tuo caso"}
+            </DialogTitle>
           </div>
           <p className="text-sm text-foreground/70 text-left">
-            Due minuti per compilare. Entro 48 ore lavorative ti diciamo in che termine sei e quali strade
-            esistono — anche quando la risposta onesta è "non conviene muoversi". <strong>Tutto riservato,
-            nessun impegno.</strong>
+            {porta
+              ? "Compila il modulo: entro 48 ore lavorative ti diciamo in che termine sei e quali strade esistono."
+              : "Le due parti del cantiere hanno problemi diversi. Dicci da che lato stai e ti diamo il modulo giusto."}
           </p>
         </DialogHeader>
 
-        {isSuccess ? (
-          <div className="py-10 text-center">
-            <div className="w-16 h-16 rounded-full bg-success/15 flex items-center justify-center mx-auto mb-4">
-              <CheckCircle2 className="w-9 h-9 text-success" />
-            </div>
-            <h3 className="text-lg font-bold text-navy mb-2">Richiesta ricevuta</h3>
-            <p className="text-sm text-foreground/70">Ti contattiamo entro 48 ore lavorative.</p>
+        {porta ? (
+          <div className="pt-2">
+            <button
+              type="button"
+              onClick={() => setScelta(null)}
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground/60 hover:text-navy mb-4"
+            >
+              <ArrowLeft className="w-4 h-4" /> Cambia
+            </button>
+            <ELFormEmbed slug={porta.slug} titoloModulo={porta.titoloModulo} />
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-4 pt-2">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div className="space-y-1.5">
-                <Label htmlFor="el-name">Nome e cognome *</Label>
-                <Input id="el-name" name="name" required placeholder="Nome e cognome" />
-              </div>
-              <div className="space-y-1.5">
-                <Label htmlFor="el-phone">Telefono *</Label>
-                <Input id="el-phone" name="phone" type="tel" required placeholder="+39 ___ _______" />
-              </div>
-            </div>
-
-            <div className="space-y-1.5">
-              <Label htmlFor="el-email">Email *</Label>
-              <Input id="el-email" name="email" type="email" required placeholder="nome@email.it" />
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div className="space-y-1.5">
-                <Label htmlFor="el-profile">Sei... *</Label>
-                <Select name="profile" required>
-                  <SelectTrigger id="el-profile"><SelectValue placeholder="Seleziona" /></SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="impresa">Un'impresa edile / artigiano</SelectItem>
-                    <SelectItem value="privato">Un privato / committente</SelectItem>
-                    <SelectItem value="condominio">Un condominio / amministratore</SelectItem>
-                    <SelectItem value="tecnico">Un tecnico (DL, progettista, CSE)</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="space-y-1.5">
-                <Label htmlFor="el-topic">Il problema riguarda... *</Label>
-                <Select name="topic" required>
-                  <SelectTrigger id="el-topic"><SelectValue placeholder="Seleziona" /></SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="crediti">Pagamenti non ricevuti</SelectItem>
-                    <SelectItem value="vizi">Difetti o vizi dei lavori</SelectItem>
-                    <SelectItem value="contratto">Contratto / preventivo / recesso</SelectItem>
-                    <SelectItem value="fisco">Fisco e bonus edilizi</SelectItem>
-                    <SelectItem value="decreto">Decreto ingiuntivo ricevuto</SelectItem>
-                    <SelectItem value="altro">Altro</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-
-            <div className="space-y-1.5">
-              <Label htmlFor="el-message">Descrivi brevemente la situazione</Label>
-              <Textarea
-                id="el-message"
-                name="message"
-                rows={3}
-                placeholder="Es: ho finito il cantiere a marzo e il committente non paga il saldo di 23.000 euro..."
-              />
-            </div>
-
-            <label className="flex items-start gap-2 text-xs text-foreground/70">
-              {/* con un name il consenso entra nei dati inviati: per chi tratta
-                  dati personali, poterlo dimostrare vale quanto raccoglierlo */}
-              <input type="checkbox" name="privacy" value="accettata" required className="mt-0.5" />
-              <span>
-                Ho letto e accetto la <a href="/privacy" className="text-navy underline">Privacy Policy</a>. I dati saranno trattati solo per gestire la richiesta.
-              </span>
-            </label>
-
-            <Button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full bg-gold hover:bg-gold-dark text-navy font-bold h-11"
-            >
-              {isSubmitting ? "Invio in corso..." : "Invia la richiesta"}
-            </Button>
-
-            <p className="text-xs text-center text-foreground/50">
-              🔒 Riservato · Senza impegno · Risposta entro 48h lavorative
-            </p>
-          </form>
+          <div className="grid sm:grid-cols-2 gap-3 pt-2">
+            {PORTE.map((p) => (
+              <button
+                key={p.slug}
+                type="button"
+                onClick={() => setScelta(p.slug)}
+                className="group text-left bg-muted/40 hover:bg-white border border-border hover:border-gold rounded-2xl p-5 transition-all hover:shadow-card"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <span className="w-11 h-11 rounded-xl bg-gold/15 flex items-center justify-center">
+                    <p.icona className="w-5 h-5 text-navy" />
+                  </span>
+                  <ArrowRight className="w-5 h-5 text-foreground/25 group-hover:text-gold-dark group-hover:translate-x-1 transition-all" />
+                </div>
+                <span className="block font-bold text-navy text-lg leading-tight">{p.titolo}</span>
+                <span className="block text-xs uppercase tracking-wider font-semibold text-gold-dark mt-1">
+                  {p.sottotitolo}
+                </span>
+                <span className="block text-sm text-foreground/65 leading-relaxed mt-3">{p.esempio}</span>
+              </button>
+            ))}
+          </div>
         )}
+
+        <p className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-foreground/55 pt-2">
+          <span className="flex items-center gap-1.5">
+            <ShieldCheck className="w-3.5 h-3.5 text-gold-dark" /> Riservato, senza impegno
+          </span>
+          <a href={`tel:${PHONE_TEL}`} className="flex items-center gap-1.5 font-semibold text-navy hover:text-gold-dark">
+            <Phone className="w-3.5 h-3.5" /> {PHONE_DISPLAY}
+          </a>
+        </p>
       </DialogContent>
     </Dialog>
   );

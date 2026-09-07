@@ -13,7 +13,7 @@ const TRACCIANTI = [
 
 interface ELFormLeadProps {
   /** Slug del modulo su EdiliziaInCloud. */
-  slug: "edilizia-legale-imprese" | "edilizia-legale-privati";
+  slug: SlugModulo;
   occhiello: string;
   titolo: string;
   testo: string;
@@ -21,18 +21,23 @@ interface ELFormLeadProps {
   titoloModulo: string;
 }
 
+export type SlugModulo = "edilizia-legale-imprese" | "edilizia-legale-privati";
+
 /**
- * Modulo di contatto ospitato su EdiliziaInCloud, incorporato in iframe.
- *
- * Tre cose che l'incorporamento grezzo non fa e qui servono:
- *  - l'URL si compone solo nel browser, perché legge i parametri di campagna
- *    dalla pagina: durante il prerender `window` non esiste, e montare
- *    l'iframe due volte con src diversi lo farebbe caricare due volte;
- *  - l'ascoltatore dei messaggi viene rimosso allo smontaggio, altrimenti
- *    navigando tra le pagine se ne accumulerebbe uno per visita;
- *  - senza JavaScript resta comunque una strada per scrivere allo studio.
+ * Solo il riquadro del modulo. L'URL si compone nel browser, perché legge i
+ * parametri di campagna dalla pagina e durante il prerender `window` non
+ * esiste; l'ascoltatore dei messaggi viene rimosso allo smontaggio, altrimenti
+ * navigando tra le pagine se ne accumulerebbe uno per visita.
  */
-const ELFormLead = ({ slug, occhiello, titolo, testo, titoloModulo }: ELFormLeadProps) => {
+export const ELFormEmbed = ({
+  slug,
+  titoloModulo,
+  className = "",
+}: {
+  slug: SlugModulo;
+  titoloModulo: string;
+  className?: string;
+}) => {
   const [src, setSrc] = useState<string | null>(null);
   const [altezza, setAltezza] = useState(620);
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -68,6 +73,23 @@ const ELFormLead = ({ slug, occhiello, titolo, testo, titoloModulo }: ELFormLead
     return () => window.removeEventListener("message", onMessage);
   }, [slug]);
 
+  if (!src) return null;
+
+  return (
+    <iframe
+      ref={iframeRef}
+      src={src}
+      title={titoloModulo}
+      loading="lazy"
+      referrerPolicy="strict-origin-when-cross-origin"
+      style={{ height: `${altezza}px` }}
+      className={`w-full max-w-[640px] mx-auto block border-0 rounded-xl overflow-hidden bg-white ${className}`}
+    />
+  );
+};
+
+/** Sezione di pagina: cornice editoriale attorno al modulo, con ripiego senza JS. */
+const ELFormLead = ({ slug, occhiello, titolo, testo, titoloModulo }: ELFormLeadProps) => {
   return (
     <section className="py-16 lg:py-20 bg-muted/40">
       <div className="container mx-auto px-4">
@@ -79,17 +101,7 @@ const ELFormLead = ({ slug, occhiello, titolo, testo, titoloModulo }: ELFormLead
           <p className="text-lg text-foreground/75 leading-relaxed">{testo}</p>
         </div>
 
-        {src && (
-          <iframe
-            ref={iframeRef}
-            src={src}
-            title={titoloModulo}
-            loading="lazy"
-            referrerPolicy="strict-origin-when-cross-origin"
-            style={{ height: `${altezza}px` }}
-            className="w-full max-w-[640px] mx-auto block border-0 rounded-xl overflow-hidden bg-white"
-          />
-        )}
+        <ELFormEmbed slug={slug} titoloModulo={titoloModulo} />
 
         <noscript>
           <p className="max-w-[640px] mx-auto text-center text-foreground/75 bg-white border border-border rounded-xl p-6">
