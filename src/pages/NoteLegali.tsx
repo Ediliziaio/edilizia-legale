@@ -1,5 +1,5 @@
 import ELLegalLayout from "@/components/ELLegalLayout";
-import { EMAIL, PEC } from "@/data/site";
+import { EMAIL, PEC, RAGIONE_SOCIALE, PARTITA_IVA, SEDI, AUTHOR_FORO } from "@/data/site";
 
 const NoteLegali = () => (
   <ELLegalLayout
@@ -12,8 +12,9 @@ const NoteLegali = () => (
   >
     <h2>1. Titolarità del sito</h2>
     <p>
-      Il sito <strong>edilizialegale.it</strong> è di proprietà dello <strong>Studio Edilizia Legale</strong>
-      [dati identificativi completi, P.IVA, sede e iscrizioni all'albo in fase di pubblicazione].
+      Il sito <strong>edilizialegale.it</strong> è di proprietà dello <strong>{RAGIONE_SOCIALE}</strong>, con sede
+      in {SEDI[0].via}, {SEDI[0].cap} {SEDI[0].citta} ({SEDI[0].provincia}){PARTITA_IVA ? `, P.IVA ${PARTITA_IVA}` : ""}.
+      L'avvocato titolare è iscritto all'{AUTHOR_FORO}.
       Contatti: {EMAIL} — PEC: {PEC}.
     </p>
 

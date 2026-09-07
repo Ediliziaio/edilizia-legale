@@ -53,6 +53,14 @@ import { entitaCitate } from "@/data/entities";
  */
 const LINK_RE = /\[([^\]]+)\]\((\/[^)\s]+|https?:\/\/[^)\s]+)\)/g;
 
+/**
+ * Toglie la sintassi dei link lasciando l'etichetta. Serve dove un link non
+ * puo' esistere — titoli e voci d'indice — perche' li' `renderInline` non
+ * viene applicato e la sintassi markdown finirebbe a video tra parentesi.
+ */
+const soloTesto = (text: string): string =>
+  text.replace(/\[([^\]]+)\]\((?:\/[^)\s]+|https?:\/\/[^)\s]+)\)/g, "$1");
+
 const renderInline = (text: string): ReactNode => {
   if (!text.includes("](")) return text;
   const out: ReactNode[] = [];
@@ -84,13 +92,13 @@ const renderBlock = (block: Block, i: number) => {
     case "h2":
       return (
         <h2 key={i} id={block.id} className="text-2xl md:text-3xl font-bold text-navy mt-12 mb-5 leading-tight scroll-mt-24">
-          {block.text}
+          {soloTesto(block.text)}
         </h2>
       );
     case "h3":
       return (
         <h3 key={i} className="text-xl font-bold text-navy mt-8 mb-3 leading-tight">
-          {block.text}
+          {soloTesto(block.text)}
         </h3>
       );
     case "p":
@@ -534,7 +542,7 @@ const Sidebar = ({ article, related, onOpenContact }: SidebarProps) => {
                   <span className={`tabular-nums shrink-0 text-xs mt-0.5 ${activeId === h.id ? "text-gold-dark font-bold" : "text-gold-dark/60"}`}>
                     {String(i + 1).padStart(2, "0")}.
                   </span>
-                  <span className="leading-tight">{h.text}</span>
+                  <span className="leading-tight">{soloTesto(h.text)}</span>
                 </a>
               </li>
             ))}
@@ -806,7 +814,7 @@ const Articolo = () => {
                         {toc.map((h) => (
                           <li key={h.id}>
                             <a href={`#${h.id}`} className="text-foreground/75 hover:text-gold-dark leading-snug">
-                              {h.text}
+                              {soloTesto(h.text)}
                             </a>
                           </li>
                         ))}

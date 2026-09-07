@@ -5,6 +5,15 @@
 export const SITE_URL = "https://www.edilizialegale.it";
 export const SITE_NAME = "Edilizia Legale";
 
+/**
+ * Denominazione dell'entita' che risponde giuridicamente: e' il titolare del
+ * trattamento nell'informativa privacy e il proprietario del sito nelle note
+ * legali. "Edilizia Legale" e' il nome del progetto editoriale, non il soggetto.
+ */
+export const RAGIONE_SOCIALE = "Studio Legale Avv. Armando Rossi";
+/** [DA CONFERMARE] Finche' e' null non viene scritto nulla al suo posto. */
+export const PARTITA_IVA: string | null = null;
+
 // Recapiti reali dello Studio Legale Avv. Armando Rossi (fonte: tuteladebito.it).
 /**
  * Il numero da chiamare si deriva da quello mostrato, non si scrive due volte.

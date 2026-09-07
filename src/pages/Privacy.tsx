@@ -1,5 +1,5 @@
 import ELLegalLayout from "@/components/ELLegalLayout";
-import { EMAIL, PEC } from "@/data/site";
+import { EMAIL, PEC, RAGIONE_SOCIALE, PARTITA_IVA, SEDI } from "@/data/site";
 
 const Privacy = () => (
   <ELLegalLayout
@@ -12,8 +12,9 @@ const Privacy = () => (
   >
     <h2>1. Titolare del trattamento</h2>
     <p>
-      Il titolare del trattamento dei dati personali è lo <strong>Studio Edilizia Legale</strong> [dati identificativi
-      completi, P.IVA e sede in fase di pubblicazione]. Per ogni comunicazione relativa alla protezione dei dati è
+      Il titolare del trattamento dei dati personali è lo <strong>{RAGIONE_SOCIALE}</strong>, con sede in{" "}
+      {SEDI[0].via}, {SEDI[0].cap} {SEDI[0].citta} ({SEDI[0].provincia})
+      {PARTITA_IVA ? `, P.IVA ${PARTITA_IVA}` : ""}. Per ogni comunicazione relativa alla protezione dei dati è
       possibile scrivere a <strong>{EMAIL}</strong> o via PEC a <strong>{PEC}</strong>.
     </p>
 

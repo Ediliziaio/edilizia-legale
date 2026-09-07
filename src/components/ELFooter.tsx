@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, Shield, Linkedin, MapPin } from "lucide-react";
 import { ELLogo } from "@/components/ELHeader";
-import { PHONE_TEL, PHONE_DISPLAY, PHONE_MOBILE_TEL, PHONE_MOBILE_DISPLAY, EMAIL, PEC, SEDI } from "@/data/site";
+import { PHONE_TEL, PHONE_DISPLAY, PHONE_MOBILE_TEL, PHONE_MOBILE_DISPLAY, EMAIL, PEC, SEDI, RAGIONE_SOCIALE, PARTITA_IVA } from "@/data/site";
 
 const ELFooter = () => {
   const year = new Date().getFullYear();
@@ -105,7 +105,7 @@ const ELFooter = () => {
 
         {/* Bottom legal row */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50">
-          <p>© {year} Edilizia Legale. Tutti i diritti riservati. P.IVA — in fase di registrazione.</p>
+          <p>© {year} {RAGIONE_SOCIALE}. Tutti i diritti riservati.{PARTITA_IVA ? ` P.IVA ${PARTITA_IVA}.` : ""}</p>
           <div className="flex gap-6">
             <Link to="/privacy" className="hover:text-gold">Privacy Policy</Link>
             <Link to="/cookie" className="hover:text-gold">Cookie Policy</Link>
