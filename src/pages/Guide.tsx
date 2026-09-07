@@ -199,7 +199,7 @@ const Guide = () => {
                     <span>Aggiornate <strong className="text-white/80">{aggiornamentoConPreposizione()}</strong></span>
                   </div>
                 </div>
-                <ELImageSlot id="guide-hero" tone="dark" className="hidden lg:flex rounded-2xl aspect-[4/3]" />
+                <ELImageSlot eager id="guide-hero" tone="dark" className="hidden lg:flex rounded-2xl aspect-[4/3]" />
               </div>
             </div>
           </section>

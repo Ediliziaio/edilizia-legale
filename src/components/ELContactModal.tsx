@@ -65,6 +65,7 @@ const ELContactModal = ({ isOpen, onClose }: ELContactModalProps) => {
       `Email: ${dati.email ?? ""}`,
       `Profilo: ${dati.profile ?? ""}`,
       `Il problema riguarda: ${dati.topic ?? ""}`,
+      `Privacy policy: ${dati.privacy ? "accettata" : "non accettata"}`,
       "",
       `${dati.message ?? ""}`,
     ].join("\n");
@@ -158,7 +159,9 @@ const ELContactModal = ({ isOpen, onClose }: ELContactModalProps) => {
             </div>
 
             <label className="flex items-start gap-2 text-xs text-foreground/70">
-              <input type="checkbox" required className="mt-0.5" />
+              {/* con un name il consenso entra nei dati inviati: per chi tratta
+                  dati personali, poterlo dimostrare vale quanto raccoglierlo */}
+              <input type="checkbox" name="privacy" value="accettata" required className="mt-0.5" />
               <span>
                 Ho letto e accetto la <a href="/privacy" className="text-navy underline">Privacy Policy</a>. I dati saranno trattati solo per gestire la richiesta.
               </span>

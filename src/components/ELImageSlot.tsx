@@ -7,6 +7,12 @@ interface ELImageSlotProps {
   className?: string;
   /** Tema del segnaposto quando manca la foto. */
   tone?: "light" | "dark";
+  /**
+   * Immagine sopra la piega: si carica subito e con priorita' alta. Marcarla
+   * lazy ritarderebbe l'LCP, perche' il browser non la richiede finche' non
+   * ha calcolato il layout e poi la mette comunque in coda.
+   */
+  eager?: boolean;
 }
 
 /**
@@ -14,7 +20,7 @@ interface ELImageSlotProps {
  * foto (con hover zoom), altrimenti un segnaposto curato con l'etichetta di
  * cosa andrà lì. Sostituire le foto = toccare SOLO src/data/imageSlots.ts.
  */
-const ELImageSlot = ({ id, className = "", tone = "light" }: ELImageSlotProps) => {
+const ELImageSlot = ({ id, className = "", tone = "light", eager = false }: ELImageSlotProps) => {
   const src = imageSlots[id];
   const label = imageSlotLabels[id];
 
@@ -24,8 +30,9 @@ const ELImageSlot = ({ id, className = "", tone = "light" }: ELImageSlotProps) =
         <img
           src={src}
           alt={label}
-          loading="lazy"
+          loading={eager ? "eager" : "lazy"}
           decoding="async"
+          {...(eager ? ({ fetchpriority: "high" } as Record<string, string>) : {})}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>

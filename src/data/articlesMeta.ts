@@ -40,7 +40,7 @@ export const articlesMeta: ArticleMeta[] = [
       "gravi difetti art 1669 cosa rientra"
     ],
     "intro": "L'art. 1669 c.c. rende il costruttore responsabile per dieci anni dal compimento dell'opera per i gravi difetti che ne compromettono solidità, durata o godimento. Chi li scopre ha un anno dalla scoperta per denunciarli, a pena di decadenza, e un anno dalla denuncia per agire in giudizio. Per i vizi meno gravi valgono i sessanta giorni e i due anni dell'art. 1667 c.c.",
-    "updatedAt": "2026-08-18"
+    "updatedAt": "2026-09-07"
   },
   {
     "slug": "annullare-contratto-impresa-edile",

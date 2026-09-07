@@ -144,7 +144,7 @@ const Contatti = () => {
                   </div>
                 </Reveal>
                 <Reveal delay={200} className="lg:col-span-2">
-                  <ELImageSlot id="contatti-studio" className="rounded-2xl aspect-[21/8]" />
+                  <ELImageSlot eager id="contatti-studio" className="rounded-2xl aspect-[21/8]" />
                 </Reveal>
               </div>
             </div>

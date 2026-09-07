@@ -71,7 +71,7 @@ const DomandeFrequenti = () => {
                   Sono risposte generali: il tuo caso va sempre verificato sui documenti.
                 </p>
               </div>
-              <ELImageSlot id="domande-hero" tone="dark" className="hidden lg:flex rounded-2xl aspect-[4/3]" />
+              <ELImageSlot eager id="domande-hero" tone="dark" className="hidden lg:flex rounded-2xl aspect-[4/3]" />
               </div>
             </div>
           </section>

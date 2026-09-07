@@ -95,7 +95,7 @@ const Studio = () => {
                   fare altro. È la scelta che abbiamo fatto.
                 </p>
               </div>
-              <ELImageSlot id="studio-team" tone="dark" className="hidden lg:flex rounded-2xl aspect-[16/9]" />
+              <ELImageSlot eager id="studio-team" tone="dark" className="hidden lg:flex rounded-2xl aspect-[16/9]" />
               </div>
             </div>
           </section>
