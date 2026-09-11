@@ -1,15 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/data/site";
+import { urlFormConCampagna } from "@/lib/eicForm";
 
 const ORIGINE = "https://app.ediliziaincloud.com";
 const COMPANY_ID = "3c6e1cf3-1b86-4ddd-add0-4e377bd5cab3";
-
-/** Parametri di campagna da inoltrare al modulo, se presenti nell'URL. */
-const TRACCIANTI = [
-  "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term",
-  "gclid", "wbraid", "gbraid", "fbclid", "ttclid", "msclkid", "li_fat_id",
-] as const;
 
 interface ELFormLeadProps {
   /** Slug del modulo su EdiliziaInCloud. */
@@ -46,16 +41,9 @@ export const ELFormEmbed = ({
     const url = new URL(`${ORIGINE}/f`);
     url.searchParams.set("slug", slug);
     url.searchParams.set("company_id", COMPANY_ID);
-    try {
-      const qui = new URLSearchParams(window.location.search);
-      for (const k of TRACCIANTI) {
-        const v = qui.get(k);
-        if (v) url.searchParams.set(k, v);
-      }
-    } catch {
-      /* URL senza query o non leggibile: si procede senza traccianti */
-    }
-    setSrc(url.toString());
+    // Parametri di campagna: quelli della pagina o, se la visita è iniziata
+    // altrove (es. annuncio → home → questa pagina), quelli salvati all'atterraggio.
+    setSrc(urlFormConCampagna(url.toString()));
   }, [slug]);
 
   useEffect(() => {
