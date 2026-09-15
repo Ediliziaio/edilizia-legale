@@ -404,13 +404,13 @@ export const articleImages: Record<string, string | null> = {
 
   // come-dimostrare-lavori-eseguiti
   // Copertina — Capocantiere in un appartamento in ristrutturazione che fotografa con lo smartphone le tracce degli impianti prima della chiusura con l'intonaco
-  "come-dimostrare-lavori-eseguiti-cover": null,
+  "come-dimostrare-lavori-eseguiti-cover": "/images/guide/come-dimostrare-lavori-eseguiti-cover.webp",
   // Capocantiere in un appartamento in ristrutturazione che fotografa con lo smartphone le tracce degli impianti prima della chiusura con l'intonaco
-  "come-dimostrare-lavori-eseguiti-1": null,
+  "come-dimostrare-lavori-eseguiti-1": "/images/guide/come-dimostrare-lavori-eseguiti-1.webp",
   // Committente che firma sullo smartphone un documento di variante mentre il capocantiere indica una parete in costruzione
-  "come-dimostrare-lavori-eseguiti-2": null,
+  "come-dimostrare-lavori-eseguiti-2": "/images/guide/come-dimostrare-lavori-eseguiti-2.webp",
   // Ufficio di un'impresa edile con un tablet aperto sulla scheda di una commessa: elenco di SAL firmati, varianti, foto del cantiere e documenti
-  "come-dimostrare-lavori-eseguiti-3": null,
+  "come-dimostrare-lavori-eseguiti-3": "/images/guide/come-dimostrare-lavori-eseguiti-3.webp",
 };
 
 export const getArticleImage = (slot: string): string | null => articleImages[slot] ?? null;
