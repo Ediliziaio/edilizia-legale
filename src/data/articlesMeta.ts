@@ -21,7 +21,7 @@ export const articlesMeta: ArticleMeta[] = [
       "fatture insolute impresa edile"
     ],
     "intro": "Un'impresa edile che non viene pagata può chiedere il decreto ingiuntivo se ha prova scritta del credito: contratto o preventivo accettato, SAL controfirmati, fatture e verbale di fine lavori. Con documenti di questo tipo il giudice concede di norma la provvisoria esecutorietà, che permette di agire subito senza attendere l'esito dell'eventuale opposizione.",
-    "updatedAt": "2026-09-01"
+    "updatedAt": "2026-09-15"
   },
   {
     "slug": "difetti-costruttivi-casa-nuova",
@@ -137,7 +137,7 @@ export const articlesMeta: ArticleMeta[] = [
       "risoluzione contratto appalto mancato pagamento"
     ],
     "intro": "L'appaltatore può sospendere i lavori per mancato pagamento invocando l'eccezione di inadempimento prevista dall'art. 1460 c.c., ma solo se l'inadempimento del committente è grave e se la sospensione è proporzionata e conforme a buona fede. Va sempre preceduta da una costituzione in mora scritta con termine.",
-    "updatedAt": "2026-08-18"
+    "updatedAt": "2026-09-15"
   },
   {
     "slug": "subappaltatore-non-pagato",
@@ -177,7 +177,7 @@ export const articlesMeta: ArticleMeta[] = [
       "verbale fine lavori senza riserve valore"
     ],
     "intro": "Il committente non può trattenere l'intero saldo per un vizio di modesta entità: la ritenuta deve essere proporzionata al costo di eliminazione del difetto. Inoltre i vizi apparenti non contestati al momento della verifica si considerano accettati, e per i vizi occulti dell'appalto la denuncia va fatta entro sessanta giorni dalla scoperta.",
-    "updatedAt": "2026-08-18"
+    "updatedAt": "2026-09-15"
   },
   {
     "slug": "durc-irregolare",
@@ -215,7 +215,7 @@ export const articlesMeta: ArticleMeta[] = [
       "prova ordine verbale variante appalto"
     ],
     "intro": "L'art. 1659 c.c. richiede l'autorizzazione scritta del committente per le variazioni al progetto, ma la giurisprudenza ammette che la prova possa emergere da altri elementi: corrispondenza, annotazioni nel giornale dei lavori controfirmate, contabilità accettata, messaggi e comportamento concludente del committente che ha usato l'opera modificata.",
-    "updatedAt": "2026-08-18"
+    "updatedAt": "2026-09-15"
   },
   {
     "slug": "ritenuta-a-garanzia",
@@ -856,7 +856,7 @@ export const articlesMeta: ArticleMeta[] = [
       "lavori in nero contestazione difetti"
     ],
     "intro": "Il contratto d'appalto privato non richiede la forma scritta: l'accordo verbale con l'impresa è pienamente valido. Il problema non è la validità, è la prova: quando qualcosa va storto, chi afferma un patto deve dimostrarlo. Bonifici, preventivi anche non firmati, messaggi, DDT e fotografie ricostruiscono l'accordo più spesso di quanto si creda — mentre i pagamenti in contanti e le intese a voce sui prezzi restano parole contro parole.",
-    "updatedAt": "2026-08-21"
+    "updatedAt": "2026-09-15"
   },
   {
     "slug": "danni-cantiere-vicino",
@@ -977,6 +977,6 @@ export const articlesMeta: ArticleMeta[] = [
       "documentazione di cantiere contenzioso"
     ],
     "intro": "Per dimostrare i lavori eseguiti servono documenti nati in cantiere nel momento dei fatti: SAL e verbali sottoscritti dal committente, varianti autorizzate per iscritto, foto con data e posizione, rapportini firmati, email e PEC tracciate. La fattura da sola non prova nulla. In causa pesa ciò che l'altra parte ha firmato, ricevuto o non può credibilmente disconoscere.",
-    "updatedAt": null
+    "updatedAt": "2026-09-15"
   }
 ];
