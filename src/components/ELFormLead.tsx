@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/data/site";
 import { urlFormConCampagna } from "@/lib/eicForm";
@@ -20,9 +20,11 @@ export type SlugModulo = "edilizia-legale-imprese" | "edilizia-legale-privati";
 
 /**
  * Altezza di partenza, volutamente più bassa del modulo (che supera i 750px a
- * qualunque larghezza): solo così la prima misura inviata è quella del contenuto.
+ * qualunque larghezza). Il modulo comunica l'altezza solo quando il suo
+ * contenuto cresce, e mai sotto quella del riquadro: partendo più alti, la
+ * misura vera non arriverebbe mai.
  */
-const ALTEZZA_SONDA = 560;
+const ALTEZZA_INIZIALE = 560;
 
 /**
  * Solo il riquadro del modulo. L'URL si compone nel browser, perché legge i
@@ -40,22 +42,8 @@ export const ELFormEmbed = ({
   className?: string;
 }) => {
   const [src, setSrc] = useState<string | null>(null);
-  const [altezza, setAltezza] = useState(ALTEZZA_SONDA);
+  const [altezza, setAltezza] = useState(ALTEZZA_INIZIALE);
   const iframeRef = useRef<HTMLIFrameElement>(null);
-  const ultimaMisura = useRef(0);
-  const attesa = useRef<ReturnType<typeof setTimeout>>();
-  const caricamenti = useRef(0);
-
-  // Abbassa il riquadro sotto il contenuto per ottenere una misura vera. Il
-  // modulo scrive solo quando il suo body cambia altezza: se non risponde, il
-  // contenuto era già alto quanto l'ultima misura e si torna a quella.
-  const sonda = useCallback(() => {
-    clearTimeout(attesa.current);
-    setAltezza(ALTEZZA_SONDA);
-    attesa.current = setTimeout(() => {
-      if (ultimaMisura.current) setAltezza(ultimaMisura.current);
-    }, 600);
-  }, []);
 
   useEffect(() => {
     const url = new URL(`${ORIGINE}/f`);
@@ -79,30 +67,11 @@ export const ELFormEmbed = ({
       // attuale: aggiungere margine creava un anello che allungava il riquadro
       // a ogni messaggio, con il modulo sospeso in mezzo al vuoto.
       const h = Math.round(Number(dati.height ?? 0));
-      if (h <= 0) return;
-      clearTimeout(attesa.current);
-      ultimaMisura.current = Math.min(2600, h);
-      setAltezza(ultimaMisura.current);
-    };
-    // Quando cambia la larghezza il contenuto si riflette, ma se si accorcia il
-    // riquadro resterebbe alto com'era: si rimisura, a scorrimento finito.
-    let ultimaLarghezza = window.innerWidth;
-    let timer: ReturnType<typeof setTimeout> | undefined;
-    const onResize = () => {
-      if (window.innerWidth === ultimaLarghezza) return; // barra indirizzi mobile
-      ultimaLarghezza = window.innerWidth;
-      clearTimeout(timer);
-      timer = setTimeout(sonda, 200);
+      if (h > 0) setAltezza(Math.min(2600, h));
     };
     window.addEventListener("message", onMessage);
-    window.addEventListener("resize", onResize);
-    return () => {
-      window.removeEventListener("message", onMessage);
-      window.removeEventListener("resize", onResize);
-      clearTimeout(timer);
-      clearTimeout(attesa.current);
-    };
-  }, [slug, sonda]);
+    return () => window.removeEventListener("message", onMessage);
+  }, [slug]);
 
   if (!src) return null;
 
@@ -113,11 +82,6 @@ export const ELFormEmbed = ({
       title={titoloModulo}
       loading="lazy"
       referrerPolicy="strict-origin-when-cross-origin"
-      // Il primo caricamento misura da sé; i successivi (es. la pagina di
-      // conferma dopo l'invio) possono essere più corti del modulo.
-      onLoad={() => {
-        if (caricamenti.current++ > 0) sonda();
-      }}
       style={{ height: `${altezza}px` }}
       className={`w-full max-w-[640px] mx-auto block border-0 rounded-xl overflow-hidden bg-white ${className}`}
     />
