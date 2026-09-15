@@ -50,7 +50,7 @@ export const AUTHOR_ROLE = "Avvocato";
  * non vengono mostrati in pagina né inseriti nei dati strutturati: meglio
  * un dato assente che un dato inventato.
  */
-export const AUTHOR_FORO: string | null = null;   // rimosso su richiesta: nessun riferimento al Foro di Napoli
+export const AUTHOR_FORO: string | null = null;   // lasciato vuoto su richiesta del titolare
 export const AUTHOR_ANNO: string | null = null;   // [DA CONFERMARE] anno di iscrizione all'albo
 /** Titolo ulteriore dichiarato dal professionista. */
 export const AUTHOR_TITOLO: string | null = "Patrocinante in Cassazione";
