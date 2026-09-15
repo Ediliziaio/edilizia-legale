@@ -4,6 +4,19 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "edilizia-legale.vercel.app"
+        }
+      ],
+      "destination": "https://www.edilizialegale.it/:path*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/:path*",

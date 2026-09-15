@@ -5,7 +5,7 @@ Sito dello studio legale **Edilizia Legale** — diritto dell'edilizia e degli a
 
 - Stack: Vite + React + TypeScript + Tailwind + shadcn/ui, **SSG con vite-react-ssg** (74 pagine prerenderizzate, 404 compresa).
 - Design: palette navy/gold, font Inter Tight (ereditati dal design system di partenza).
-- Dominio previsto: `https://www.edilizialegale.it` (placeholder — un solo punto di modifica, vedi sotto).
+- Dominio: **`https://www.edilizialegale.it`, collegato e in produzione**. Il dominio senza www reindirizza a www con 308; il vecchio host `edilizia-legale.vercel.app` reindirizza a www con 308 (regola in `vercel.json`), così Google vede un solo host.
 
 ## Comandi
 
@@ -125,7 +125,6 @@ promuovere questi contenuti, un professionista dovrebbe validare:
 
 Tutti i placeholder sono centralizzati in **`src/data/site.ts`**:
 
-- dominio definitivo (aggiorna anche `index.html`, `robots.txt`, `llms.txt`, `scripts/*.mjs`);
 - telefono, email, PEC reali;
 - **autore reale dei contenuti**: sostituire "Redazione Edilizia Legale" con un avvocato nominato
   (foro, anno di iscrizione, bio in `/studio`) — vale ~+60% di citazioni AI ed è essenziale per l'E-E-A-T;
