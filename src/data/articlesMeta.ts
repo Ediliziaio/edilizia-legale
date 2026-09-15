@@ -957,5 +957,26 @@ export const articlesMeta: ArticleMeta[] = [
     ],
     "intro": "Contro l'esclusione da una gara pubblica il ricorso al TAR va notificato entro trenta giorni, con il rito accelerato degli appalti. Ma la vera domanda non è se l'esclusione sia contestabile: è se il ricorso conviene, e la risposta dipende da tre numeri — la probabilità di vittoria sul vizio concreto, il valore della commessa e il costo pieno del giudizio, contributo unificato incluso. Prima di decidere: accesso agli atti immediato, perché senza i verbali integrali si impugna alla cieca.",
     "updatedAt": "2026-08-21"
+  },
+  {
+    "slug": "come-dimostrare-lavori-eseguiti",
+    "title": "Come dimostrare i lavori eseguiti: le prove di cantiere che reggono in causa",
+    "excerpt": "Quando il committente contesta o non paga, il credito dell'impresa vale quanto le prove raccolte in cantiere. Foto, rapportini, SAL, varianti firmate, email automatiche e giornale dei lavori: cosa pesa davanti al giudice e come si costruisce, giorno per giorno, un fascicolo che regge.",
+    "category": "Imprese",
+    "date": "Settembre 2026",
+    "readTime": "17 min",
+    "author": "Avv. Armando Rossi",
+    "cover": "from-navy to-gold",
+    "keywords": [
+      "come dimostrare i lavori eseguiti",
+      "valore probatorio foto cantiere",
+      "giornale dei lavori valore probatorio",
+      "prova lavori extra appalto",
+      "firma elettronica SAL valore legale",
+      "email automatiche cliente valore legale",
+      "documentazione di cantiere contenzioso"
+    ],
+    "intro": "Per dimostrare i lavori eseguiti servono documenti nati in cantiere nel momento dei fatti: SAL e verbali sottoscritti dal committente, varianti autorizzate per iscritto, foto con data e posizione, rapportini firmati, email e PEC tracciate. La fattura da sola non prova nulla. In causa pesa ciò che l'altra parte ha firmato, ricevuto o non può credibilmente disconoscere.",
+    "updatedAt": null
   }
 ];

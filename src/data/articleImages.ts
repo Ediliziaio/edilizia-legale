@@ -401,6 +401,16 @@ export const articleImages: Record<string, string | null> = {
   "esclusione-gara-appalto-ricorso-1": "/images/guide/esclusione-gara-appalto-ricorso-1.webp",
   // Aula del tribunale amministrativo con banchi vuoti e fascicoli di gara impilati sul tavolo dei difensori
   "esclusione-gara-appalto-ricorso-2": "/images/guide/esclusione-gara-appalto-ricorso-2.webp",
+
+  // come-dimostrare-lavori-eseguiti
+  // Copertina — Capocantiere in un appartamento in ristrutturazione che fotografa con lo smartphone le tracce degli impianti prima della chiusura con l'intonaco
+  "come-dimostrare-lavori-eseguiti-cover": null,
+  // Capocantiere in un appartamento in ristrutturazione che fotografa con lo smartphone le tracce degli impianti prima della chiusura con l'intonaco
+  "come-dimostrare-lavori-eseguiti-1": null,
+  // Committente che firma sullo smartphone un documento di variante mentre il capocantiere indica una parete in costruzione
+  "come-dimostrare-lavori-eseguiti-2": null,
+  // Ufficio di un'impresa edile con un tablet aperto sulla scheda di una commessa: elenco di SAL firmati, varianti, foto del cantiere e documenti
+  "come-dimostrare-lavori-eseguiti-3": null,
 };
 
 export const getArticleImage = (slot: string): string | null => articleImages[slot] ?? null;
@@ -558,6 +568,10 @@ export const articleImageAlt: Record<string, string> = {
   "esclusione-gara-appalto-ricorso-cover": "Scrivania con il provvedimento di esclusione dalla gara, il bando evidenziato e un calendario con il termine di trenta giorni cerchiato",
   "esclusione-gara-appalto-ricorso-1": "Scrivania con il provvedimento di esclusione dalla gara, il bando evidenziato e un calendario con il termine di trenta giorni cerchiato",
   "esclusione-gara-appalto-ricorso-2": "Aula del tribunale amministrativo con banchi vuoti e fascicoli di gara impilati sul tavolo dei difensori",
+  "come-dimostrare-lavori-eseguiti-cover": "Capocantiere in un appartamento in ristrutturazione che fotografa con lo smartphone le tracce degli impianti prima della chiusura con l'intonaco",
+  "come-dimostrare-lavori-eseguiti-1": "Capocantiere in un appartamento in ristrutturazione che fotografa con lo smartphone le tracce degli impianti prima della chiusura con l'intonaco",
+  "come-dimostrare-lavori-eseguiti-2": "Committente che firma sullo smartphone un documento di variante mentre il capocantiere indica una parete in costruzione",
+  "come-dimostrare-lavori-eseguiti-3": "Ufficio di un'impresa edile con un tablet aperto sulla scheda di una commessa: elenco di SAL firmati, varianti, foto del cantiere e documenti",
 };
 
 export const getArticleImageAlt = (slot: string): string | undefined => articleImageAlt[slot];

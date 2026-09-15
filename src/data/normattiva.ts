@@ -34,9 +34,11 @@ const ATTI: Record<string, { tipo: string; data: string }> = {
   "D.lgs. 170/2021": { tipo: "decreto.legislativo", data: "2021-11-04" },
   "D.lgs. 471/1997": { tipo: "decreto.legislativo", data: "1997-12-18" },
   "D.lgs. 87/2024": { tipo: "decreto.legislativo", data: "2024-06-14" },
+  "D.lgs. 82/2005": { tipo: "decreto.legislativo", data: "2005-03-07" },
   // d.P.R.
   "D.P.R. 380/2001": { tipo: "decreto.del.presidente.della.repubblica", data: "2001-06-06" },
   "D.P.R. 207/2010": { tipo: "decreto.del.presidente.della.repubblica", data: "2010-10-05" },
+  "D.P.R. 68/2005": { tipo: "decreto.del.presidente.della.repubblica", data: "2005-02-11" },
   // decreti-legge
   "D.L. 34/2020": { tipo: "decreto.legge", data: "2020-05-19" },
   "D.L. 124/2019": { tipo: "decreto.legge", data: "2019-10-26" },

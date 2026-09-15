@@ -49,7 +49,7 @@ export const article: Article = {
       ["Uso prolungato dell'opera senza contestazioni", "Comportamento concludente del committente", "Medio: rafforza il quadro, da solo raramente basta"],
       ["Testimonianze di operai o fornitori", "Le circostanze di fatto del cantiere", "Limitato: la forma ad probationem restringe la prova per testi"],
     ] },
-    { type: "p", text: "La lezione operativa è una: nessuno di questi elementi nasce in tribunale, nascono tutti in cantiere, nei giorni in cui la variante viene ordinata ed eseguita. Chi arriva dal legale con due messaggi, un'annotazione firmata e un collaudo sottoscritto discute di quanto incassare; chi arriva solo con la propria parola discute di quanto perdere." },
+    { type: "p", text: "La lezione operativa è una: nessuno di questi elementi nasce in tribunale, nascono tutti in cantiere, nei giorni in cui la variante viene ordinata ed eseguita. Chi arriva dal legale con due messaggi, un'annotazione firmata e un collaudo sottoscritto discute di quanto incassare; chi arriva solo con la propria parola discute di quanto perdere. Quali documenti reggono meglio, e come si producono giorno per giorno, lo spiega la guida su [come dimostrare i lavori eseguiti](/guide/come-dimostrare-lavori-eseguiti)." },
 
     { type: "h2", text: "Il giornale dei lavori: perché quasi nessuno lo usa?", id: "giornale-lavori" },
     { type: "p", text: "Negli appalti privati il giornale dei lavori non è obbligatorio, ed è per questo che quasi nessuna impresa lo tiene. È un errore di calcolo: si tratta dello strumento probatorio più economico che esista — un quaderno o un file condiviso — e di quello che i giudici leggono più volentieri, perché è contemporaneo ai fatti e non costruito a lite già nata." },

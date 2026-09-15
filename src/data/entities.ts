@@ -32,6 +32,8 @@ export const ENTITA: Entita[] = [
   { name: "Superbonus 110%", sameAs: `${W}Superbonus_110%25`, trigger: ["superbonus"] },
   { name: "Impianto fotovoltaico", sameAs: `${W}Impianto_fotovoltaico`, trigger: ["fotovoltaic"] },
   { name: "Inversione contabile", sameAs: `${W}Inversione_contabile`, trigger: ["reverse charge"] },
+  { name: "Firma elettronica", sameAs: `${W}Firma_elettronica`, trigger: ["firma elettronica"] },
+  { name: "Posta elettronica certificata", sameAs: `${W}Posta_elettronica_certificata`, trigger: ["posta elettronica certificata", " pec ", " pec,", " pec.", "(pec", "pec:"] },
 ];
 
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");

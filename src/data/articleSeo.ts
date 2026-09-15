@@ -201,6 +201,10 @@ export const ARTICLE_SEO: Record<string, ArticleSeo> = {
   "esclusione-gara-appalto-ricorso": {
     "seoTitle": "Esclusione da Gara d'Appalto: Ricorso al TAR in 30 Giorni",
     "metaDescription": "Esclusa da una gara pubblica? Termini del ricorso al TAR, costi reali, vizi che si vincono e alternative: la valutazione da fare nei primi giorni."
+  },
+  "come-dimostrare-lavori-eseguiti": {
+    "seoTitle": "Come dimostrare i lavori eseguiti in cantiere",
+    "metaDescription": "Foto, rapportini, SAL firmati, giornale dei lavori: quali prove di cantiere reggono davanti al giudice e come raccoglierle ogni giorno."
   }
 };
 
