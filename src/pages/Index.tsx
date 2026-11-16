@@ -1,3 +1,4 @@
+import { PriorityPaths } from "@/components/PriorityPaths";
 import { useState, useRef, useEffect, lazy, Suspense } from "react";
 import SEO from "@/components/SEO";
 import ELHeader from "@/components/ELHeader";
@@ -62,6 +63,7 @@ const Index = () => {
 
         <main id="contenuto" className="flex-1">
           <ELHero />
+        <PriorityPaths />
           <ELTrustStrip />
           <ELStats />
           <ELProblemSolution />

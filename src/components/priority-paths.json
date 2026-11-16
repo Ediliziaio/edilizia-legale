@@ -1,0 +1,21 @@
+{
+  "title": "Un problema nel lavoro edile: ricostruisci i riferimenti",
+  "intro": "Contratto, documenti di avanzamento e comunicazioni aiutano a descrivere la situazione. Le guide orientano le domande; la valutazione del rapporto concreto richiede il confronto con il professionista competente.",
+  "links": [
+    {
+      "href": "/guide/sal-non-pagato",
+      "title": "Raccogli i riferimenti del SAL non pagato",
+      "description": "Distingui documenti, scadenze e riscontri prima di discutere il caso."
+    },
+    {
+      "href": "/guide/difetti-costruttivi-casa-nuova",
+      "title": "Descrivi i difetti osservati",
+      "description": "Collega il problema ai documenti e ai chiarimenti da richiedere."
+    },
+    {
+      "href": "/domande-frequenti/subappaltatore-puo-chiedere-soldi-committente",
+      "title": "Approfondisci il rapporto di subappalto",
+      "description": "Leggi la domanda frequente distinguendo il quadro generale dalle condizioni del rapporto."
+    }
+  ]
+}
