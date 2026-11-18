@@ -135,6 +135,19 @@ export const article: Article = {
       { when: "Con la sentenza", label: "Liquidazione delle spese e soccombenza", detail: "Il giudice pone le spese a carico del soccombente o le compensa, in tutto o in parte, motivando." },
     ] },
 
+    { type: "h2", text: "Come confrontare due preventivi senza confondere le fasi", id: "confrontare-preventivi-per-fasi" },
+    { type: "p", text: "Due preventivi sono confrontabili quando descrivono lo stesso lavoro. Un importo riferito alla sola analisi iniziale non si può confrontare con un importo che include attività successive. Chiedi un prospetto per fasi e usa una colonna separata per ciò che è incluso, ciò che è escluso e ciò che sarà stimato soltanto dopo aver esaminato i documenti." },
+    { type: "table", headers: ["Voce del confronto", "Domanda da porre", "Dato da riportare nel prospetto"], rows: [
+      ["Analisi iniziale", "Quali documenti vengono esaminati e quale restituzione riceverò?", "Attività compresa e relativo compenso"],
+      ["Attività tecnica", "La valutazione di un tecnico è compresa oppure separata?", "Soggetto incaricato, attività e preventivo distinto"],
+      ["Fasi successive", "A quali attività si riferisce ciascun importo?", "Descrizione della fase e momento in cui viene attivata"],
+      ["Esborsi e accessori", "Quali somme sono comprese nel totale e quali restano fuori?", "Importi noti e voci ancora da quantificare"],
+      ["Pagamento", "Quando sono previsti gli anticipi e i saldi?", "Scadenze e condizioni indicate nella proposta"],
+      ["Variazioni", "Come verrà comunicata un'attività ulteriore rispetto all'incarico?", "Modalità di aggiornamento del preventivo"],
+    ] },
+    { type: "p", text: "Accanto al prospetto prepara un indice del fascicolo: contratto, pagamenti, segnalazioni inviate, risposte ricevute, fotografie e documenti tecnici disponibili. Indica ciò che manca, senza inventare una stima per riempire la casella. Il confronto diventa più utile quando il professionista può spiegare quali attività sono già definibili e quali dipendono da un accertamento successivo." },
+    { type: "p", text: "Questa scheda organizza le proposte economiche; per confrontare i diversi percorsi leggi la [guida sull'accertamento tecnico preventivo](/guide/accertamento-tecnico-preventivo) e quella sulla [mediazione in edilizia](/guide/mediazione-obbligatoria-edilizia). Se la tua domanda riguarda soprattutto le fasi temporali, la [guida sulla durata delle cause per difetti](/guide/quanto-dura-causa-difetti) affronta quel tema separatamente dai costi." },
+
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [
       { q: "Se vinco, recupero tutto quello che ho speso?", a: "Non necessariamente. Il giudice liquida le spese secondo i parametri forensi, che possono essere inferiori al compenso pattuito con il tuo difensore. La differenza resta a tuo carico. Inoltre il recupero effettivo dipende dalla capienza patrimoniale della controparte, che va verificata prima di agire." },

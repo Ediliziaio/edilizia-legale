@@ -81,6 +81,7 @@ export const isPillar = (slug: string): boolean =>
 
 // Lightweight metadata for all articles (eager, tiny). Full `content` is NOT here.
 import { articlesMeta } from "./articlesMeta";
+import { readingPaths } from "./readingPaths";
 export { articlesMeta };
 
 // Lazy per-article loaders: each ./articles/<slug>.ts becomes its own chunk,
@@ -130,10 +131,13 @@ export const getRelated = (slug: string, limit = 3): ArticleMeta[] => {
     );
 
   const mie = parole(current);
+  const pathSlugs: string[] = readingPaths
+    .filter((path) => (path.slugs as readonly string[]).includes(slug))
+    .flatMap((path): string[] => [...path.slugs]);
   const punteggio = (a: ArticleMeta) => {
     let n = 0;
     for (const w of parole(a)) if (mie.has(w)) n++;
-    return n * 2 + (a.category === current.category ? 1 : 0);
+    return (pathSlugs.includes(a.slug) ? 100 : 0) + n * 2 + (a.category === current.category ? 1 : 0);
   };
 
   return [...others]

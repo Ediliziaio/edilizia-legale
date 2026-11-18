@@ -127,6 +127,19 @@ export const article: Article = {
       { when: "2 anni dalla cessazione dell'appalto", label: "Limite della responsabilità solidale", detail: "Art. 29, comma 2, D.lgs. 276/2003, per retribuzioni, TFR, contributi e premi assicurativi." },
     ] },
 
+    { type: "h2", text: "Una scheda per confrontare le clausole prima della firma", id: "scheda-confronto-clausole" },
+    { type: "p", text: "Per confrontare due contratti non basta leggere l'importo finale. Prepara una scheda con una riga per ciascuna condizione e indica dove si trova nel testo: articolo, allegato e versione del documento. Se un'informazione non compare, scrivi ‘non indicata’; non sostituirla con quello che è stato detto a voce. La scheda serve a portare al confronto un elenco concreto di punti da chiarire." },
+    { type: "table", headers: ["Punto da confrontare", "Dato da annotare", "Documento da affiancare"], rows: [
+      ["Lavorazioni e confini", "Attività comprese, esclusioni, quantità e modalità di misura", "Capitolato, elaborati e offerta accettata"],
+      ["Contabilizzazione", "Chi verifica i lavori, come si presenta il SAL e quali documenti accompagnarlo", "Modello SAL e procedura prevista dal contratto"],
+      ["Pagamento", "Evento da cui decorre il termine, eventuali condizioni e riferimenti alla fattura", "Clausola pagamenti e condizioni dell'offerta"],
+      ["Ritenute e garanzie", "Percentuale, importo, evento di svincolo e documento richiesto", "Clausola specifica e allegati richiamati"],
+      ["Modifiche", "Referente autorizzato a chiedere extra e modalità di conferma", "Procedura varianti e prezzi applicabili"],
+      ["Tempi e interferenze", "Consegne previste, dipendenze da altre imprese e comunicazioni", "Cronoprogramma e verbale di consegna"],
+    ] },
+    { type: "p", text: "Allega la stessa versione dei documenti a tutti i soggetti che devono esaminarli. Un preventivo del mese scorso e un capitolato aggiornato ieri possono descrivere lavori diversi: il primo controllo è ricomporre una base documentale comune. Conserva anche le domande inviate e le risposte ricevute, distinguendo una richiesta di modifica da una condizione già accettata." },
+    { type: "p", text: "Se il contratto è già in esecuzione e il problema riguarda l'incasso, passa alla [guida sul subappaltatore non pagato](/guide/subappaltatore-non-pagato). Per isolare una trattenuta dal resto del credito, consulta la [guida sulla ritenuta a garanzia](/guide/ritenuta-a-garanzia). Sono due verifiche diverse: la scheda aiuta a capire quale approfondimento corrisponde al documento che hai davanti." },
+
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [
       { q: "Serve sempre l'autorizzazione del committente per subappaltare?", a: "Nel privato l'art. 1656 c.c. vieta all'appaltatore di subappaltare senza autorizzazione del committente, salvo diverso accordo. Nei lavori pubblici l'autorizzazione della stazione appaltante è disciplinata dall'art. 119 D.lgs. 36/2023 e presuppone la verifica dei requisiti. Eseguire prima dell'autorizzazione espone entrambe le imprese a conseguenze rilevanti." },

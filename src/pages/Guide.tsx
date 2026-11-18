@@ -13,6 +13,7 @@ import { articlesMeta, isPillar, type ArticleMeta, type Category, aggiornamentoC
 import { SITE_URL } from "@/data/site";
 import ELImageSlot from "@/components/ELImageSlot";
 import ArticleCover from "@/components/ArticleCover";
+import { readingPaths } from "@/data/readingPaths";
 
 type FilterKey = "Tutte" | Category;
 
@@ -254,6 +255,26 @@ const Guide = () => {
               </div>
             </div>
           </section>
+
+          {showPillars && (
+            <nav aria-labelledby="percorsi-guide" className="container mx-auto px-4 py-10">
+              <h2 id="percorsi-guide" className="text-xl font-bold text-navy mb-6">Trova la guida per il tuo problema</h2>
+              <div className="grid md:grid-cols-3 gap-8">
+                {readingPaths.map((path) => (
+                  <div key={path.title}>
+                    <h3 className="font-semibold text-navy mb-2">{path.title}</h3>
+                    <p className="text-sm text-foreground/70 leading-relaxed mb-3">{path.description}</p>
+                    <ul className="space-y-2">
+                      {path.slugs.slice(0, 3).map((slug) => {
+                        const guide = articlesMeta.find((item) => item.slug === slug);
+                        return guide ? <li key={slug}><Link to={`/guide/${slug}`} className="text-sm text-navy underline underline-offset-4 hover:text-gold-dark">{guide.title}</Link></li> : null;
+                      })}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </nav>
+          )}
 
           {/* Pilastri */}
           {showPillars && (

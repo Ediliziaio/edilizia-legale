@@ -1123,6 +1123,11 @@ Il bivio è tra due strade. La prima: proseguire sugli altri lotti dello stesso 
 Tre clausole avrebbero cambiato l'esito, e sarebbero costate una riga ciascuna. Un termine di trenta giorni per l'approvazione della contabilità, decorso il quale si intende approvata. Un tetto e una data certa per lo svincolo della ritenuta. La conferma scritta obbligatoria per ogni lavorazione aggiuntiva, che avrebbe reso incontestabili i 3.900 euro chiesti a voce.
 L'errore da non fare: eseguire lavorazioni aggiuntive su richiesta verbale del capocantiere senza conferma scritta. Nel contenzioso quelle opere risultano non ordinate e il loro costo resta a carico di chi le ha eseguite. Lo scenario descritto è illustrativo: importi, tempi ed esiti dipendono dal testo del contratto e dalle circostanze concrete.
 
+### Una scheda per confrontare le clausole prima della firma
+Per confrontare due contratti non basta leggere l'importo finale. Prepara una scheda con una riga per ciascuna condizione e indica dove si trova nel testo: articolo, allegato e versione del documento. Se un'informazione non compare, scrivi ‘non indicata’; non sostituirla con quello che è stato detto a voce. La scheda serve a portare al confronto un elenco concreto di punti da chiarire.
+Allega la stessa versione dei documenti a tutti i soggetti che devono esaminarli. Un preventivo del mese scorso e un capitolato aggiornato ieri possono descrivere lavori diversi: il primo controllo è ricomporre una base documentale comune. Conserva anche le domande inviate e le risposte ricevute, distinguendo una richiesta di modifica da una condizione già accettata.
+Se il contratto è già in esecuzione e il problema riguarda l'incasso, passa alla guida sul subappaltatore non pagato. Per isolare una trattenuta dal resto del credito, consulta la guida sulla ritenuta a garanzia. Sono due verifiche diverse: la scheda aiuta a capire quale approfondimento corrisponde al documento che hai davanti.
+
 ### Domande frequenti
 
 ### Il passo successivo
@@ -2674,6 +2679,11 @@ Sommando compenso del difensore per le fasi previste, contributo, tecnico di par
 Qui si apre il bivio, e non è quello che sembra. La prima strada è agire da solo per i 6.850 euro, con un rapporto costo-beneficio sfavorevole. La seconda è sollecitare il condominio ad attivarsi per il difetto della parte comune, condividendo l'accertamento tecnico e i suoi costi tra sei unità, e coltivare la tua domanda interna in aggiunta. Nel secondo caso il costo pro capite dell'accertamento cambia scala, e cambia anche il peso negoziale verso il costruttore.
 L'errore da non fare: gonfiare la domanda per «avere margine di trattativa». Una domanda sovrastimata aumenta il contributo unificato, espone alla soccombenza parziale e favorisce la compensazione delle spese. Lo scenario descritto è illustrativo: importi, tempi ed esiti dipendono dal caso concreto e dal tribunale competente.
 
+### Come confrontare due preventivi senza confondere le fasi
+Due preventivi sono confrontabili quando descrivono lo stesso lavoro. Un importo riferito alla sola analisi iniziale non si può confrontare con un importo che include attività successive. Chiedi un prospetto per fasi e usa una colonna separata per ciò che è incluso, ciò che è escluso e ciò che sarà stimato soltanto dopo aver esaminato i documenti.
+Accanto al prospetto prepara un indice del fascicolo: contratto, pagamenti, segnalazioni inviate, risposte ricevute, fotografie e documenti tecnici disponibili. Indica ciò che manca, senza inventare una stima per riempire la casella. Il confronto diventa più utile quando il professionista può spiegare quali attività sono già definibili e quali dipendono da un accertamento successivo.
+Questa scheda organizza le proposte economiche; per confrontare i diversi percorsi leggi la guida sull'accertamento tecnico preventivo e quella sulla mediazione in edilizia. Se la tua domanda riguarda soprattutto le fasi temporali, la guida sulla durata delle cause per difetti affronta quel tema separatamente dai costi.
+
 ### Domande frequenti
 
 ### Il passo successivo
@@ -3302,6 +3312,11 @@ L'impresa firma il verbale con riserva, pretendendo che vengano indicati i nove 
 Sui 34 giorni il calcolo somma manodopera inoperosa non ricollocabile, quota di ammortamento dell'escavatore, canoni di nolo della piattaforma effettivamente pagati, spese generali sulla produzione bloccata e quota di utile non realizzata. Il totale è di 47.300 euro, presentato con un prospetto che richiama riga per riga LUL, fatture di nolo, libro cespiti e cronoprogramma.
 Il bivio arriva al verbale di ripresa: la direzione lavori concede una proroga di 71 giorni e chiede la firma. Accettare senza riserva significherebbe considerare il fermo integralmente compensato dal tempo. L'impresa firma confermando la riserva e precisando che la proroga copre il tempo ma non i costi sostenuti nel periodo di fermo non giustificato.
 L'errore da non fare: chiedere il risarcimento sull'intera durata della sospensione senza distinguere il periodo legittimo da quello illegittimo. Una richiesta indistinta indebolisce anche la parte fondata e sposta la discussione sul quantum complessivo invece che sui giorni realmente imputabili. Lo scenario descritto è illustrativo: importi, durate ed esiti dipendono dal contratto e dalle circostanze del cantiere.
+
+### Il prospetto documentale del fermo cantiere
+Per ricostruire il fermo prepara un prospetto cronologico, distinto dal calcolo della richiesta economica. Ogni riga deve collegare un fatto a una data e a un documento. Separare questi elementi rende più semplice individuare periodi sovrapposti, spese duplicate e informazioni ancora mancanti, prima di attribuire una causa o formulare una quantificazione.
+Mantieni il riferimento al documento originario anche quando riepiloghi i dati in un foglio di calcolo. Una fattura che copre un mese non descrive da sola quanti giorni una macchina sia rimasta inutilizzata; una fotografia documenta una situazione, ma va collegata al momento e alla lavorazione. Il prospetto deve rendere queste differenze leggibili, senza trasformare automaticamente ogni costo del periodo in una somma da richiedere.
+Se al fermo si aggiungono modifiche delle opere, usa anche la guida sulle varianti in corso d'opera. Per approfondire il rapporto tra documenti contabili e contestazioni, prosegui con la guida sull'iscrizione delle riserve. La cronologia resta la base comune: le due guide affrontano aspetti diversi dello stesso fascicolo.
 
 ### Domande frequenti
 

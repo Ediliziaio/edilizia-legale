@@ -10,13 +10,14 @@ import { ArrowLeft, ArrowRight, BookOpen, Scale } from "lucide-react";
 import { getFaq, faqEntries } from "@/data/faq";
 import { estraiFonti } from "@/components/ArticleSources";
 import { fonteNormattiva } from "@/data/normattiva";
-import { getArticleMeta, aggiornamentoConPreposizione, ultimoAggiornamentoContenuti, toISODate } from "@/data/articles";
-import { SITE_URL, DEFAULT_AUTHOR, AUTHOR_ID, AUTHOR_URL } from "@/data/site";
+import { getArticleMeta, aggiornamentoConPreposizione } from "@/data/articles";
+import { SITE_URL } from "@/data/site";
 
 /**
  * Pagina dedicata a UNA sola domanda (/domande-frequenti/[slug]):
  * H1 = domanda esatta, risposta diretta 40-60 parole, approfondimento con
- * riferimento normativo, link contestuale alla guida. Schema QAPage.
+ * riferimento normativo, link contestuale alla guida. Pagina redazionale,
+ * non un forum nel quale gli utenti possono aggiungere risposte.
  */
 const DomandaSingola = () => {
   const { slug } = useParams();
@@ -57,31 +58,26 @@ const DomandaSingola = () => {
     ...faq.detail.map((t) => ({ type: "p" as const, text: t })),
   ]);
 
-  // Data di pubblicazione: la stessa "aggiornato a..." mostrata in pagina —
-  // le risposte vengono riviste insieme al corpus delle guide.
-  const dataISO = toISODate(ultimoAggiornamentoContenuti());
-
-  // Search Console segnala come "da migliorare" i campi author, datePublished
-  // e upvoteCount: li dichiariamo con valori veri. La domanda e' redatta dallo
-  // studio, la risposta e' dell'avvocato; upvoteCount e' 0 perche' il sito non
-  // ha un sistema di voti — meglio uno zero onesto che un numero inventato.
-  const qaSchema = {
+  // QAPage richiede risposte inseribili dagli utenti. Qui la risposta è
+  // redazionale: descriviamo una WebPage e il testo effettivamente visibile,
+  // senza voti, interazioni o date di pubblicazione non documentate.
+  const answerPageSchema = {
     "@context": "https://schema.org",
-    "@type": "QAPage",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    "url": url,
+    "name": faq.question,
+    "description": faq.answer,
+    "inLanguage": "it-IT",
+    "isPartOf": { "@id": `${SITE_URL}/#website` },
     "mainEntity": {
       "@type": "Question",
       "name": faq.question,
       "text": faq.question,
-      "answerCount": 1,
-      ...(dataISO ? { "datePublished": dataISO } : {}),
-      "author": { "@type": "Organization", "@id": `${SITE_URL}/#studio`, "name": "Edilizia Legale" },
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": faq.answer,
+        "text": [faq.answer, ...faq.detail].join("\n\n"),
         "url": url,
-        "upvoteCount": 0,
-        ...(dataISO ? { "datePublished": dataISO } : {}),
-        "author": { "@type": "Person", "@id": AUTHOR_ID, "name": DEFAULT_AUTHOR, "url": AUTHOR_URL },
       },
     },
   };
@@ -109,7 +105,7 @@ const DomandaSingola = () => {
         description={faq.answer.length <= 155 ? faq.answer : `${faq.answer.slice(0, 152)}…`}
         canonical={url}
         ogType="article"
-        jsonLd={[qaSchema, breadcrumbSchema]}
+        jsonLd={[answerPageSchema, breadcrumbSchema]}
       />
 
       <div className="min-h-screen bg-background flex flex-col">

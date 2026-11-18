@@ -115,6 +115,19 @@ export const article: Article = {
       { when: "Alla ripresa dei lavori", label: "Verbale di ripresa e nuova scadenza", detail: "Firmare senza riserva significa accettare che la proroga compensi integralmente il fermo." },
     ] },
 
+    { type: "h2", text: "Il prospetto documentale del fermo cantiere", id: "prospetto-documentale-fermo" },
+    { type: "p", text: "Per ricostruire il fermo prepara un prospetto cronologico, distinto dal calcolo della richiesta economica. Ogni riga deve collegare un fatto a una data e a un documento. Separare questi elementi rende più semplice individuare periodi sovrapposti, spese duplicate e informazioni ancora mancanti, prima di attribuire una causa o formulare una quantificazione." },
+    { type: "table", headers: ["Campo", "Che cosa registrare", "Riscontro da conservare"], rows: [
+      ["Periodo", "Data iniziale e finale del singolo intervallo; sospensione totale o parziale", "Verbali, comunicazioni e giornale dei lavori"],
+      ["Lavorazione", "Attività prevista e attività concretamente rimasta ferma", "Cronoprogramma, rapportini e fotografie datate"],
+      ["Risorsa", "Mezzo, attrezzatura o squadra cui si riferisce la voce", "Identificativo del mezzo, contratto di nolo o prospetto di impiego"],
+      ["Costo registrato", "Importo del documento, periodo coperto e criterio di ripartizione", "Fattura, contratto e documentazione contabile"],
+      ["Eventuale ricollocazione", "Giorni o attività nei quali la risorsa è stata utilizzata altrove", "Rapportini e registrazioni delle altre commesse"],
+      ["Punto aperto", "Dato non disponibile e persona cui chiederlo", "Richiesta inviata e successiva risposta"],
+    ] },
+    { type: "p", text: "Mantieni il riferimento al documento originario anche quando riepiloghi i dati in un foglio di calcolo. Una fattura che copre un mese non descrive da sola quanti giorni una macchina sia rimasta inutilizzata; una fotografia documenta una situazione, ma va collegata al momento e alla lavorazione. Il prospetto deve rendere queste differenze leggibili, senza trasformare automaticamente ogni costo del periodo in una somma da richiedere." },
+    { type: "p", text: "Se al fermo si aggiungono modifiche delle opere, usa anche la [guida sulle varianti in corso d'opera](/guide/varianti-in-corso-opera). Per approfondire il rapporto tra documenti contabili e contestazioni, prosegui con la [guida sull'iscrizione delle riserve](/guide/iscrizione-riserve-appalto). La cronologia resta la base comune: le due guide affrontano aspetti diversi dello stesso fascicolo." },
+
     { type: "h2", text: "Domande frequenti", id: "faq" },
     { type: "faq", items: [
       { q: "Posso rifiutarmi di firmare il verbale di sospensione?", a: "Puoi, ma di regola non conviene. La sospensione si realizza comunque nei fatti e senza il verbale sottoscritto perdi il documento su cui appoggiare la riserva e la prova di mezzi e maestranze presenti. La strada corretta è firmare con riserva e depositare subito una dichiarazione integrativa con data certa." },
